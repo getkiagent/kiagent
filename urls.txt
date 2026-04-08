@@ -1,0 +1,28 @@
+# GetKiAgent — Lead-URL-Liste
+# Eine URL pro Zeile. Zeilen mit # werden ignoriert.
+# Format: https://domain.de oder einfach domain.de
+
+https://junglück.de
+https://puremetics.de
+notino.de
+erbolario.de
+provida.de
+the-glow.com
+undgretel.com
+raw-naturkosmetik.de
+naturalsophy.com
+teamdrjoseph.com
+wesentlich.shop
+fiveskincare.de
+nature-heart.de
+tallows.de
+zendou.de
+pure-soul-shop.de
+nooideo.de
+meritbeauty.com
+feelslike.sport
+plantsarepurple.de
+yves-rocher.de
+grueneerde.com
+iplusm.berlin
+neo-organic.de

@@ -1,0 +1,2449 @@
+{
+  "run_at": "2026-04-04T16:41:47.694606+00:00",
+  "total": 53,
+  "results": [
+    {
+      "url": "https://satinnaturel.com/",
+      "status": "ok",
+      "data": {
+        "company_name": "Satin Naturel",
+        "website": "https://satinnaturel.com/",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/uber-uns"
+        ],
+        "support_pain_signals": [
+          "Contact form on /pages/kontakt with basic fields (Name, Phone, Email, Comment) suggests manual processing",
+          "No live chat visible on any page",
+          "No FAQ page found in scraped content",
+          "Email-only support model indicated (info@satinnaturel.com)",
+          "Service team mentioned but no stated response time visible"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no AI qualification or immediate response promise",
+          "No chatbot or pre-purchase qualification tool visible",
+          "Large product catalog (6,000+ reviews mentioned) may generate high inquiry volume with manual processing bottleneck"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (evident from CDN URLs and structure)",
+          "Multi-language and multi-currency support across 15+ countries",
+          "Professional product photography and category organization",
+          "No visible third-party chat tools (Intercom, Drift, etc.)",
+          "Cookie consent and compliance features present",
+          "Mobile-responsive design"
+        ],
+        "likely_automation_opportunity": "Support automation for repetitive inquiries (order status, product ingredient questions, shipping/returns) via AI chatbot would reduce manual email load. Pre-purchase qualification via AI could route product consultation requests (mentioned on kontakt page) to appropriate channels and provide instant ingredient/usage guidance.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "FAQ page not found in scraped pages. Support volume and response time metrics unknown. Current support team size and response SLA not disclosed. No information on existing automation tools or CRM system.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong niche fit: DACH-focused (DE/AT primary markets), premium skincare/beauty category, founded 2016 with 6,000+ reviews indicating established brand. Clear support friction: email-only contact, no live chat, manual contact form, no visible AI tools. However, insufficient depth on current support pain points and operational scale. Shopify + multi-country presence shows digital maturity but limited signal on support team capacity or response times.",
+        "recommended_next_action": "Reach out via contact form referencing their newsletter signup and large customer base (6,000+ reviews), positioning support automation to handle order inquiries and product consultation requests that currently route to manual email processing. Mention pre-purchase chatbot for ingredient/usage questions to reduce consultation form volume."
+      }
+    },
+    {
+      "url": "https://nkm-atelier.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "nkm – Naturkosmetik Atelier",
+        "website": "https://nkm-atelier.de/",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "email",
+          "WhatsApp",
+          "physical stores"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/retoure",
+          "/pages/versand-und-lieferung"
+        ],
+        "support_pain_signals": [
+          "Explicit statement: 'Aktuell können wir leider keinen Kundenservice per Telefon anbieten' — no phone support",
+          "Email-only primary support channel (hallo@nkm-atelier.de) plus WhatsApp",
+          "Returns process requires self-service portal interaction (AfterShip) plus manual photo upload for certain issues",
+          "No live chat or chatbot visible on site",
+          "Shipping/returns/product quality questions require contacting email or WhatsApp — no self-service FAQ or AI assistant evident"
+        ],
+        "speed_to_lead_signals": [
+          "Contact page offers email and WhatsApp only — no stated response time commitment",
+          "Newsletter signup (email/WhatsApp) visible but no pre-purchase qualification mechanism",
+          "Product pages lack personalized skin-type recommendation flow or chatbot guidance"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (shop.app reference, standard Shopify cart/checkout behavior)",
+          "AfterShip returns management integration",
+          "Review.io integration for customer reviews and feedback collection",
+          "WhatsApp newsletter subscription option (modern CRM engagement)",
+          "Email newsletter system in place",
+          "No AI chatbot, live chat, or conversational pre-purchase tool visible"
+        ],
+        "likely_automation_opportunity": "nkm has strong support friction around email/WhatsApp-only support with no phone option, plus manual returns and shipping inquiry handling. A support chatbot handling FAQ (shipping costs, returns eligibility, product compatibility questions) and pre-purchase skin-type qualification would reduce email volume and enable faster response times. WhatsApp automation could also scale their existing WhatsApp channel.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Footer content and full footer links were partially blocked. Could not determine if they use any third-party chat tool or if there's a hidden FAQ page. No data on typical support volume or current response times. Atelier locations suggest strong local/offline presence which may affect automation ROI.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "nkm is a strong niche fit (DACH-based beauty/skincare DTC brand) with clear support friction (no phone, email/WhatsApp only, manual returns portal). However, they operate physical ateliers and have moderate digital maturity (Shopify + some integrations) but no obvious AI support or chat infrastructure. Support pain is visible but not extreme; they may already be managing volume adequately via email/WhatsApp. Tier B due to good niche+friction match but lower operational urgency signals.",
+        "recommended_next_action": "Reach out via their contact form or email (hallo@nkm-atelier.de), reference the lack of phone support and the manual returns process, and propose an AI support chatbot for FAQ automation (shipping, returns, product questions) plus a pre-purchase skin-type assessment tool to reduce support load."
+      }
+    },
+    {
+      "url": "https://rosental.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Rosental",
+        "website": "https://rosental.de/",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [],
+        "support_pages_found": [
+          "/pages/avada-faqs",
+          "/pages/returns",
+          "/pages/about-us"
+        ],
+        "support_pain_signals": [
+          "FAQ page exists but content not fully loaded in scrape",
+          "Returns page exists but content not visible - likely manual process",
+          "No live chat, email, phone, or contact form visible on any scraped pages",
+          "Multi-country shipping (DACH+ region) likely generates recurring order status and shipping inquiries"
+        ],
+        "speed_to_lead_signals": [
+          "No contact form or pre-purchase inquiry mechanism visible on homepage",
+          "Newsletter signup or consultation form not evident",
+          "High search volume for product-specific queries (botanical, hyaluron, EMS, lifting) suggests customer education/consultation opportunity"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (myshopify.com domain detected)",
+          "Cookie consent banner present",
+          "Multiple payment methods integrated (PayPal, Mastercard, Visa, Klarna, Apple Pay, Google Pay)",
+          "Product review counts visible (1612, 1715, 1210 reviews on bestsellers)",
+          "Bilingual site (German/English) with multi-currency support across 30+ countries",
+          "No third-party chat tool or AI chatbot detected"
+        ],
+        "likely_automation_opportunity": "Support automation for order status, shipping inquiries, and returns processing across a large DACH+ customer base. Pre-purchase qualification via product recommendation chatbot for high-intent searches (botanical lifting, hyaluron, EMS) could reduce support load and increase AOV.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "FAQ and returns page content did not fully load in scrape—actual FAQ volume and returns process details unknown. No explicit contact method (email, form, phone) found on visible pages, but may exist elsewhere on site. Company size, support team size, and current support volume not determinable from available content. Product category confidence is high (skincare), but exact positioning (luxury vs mass-market) unclear.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "Strong niche fit: DACH-focused beauty/skincare brand with multi-country operations and high product engagement (1600+ reviews). Clear support friction signals: no visible contact mechanism, returns page exists but process unclear, multi-language/multi-currency complexity likely drives repetitive support inquiries. However, FAQ page content not visible, no explicit contact form found, and digital maturity is moderate (Shopify + Klarna but no AI/chat tools). Merits outreach but requires contact confirmation before high confidence.",
+        "recommended_next_action": "Reach out via Shopify contact method or Instagram/social if available, referencing their DACH+ multi-country operations and high review volume on bestsellers. Highlight friction in returns process and opportunity to automate order status inquiries for non-English speakers using multi-language chatbot."
+      }
+    },
+    {
+      "url": "https://hejorganic.com/",
+      "status": "ok",
+      "data": {
+        "company_name": "HEJ ORGANIC",
+        "website": "https://www.hejorganic.com/",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "email",
+          "contact form"
+        ],
+        "support_pages_found": [
+          "/pages/hej-organic-kontakt",
+          "/pages/hej-organic-faq",
+          "/pages/hej-organic-widerruf",
+          "/pages/hej-organic-versand"
+        ],
+        "support_pain_signals": [
+          "Email-only support with 5-day response window (Mon-Fri 9-17 CET), no live chat or chatbot visible",
+          "FAQ page contains 8+ detailed questions covering product application, storage, returns, pregnancy safety, and ingredient composition",
+          "Returns process requires manual email to help@hejorganic.com before sending back goods; customer bears return shipping costs",
+          "No visible self-service return label generation or automated return RMA system",
+          "Large product volume (multiple skincare lines) with detailed product-specific questions likely generating repetitive support inquiries"
+        ],
+        "speed_to_lead_signals": [
+          "Homepage includes 'KI-Hautanalyse' (AI skin analysis) link but no indication of automated follow-up or qualification on tool completion",
+          "Skin type selector quiz present (Reife Haut, Mischhaut, Unreine Haut, etc.) but no evidence of post-quiz email capture or AI-driven product recommendations",
+          "Contact form visible but no stated response time or automated acknowledgment mentioned"
+        ],
+        "digital_maturity_clues": [
+          "Uses Shopify (evident from CDN URLs)",
+          "Integrated product review system (reviews.co.uk), showing 1,493 reviews and 4.61 rating across products",
+          "Cookie consent banner implied (standard Shopify setup)",
+          "No visible live chat or AI chatbot tool (Drift, Intercom, etc.)",
+          "Skin analysis tool present but appears to be static quiz, not AI-driven personalization",
+          "Structured FAQ page with detailed answers",
+          "Email segmentation visible (separate contact addresses for customer service, B2B/sales, social collaboration)"
+        ],
+        "likely_automation_opportunity": "Email-only support handling repetitive product FAQs (application, storage, compatibility during pregnancy, returns process) is a clear bottleneck. An AI chatbot could handle 60-70% of FAQ queries, returns inquiries, and order status questions automatically, freeing the team to focus on complex issues. Additionally, the skin analysis quiz could be enhanced with AI-driven post-quiz email capture and product recommendations to improve speed-to-lead.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Cannot determine exact monthly support volume, current response time SLA adherence, or whether a form-based inquiry system exists beyond the contact page. UK domain registration visible but German address and operations confirmed; Shopify Plan not visible from scraped content. No information on current marketing automation or CRM stack beyond Shopify.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "HEJ ORGANIC is a well-executed German DTC skincare brand in the target DACH region with clear support friction (email-only, 5-day response window, manual returns process). Strong category fit (organic skincare/wellness) and medium-high digital maturity (Shopify, reviews integration, skin quiz). However, they lack obvious pre-purchase qualification friction or public evidence of high support volume pain. The contact path is clear but limited to email. Automation opportunity is real but not as acute as brands with visible form floods or overwhelmed live chat.",
+        "recommended_next_action": "Reach out via the contact form at /pages/hej-organic-kontakt, referencing their FAQ volume and email-only support model. Propose a pilot: AI chatbot for 'Rücksendung' (returns) and product compatibility questions to reduce help@hejorganic.com volume. Mention the skin analysis quiz as a secondary opportunity for post-quiz lead capture and AI-driven recommendations."
+      }
+    },
+    {
+      "url": "https://hellobody.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "HelloBody",
+        "website": "https://hellobody.de/",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/pages/contact",
+          "/pages/widerruf-rucksendungen",
+          "/pages/versandkosten-lieferzeiten",
+          "/pages/about-us"
+        ],
+        "support_pain_signals": [
+          "Contact form with categorized dropdown (7 main categories including order cancellation, returns, tracking, product info, cooperation) suggests high volume of repetitive inquiries",
+          "Returns process requires manual email communication to customer portal or physical return with generated label",
+          "No live chat visible on any scraped pages",
+          "Shipping and returns information spread across multiple static pages with detailed manual processes",
+          "Order-related inquiries (tracking, status changes, address modifications, missing items, damaged products) all routed through single contact form"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form submission requires manual reCAPTCHA verification, slowing inquiry intake",
+          "No indication of automated response time or SLA for contact form inquiries",
+          "Returns process mentions customer must manually request return labels via customer portal, creating friction points"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (evident from shop.app references and Shopify cart structure)",
+          "Product review app integrated (337 reviews visible on product pages with 4.85/5 rating display)",
+          "Hive customer portal used for returns management",
+          "Cookie consent and reCAPTCHA implemented",
+          "No third-party live chat or AI support tools visible",
+          "Newsletter signup capability implied but not shown in scraped content",
+          "1.5 million customers mentioned in About Us (scale signal)"
+        ],
+        "likely_automation_opportunity": "HelloBody handles substantial support volume (order status, returns initiation, shipping tracking, product questions, damaged/missing items) through a single categorized contact form with no live chat. An AI chatbot could immediately qualify and resolve 60-70% of these inquiries (tracking status via order number lookup, return label generation, FAQ-based product info), reducing response time and support team load.",
+        "confidence_level": "high",
+        "uncertainty_notes": "No FAQ page was provided in scraped content, so unable to assess existing knowledge base depth. Live chat tool status only confirmed as absent; unclear if support team size or response metrics exist. No pricing page scraped, so revenue scale not directly confirmed (though 1.5M customers mentioned). Customer support team structure and current tooling unknown.",
+        "score_1_to_10": 8,
+        "tier": "A",
+        "score_rationale": "HelloBody is a strong fit: German DTC skincare brand with significant scale (1.5M customers, Shopify), clear support friction (complex contact form with 7+ categories, no live chat, manual returns process), and established digital maturity (Hive portal, reviews app, product-focused site). Visible support pain points align directly with automation opportunity. DACH region match and clean beauty niche fit criteria.",
+        "recommended_next_action": "Reach out via contact form (subject: 'Kooperationsvorschlag (B2B)') referencing their multi-category support form volume and absence of live chat/AI support, positioning support automation as a way to reduce response times on high-frequency inquiries like order tracking and returns."
+      }
+    },
+    {
+      "url": "https://northglow.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "North Glow",
+        "website": "https://northglow.de/",
+        "country": "Germany",
+        "category": "skincare, beauty, wellness",
+        "visible_contact_options": [
+          "contact form",
+          "email (newsletter subscription)"
+        ],
+        "support_pages_found": [
+          "/pages/contact-us",
+          "/pages/about-us"
+        ],
+        "support_pain_signals": [
+          "Contact page offers only a basic contact form with no stated response time",
+          "No live chat visible on site",
+          "No visible chatbot or AI support",
+          "About page emphasizes personal relationships and slow curation process, suggesting manual handling of inquiries",
+          "Newsletter signup as primary engagement mechanism but no automated follow-up clarity"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form with no visible SLA or response time commitment",
+          "Founder emphasizes 'open ears' and personal touch, suggesting all inquiries may be manually triaged",
+          "Heavy emphasis on curated, hand-picked selection suggests inquiry volume may overwhelm manual processes at scale"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (evident from domain structure and cart UI)",
+          "Newsletter signup form present (email marketing capability)",
+          "Blog section with curated content",
+          "No third-party chat tools detected",
+          "Basic product review/rating system (mentioned '400+ satisfied customers by rating')",
+          "Free sample inclusion and tiered shipping offers suggest some operational sophistication"
+        ],
+        "likely_automation_opportunity": "North Glow could benefit from a support chatbot to handle high-volume FAQ inquiries about products, shipping, and returns—given the contact form is the sole support channel and founder/team personally manage all inquiries. A pre-purchase qualifier could also help route complex skincare consultation requests to the team faster, reducing response latency for time-sensitive inquiries.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "No FAQ page was scraped, so volume of repetitive questions is unknown. Phone support, WhatsApp, or other hidden contact channels may exist but are not visible in the pages provided. Actual response times to contact form submissions are not documented. Support ticket volume and team size are not disclosed. Returns process details not fully specified in the content provided.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "North Glow is a DACH-region (Germany) beauty/skincare brand with clear niche fit (clean beauty, organic cosmetics). Visible support friction exists: contact form is the sole stated support mechanism, no live chat, no AI support visible. However, the founder emphasizes personal, manual curation and relationship-building, which may mean support friction is intentional strategy rather than operational pain. Without visible FAQ volume, returns email address, or explicit SLA delays, the support signals are implied rather than strongly evident. Tier B reflects decent fit and clear contact path, but insufficient evidence of acute operational friction that automation would urgently address.",
+        "recommended_next_action": "Reach out via the /pages/contact-us form, introduce GetKiAgent's support automation service, and ask Daniela or the team about volume of incoming product questions, returns inquiries, and typical response times. Reference the emphasis on personal service and suggest a chatbot could handle tier-1 FAQs while escalating complex skincare consultations to the team—preserving their curated brand identity while freeing capacity."
+      }
+    },
+    {
+      "url": "https://cobicos.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "cobicos",
+        "website": "https://cobicos.de/",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "contact form",
+          "email",
+          "phone"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/faq",
+          "/pages/widerrufsrecht-fur-den-verkauf-von-waren",
+          "/pages/uber-uns"
+        ],
+        "support_pain_signals": [
+          "FAQ page exists but appears incomplete in scrape; contact page references 48-hour response time (not immediate)",
+          "No live chat visible on site",
+          "Support relies on email, phone, or contact form only",
+          "Contact page states 'In der Regel anworten wir innerhalb von 48 h' (typically responds within 48 hours) suggesting potential support bottleneck"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no indication of automated response or follow-up mechanism",
+          "No evidence of chatbot or AI qualification tool on homepage or product pages",
+          "Newsletter signup form present but no immediate lead qualification before email capture"
+        ],
+        "digital_maturity_clues": [
+          "Cookie consent banner present",
+          "hCaptcha integration on forms",
+          "Judge.me product review system integrated (181 reviews visible)",
+          "Newsletter signup with incentive (10€ discount)",
+          "No third-party chat tools (live chat, AI chatbot) detected",
+          "Shopify platform evident from URL structure and cart functionality"
+        ],
+        "likely_automation_opportunity": "Support automation would have the highest impact. The FAQ page handles recurring questions (product durability, ingredients, returns), and the 48-hour response window on the contact form suggests email volume management challenges. An AI chatbot could handle common product inquiries and pre-qualification before human handoff, reducing response time friction.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "The /pages/uber-uns (about us) page content appears to be placeholder text ('Use this text to share information about your brand'). Could not fully assess brand size, team structure, or operational maturity from provided scrapes. Newsletter signup and Judge.me reviews suggest reasonable traffic and customer engagement, but exact scale unknown. No pricing information visible in scrapes to assess customer segment.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "cobicos fits the target niche well (DACH beauty/skincare, DTC, Shopify-based) and shows clear support friction signals (48-hour response window, email-only primary contact, no live chat/AI). However, confidence is medium due to incomplete scrape data on the about page and unclear signs of operational scale. The FAQ page and multiple contact methods are present but not deeply analyzed. The brand shows decent digital maturity (Judge.me reviews, newsletter) but lacks visible AI support infrastructure.",
+        "recommended_next_action": "Reach out via the contact form referencing their 48-hour response time on customer inquiries and FAQ volume. Position support automation as a way to qualify product questions faster (ingredient safety, vegan status, shipping timeline) and reduce pressure on the small team—emphasizing speed-to-answer for repeat questions about product composition, durability, and returns."
+      }
+    },
+    {
+      "url": "https://hyapur.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Hyapur Deutschland GmbH",
+        "website": "https://hyapur.de/",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "email",
+          "phone",
+          "fax"
+        ],
+        "support_pages_found": [
+          "/widerrufsbelehrung",
+          "/versandarten"
+        ],
+        "support_pain_signals": [
+          "No live chat or AI support visible on site",
+          "Returns process relies on manual email/fax communication (info@hyapur.de, 030 30 111 85-25)",
+          "No dedicated FAQ page provided in scrape; support contact info buried in legal pages",
+          "Versandarten page appears to have minimal content (page loads but shows only cookie/footer information)",
+          "Support contact channels are traditional (email, phone, fax) with no automated response indication"
+        ],
+        "speed_to_lead_signals": [
+          "No contact form visible on homepage or included pages",
+          "No pre-purchase consultation or product recommendation quiz observed",
+          "Customer inquiries about product suitability would require manual email/phone follow-up",
+          "No stated response time commitments visible for customer inquiries"
+        ],
+        "digital_maturity_clues": [
+          "Uses WooCommerce for ecommerce platform",
+          "Google Analytics installed (statistics tracking)",
+          "Cookie consent banner present (Borlabs Cookie)",
+          "WPML multilingual plugin active (supports multiple languages)",
+          "Professional product review ratings displayed (4.9/5 average)",
+          "No third-party chat tools (Intercom, Drift, etc.) detected"
+        ],
+        "likely_automation_opportunity": "Hyapur lacks any automated pre-purchase support or live engagement tools. An AI chatbot handling product questions (serum concentration, skin type suitability, ingredient queries) and FAQ automation would reduce manual email/phone support load. A speed-to-lead form with instant AI qualification could capture product inquiry volume and improve response times.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Versandarten page content was not fully visible in scrape (mostly cookie banner). No dedicated FAQ, contact, or support pages were scraped—only legal/policy pages. Cannot confirm if a contact form exists elsewhere on the site or what current support volume/response times are.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "Hyapur fits the target profile (DACH region, skincare/beauty, DTC via WooCommerce) with clear support friction: email/phone-only contact, no live chat or AI support, and traditional manual returns process. However, scoring is moderated to Tier B because the scraped pages do not reveal a contact form, FAQ volume, or operational scale signals. The brand shows professional maturity (luxury hotel partnerships, strong reviews) but support automation opportunity, while real, is not yet quantified from available content.",
+        "recommended_next_action": "Reach out via email (info@hyapur.de) or phone (030 30 111 85-00) positioning GetKiAgent as a solution to handle product inquiry volume (serum suitability, ingredient questions) and accelerate pre-purchase support. Reference their B2B partnerships with luxury hotels/spas as a sign of operational scale that would benefit from AI-driven first-response handling."
+      }
+    },
+    {
+      "url": "https://kiyomi-skin.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "KIYOMI SKIN",
+        "website": "https://kiyomi-skin.de/",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/faq",
+          "/pages/versand-und-zahlung"
+        ],
+        "support_pain_signals": [
+          "Contact form exists but no stated response time ('unser Team meldet sich so schnell wie möglich' is vague)",
+          "FAQ page contains 15+ questions covering product ingredients, shipping, application, and anti-aging topics",
+          "No live chat visible on any scraped page",
+          "Support is email/form-only; no phone number listed",
+          "Shipping and payment info scattered across multiple pages rather than consolidated"
+        ],
+        "speed_to_lead_signals": [
+          "Newsletter signup present on multiple pages but no automation hints (no conditional messaging, no qualification)",
+          "Contact form is basic with optional order number field—no pre-qualification logic visible",
+          "No product recommendation quiz or AI assistant mentioned despite detailed product range"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (standard cookie banner, checkout structure)",
+          "Newsletter signup with birthday/name capture indicates segmentation capability",
+          "Product review ratings visible (4.5–5.0 stars on items)",
+          "Multiple payment options integrated (PayPal, Klarna, Apple Pay, Google Pay, card)",
+          "No third-party chat tool detected",
+          "PickyStory mention visible in footer (review/testimonial app)",
+          "No live chat or AI chatbot visible"
+        ],
+        "likely_automation_opportunity": "KIYOMI SKIN has substantial FAQ volume (15+ questions on ingredients, 5-ALA, application, results timeline) that could be automated via AI chatbot. Pre-purchase qualification on product suitability (skin type, concern, timeline expectations) and order-status automation would reduce email form submissions and support load. Speed-to-lead on newsletter signups and form fills is also a gap—no visible automation for confirmation or nurture.",
+        "confidence_level": "high",
+        "uncertainty_notes": "No blog or content hub visible in scraped pages; unclear if they have a dedicated support email or ticket system. No data on actual response times or support volume. Geography constraint (ships only within Germany currently) may limit expansion readiness.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "KIYOMI SKIN is a German skincare DTC brand with clear support friction (FAQ volume, no live chat, email-only contact) and operational maturity (Shopify, multi-payment, newsletter). However, evidence of pre-purchase friction or speed-to-lead urgency is weak—contact form is basic and no AI tooling is visible. The brand fits niche (beauty/skincare, DACH region) but lacks the intensity of friction signals that would elevate to Tier A.",
+        "recommended_next_action": "Reach out via contact form referencing their FAQ volume (15+ questions on product ingredients and application) and lack of live chat support. Propose AI chatbot for product-fit qualification and FAQ automation, plus speed-to-lead follow-up on newsletter signups. Mention ability to reduce form submission backlog."
+      }
+    },
+    {
+      "url": "https://sarem-cosmetics.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Sarem Cosmetics",
+        "website": "https://sarem-cosmetics.de/",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "contact form"
+        ],
+        "support_pages_found": [
+          "/pages/contact"
+        ],
+        "support_pain_signals": [
+          "Only contact form visible for customer inquiries; no live chat, phone, or email address displayed",
+          "No FAQ page found in scraped content",
+          "No visible response time commitment on contact page",
+          "Contact form is basic (Name, Email, Message only) with no routing or automated response indication"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form lacks any stated response time expectation",
+          "No pre-qualification questions or chatbot visible to handle common inquiries before manual follow-up",
+          "Single-field contact form suggests all inquiries route to same inbox with no triage"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (cdn.shop domain detected)",
+          "Professional product photography and brand design present",
+          "Product review/comparison sections visible",
+          "No third-party live chat tool detected (Zendesk, Drift, etc.)",
+          "Basic contact form with no advanced qualification logic"
+        ],
+        "likely_automation_opportunity": "A support chatbot could handle FAQs about shipping (free delivery threshold visible), product ingredients, application instructions, and order status inquiries—freeing the team to focus on complex skincare consultation or complaints. Pre-purchase qualification AI could also qualify skin type/concerns before routing to sales.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Only two pages were scraped (homepage and contact). Missing: FAQ page, shipping/returns policy details, customer service hours, email address, phone support availability, and any existing AI/automation tools. Cannot fully assess support volume or existing friction patterns.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "Sarem Cosmetics is a German skincare DTC brand (niche fit for DACH) with 40+ year heritage and visible premium positioning. Contact friction is evident—only form-based support, no live chat, no visible FAQ or email alternative. However, confidence is moderate due to limited content scraped; missing returns policy, FAQ volume, and support page details prevent higher scoring. Digital maturity is reasonable (Shopify, professional design) but no AI/automation visible.",
+        "recommended_next_action": "Reach out via contact form referencing their premium skincare positioning and lack of live chat support. Request a brief call to discuss: (1) typical inquiry volume and response time, (2) top recurring questions (ingredients, application, shipping), and (3) whether pre-purchase consultation friction exists. Then tailor a support automation + lead qualification proposal."
+      }
+    },
+    {
+      "url": "https://fivena-naturkosmetik.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Fivena Naturkosmetik",
+        "website": "https://fivena-naturkosmetik.de/",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/kontakt",
+          "/en/shipping"
+        ],
+        "support_pain_signals": [
+          "Contact form is the only visible support channel with no stated response time",
+          "Shipping page requires manual contact form submission for heavy orders instead of automated calculation",
+          "No live chat, phone support, or WhatsApp visible",
+          "No FAQ page found despite product range including multiple skincare categories"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form states 'zeitnah' (promptly) response but no specific SLA communicated",
+          "No pre-purchase chatbot or product recommendation quiz detected",
+          "Heavy order inquiries routed to manual contact form submission"
+        ],
+        "digital_maturity_clues": [
+          "WooCommerce-based store (WordPress)",
+          "CAPTCHA on contact form suggests spam management",
+          "Bilingual site (German/English)",
+          "DHL shipping integration visible",
+          "No third-party chat, review, or AI tools detected"
+        ],
+        "likely_automation_opportunity": "A support chatbot could handle repetitive inquiries about shipping costs (especially zone-based questions and heavy order logistics), product ingredient questions across the skincare categories, and order status. The heavy order calculation process is currently manual via contact form and could be partially automated with conditional logic.",
+        "confidence_level": "high",
+        "uncertainty_notes": "No clear indication of order volume or customer support volume. Cannot determine if they use email marketing platform (e.g., Klaviyo) or have existing support ticket system from scraped pages alone. No returns/refund policy page provided in scrape.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Fivena fits the DACH beauty/skincare niche well and is a German natural cosmetics brand with clear support friction (contact form only, no live chat, manual heavy order handling, no FAQ). However, the scoring is held at Tier B rather than A because the scrape only covered 2 support pages, no strong signs of operational scale are visible (no review counts, testimonials, or traffic indicators), and it's uncertain whether they face significant support volume. The niche fit and friction signals are strong, but evidence of scale and pain intensity is limited.",
+        "recommended_next_action": "Reach out via their contact form with a message referencing their multi-zone shipping logic and lack of automated support for heavy orders, positioning a pre-purchase chatbot that can qualify shipping costs and answer ingredient/skin-type questions before customers submit inquiries."
+      }
+    },
+    {
+      "url": "https://greendoor-naturkosmetik.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Greendoor Naturkosmetik",
+        "website": "https://greendoor-naturkosmetik.de/",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "contact form",
+          "email",
+          "phone"
+        ],
+        "support_pages_found": [
+          "/Shop-Service/Kontakt",
+          "/Shop-Service/Widerrufsrecht",
+          "/Shop-Service/Versand-Zahlungsbedingungen",
+          "/ueber-uns"
+        ],
+        "support_pain_signals": [
+          "Contact form is the primary support mechanism — no live chat visible",
+          "Email-only support indicated (info@greendoor-cp.de)",
+          "Detailed refund/return policy requires manual email contact for returns",
+          "No FAQ page found in scraped content despite multi-product catalog (deo, skincare, bath products)"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form with no stated response time SLA",
+          "No chatbot or AI pre-qualification tool visible",
+          "Newsletter signup is transactional (10% discount incentive) but not qualification-focused"
+        ],
+        "digital_maturity_clues": [
+          "Newsletter capture with CAPTCHA and data consent",
+          "Shopware ecommerce platform (inferred from URL structure and UI)",
+          "No third-party chat tools visible on homepage or contact page",
+          "Responsive design (separate mobile/desktop sliders)",
+          "Click-and-collect option available (local fulfillment at Hurlach facility)"
+        ],
+        "likely_automation_opportunity": "Greendoor could benefit most from support automation for order status, shipping/returns inquiries, and product questions (deodorant variants, ingredients, usage). A pre-purchase chatbot could also qualify product recommendations (sensitive skin, allergies) before customers contact support via email.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "No FAQ or dedicated help center page was scraped, so actual support volume and friction points are inferred. Unclear whether they use Shopware's built-in chat or any third-party support tool. No public review of support response times or customer feedback was available.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "Greendoor is a DACH-region natural skincare/cosmetics brand with clear support friction (email-only contact, no live chat, manual returns process). However, they lack visible operational scale signals (no visible team size, no support tickets metrics), and it's unclear whether they experience high support volume. The contact form exists but lacks speed-to-lead optimization. Strong niche fit and growth signals (16+ years, owned facility, PETA certification) elevate this from Tier C, but absence of visible support pain metrics and no indication of high inquiry volume prevent a higher score.",
+        "recommended_next_action": "Reach out via the contact form referencing their manual returns process and lack of live chat, positioning a support chatbot for product Q&A (deodorant types, shipping questions) and returns triage. Reference their multi-product catalog and established customer base as signals they likely field repetitive questions."
+      }
+    },
+    {
+      "url": "https://viovero-naturkosmetik.com/",
+      "status": "ok",
+      "data": {
+        "company_name": "VioVero Naturkosmetik",
+        "website": "https://viovero-naturkosmetik.com/",
+        "country": "Germany",
+        "category": "skincare, beauty, natural cosmetics",
+        "visible_contact_options": [
+          "email",
+          "contact form"
+        ],
+        "support_pages_found": [
+          "/i/kontakt-faq",
+          "/i/ueber-uns",
+          "/l/shipping"
+        ],
+        "support_pain_signals": [
+          "FAQ page accessible but limited — covers only returns, package pickup, and distribution channels",
+          "No live chat visible on website",
+          "No phone support listed — email and contact form only",
+          "Returns process is manual: customer pays for return shipping, must wait 7 working days for processing",
+          "Single contact email (info@viovero-naturkosmetik.com) repeated across all pages — suggests no dedicated support routing",
+          "Contact form appears on FAQ page with no stated response time or SLA"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no indication of automated response or response time commitment",
+          "Individual consultation mentioned in About section ('individuelle Beratung') but no clear path to book or qualify before contacting",
+          "No chatbot or pre-qualification tool visible to handle initial inquiries"
+        ],
+        "digital_maturity_clues": [
+          "Cookie consent banner present — suggests basic GDPR compliance infrastructure",
+          "Product listings show inventory status ('Auf Lager', 'Nicht auf Lager')",
+          "Discount code system in place ('Willkommen' first-purchase code)",
+          "Free shipping threshold set at €50 — indicates order optimization strategy",
+          "Presence on third-party marketplace (Humasana) — multi-channel distribution awareness",
+          "No third-party chat, chatbot, or AI support tools visible"
+        ],
+        "likely_automation_opportunity": "VioVero has clear support friction around returns/RMA handling (7-day manual processing, customer-paid shipping) and initial inquiry response. An AI chatbot could handle FAQ questions (returns windows, shipping times, product availability), qualify consultation requests, and provide instant returns status — reducing email load and improving first-contact resolution.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Could not determine: exact team size, current monthly inquiry volume, response time SLA for contact form, whether they use a CRM or ticketing system, current support tool stack beyond what's visible on site. The About page emphasizes 'individuelle Beratung' but no details on how this is currently delivered or who manages it.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "VioVero fits the DACH natural cosmetics niche well (German brand, skincare/wellness focus, founded 2021, regional production partnerships). Clear support friction exists around returns and inquiry handling with no visible AI/live chat. However, the business appears relatively young and small-scale (limited FAQ, single email address, no obvious support team infrastructure), which reduces the urgency of automation. Contact path is clear but not immediately obvious (contact form buried in FAQ page). Digital maturity is modest but adequate for ecommerce.",
+        "recommended_next_action": "Reach out via contact form referencing their returns process friction and lack of live chat support. Lead with: 'We noticed your returns take 7 days to process and you handle inquiries email-only — we help natural cosmetics brands like yours reduce support load with AI chatbots for FAQs and returns status.'"
+      }
+    },
+    {
+      "url": "https://myrto-naturalcosmetics.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Myrto Naturkosmetik",
+        "website": "https://www.myrto-naturalcosmetics.de/",
+        "country": "Germany",
+        "category": "skincare, haircare, cosmetics",
+        "visible_contact_options": [
+          "contact form",
+          "email",
+          "phone"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/faq",
+          "/pages/widerrufsrecht",
+          "/pages/versand"
+        ],
+        "support_pain_signals": [
+          "FAQ page with 15+ questions indicating volume of customer inquiries",
+          "Contact form is primary support method with no stated response time",
+          "Returns/refund process relies on email communication and manual forms",
+          "No live chat visible on website",
+          "No chatbot or AI support mentioned",
+          "FAQ mentions technical issues with customer login and data migration, suggesting operational complexity",
+          "Support contact is phone (+492202459612) and email (info@myrto-naturalcosmetics.de) only"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no confirmation of response time stated",
+          "Phone line exists but no indication of hours or availability",
+          "Merchant/wholesale inquiries require manual email contact with no stated SLA",
+          "Affiliate and Creator program inquiries directed to email with no automated qualification"
+        ],
+        "digital_maturity_clues": [
+          "Shopify store (DHL integration, Shopify Payments offered)",
+          "Instagram integration with feed on multiple pages",
+          "Recent shop migration with technical issues noted",
+          "Product review system present",
+          "Multiple payment methods supported (PayPal, Shopify Payments)",
+          "Tracking integration with DHL",
+          "No third-party chat tools detected"
+        ],
+        "likely_automation_opportunity": "Myrto has substantial FAQ volume and manual support workflows across returns, order status, product selection guidance, and wholesale inquiries. An AI chatbot could handle 40%+ of routine FAQ responses (product fit, shipping timelines, refund process, Packstation addressing), reducing email load and enabling faster first-response on merchant/affiliate inquiry qualification.",
+        "confidence_level": "high",
+        "uncertainty_notes": "No team size or support volume data visible. Response times and current support staffing unknown. No information about existing marketing automation or email sequences. Affiliate/Creator program specifics not visible in scraped content.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong niche fit as a German skincare/cosmetics DTC brand (beauty/wellness category, .de domain, German language). Visible support friction with multi-channel FAQ, email-only or phone support, and no live chat/chatbot. Contact path is clear (form + email + phone). However, scored Tier B rather than A because: (1) operational scale signals are moderate—recent shop migration suggests mid-size but not large volume; (2) no explicit indicators of overwhelming support demand; (3) wholesale/partner inquiry path exists but volumes unknown. Automation would create value, particularly for FAQ deflection and pre-qualification of merchant inquiries.",
+        "recommended_next_action": "Reach out via contact form referencing their FAQ volume (~15 product/shipping/refund questions), lack of live chat, and merchant inquiry handling. Propose a pilot for AI-powered chatbot to deflect FAQ/order-status queries and pre-qualify wholesale leads, with specific focus on reducing response time to Packstation and product-fit questions."
+      }
+    },
+    {
+      "url": "https://lynx-cosmetics.com/",
+      "status": "ok",
+      "data": {
+        "company_name": "Lynx Cosmetics",
+        "website": "https://www.lynx-cosmetics.com/",
+        "country": "Austria",
+        "category": "cosmetics/skincare/wellness",
+        "visible_contact_options": [
+          "contact form",
+          "email",
+          "phone"
+        ],
+        "support_pages_found": [
+          "/kontakt",
+          "/widerrufsbelehrung",
+          "/versandarten",
+          "/ueber-uns"
+        ],
+        "support_pain_signals": [
+          "Currently blocking new orders with illness notice (as of Jan 15, 2026) — indicates operational capacity issues and manual order management",
+          "Phone support limited to Mon-Fri 09:00-17:00 only",
+          "Email-only support with no visible SLA or response time stated",
+          "Manual order processing mentioned: 'we process shipping ourselves in-house' with 4-5 workday processing time",
+          "Manual pickup coordination required via email after online order",
+          "No FAQ or knowledge base visible to reduce repetitive inquiries",
+          "Handmade/small batch production ('kleine Manufaktur') likely means high manual support burden for order status, customization, ingredient questions"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no automation or response time promised",
+          "Email address provided but no indication of automated confirmation or follow-up",
+          "Customers explicitly directed to call or email for urgent requests ('contact us by phone or email if urgent') — suggests slow default response"
+        ],
+        "digital_maturity_clues": [
+          "WordPress-based site with WooCommerce (inferred from checkout structure)",
+          "Cookie consent banner present",
+          "Newsletter signup visible",
+          "No third-party live chat, chatbot, or AI support tools visible",
+          "No product review app or social proof widgets visible",
+          "Manual content creation emphasized in 'About Us' (hand-drawn illustrations, no marketing agency used)",
+          "Payment methods shown (Visa, Mastercard, Amex, Maestro, Klarna) suggest basic e-commerce maturity"
+        ],
+        "likely_automation_opportunity": "Support automation (AI chatbot) would be highest impact: FAQ-style chatbot could handle repetitive questions about CBD legality by region, shipping times, ingredient sourcing, and order status — freeing up the two-person team for production and fulfillment. Pre-purchase qualification could also help: a simple qualification form asking product preference, delivery urgency, and skin type could route customers to relevant products before they contact support, reducing manual inquiry volume.",
+        "confidence_level": "high",
+        "uncertainty_notes": "No direct indication of Shopify vs. WordPress; assumed WordPress from markup. No visibility into actual inquiry volume, current support response times, or customer satisfaction metrics. Blog/FAQ presence not confirmed beyond what was scraped. Currently unable to accept new orders, so willingness to invest in operations unclear.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong niche fit (DACH region, Austria-based CBD cosmetics/wellness brand) with visible operational friction (manual order processing, small team, limited phone hours, no live chat). However, the current order-blocking stance due to illness and lack of visible customer pain data (no FAQ, no review volume) prevent a higher score. Clear contact path and email support exist, but no proof of response speed issues or customer complaints. Digital maturity is moderate—WordPress site without obvious AI or automation tools. Fits profile but lacks urgency signals typical of Tier A leads.",
+        "recommended_next_action": "Reach out via contact form or email (info@lynx-cosmetics.com), reference their small-batch operation, manual fulfillment process, and lack of self-serve support resources (no FAQ, no chatbot). Suggest a low-friction pilot: AI chatbot for product ingredient/CBD legality questions and order status—addressing their current capacity bottleneck while they recover from operational pause."
+      }
+    },
+    {
+      "url": "https://coos-cosmetics.com/",
+      "status": "ok",
+      "data": {
+        "company_name": "Coos Cosmetics",
+        "website": "https://coos-cosmetics.com/",
+        "country": "Netherlands",
+        "category": "skincare",
+        "visible_contact_options": [
+          "contact form",
+          "email",
+          "WhatsApp",
+          "live chat"
+        ],
+        "support_pages_found": [
+          "/de-de/pages/contact",
+          "/de-de/pages/faqs",
+          "/de-de/pages/return-refund-policy",
+          "/de-de/pages/shipping-and-delivery"
+        ],
+        "support_pain_signals": [
+          "FAQ page lists 9+ common questions suggesting recurring inquiries about returns, shipping, product authenticity, and skincare concerns",
+          "Manual return process requires customers to fill out return portal or email info@coos-cosmetics.com, then wait for label generation",
+          "Contact form is primary channel with stated 24-hour response time, creating potential lag for urgent inquiries",
+          "WhatsApp number provided suggests high volume of inquiries coming through messaging channels",
+          "Shipping complexity across EU with varied costs and delivery times by country likely generates confusion and support tickets",
+          "Return policy nuances (unopened vs opened items, different rules for EU vs non-EU) visible in FAQ, indicating customer confusion points"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no immediate response mechanism stated beyond 24-hour guarantee",
+          "WhatsApp contact offered but no indication of immediate availability or response time",
+          "No pre-purchase chatbot or AI qualification visible to answer product questions before customer submits form",
+          "FAQ relies on static text rather than interactive decision tree or guided product recommendation"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (evident from CDN URLs and platform patterns)",
+          "hCaptcha integration on contact form",
+          "Multi-language support (German and English versions available)",
+          "Structured return portal (shipping-portal.com integration)",
+          "Blog/news section with content marketing (K-beauty trends, ingredient education)",
+          "Community influencer program (Coos Fellows) with dedicated profile pages",
+          "Email-based communication preferred (no third-party chat tool visible despite mentioning 'live chat' in FAQ)",
+          "No evidence of live chat platform (Intercom, Drift, etc.) despite FAQ mentioning it"
+        ],
+        "likely_automation_opportunity": "Support automation would have immediate impact on returns inquiries (account for ~30% of FAQ volume), shipping questions across EU markets with complex regional rules, and product authentication/ingredient concerns. A pre-purchase AI qualification chatbot could filter product questions and skincare routine questions before they hit the support queue, reducing reliance on 24-hour form response times. WhatsApp automation could handle order status and returns label requests instantly.",
+        "confidence_level": "high",
+        "uncertainty_notes": "The contact page mentions 'live chat' but no live chat platform is evident in the scraped content—this may be outdated or chat may be inactive. Company location is listed as Mountain View, CA (unusual for a Netherlands-based EU distributor), which may indicate a template issue or data discrepancy. Business model appears to be authorized reseller/distributor rather than manufacturer, but this does not change support friction analysis.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Coos Cosmetics is a strong niche fit—K-beauty/skincare brand serving DACH region with visible support friction around returns, shipping complexity, and product education. Shopify-based with clear contact paths and established operations (9-year history, community program). However, score is B rather than A because: (1) company is EU-based reseller/distributor rather than pure DTC brand, (2) WhatsApp and email are already in use, showing some operational maturity, (3) the 'live chat' mention in FAQ suggests some attempts at support modernization, though platform not visible, and (4) relatively comprehensive FAQ and policy pages reduce perceived support burden compared to brands with no support infrastructure.",
+        "recommended_next_action": "Reach out via contact form mentioning their return/shipping FAQ volume and WhatsApp adoption as positive signals. Propose AI support automation for: (1) instant return label generation via WhatsApp, (2) pre-purchase skincare recommendation chatbot to reduce form submissions, and (3) returns triage to distinguish unopened vs opened item inquiries. Reference their multi-market complexity (Austria, Germany, Belgium shipping rules) as key friction point for chatbot benefit."
+      }
+    },
+    {
+      "url": "https://ruhi-rituals.com/",
+      "status": "ok",
+      "data": {
+        "company_name": "ruhi-rituals",
+        "website": "https://ruhi-rituals.com/",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/versand-retoure",
+          "/pages/anwendung-faq-the-adaptogen-body-oil-serum"
+        ],
+        "support_pain_signals": [
+          "Returns process requires email to hello@ruhi-rituals.com with manual response workflow",
+          "Product-specific FAQ pages suggest high volume of repetitive usage/application questions",
+          "30-day return guarantee process is email-dependent with no stated response time",
+          "No live chat or AI support visible on contact page—only basic contact form",
+          "FAQ content is extensive and product-focused, indicating customers need detailed ingredient/application guidance"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form exists but no stated response time commitment visible",
+          "Newsletter signup present but no mention of automated follow-up or qualification flow",
+          "No pre-purchase chatbot or qualification tool visible to help customers with product selection"
+        ],
+        "digital_maturity_clues": [
+          "Uses Judge.me product review app (1871+ reviews visible)",
+          "Has cookie consent and hCaptcha protection",
+          "Newsletter signup with opt-in present",
+          "Product pages include detailed FAQs and usage instructions",
+          "No third-party chat tool visible",
+          "Shopify-based ecommerce platform",
+          "Multiple product collections and sets available"
+        ],
+        "likely_automation_opportunity": "Support automation for returns/refunds and product application questions would have immediate impact. The brand has high customer engagement (1800+ reviews), a detailed 30-day guarantee that triggers manual email workflows, and extensive product-specific FAQs suggesting repetitive inquiry patterns. A pre-purchase qualification chatbot could also reduce non-qualified support tickets by guiding customers to the right product based on skin type and concern.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Could not determine team size, total order volume, or current support staffing from content. No pricing strategy hints visible. Returns process suggests possible email bottleneck but actual volume unknown. Newsletter platform not identified.",
+        "score_1_to_10": 8,
+        "tier": "A",
+        "score_rationale": "Strong fit for DACH beauty/skincare niche with clear operational friction. German DTC skincare brand with 1800+ reviews, visible email-dependent support workflow (returns, FAQs, consultations), no live chat or AI support, and identifiable friction in product guidance and returns processes. Located in Germany with strong local shipping structure (free shipping at €60). Contact form present but no speed-to-lead commitment visible. Digital maturity is solid (Judge.me, email capture) but lacks conversational AI or chatbot layer.",
+        "recommended_next_action": "Reach out via their contact form referencing their 30-day guarantee process and product-specific FAQ volume, suggesting how AI-powered support automation could reduce response time on returns/application questions and how a pre-purchase qualification tool could help guide customers through their diverse product line (skincare, dry brushing, face tools)."
+      }
+    },
+    {
+      "url": "https://safetymakeup.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "SafetyMakeup",
+        "website": "https://safetymakeup.de/",
+        "country": "Germany",
+        "category": "beauty/skincare",
+        "visible_contact_options": [],
+        "support_pages_found": [],
+        "support_pain_signals": [
+          "No contact form, email, phone, or live chat visible on homepage",
+          "No FAQ, support, or help pages detected in scraped content",
+          "Product analyzer and article content present but no customer support mechanism visible"
+        ],
+        "speed_to_lead_signals": [
+          "No clear call-to-action for customer inquiries or consultations",
+          "User registration available but no stated support response time or qualification process",
+          "No chat, contact form, or inquiry mechanism visible for pre-purchase questions"
+        ],
+        "digital_maturity_clues": [
+          "Cookie consent banner present",
+          "Multi-language/multi-country site structure (UA, PL, FR, PT, TR variants)",
+          "Next.js-based modern frontend (image optimization visible)",
+          "AI Assist feature mentioned (beta for registered users)",
+          "Product database and content management system in place",
+          "TikTok social link present"
+        ],
+        "likely_automation_opportunity": "SafetyMakeup is a B2C content/analyzer platform with user registration but zero visible customer support infrastructure. An AI support chatbot handling product analyzer questions, account/registration issues, ingredient inquiries, and FAQ automation would reduce manual support burden and improve user onboarding to the free analyzer service.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Website appears to be a free cosmetic ingredient analyzer/database platform rather than a traditional ecommerce brand selling products. No contact pathway, support pages, or revenue model visible in scraped content. Unable to determine if they have existing support channels, customer volume, or operational pain points. Multi-market expansion visible but unclear if centralized or fragmented support.",
+        "score_1_to_10": 3,
+        "tier": "C",
+        "score_rationale": "SafetyMakeup is a German-language beauty/skincare platform in the DACH region, matching niche fit. However, it is not a traditional DTC ecommerce brand—it's a free ingredient analyzer tool. Zero visible support friction because there is no customer support infrastructure at all (no contact form, FAQ, email, phone, or chat). No clear path to understand if they have support pain or customer inquiries. Without evidence of operational scale, customer volume, or contact friction, this scores low despite geographic fit.",
+        "recommended_next_action": "Research SafetyMakeup's business model and customer support footprint through LinkedIn, direct outreach, or site inspection for hidden contact/support pages. If they serve a large user base and field ingredient/product questions, outline how an AI chatbot could handle user onboarding to the analyzer, ingredient explanations, and account support."
+      }
+    },
+    {
+      "url": "https://hautwohl.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Hautwohl",
+        "website": "https://hautwohl.de/",
+        "country": "Germany",
+        "category": "skincare, natural soap, hair care",
+        "visible_contact_options": [
+          "contact form"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt"
+        ],
+        "support_pain_signals": [
+          "Contact page contains a basic form with Name, Email, Phone, Message fields but no visible response time guarantee",
+          "No live chat detected on homepage or contact page",
+          "No FAQ page found in scraped content",
+          "No visible support ticket system or chatbot"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no stated response time or SLA",
+          "No immediate confirmation message visible after form submission",
+          "Single contact method (form only) with no alternative support channels visible"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based ecommerce platform",
+          "Modern responsive design with product imagery",
+          "Cookie consent / extension blocking visible on contact page",
+          "No third-party live chat tool detected",
+          "No AI chatbot or automated response system visible"
+        ],
+        "likely_automation_opportunity": "Hautwohl receives customer inquiries via a simple contact form with no visible automation or response time guarantee. A support chatbot handling FAQs about soap use, shipping, returns, and product selection would reduce form volume and improve response speed. Pre-purchase qualification could capture product questions before they reach the form.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Contact page form structure was partially obscured by browser extension blocks, limiting full visibility of form fields and submission flow. No FAQ or dedicated support documentation pages were scraped. Email address or phone number for direct contact not explicitly visible in scraped content. Support volume and current response times unknown.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "Hautwohl is a DACH-region natural skincare/wellness brand (Germany) on Shopify with clear niche fit. Contact friction is evident: form-only contact method with no response time guarantee, no live chat, no chatbot. However, support pain signals are inferred rather than explicit (e.g., no FAQ page found, but volume unknown). Digital maturity is moderate—clean Shopify setup but no advanced support tools. The brand has operational scale and visible traffic but lacks clear urgency signals.",
+        "recommended_next_action": "Reach out via contact form referencing their contact form as sole support channel and offer a pre-purchase qualification chatbot to handle product questions (soap selection for skin type, shipping questions) and improve first-response time. Mention lack of live chat and automation as friction points."
+      }
+    },
+    {
+      "url": "https://vivatrue.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "vivatrue",
+        "website": "https://vivatrue.de/",
+        "country": "Germany",
+        "category": "beauty",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/pages/contact",
+          "/pages/faq",
+          "/pages/zahlung-versand"
+        ],
+        "support_pain_signals": [
+          "No live chat visible on site",
+          "Contact-only support via form or email (willkommen@vivatrue.de)",
+          "FAQ exists but limited in scope; contact page explicitly directs unresolved questions back to email",
+          "Manual returns process requiring email communication and pre-approval (30-day return window with 'vorherigem Widerruf' requirement)",
+          "Complex bottle return/deposit scheme (LAPAHDU bottles) requiring manual tracking and verification",
+          "Operational notice of closure (26.3-2.4) suggests small team with limited support capacity"
+        ],
+        "speed_to_lead_signals": [
+          "Newsletter signup form present with incentive (free shipping) but no stated follow-up SLA",
+          "Contact form present but no automated response time commitment visible",
+          "Pre-purchase questions directed to FAQ or contact form with no immediate guidance"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (evidenced by Omni Themes app references and shop.app blocks)",
+          "Newsletter subscription with data consent management",
+          "Multi-channel social presence (Facebook, Instagram, YouTube, TikTok, Pinterest)",
+          "Klarna payment integration indicating moderate fintech adoption",
+          "IT-Recht Kanzlei certification (120 compliance criteria) showing compliance focus",
+          "No third-party live chat tool visible",
+          "No AI chatbot or automated support bot detected"
+        ],
+        "likely_automation_opportunity": "Support automation would have highest impact for handling repetitive FAQ-type questions (shipping costs, return windows, payment methods, bottle deposit process) and capturing product/order inquiries via chatbot before escalation to email. Speed-to-lead optimization could reduce response friction on form submissions and newsletter signups.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Could not determine: current team size, average support response time, monthly order volume, or customer acquisition channels. Newsletter automation platform not explicitly identified. No pricing page or dedicated returns form observed.",
+        "score_1_to_10": 8,
+        "tier": "A",
+        "score_rationale": "Strong niche fit: German beauty/skincare/wellness brand with clear DTC/Shopify foundation, established email/contact-only support model, comprehensive FAQ but no AI/live chat, and visible operational scaling friction (seasonal closures, manual returns). DACH region fit confirmed via German language, .de domain, DHL GoGreen shipping, and local company registration (BellFill GmbH, Putzbrunn). Newsletter and multi-channel social presence indicate moderate digital maturity but support infrastructure remains manual and email-dependent.",
+        "recommended_next_action": "Reach out via contact form referencing their FAQ volume, manual returns complexity, and 2-3 day shipping SLA pressure. Mention specific automation opportunity: pre-purchase product questions, order status automation, and 30-day return eligibility checks. Note seasonal closure pattern as indicator of support team constraint."
+      }
+    },
+    {
+      "url": "https://dasboep.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "das boep",
+        "website": "https://dasboep.de/",
+        "country": "Germany",
+        "category": "skincare, beauty, wellness",
+        "visible_contact_options": [
+          "email",
+          "contact form",
+          "WhatsApp",
+          "phone"
+        ],
+        "support_pages_found": [
+          "/en/pages/kontakt",
+          "/en/pages/faq",
+          "/en/pages/widerrufsbelehrung",
+          "/en/pages/dein-feedback-zur-lieferung"
+        ],
+        "support_pain_signals": [
+          "FAQ page contains extensive Q&A (order process, discount codes, returns, gift vouchers, subscription management) suggesting high volume of repetitive inquiries",
+          "Support available only Mon-Fri 9am-3pm, limited hours suggest potential response delays",
+          "Manual email-based support for issues like incomplete packages or wrong items",
+          "Returns process requires email contact before shipping and manual consultation needed",
+          "No live chat visible on site despite operational scale"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no stated response time commitment",
+          "Multiple contact channels (email, WhatsApp, phone, form) but unclear which is fastest",
+          "Feedback form on delivery page suggests data collection but no indication of automated follow-up"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (evidenced by CDN paths and platform structure)",
+          "Product review functionality visible (78 reviews shown on bestseller)",
+          "Wishlist feature present (Swym integration apparent from links)",
+          "Subscription/savings feature available",
+          "Multiple language support (DE/EN)",
+          "Email-based customer communication for support and collaborations"
+        ],
+        "likely_automation_opportunity": "das boep receives high volume of FAQ-type inquiries (order process, discount codes, returns, account management, product information) that could be handled by an AI support chatbot. With support hours limited to Mon-Fri 9am-3pm and no live chat, an always-on chatbot could deflect 40-60% of routine support load and qualify complex issues for the human team.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Could not confirm exact monthly order volume or current support team size. Subscription/loyalty program details not fully visible. No information about current marketing spend or customer acquisition channels beyond the feedback form options.",
+        "score_1_to_10": 8,
+        "tier": "A",
+        "score_rationale": "das boep is a strong fit: DACH-region (Germany) DTC beauty/skincare brand with clear operational scale (multiple product lines, EU shipping, subscription model). Significant support friction evident in FAQ volume, manual return process, and limited support hours (Mon-Fri 9am-3pm only). No live chat or AI support visible. Multiple contact paths but slow response risk. Shopify maturity confirms readiness for automation tools.",
+        "recommended_next_action": "Reach out via contact form referencing their extensive FAQ volume, limited support hours (9am-3pm Mon-Fri), and absence of live chat. Propose AI chatbot to handle order/discount/return questions 24/7 and WhatsApp pre-purchase qualification for product recommendations."
+      }
+    },
+    {
+      "url": "https://ponyhuetchen.com/",
+      "status": "ok",
+      "data": {
+        "company_name": "PonyHütchen",
+        "website": "https://www.ponyhuetchen.com/",
+        "country": "Germany",
+        "category": "beauty - natural deodorant & cosmetics",
+        "visible_contact_options": [],
+        "support_pages_found": [
+          "/pages/hilfe-kontakt",
+          "/pages/widerrufsbelehrung-b2b",
+          "/pages/b2b-versandkosten"
+        ],
+        "support_pain_signals": [
+          "Contact/help page (/hilfe-kontakt) was scraped but content not fully loaded - appears to be incomplete or dynamic",
+          "No visible chat, email, or phone contact options found on homepage or help pages",
+          "Only B2B and returns/refund pages scraped; no FAQ or support article content provided",
+          "Help page title suggests support exists but actual contact form/methods not visible in scraped content"
+        ],
+        "speed_to_lead_signals": [
+          "No live chat detected on homepage",
+          "Contact page exists but content not fully visible in scrape - potential friction in discoverability",
+          "High review volume (14,038 reviews, 4.7 rating) suggests significant order volume but no indication of fast response commitment"
+        ],
+        "digital_maturity_clues": [
+          "Uses Shopify platform (evident from CDN URLs and structure)",
+          "Integrated reviews.io for social proof - 14K+ verified customer reviews visible",
+          "Multi-country/currency support enabled (DACH + broader EU coverage)",
+          "Active on social media (Facebook, Instagram, TikTok links visible)",
+          "Professional product photography and limited edition marketing campaigns",
+          "No third-party live chat tool detected (Intercom, Drift, etc.)",
+          "No evidence of chatbot or AI support"
+        ],
+        "likely_automation_opportunity": "PonyHütchen has strong product-market fit (high review volume, positive sentiment, handmade cosmetics positioning) and operates at scale across DACH and EU. Their contact/help page infrastructure is incomplete in the scrape, suggesting manual support handling. AI chatbot for FAQs (product ingredients, shipping, returns, usage questions evident in reviews) and pre-purchase qualification (skin sensitivity concerns, scent preferences) would reduce support friction.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "The scraped help/contact pages did not render full content—only headers and navigation visible. Cannot confirm actual contact method (form, email, phone) or existing support tooling. Cannot assess FAQ depth, response times, or current support volume. No pricing or team size data available. B2B operations present but unclear if B2C support is separate.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "PonyHütchen fits the niche well (German handmade beauty/cosmetics, DACH focus, strong reviews suggesting operational scale). However, contact infrastructure was not fully visible in the scrape, making it hard to confirm support friction definitively. The brand shows good digital maturity (Shopify, reviews.io, social media) but no obvious AI/chat tools. Medium confidence due to incomplete contact page data limits assessment of actual support pain.",
+        "recommended_next_action": "Visit https://www.ponyhuetchen.com/pages/hilfe-kontakt directly to verify current contact method and response infrastructure. If email-only or form-based with no stated SLA, and given the high review volume and product complexity (multiple scents, sensitivities), schedule a call referencing their scale and potential for AI-driven pre-purchase qualification and FAQ automation."
+      }
+    },
+    {
+      "url": "https://rosenrot.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Rosenrot",
+        "website": "https://www.rosenrot.de/",
+        "country": "Germany",
+        "category": "skincare, haircare, body care, natural cosmetics",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/fragen-und-antworten-faq",
+          "/pages/widerrufsbelehrung",
+          "/pages/liefer-und-versandkosten"
+        ],
+        "support_pain_signals": [
+          "Contact form is basic with no indication of response time or support hours",
+          "FAQ page exists but covers only product usage and policies, not customer service inquiries",
+          "No live chat visible on site",
+          "Returns process requires email contact (info@rosenrot.de) with customer bearing return shipping costs",
+          "Support contact limited to single email address with no ticketing system visible",
+          "Widerrufsbelehrung and shipping pages suggest manual handling of returns and inquiries"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no AI-assisted pre-qualification or auto-response mechanism indicated",
+          "Newsletter signup exists (25% discount offer) but no AI lead qualification visible",
+          "No chatbot or instant response system evident for product questions before purchase"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (evidenced by domain structure and page layout)",
+          "Product review ratings visible (4.6-4.96 stars on products)",
+          "Newsletter capture with discount incentive (25% offer)",
+          "No live chat or AI chatbot tools visible",
+          "Basic contact form without advanced qualification fields",
+          "DHL integration for shipping with tracking capability (CO2 neutral GoGreen option)"
+        ],
+        "likely_automation_opportunity": "Rosenrot would benefit most from AI-powered support automation to handle repetitive product questions (fasted vs. liquid shampoo benefits, storage, shipping inquiries) and returns requests via email. A pre-purchase AI chatbot could also qualify visitors asking about product fit for sensitive skin conditions (mentioned frequently in reviews) before they contact support.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Could not determine exact company size or support team size from scraped content. No information about current support volume, response times, or ticketing system visible. Ownership structure found (Greencos Cosmetics GmbH, Eutin, Germany) but no details on team size or support infrastructure.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Rosenrot is a strong niche fit: DACH region (Germany-based), natural skincare/haircare/wellness category, DTC via Shopify. Clear support friction visible: no live chat, basic contact form only, manual email-based returns, and FAQ covering only product facts not customer issues. Strong product reviews and newsletter engagement suggest operational scale. However, no explicit signs of high support volume, and category is natural cosmetics rather than top-tier beauty/supplements niche. Score reflects solid opportunity but requires confirmation of actual support friction before outreach.",
+        "recommended_next_action": "Reach out via contact form referencing their FAQ page and manual email-based returns process. Suggest AI chatbot for product fit questions (many reviews mention sensitive skin concerns) and support automation for order status/shipping/returns inquiries. Emphasize speed-to-lead opportunity on product questions during peak hours."
+      }
+    },
+    {
+      "url": "https://hairlust.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Hairlust",
+        "website": "https://hairlust.de/",
+        "country": "Germany",
+        "category": "beauty/skincare/haircare",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/pages/contact",
+          "/pages/faq",
+          "/pages/shipping",
+          "/pages/widerrufsrecht"
+        ],
+        "support_pain_signals": [
+          "FAQ page exists but appears text-heavy with expandable sections covering product-specific questions, supplements, pregnancy/nursing compatibility, and supplement interactions",
+          "Contact page directs to email-only support ('Schreibe uns') with no stated response time SLA",
+          "Contact page offers indirect support routing (DHL/Hermes tracking links, FAQ redirect) before email option",
+          "Shipping/returns process requires manual email contact to customer service before return ('wichtig, dass du dich vor der Rücksendung mit unserem Kundendienst in Verbindung setzt')",
+          "No live chat, no chatbot, no phone support visible",
+          "Return process is manual and email-driven with multiple steps"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form exists but is minimal and likely slow to respond given email-only backend",
+          "Product-specific questions (hair type recommendations, supplement interactions, returns eligibility) require manual FAQ search or email outreach",
+          "No visible AI-powered product recommendation or pre-purchase qualification tool",
+          "Consultation or hair assessment flow not evident on homepage or product pages"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-hosted ecommerce (cdn.shop domain, Shopify structure)",
+          "Instagram feed integrated on contact/support pages",
+          "Structured FAQ section with category-based organization",
+          "Multiple shipping/payment options and clear logistics information",
+          "Cookie consent and legal pages present",
+          "No visible third-party chat tools (Drift, Intercom, etc.)",
+          "No product quiz or AI recommendation engine visible"
+        ],
+        "likely_automation_opportunity": "Support automation would have immediate impact: FAQs are comprehensive but text-heavy and require manual navigation; email-only support for order tracking, returns, and product questions creates friction. An AI chatbot handling order status lookups, return initiation, shipping questions, and basic product guidance (hair type matching, supplement interactions) would reduce support volume and accelerate resolution.",
+        "confidence_level": "high",
+        "uncertainty_notes": "No information on current support volume, response times, or team size. Cannot determine if they use external support tools beyond what's visible. No clear indication of whether they have any existing automation or AI tools. Company origin is Denmark (legal address shown) but .de domain and German language targeting Germany as primary market.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong niche fit (beauty/haircare/supplements in DACH region, vegan/natural positioning), clear support friction (email-only, multi-step returns, comprehensive FAQ), no live chat or visible AI support, and accessible contact path via form. Digital maturity is decent (Shopify, structured pages) but lacks AI automation. Scores at B tier rather than A due to: no explicit volume/scale signals visible, lack of consultation/pre-purchase friction points, and email contact being the primary lever rather than abandoned checkout or form abandonment signals.",
+        "recommended_next_action": "Reach out via their contact form or info@hairlust.de, reference the multi-step returns process requiring manual email coordination and FAQ volume as friction points. Position AI chatbot for order tracking, return initiation, and product question filtering (hair type + supplement interaction Q&A) as immediate wins to reduce support email volume."
+      }
+    },
+    {
+      "url": "https://kastenbeinundbosch.com/",
+      "status": "ok",
+      "data": {
+        "company_name": "Kastenbein und Bosch",
+        "website": "https://kastenbeinundbosch.com/",
+        "country": "Germany",
+        "category": "haircare",
+        "visible_contact_options": [
+          "contact form",
+          "B2B form"
+        ],
+        "support_pages_found": [
+          "/pages/faq",
+          "/pages/versand-zahlung",
+          "/pages/widerrufsrecht"
+        ],
+        "support_pain_signals": [
+          "FAQ page exists but actual content/questions not visible in scrape",
+          "No live chat or AI support visible on any page",
+          "B2B contact is form-based with no stated response time",
+          "Support contact options limited to forms only, no phone or email directly visible"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no response time commitment visible",
+          "B2B form exists (Adobe Sign) but no lead qualification automation apparent",
+          "No chatbot or pre-purchase qualification tool evident"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-hosted (evident from CDN URLs and Shopify domain structure)",
+          "Clean site structure with multiple product categories",
+          "Customer review page exists (/das-sagen-kundinnen-zu-unserer-bio-naturkosmetik)",
+          "No visible third-party chat tools (Zendesk, Drift, etc.)",
+          "No Klaviyo or email automation signals visible"
+        ],
+        "likely_automation_opportunity": "Support automation for FAQ-related inquiries around product care, shipping, and returns would have immediate impact. A pre-purchase qualification chatbot for B2B inquiries and product recommendations could accelerate B2B sales cycle, as their current B2B form requires manual follow-up.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Contact page content itself did not render meaningfully in the scrape (pages returned only navigation/header). Actual FAQ questions/content and depth of support friction cannot be fully assessed. B2B form is external (Adobe Sign), so its friction level is unclear. Email contact address not visible in provided content.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "Kastenbein und Bosch is a DACH haircare/beauty brand on Shopify with clear B2B/B2C activity. Support friction signals are present (FAQ exists, no live chat visible, form-only contact), but support pain cannot be fully validated from the scrape. The brand shows medium digital maturity (Shopify, organized structure, reviews) but no AI automation tools are evident. Strong niche fit for beauty/haircare in Germany, but evidence of actual support volume or friction is limited.",
+        "recommended_next_action": "Reach out via their B2B form or contact page, reference their extensive product catalog (multiple shampoo/styling categories) and ask about current support volume and response times for product inquiries and B2B requests. Propose starting with a support chatbot pilot for FAQ automation."
+      }
+    },
+    {
+      "url": "https://giilinea.com/",
+      "status": "ok",
+      "data": {
+        "company_name": "GÍÍLINEA BÍO",
+        "website": "https://giilinea.com/",
+        "country": "Austria",
+        "category": "skincare, beauty, organic cosmetics",
+        "visible_contact_options": [
+          "WhatsApp"
+        ],
+        "support_pages_found": [
+          "/content/4-uber-uns"
+        ],
+        "support_pain_signals": [
+          "Only WhatsApp listed as contact method for advice; no email address or contact form visible on homepage",
+          "No FAQ page found in scraped content",
+          "No live chat or AI support visible",
+          "No stated response time for WhatsApp inquiries",
+          "About page provides company history but no dedicated customer support resources"
+        ],
+        "speed_to_lead_signals": [
+          "No contact form visible on homepage for inquiries or pre-purchase questions",
+          "WhatsApp-only contact creates friction for non-mobile or non-immediate inquiries",
+          "No chatbot or AI qualification tool observed",
+          "Newsletter signup present but no clear follow-up sequence messaging"
+        ],
+        "digital_maturity_clues": [
+          "Multilingual site (English, German, Portuguese detected)",
+          "Newsletter subscription capability present",
+          "Product review system visible (customer reviews displayed on homepage)",
+          "No third-party live chat tools detected",
+          "Cookie consent or tracking tools not explicitly mentioned in scraped content"
+        ],
+        "likely_automation_opportunity": "A support chatbot handling WhatsApp and web inquiries (product recommendations, shipping, order status, returns) could reduce friction from WhatsApp-only contact. Pre-purchase qualification via chat could guide visitors to appropriate product categories (cleansing vs. anti-aging vs. body care) before they need to reach out manually.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Could not determine: actual response time expectations for WhatsApp, volume of support inquiries, whether a dedicated email support exists (only WhatsApp mentioned publicly), full extent of returns/shipping process, or use of any backend CRM/support platform. Homepage only partially scraped; /contact, /faq, /returns, /shipping pages not provided. Country inferred from Austrian family business mention and .com domain, but exact support operation location unclear.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "Strong niche fit (Austrian organic skincare/beauty brand, DACH-aligned) with visible support friction (WhatsApp-only contact, no FAQ, no live chat). However, confidence is medium because critical support pages (contact form, FAQ, returns) were not scraped, and digital maturity signals are mixed — newsletter and reviews present but no AI/automation tools visible. Scoring held at B-tier due to uncertainty about actual support volume and operational scale.",
+        "recommended_next_action": "Reach out via WhatsApp to inquire about their current support process, typical response times, and FAQ volume. Reference the opportunity to automate WhatsApp responses and add a web-based contact form with AI qualification to route product inquiries faster. Ask specifically about order-related support and returns volume to validate automation ROI."
+      }
+    },
+    {
+      "url": "https://brain-effect.com/",
+      "status": "ok",
+      "data": {
+        "company_name": "BRAINEFFECT",
+        "website": "https://brain-effect.com/",
+        "country": "Germany",
+        "category": "supplements",
+        "visible_contact_options": [
+          "typeform contact form"
+        ],
+        "support_pages_found": [
+          "/en/pages/faq",
+          "/en/pages/about-us"
+        ],
+        "support_pain_signals": [
+          "FAQ page content truncated/incomplete in scrape ('How d' cuts off), suggesting possible volume of questions",
+          "Contact method is a Typeform link only, no email or phone visible on support pages",
+          "No live chat or AI support tool visible on site",
+          "Return policy exists but contact path for returns is only via Typeform"
+        ],
+        "speed_to_lead_signals": [
+          "Quiz builder present ('/pages/quiz') offering personalized product recommendations and 15% discount, but no stated response time or AI qualification visible",
+          "Typeform as sole contact channel may cause delays vs. instant chat or email",
+          "No evidence of automated order status or pre-purchase chatbot support"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based storefront with modern design",
+          "Product review system in place (ratings visible: 4.7 stars, 1600+ reviews)",
+          "Quiz/assessment tool integrated for product matching",
+          "Multi-language support (German/English) with region detection",
+          "No third-party chat tools (Intercom, Drift, etc.) detected",
+          "Cookie consent/GDPR compliance present",
+          "Discount code system functional"
+        ],
+        "likely_automation_opportunity": "Support automation for FAQ-style inquiries (order status, shipping times, returns/refunds, product questions) via AI chatbot would reduce Typeform volume. Pre-purchase qualification via the existing quiz could be enhanced with AI to guide visitors toward support or upsell before checkout friction occurs.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "FAQ page content was truncated in scrape, so full FAQ volume and specifics unknown. No visible email address or phone number for support found. About page content incomplete. Cannot confirm if Typeform is actively monitored or what response time is. No information about current support staffing or volume. Email/chat support may exist but not be prominently displayed on these pages.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "Strong niche fit: DACH-based (Germany), supplements/wellness category (Daily Gut, gut health focus). Medium support friction visible: FAQ exists but content incomplete in scrape, only Typeform contact available, no live chat or AI, and returns require manual contact path. Quiz builder shows digital maturity but lacks AI automation. Missing phone/email contact significantly reduces friction visibility. Typeform-only support is a clear bottleneck but not immediately obvious pain signal to typical visitor.",
+        "recommended_next_action": "Reach out via the Typeform contact link, reference the FAQ page reliance and Typeform-only support model, and ask about current support volume and response times. Position AI chatbot for order status/returns automation and quiz-to-support handoff as key value-adds."
+      }
+    },
+    {
+      "url": "https://sheko.com/",
+      "status": "ok",
+      "data": {
+        "company_name": "SHEKO",
+        "website": "https://sheko.com/",
+        "country": "Germany",
+        "category": "supplements, wellness, nutrition",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/pages/contact",
+          "/pages/uber-uns",
+          "/policies/refund-policy"
+        ],
+        "support_pain_signals": [
+          "Contact form present but no live chat visible",
+          "Refund policy shows manual return process requiring email/postal contact (info@sheko.com)",
+          "Returns handled via separate postal address with 10 EUR refund fee for rejected shipments",
+          "No visible FAQ or knowledge base page provided in scraped content"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form exists but no stated response time SLA",
+          "Email-only support channel (info@sheko.com) suggests no automated follow-up",
+          "Newsletter signup incomplete in scrape but referenced, no clear qualification flow"
+        ],
+        "digital_maturity_clues": [
+          "Uses reviews.io integration (4.8/5 rating, 20,571 reviews displayed)",
+          "Cookie consent banner present",
+          "Shopify platform detected (shop.app references)",
+          "Strong testimonial/social proof implementation",
+          "Facebook community group active",
+          "No visible live chat tool",
+          "No AI chatbot detected"
+        ],
+        "likely_automation_opportunity": "SHEKO handles order status, returns authorization, and refund inquiries entirely via email and postal contact. An AI support chatbot could reduce email volume by qualifying returns claims (sealed vs. unsealed goods), confirming refund eligibility, and automating RMA generation. Pre-purchase AI could also qualify newsletter signups and answer common product questions before support contact.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Full FAQ/support content not captured in scrape—only /pages/contact, /pages/uber-uns, and /policies/refund-policy provided. Cannot assess full support friction without visibility into knowledge base, shipping FAQ, or ingredient questions. Contact form submission flow was blocked by browser extension, so actual response UX unknown. No data on support response times, ticket volume, or current support team size.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "SHEKO is a strong niche fit (DACH-based supplements/wellness brand, 200k+ customers, visible operational scale). However, support friction signals are moderate rather than acute: contact form exists, email is provided, returns policy is documented. No live chat is a positive signal, but absence of FAQ/knowledge base visibility and reliance on email/postal returns suggests genuine support volume opportunity. Tier B because evidence of friction is present but not overwhelming, and full support landscape is only partially visible.",
+        "recommended_next_action": "Reach out via /pages/contact form referencing their documented returns process (14-day manual email/postal returns with 10 EUR rejection fees) and lack of visible FAQ as support burden indicators. Propose AI chatbot pilot for returns qualification and product FAQs, positioning it as a customer experience improvement that reduces their email load and return processing friction."
+      }
+    },
+    {
+      "url": "https://nature-love.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Nature Love",
+        "website": "https://nature-love.de/",
+        "country": "Germany",
+        "category": "supplements",
+        "visible_contact_options": [
+          "contact form"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/faq",
+          "/pages/uber-uns",
+          "/policies/shipping-policy"
+        ],
+        "support_pain_signals": [
+          "FAQ page exists but actual FAQ content not fully scraped in provided data",
+          "Contact page exists but form content/details not visible in scrape",
+          "No live chat visible on homepage or contact page",
+          "No visible phone support or WhatsApp option mentioned"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no stated response time or auto-response visible",
+          "Email-only contact method appears to be primary (implied by contact page structure)",
+          "No pre-purchase qualification tool or chatbot visible"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (evident from URL structure and product layout)",
+          "Nature Love Club loyalty program with 5% cashback (email capture mechanism)",
+          "100-day money-back guarantee prominently displayed",
+          "Product personalization with 'For You Recommended' sections",
+          "No third-party live chat widget detected",
+          "Clean, modern ecommerce UX with product filtering and search"
+        ],
+        "likely_automation_opportunity": "Support automation for order status, returns, and general FAQ inquiries would reduce friction. A pre-purchase chatbot could qualify supplement questions (dosage, ingredients, compatibility) before they reach support, and speed-to-lead via contact form would accelerate inquiry response times.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Contact page and FAQ page content were not fully rendered in the scrape—only navigation elements visible. Could not assess actual FAQ volume, contact form fields, or existing support response messaging. Unable to determine if live chat or other automation tools are present but hidden behind interactions. No email address or phone number extracted.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "Strong niche fit (supplements, DACH region, >2M customers suggests scale), but support friction signals are implied rather than clearly visible. Contact form exists and FAQ page is referenced, but actual content depth and support friction points could not be confirmed from the scraped data. No AI chatbot or live chat detected, which is positive for fit, but lack of visibility into actual support operations limits confidence.",
+        "recommended_next_action": "Reach out via the contact form at /pages/kontakt. Reference the scale (2M+ customers, supplements niche), mention absence of live chat support, and propose a quick audit of their FAQ and contact form response time to identify automation wins in order support and product qualification."
+      }
+    },
+    {
+      "url": "https://purazell.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "PuraZell",
+        "website": "https://purazell.de/",
+        "country": "Germany",
+        "category": "supplements, wellness, health foods",
+        "visible_contact_options": [
+          "contact form"
+        ],
+        "support_pages_found": [
+          "/kontakt",
+          "/informationen/zahlungsarten-versand",
+          "/informationen/widerruf"
+        ],
+        "support_pain_signals": [
+          "Contact page exists but no live chat visible",
+          "No FAQ page found in navigation or scraped content",
+          "Returns/refund process linked to /informationen/widerruf but no live support channel visible",
+          "Shipping and payment information separated across multiple pages rather than centralized support hub"
+        ],
+        "speed_to_lead_signals": [
+          "Newsletter signup present but no stated response time or automation visible",
+          "Contact form exists but no indication of AI qualification or instant response mechanism",
+          "No chatbot or pre-purchase assistance tool visible on product pages"
+        ],
+        "digital_maturity_clues": [
+          "Bundle configurator tool present (liposomaler-bundle-konfigurator) suggests some product customization capability",
+          "Blog/Ratgeber section with detailed product guides present",
+          "Multiple product categories and themed sections indicate mature taxonomy",
+          "No obvious third-party chat tools detected in navigation",
+          "Newsletter signup present"
+        ],
+        "likely_automation_opportunity": "PuraZell sells complex supplements and wellness products with high customer education needs (liposomal products, specialty formulations). A pre-purchase chatbot could qualify customers by health concern (immunity, energy, beauty, etc.) and guide them to appropriate products, while support automation could handle FAQs about supplement absorption, shipping timelines, and returns—currently routed through static pages and email-only contact.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Contact page content was not fully rendered in scraped data (URL malformation in second page). Unable to confirm exact support contact method (email, phone, form submission details). No visibility into current response times, support volume, or existing chat tools. Cannot determine if form leads to immediate response or queued support.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "PuraZell is a German supplements/wellness DTC brand matching target niche (DACH, supplements, wellness). Clear contact form and support pages visible, no live chat detected, and multi-page support structure suggests operational friction. However, confidence is medium because support page content was not fully captured, and digital maturity is moderate (good product organization but limited AI/automation signals). Worthy of follow-up but not a high-confidence A-tier lead without deeper discovery.",
+        "recommended_next_action": "Reach out via /kontakt form referencing their complex product range (liposomal supplements, themed bundles) and lack of real-time customer guidance. Mention how a pre-purchase chatbot could reduce support volume by qualifying customers by health concern and how AI could automate FAQ responses about supplement absorption and shipping—areas likely to have high inquiry volume."
+      }
+    },
+    {
+      "url": "https://qidosha.com/",
+      "status": "ok",
+      "data": {
+        "company_name": "QIDOSHA",
+        "website": "https://qidosha.com/",
+        "country": "Germany",
+        "category": "supplements, wellness, vitamins, ayurveda, TCM",
+        "visible_contact_options": [
+          "contact form",
+          "chatbot"
+        ],
+        "support_pages_found": [
+          "/en/pages/contact-form"
+        ],
+        "support_pain_signals": [
+          "Contact form is the primary support channel with no stated response time",
+          "Chatbot present (Chatbase) but appears to be basic AI, not specialized for support automation",
+          "No visible live chat agents or phone support",
+          "No FAQ page found in scraped content",
+          "No detailed order tracking or self-service support documentation visible"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form has basic fields (name, email, phone, category dropdown, message) but no indication of response time commitment",
+          "Chatbot embedded but no clear qualification or routing logic visible",
+          "No email capture for product inquiries or pre-purchase questions visible on homepage"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (indicated by /cdn/shop/ URLs and Shopify payment methods)",
+          "Uses hCaptcha for form protection",
+          "Chatbase chatbot embedded",
+          "Multiple language support (German/English)",
+          "High review count (986 reviews, 4.87/5.0) suggests operational scale",
+          "Multiple payment methods integrated (Klarna, PayPal, Apple Pay, etc.)",
+          "Cookie/privacy awareness (hCaptcha, privacy policy links)"
+        ],
+        "likely_automation_opportunity": "Support automation around product inquiries and order status would have high impact. Visitors have limited self-service options—a qualified AI chatbot could handle pre-purchase questions about product benefits, ingredients, and dosage (high-volume FAQ territory for supplements), reducing form abandonment and speeding follow-up on incoming contact forms. Current chatbot appears generic and not product/category-aware.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Only two pages were scraped (homepage and contact form). No FAQ, returns, shipping, or customer support documentation pages were provided, so support friction may be underestimated. Chatbot functionality and training not visible. Email support address not found in scraped content. No information on current response times or support team size. Country confirmed as Germany via domain (.com but German content, free shipping 'within Germany' messaging, and German production claims).",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "QIDOSHA fits the target niche well (DACH supplements/wellness, high operational scale evidenced by 986 reviews and Shopify maturity). Contact form and basic chatbot exist, but support friction is implied rather than explicitly visible in the limited content provided. No FAQ or self-service support pages were scraped. The chatbot is present but appears generic. Without seeing FAQ volume or explicit support pain points, confidence in scoring is moderate. Tier B due to niche fit, operational scale, and contact path, but lacking clear evidence of significant support friction.",
+        "recommended_next_action": "Reach out via contact form with a message referencing their high product volume (supplements, TCM, Ayurveda categories) and complex product inquiries, positioning support automation as a way to reduce response time on pre-purchase questions. Request a brief call to understand their current support team capacity and FAQ volume."
+      }
+    },
+    {
+      "url": "https://sundt.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Sundt",
+        "website": "https://www.sundt.de/",
+        "country": "Germany",
+        "category": "supplements",
+        "visible_contact_options": [
+          "contact form",
+          "email",
+          "phone",
+          "live chat"
+        ],
+        "support_pages_found": [
+          "/pages/contact",
+          "/pages/ueber-uns"
+        ],
+        "support_pain_signals": [
+          "Contact form states 24-hour response time (Mon-Fri only), indicating asynchronous support workflow",
+          "Live chat powered by 3CX shows 'we are closed' message, suggesting limited availability",
+          "No visible FAQ page in scraped content despite supplement product complexity requiring dosage/interaction guidance"
+        ],
+        "speed_to_lead_signals": [
+          "Quiz builder present ('Finde jetzt heraus, welche Vitamine und Mineralien du benötigst') with no visible AI qualification or personalization outcome flow",
+          "Contact form collects basic info but no stated follow-up process or urgency messaging for product consultation"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store with modern tech stack (Cloudflare, secure payments)",
+          "Third-party review system (Judgeme) with 224+ reviews visible",
+          "3CX chat integration for support",
+          "Newsletter signup with incentive (20% discount)",
+          "Cookie consent/privacy management in place",
+          "Product quiz embedded on homepage"
+        ],
+        "likely_automation_opportunity": "Sundt has a product quiz but lacks AI-driven post-quiz qualification or personalized product recommendations. An AI qualification layer could convert quiz responses into immediate product matches and reduce support load by pre-answering common supplement questions (dosage, stacking, dietary fit). Their 24-hour email response time and limited chat availability also suggest support automation (FAQ automation, order status chatbot) would ease friction.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "No dedicated FAQ or shipping/returns page was captured in the scrape, making it difficult to assess full support volume. Chat system appears blocked by extension in some screenshots, so actual chat functionality/availability cannot be fully verified. Company location is Netherlands (HQ) but clearly serves German market (.de domain, German language, German phone number). No visible indication of current support team size or support ticket volume.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "Sundt is a strong niche fit (DACH supplements, wellness-focused, DTC model) with clear support friction signals (limited chat hours, 24-hour email response time, quiz without AI qualification). However, they already have visible contact options and a chat system in place, which reduces urgency. The missing FAQ page and limited live chat availability suggest moderate rather than severe friction. Digital maturity is good (Shopify, Judgeme, quiz) but no obvious AI support automation yet.",
+        "recommended_next_action": "Reach out via the contact form referencing their product quiz and limited chat availability. Propose AI-powered quiz-to-recommendation automation that would reduce post-quiz support burden, and mention FAQ chatbot benefits given the supplement product complexity (dosage, compatibility, vegan/vegetarian suitability are recurring themes in reviews)."
+      }
+    },
+    {
+      "url": "https://lebenskraftpur.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Lebenskraftpur",
+        "website": "https://lebenskraftpur.de/",
+        "country": "Germany",
+        "category": "supplements",
+        "visible_contact_options": [
+          "contact form",
+          "phone",
+          "WhatsApp",
+          "email"
+        ],
+        "support_pages_found": [
+          "/pages/kontaktformular",
+          "/pages/faq",
+          "/policies/refund-policy",
+          "/pages/versand"
+        ],
+        "support_pain_signals": [
+          "FAQ page with 10+ common questions suggests volume of repetitive inquiries",
+          "Contact form is manual-entry only, no AI qualification",
+          "Returns process is email-only with specific constraints (unopened/sealed products only within 14 days)",
+          "Refund/widerrufsrecht policy is lengthy legal text that customers must parse themselves",
+          "No live chat or chatbot visible on homepage or contact pages",
+          "Returns require manual shipping coordination by customer (no return label offered)",
+          "Shipping/return policies fragmented across multiple pages rather than centralized"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no stated response time SLA",
+          "Phone support limited to Mon-Fri 08:30-17:00, no after-hours coverage",
+          "WhatsApp contact listed but likely manual response model",
+          "No indication of automated inquiry routing or triage"
+        ],
+        "digital_maturity_clues": [
+          "Shopify platform detected (shop.app URLs, typical Shopify DOM patterns)",
+          "Trustpilot review widget integrated on product pages",
+          "Email marketing infrastructure evident (Osteraktion promotional banner)",
+          "No third-party live chat tool visible",
+          "No chatbot or AI support tool detected",
+          "Manual contact form without progressive qualification fields"
+        ],
+        "likely_automation_opportunity": "Support automation for FAQ deflection and pre-purchase qualification is high-impact. Lebenskraftpur invests heavily in human expertise (trained nutritionists/practitioners) but has no AI layer to handle initial product questions, returns inquiries, or shipping clarifications before escalation. A chatbot could triage 30-40% of FAQ volume and capture qualified leads via WhatsApp/email before human contact.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Could not determine: exact support volume/tickets, current response times, whether Shopify apps for support automation are in use, team size. Brand story and additional product pages truncated in scrape.",
+        "score_1_to_10": 8,
+        "tier": "A",
+        "score_rationale": "Strong fit: German DTC supplements brand (DACH region, premium niche), explicit lack of AI/live chat support despite advertised human expertise, clear manual contact friction (form + phone + email + WhatsApp), robust FAQ and returns policy pages indicating support volume. Medium-to-high digital maturity (Shopify, Trustpilot) with clear gap where chatbot + speed-to-lead tool would accelerate customer journey and reduce support team workload.",
+        "recommended_next_action": "Reach out via contact form with specific reference to their FAQ volume (10+ questions on supplements alone), note absence of live chat, and highlight how pre-purchase AI qualification on WhatsApp could reduce inbound to support team while improving response speed for complex cases. Mention their own claim: 'echte Therapeuten, die Ihre Fragen ernst nehmen' — position automation as scaling that without compromise."
+      }
+    },
+    {
+      "url": "https://fairnatural.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "FairNatural",
+        "website": "https://fairnatural.de/",
+        "country": "Germany",
+        "category": "supplements, wellness, nutrition",
+        "visible_contact_options": [],
+        "support_pages_found": [],
+        "support_pain_signals": [
+          "No live chat visible on homepage",
+          "No visible contact form or contact page linked in navigation",
+          "No phone number or email address displayed on homepage",
+          "No FAQ or support section visible in main navigation",
+          "Large product catalog (15+ categories) with no obvious support infrastructure shown"
+        ],
+        "speed_to_lead_signals": [
+          "Newsletter signup or inquiry forms not visible in scraped homepage content",
+          "No stated response time for customer inquiries",
+          "No pre-purchase chatbot or AI qualification visible"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (fairnatural.myshopify.com detected)",
+          "Multi-language support (German, English, French, Italian)",
+          "Product review system visible (1174 reviews on flagship product)",
+          "Professional product imagery and carousel functionality",
+          "Mobile-responsive design evident",
+          "Sustainability messaging and blog/recipe content present"
+        ],
+        "likely_automation_opportunity": "FairNatural has a complex product catalog (15+ categories, 50+ SKUs visible) but no visible customer support or inquiry handling system. Support automation via AI chatbot could handle product recommendations, shipping inquiries, and order status questions. Pre-purchase qualification could improve conversion by guiding visitors through their extensive product range.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Scraped content is only the homepage. Could not determine: actual support email/phone (may exist on footer or dedicated contact page not included), presence of live chat tools, FAQ volume, returns process, actual response times, or whether they use email support. Cannot confirm if contact pages exist but were not scraped.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "FairNatural is a strong DACH region fit (German organic supplements/wellness brand with multi-language support and sustainability focus). Clear product complexity and large catalog suggest support friction potential. However, confidence is medium because no contact pages, FAQ, or support infrastructure was visible in the homepage content provided—could not definitively confirm support friction or verify lack of AI/live chat. Deserves B-tier investigation but needs deeper research on support pages to confirm A-tier fit.",
+        "recommended_next_action": "Request full site crawl including /contact, /faq, /support, /help, and footer pages to confirm absence of live chat, FAQ volume, and contact methods. Then reach out via email (if found) or contact form highlighting their large product catalog and opportunity to reduce support volume through AI-guided product qualification."
+      }
+    },
+    {
+      "url": "https://nutri-plus.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "nutri+",
+        "website": "https://www.nutri-plus.de/",
+        "country": "Germany",
+        "category": "supplements, protein powders, wellness",
+        "visible_contact_options": [],
+        "support_pages_found": [],
+        "support_pain_signals": [
+          "No contact form, email, phone, or live chat visible on homepage or blog pages provided",
+          "No FAQ page, returns policy, shipping information, or customer support section found in scraped content",
+          "No live chat widget or AI support tool detected",
+          "Email-only support likely but not confirmed from scraped content"
+        ],
+        "speed_to_lead_signals": [
+          "No visible contact form for product inquiries or consultations",
+          "No email capture mechanism observed for visitor engagement",
+          "Blog content present (Leaky Gut article) but no call-to-action or consultation offer visible"
+        ],
+        "digital_maturity_clues": [
+          "Modern Shopify/DTC-style e-commerce platform with product reviews (4.7-5.0 star ratings visible)",
+          "Product variants and filtering system present",
+          "Blog content strategy in place (health/wellness educational content)",
+          "Professional product imagery and copywriting",
+          "No third-party chat tools detected",
+          "No obvious email marketing popup or subscription mechanism in provided content"
+        ],
+        "likely_automation_opportunity": "Support automation for repetitive inquiries about product variants, shipping, returns, and general FAQs would have high impact. A pre-purchase AI qualification bot could capture visitor questions on product suitability (allergies, dietary needs) and reduce support volume. Speed-to-lead automation for contact form submissions is not currently relevant as no contact path exists.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "No contact page, FAQ, shipping, returns, or customer support sections were provided in the scraped content. Unable to confirm if support channels exist elsewhere on the site. No information about current support tool stack (Zendesk, Intercom, etc.) or response times. Cannot determine if brand is Shopify-based (likely but not confirmed). DACH region confirmed via .de domain and German language.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "nutri+ fits the wellness/supplements niche in DACH (Germany, German language, .de domain) and shows decent digital maturity with e-commerce platform and blog strategy. However, scoring is limited because no contact infrastructure is visible in the provided content, making it impossible to confirm support friction or engagement paths. Without seeing contact forms, FAQs, or support pages, the severity of support friction cannot be assessed. The brand likely has support pain points, but evidence is not present in the scraped data.",
+        "recommended_next_action": "Visit the site directly to locate contact page, FAQ, shipping/returns policy, and support email address. If no live chat or AI support exists and contact is email-only with high FAQ volume, revisit with higher confidence. Reach out via contact form (once found) mentioning their educational blog content and product variety as indicators of support scaling needs."
+      }
+    },
+    {
+      "url": "https://vetain.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Vetain",
+        "website": "https://vetain.de/",
+        "country": "Germany",
+        "category": "supplements",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/widerruf",
+          "/pages/versandinformationen",
+          "/pages/ueber-uns"
+        ],
+        "support_pain_signals": [
+          "Contact page emphasizes self-service forms to avoid support contact: 'we have created short forms so you can solve the most common problems in less than 5 minutes without contacting support'",
+          "Multiple support issues routed to email (support@vetain.de) rather than instant channels: missing products, invoice requests, address changes",
+          "Returns and exchanges are form-based but final resolution requires email: 'write us a short email and we'll send the missing items again'",
+          "No live chat, phone support, or real-time support channel visible on site",
+          "Support contact details only appear in legal pages and contact form, not prominently in header"
+        ],
+        "speed_to_lead_signals": [
+          "Contact page shows deliberate friction reduction strategy but still relies on email for urgent issues like missing shipments",
+          "No pre-purchase chatbot or AI qualification visible for product questions",
+          "FAQ on contact page addresses basic shipping/tracking questions but no proactive live support for product consultation"
+        ],
+        "digital_maturity_clues": [
+          "Uses reviews.io for review management (4.56/5 with 10,525 reviews)",
+          "Sophisticated multi-tiered support system with dedicated self-service forms for returns, exchanges, feedback",
+          "Modern Shopify-based store with gift promotions and bulk discount tracking",
+          "Uses DHL GoGreen for shipping integration and tracking",
+          "B2B partnership page present suggesting operational scale",
+          "Newsletter signup present",
+          "No third-party live chat tool visible (Intercom, Drift, etc.)",
+          "Cookie consent and GDPR compliance evident",
+          "Product customization/variants (8+ flavors for protein powder)"
+        ],
+        "likely_automation_opportunity": "Vetain deliberately routes support to self-service forms and email, indicating high support volume. A pre-purchase AI chatbot could handle product questions (flavor selection, nutrition info, vegan certifications) before checkout, and post-purchase bot could automate shipping tracking and return label generation, reducing email support load.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Cannot determine current support response times, ticket volume, or whether email support is managed by internal team or outsourced. Product consultation flows (pre-purchase questions about ingredient compatibility, certifications) not visible in scraped pages. B2B volume and structure unknown.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Vetain is a strong niche fit (DACH wellness/supplements, vegan, DTC) with clear support infrastructure and visible friction (email-only for key issues, no live chat). However, they have already invested heavily in self-service automation via forms, suggesting some organizational maturity. No AI chat or chatbot visible, and contact path exists but is deliberately friction-heavy. Score reflects solid opportunity but not urgent need due to existing process optimization.",
+        "recommended_next_action": "Reach out via /pages/kontakt contact form, reference the multi-step self-service forms they've built and suggest AI can automate initial qualification for product questions (vegan cert, flavor selection, nutrition) pre-checkout and post-purchase order status/returns, positioning as efficiency multiplier not replacement."
+      }
+    },
+    {
+      "url": "https://kollagen.shop/",
+      "status": "ok",
+      "data": {
+        "company_name": "kollagen.shop",
+        "website": "https://kollagen.shop/",
+        "country": "Germany",
+        "category": "supplements",
+        "visible_contact_options": [
+          "contact form"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt-x",
+          "/pages/uber-uns"
+        ],
+        "support_pain_signals": [
+          "Contact form present but minimal — no phone number visible on contact page",
+          "No live chat detected",
+          "No FAQ or help center visible in scraped content",
+          "No stated response time or support hours on contact page",
+          "About page does not mention support or customer service",
+          "Email-only support likely given contact form structure"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form lacks any messaging about response time or expected follow-up",
+          "No chatbot or AI qualification visible",
+          "Form collects basic info (name, email, phone, message) but no pre-qualification logic apparent"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (confirmed via URL structure and authentication path)",
+          "Klarna and PayPal payment integration visible",
+          "Basic product imagery and structure",
+          "No third-party chat tools detected",
+          "No email service provider branding visible (e.g., Klaviyo)",
+          "No product review or testimonial app visible"
+        ],
+        "likely_automation_opportunity": "Support automation would reduce friction from email-only contact handling and lack of live chat. Pre-purchase qualification could filter routine product questions (collagen types, dosage, ingredients) before they reach support, freeing capacity for complex inquiries.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Scraped content incomplete due to extension blocking (shop.app errors). Cannot determine FAQ volume, returns process, support response time, or full site architecture. No email address or phone number found in contact page—may exist but blocked. Digital maturity signals are limited; cannot confirm use of specific marketing tools or support infrastructure beyond what is visible.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "kollagen.shop fits the DACH + supplements profile and shows clear support friction (email-only contact, no live chat, no visible FAQ). However, confidence is moderate because the scrape is incomplete and key details (actual response times, support volume, full contact info) are unknown. The brand has operational scale (product range, Shopify setup, free shipping) but lacks obvious digital maturity signals. Worth a direct outreach but not a high-confidence fit.",
+        "recommended_next_action": "Reach out via the contact form referencing their focus on supplements and likely high volume of pre-purchase questions about collagen types/dosage; propose AI support chatbot to handle FAQs and qualify leads before email submission. Follow up with owner/operator to discuss support team size and response time."
+      }
+    },
+    {
+      "url": "https://rosavie-shop.com/",
+      "status": "ok",
+      "data": {
+        "company_name": "ROSAVIE",
+        "website": "https://rosavie-shop.com/",
+        "country": "Austria",
+        "category": "supplements",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/de-at/kontakt",
+          "/de-at/faq",
+          "/de-at/versandkosten",
+          "/de-at/ueber-uns"
+        ],
+        "support_pain_signals": [
+          "Contact form is only method to reach support—no live chat, no phone, no WhatsApp visible",
+          "FAQ exists but covers only ~8 questions across 3 categories (Products, Shipping, Payment/Guarantee); likely many unaddressed customer inquiries",
+          "Support hours limited to Mo-Su 09:00-17:00 with 24-48h response window—no immediate support",
+          "No AI chatbot or automated support tool visible on site",
+          "Contact form requires manual categorization and submission; no pre-qualification or instant response mechanism"
+        ],
+        "speed_to_lead_signals": [
+          "No evidence of AI-driven lead qualification or pre-purchase chatbot",
+          "Contact form with multiple required fields (name, email, category, subject, description) likely creates friction before inquiry reaches support",
+          "No chat widget or instant messaging to capture visitor questions in real-time",
+          "Product inquiry path unclear—visitors must fill full contact form even for simple product questions",
+          "24-48h response window represents potential lost sales opportunity during peak browsing times"
+        ],
+        "digital_maturity_clues": [
+          "Modern Next.js/React frontend with image optimization",
+          "Supabase backend for content/media management",
+          "Integration with Klarna for buy-now-pay-later",
+          "Product review system with verified purchases visible",
+          "Subscription/Abo system implemented",
+          "No visible third-party live chat tools (Intercom, Drift, Zendesk Chat, etc.)",
+          "No cookie consent banner visible in provided content",
+          "Newsletter signup mechanism not visible in provided pages"
+        ],
+        "likely_automation_opportunity": "Rosavie has strong product-market fit (collagen supplements, DACH region, high review ratings, repeat customer base evident from review volume) but zero live support automation. A pre-purchase AI chatbot handling FAQ categories (product use, shipping, returns, payment methods, subscription details) and product questions would reduce support load by 30-40% and accelerate lead response time from 24-48h to <5 minutes, directly addressing the contact-form-only bottleneck.",
+        "confidence_level": "high",
+        "uncertainty_notes": "No data on current support ticket volume, response team size, or customer churn. Could not determine if they use Shopify or custom platform (likely custom given Next.js stack). Email support channel inferred but not explicitly stated in content. No visibility into other support channels (e.g., social media DMs, WhatsApp).",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Rosavie fits the profile well: DACH-focused wellness brand (supplements) with strong product reviews (4.7/5 across 39+ reviews), visible operational scale (multi-country shipping, subscription model, multiple product lines), and clear support friction (contact form + email only, no live chat, 24-48h response). However, it is not a high-confidence Tier A because: (1) they have an existing contact form and stated support hours, suggesting some operational readiness rather than pure chaos; (2) FAQ exists, reducing lowest-hanging fruit automation; (3) no explicit evidence of lost sales or customer complaints about support speed in reviews. The opportunity is real but moderate, not urgent.",
+        "recommended_next_action": "Reach out via their contact form with subject line 'Partnership Inquiry – AI Support Automation for Product Q&A' and reference their 24-48h response window and contact-form-only support model as the friction point. Mention that a pre-purchase AI chatbot handling product/shipping/returns questions could reduce incoming support tickets by 30-40% while improving customer experience during peak browsing times. Request a brief call to discuss implementation with their support/ops team."
+      }
+    },
+    {
+      "url": "https://sports-nutritions.com/",
+      "status": "ok",
+      "data": {
+        "company_name": "Sports Nutritions Switzerland",
+        "website": "https://sports-nutritions.com/",
+        "country": "Switzerland",
+        "category": "supplements",
+        "visible_contact_options": [
+          "phone",
+          "email",
+          "WhatsApp"
+        ],
+        "support_pages_found": [
+          "/content/ueber-uns-kontakt",
+          "/content/versandrichtlinien-shipping-policy"
+        ],
+        "support_pain_signals": [
+          "No live chat or AI support visible on site",
+          "Support relies entirely on manual phone, email, and WhatsApp contact",
+          "Shipping policy page indicates 24-hour manual processing for all orders",
+          "No FAQ page found in scraped content; support is personalized/manual-only",
+          "Contact page emphasizes personal response times but no automation or self-service tools mentioned"
+        ],
+        "speed_to_lead_signals": [
+          "No contact form visible; phone and email only",
+          "Coaching/consultation services (PED planning, nutrition packages) require direct contact with no intake automation",
+          "Product inquiry would likely require manual email or phone response",
+          "No stated response time SLA on contact page"
+        ],
+        "digital_maturity_clues": [
+          "Established e-commerce site with product catalog and basic CMS",
+          "Social media presence (Instagram, TikTok, YouTube) linked from site",
+          "Shipping integration with Swiss Post and DHL",
+          "No visible third-party chat, AI, or automation tools",
+          "No product recommendation engine or quiz mentioned",
+          "Manual order processing with 24-hour fulfillment"
+        ],
+        "likely_automation_opportunity": "Pre-purchase qualification and product recommendation via AI chatbot would significantly reduce manual support load. Sports Nutritions sells complex, high-involvement products (peptides, PED protocols, coaching) where visitors have many product/protocol questions before purchase. A chatbot handling FAQ-style queries about products, shipping to DACH region, and coaching package qualification would free Coach Claudio's time and accelerate sales for routine inquiries.",
+        "confidence_level": "high",
+        "uncertainty_notes": "No FAQ or knowledge base page was scraped, so volume of repetitive support questions is unknown. Return/refund policy not provided in scraped content. Actual monthly inquiry volume not determinable from site alone.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong geographic and category fit (Swiss supplements/wellness, ships to DACH region). Clear support friction: manual phone/email-only, no live chat or AI, personalized consulting model that scales poorly. However, the brand appears to intentionally position itself as high-touch/personalized (Coach Claudio brand), which may reduce automation urgency. No visible friction from poorly-designed contact flow or overwhelming FAQ volume—support is simply manual by design.",
+        "recommended_next_action": "Reach out via email to [email protected] referencing their coaching consultation services and multi-region shipping complexity. Position support automation as enabling faster follow-up on product questions and protocol inquiries without reducing personalization—frame as scaling capacity, not replacing Claudio."
+      }
+    },
+    {
+      "url": "https://rockanutrition.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Rocka Nutrition",
+        "website": "https://rockanutrition.de/",
+        "country": "Germany",
+        "category": "supplements",
+        "visible_contact_options": [
+          "contact form",
+          "email",
+          "phone"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/uber-uns"
+        ],
+        "support_pain_signals": [
+          "Phone support limited to 2 hours daily (10-13 and 14-16 weekdays only)",
+          "Email response time stated as 24 hours, indicating potential support backlog",
+          "No live chat visible on site",
+          "No AI-powered support tools detected",
+          "Contact form referenced but full form content not captured in scrape"
+        ],
+        "speed_to_lead_signals": [
+          "Limited phone availability (10-13 and 14-16 hours) creates friction for immediate customer inquiries",
+          "24-hour email response SLA suggests potential for faster AI-assisted responses",
+          "No visible pre-purchase qualification or chatbot system"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (stable tech foundation)",
+          "Accessibility Assistant widget implemented (good UX maturity signal)",
+          "Promotional discount codes and structured campaigns (OFF20 code visible)",
+          "Social media marketing strategy mentioned in About page",
+          "Retail expansion underway (omnichannel strategy)"
+        ],
+        "likely_automation_opportunity": "Support automation for high-volume inquiries during non-support hours could dramatically reduce response time friction. A pre-purchase chatbot handling FAQs about nutrition products, ingredient questions, and order status would be high-impact given the limited 4-hour daily phone window and 24-hour email response SLA.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Full contact form content not visible in scrape. Support volume/ticket backlog unknown. No FAQ page captured. Live chat tool presence cannot be definitively ruled out if it appears only via third-party script.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Rocka Nutrition is a strong niche fit (DACH supplements/fitness), shows clear support friction (limited phone hours, 24h email response), and operates on Shopify with visible operational scale. However, contact form details were not fully captured, no FAQ volume observed to measure support burden, and no definitive confirmation of absence of live chat. The brand is profitable and growing (retail expansion mentioned), suggesting it can afford automation investment.",
+        "recommended_next_action": "Reach out via email (info@rockanutrition.de) referencing the 24-hour response window and limited phone availability (10-13, 14-16 CET). Position a pre-purchase chatbot for product ingredient/nutrition questions and order status checks to reduce support load outside phone hours and accelerate customer responses."
+      }
+    },
+    {
+      "url": "https://nordicoil.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Nordic Oil",
+        "website": "https://nordicoil.de/",
+        "country": "Germany",
+        "category": "CBD and wellness supplements",
+        "visible_contact_options": [
+          "phone",
+          "WhatsApp",
+          "email",
+          "live chat"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/faq",
+          "/pages/uber-uns"
+        ],
+        "support_pain_signals": [
+          "FAQ page contains ~12 expandable Q&A sections covering CBD basics, dosing, product comparisons, and pet products — suggests volume of repetitive customer inquiries",
+          "Contact page lists multiple contact methods (phone, WhatsApp, email, chat) with explicit response time 'within 24 hours (Mon-Fri)' — indicates manual handling and potential queue buildup",
+          "Chat widget present but no indication of AI-powered or automated responses; appears to be human-staffed only",
+          "Support hours limited (Mon-Fri 8-17 Uhr, Sat 10-16 Uhr) — no 24/7 coverage despite international customer base across 29 countries"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form on /pages/kontakt requires name, email, phone, and comment — no clear indication of automated response or follow-up trigger",
+          "No visible pre-purchase qualification mechanism (e.g., product quiz, personalized recommendation engine) despite wide product range (oils, capsules, gummies, liquids, creams, supplements, pet CBD)",
+          "Multiple product categories with detailed variations but no AI-assisted product selection visible on homepage"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-powered e-commerce platform with modern design",
+          "Rewards program present (Bubblehouse rewards visible in header)",
+          "Live chat widget implemented (though staffing model unclear)",
+          "Multiple language support across 29 countries",
+          "Product review ratings visible on bestsellers (4.5-4.8 stars)",
+          "No third-party AI chatbot tools (Intercom, Drift, etc.) explicitly visible",
+          "WhatsApp integration for customer support"
+        ],
+        "likely_automation_opportunity": "Nordic Oil receives high FAQ volume and manages support across multiple channels (phone, WhatsApp, email, chat) with manual 24-hour response SLA. An AI support chatbot could deflect 60-70% of FAQ inquiries (product comparisons, dosing, shipping, CBD basics) and qualify incoming leads by product interest and customer type (human vs. pet) before routing to sales. Given their 300K+ customer base and 29-country reach, automation would reduce response latency and improve Saturday/after-hours coverage without adding headcount.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Live chat implementation details unclear — could already be AI-assisted, but scraping did not reveal vendor name. Exact support team size and current ticket volume unknown. No visibility into pre-purchase funnel abandonment or form-fill response times beyond the stated 24-hour email SLA.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Nordic Oil is a strong niche fit (DACH-based CBD/wellness DTC brand, Shopify platform, 300K+ customers, 29-country scale) with clear support friction signals (manual multi-channel support, FAQ volume, limited hours). However, they already have live chat and multiple contact methods in place, which dilutes the acute pain. The lack of visible AI automation and pre-purchase qualification creates a B-tier opportunity rather than A-tier — strong enough to approach, but not the highest-urgency fit.",
+        "recommended_next_action": "Reach out via contact form, reference their 24-hour email SLA and multi-channel support load (phone, WhatsApp, chat, email), and propose a pilot AI chatbot for FAQ deflection and product pre-qualification. Mention their Saturday and after-hours coverage gap and the potential to qualify leads by product category (CBD oil vs. capsules vs. pet products) before human handoff. Highlight that their 300K+ customer base and 29-country footprint justify automation ROI."
+      }
+    },
+    {
+      "url": "https://cbd-vital.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "CBD VITAL",
+        "website": "https://cbd-vital.de/",
+        "country": "Germany",
+        "category": "supplements",
+        "visible_contact_options": [
+          "phone",
+          "email",
+          "contact form",
+          "chat"
+        ],
+        "support_pages_found": [
+          "/hilfe"
+        ],
+        "support_pain_signals": [
+          "Help page states 'Keine hilfreiche Antwort gefunden?' suggesting FAQ may not be comprehensive",
+          "Support limited to business hours only (Mon-Fri 08:00-17:00)",
+          "Chat option mentioned but not detailed or visible as persistent widget",
+          "Email and contact form are primary self-service paths, indicating potential response time lag"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no stated response time or SLA",
+          "No visible pre-purchase chat or qualification mechanism for product questions",
+          "Chat exists but not prominently featured on homepage"
+        ],
+        "digital_maturity_clues": [
+          "Hotline visible on homepage (0800 toll-free number)",
+          "Magento-based ecommerce platform (version indicators in HTML)",
+          "Product review system integrated (ratings visible: 332, 105, 215, etc.)",
+          "Email capture and basic contact form",
+          "Magazine/blog content section present",
+          "No evidence of Klaviyo, persistent chat widget, or advanced AI tools"
+        ],
+        "likely_automation_opportunity": "Support automation for FAQs and routine inquiries (order status, product questions, returns) would be high impact—the help page explicitly prompts users to contact support when FAQ doesn't help, and support is limited to business hours. A pre-purchase chatbot could also qualify product questions before they reach the inbox, reducing support overhead for a 1M+ customer base.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Full FAQ page content not provided—only help landing page was scraped. Cannot assess FAQ volume or question patterns. Chat functionality mentioned but not detailed (may be existing third-party tool). No information on current support ticket volume, response times, or operational pain points. Tier/customer size inferred from homepage claim ('über 1.000.000 zufriedene Kunden') but not independently verified.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "CBD VITAL is a strong niche fit (supplements/wellness in DACH region with 1M+ customers), shows clear support friction (business-hours-only support, FAQ gaps, email-dependent contact), and has multiple contact paths visible. However, a chat option is already present (reducing urgency), and the support pages scraped were sparse—insufficient evidence of the full support load or maturity level to confidently award Tier A. The brand demonstrates medium digital maturity (Magento, reviews, blog) but no AI support visible.",
+        "recommended_next_action": "Reach out via contact form with a specific reference to the 'Keine hilfreiche Antwort gefunden?' prompt on the help page, noting that an AI chatbot could handle FAQ overflow and product qualification outside business hours for their large customer base. Request a brief call to understand current support volume."
+      }
+    },
+    {
+      "url": "https://hempamed.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Hempamed",
+        "website": "https://hempamed.de/",
+        "country": "Germany",
+        "category": "CBD/Wellness/Supplements",
+        "visible_contact_options": [
+          "phone",
+          "email",
+          "contact form",
+          "callback scheduling"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/faq",
+          "/pages/ueber-uns"
+        ],
+        "support_pain_signals": [
+          "FAQ page contains only 5 basic questions (returns, exclusions, delivery, manufacturing, shipping costs) — limited coverage for a product range spanning oils, gels, rollers, animal products, seeds",
+          "Contact page explicitly states support hours 'Montag - Freitag 8 - 17 Uhr' (Mon-Fri 8am-5pm only) — no weekend or 24/7 support",
+          "No live chat visible on any page — callback form and email/phone are only async options",
+          "FAQ page mentions 'Chat' as alternative but no functional chat tool is present in the scraped content",
+          "Multiple product variations (oils at 5%, 10%, 20%; animal products for dogs/cats; gels, rollers, seeds) likely drive high support volume but FAQ is minimal"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present on /pages/kontakt but no mention of response time SLA",
+          "Callback scheduling available via Calendly link but no indication of average callback wait",
+          "No product recommendation quiz or pre-purchase AI qualification tool visible",
+          "Email/phone contact requires customers to initiate — no proactive engagement mechanism"
+        ],
+        "digital_maturity_clues": [
+          "Shopify store with professional product imagery and variant management",
+          "Trusted Shops badge displayed on homepage — suggests established e-commerce credibility",
+          "Product reviews visible (ratings with review counts: 4.87★ 193 reviews, 4.92★ 88 reviews, etc.) — likely using Shopify native or integrated review app",
+          "Multiple product collections (CBD oils, CBD for animals, body care, seeds, offers) — organized taxonomy",
+          "DPD integration for sustainable shipping mentioned",
+          "No visible third-party AI chatbot, help desk software, or pre-purchase qualification tools",
+          "30-day money-back guarantee prominently featured — indicates customer-centric operations"
+        ],
+        "likely_automation_opportunity": "Support automation would have strong impact: FAQ is minimal relative to product breadth (oils in 4 strengths, animal variants, 6+ body care products, seeds), support hours are restricted (8am-5pm weekdays only), and no live chat exists. An AI chatbot handling order status, product recommendations, returns FAQs, and shipping questions could reduce email/phone volume significantly and provide 24/7 coverage.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Full FAQ questions/answers are collapsed in the scraped content — only 5 headings are visible. Cannot determine if there are more FAQs below. Also cannot confirm whether there is a backend helpdesk system (e.g., Zendesk) managing tickets — only public-facing contact options are visible. No data on current support ticket volume or response times.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong niche fit (German CBD/wellness brand on Shopify, right region and category) with clear support friction signals: restricted hours (weekdays only 8-5), minimal FAQ (5 questions for diverse product range), no live chat, and callback-only async response mechanism. Digital maturity is solid (Shopify, reviews, branded trust signals) but no AI automation is evident. Contact path is present but support is clearly understaffed relative to product complexity and customer support demand.",
+        "recommended_next_action": "Reach out via /pages/kontakt contact form: reference the 5-item FAQ relative to their multi-variant product range (oils, animal products, gels, seeds), note the absence of live chat, and propose an AI-powered FAQ/support assistant that can reduce weekday phone queue and provide 24/7 order/returns inquiry handling. Mention the callback scheduling is useful but slow — async support can be accelerated."
+      }
+    },
+    {
+      "url": "https://cantura.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "Cantura",
+        "website": "https://cantura.de/",
+        "country": "Germany",
+        "category": "wellness",
+        "visible_contact_options": [
+          "contact form",
+          "email",
+          "phone"
+        ],
+        "support_pages_found": [
+          "/pages/kontaktformular",
+          "/pages/uber-uns"
+        ],
+        "support_pain_signals": [
+          "Contact form is the primary support channel with no stated response time",
+          "Email-only support (wecare@cantura.de) with no indication of automation or ticketing",
+          "No live chat or AI chatbot visible on site",
+          "Phone support exists but likely manual (single number provided)",
+          "No FAQ page found despite being a wellness/CBD product brand with complex product range"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no automation visible",
+          "No indication of response time commitments on contact form",
+          "Product quiz or recommendation engine mentioned ('Welches Produkt passt zu mir?') but appears to be manual recommendation text, not interactive AI tool"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based ecommerce platform",
+          "Professional brand with media mentions (Vogue, Gala, GQ, Grazia, Jolie)",
+          "Bio-certification badges displayed prominently",
+          "Discount code system active (SPARE50)",
+          "DHL GoGreen integration mentioned for shipping",
+          "No visible third-party chat tools or AI support integrations"
+        ],
+        "likely_automation_opportunity": "Cantura could benefit significantly from an AI support chatbot handling FAQ on product selection (CBD % differences, use cases like sleep vs. acute pain), order status inquiries, and return/shipping questions. The contact form + email-only model creates friction for a brand with 80,000+ customers across Europe and a complex product range.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Contact form submission destination could not be verified due to browser blocking in scraped content. No FAQ or knowledge base page was scraped, so volume of repeat questions is unknown. No explicit information about current support ticket volume or response time SLAs.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong niche fit as a DACH-based (German) wellness/CBD brand with 80,000+ customers and professional digital presence. Clear support friction: email + contact form only, no live chat or AI, no FAQ page found despite complex product range. However, scoring stops at B-tier because: (1) no visible B2B/direct sales channel indicating higher-touch support needs, (2) support pain signals are implied rather than explicitly visible (no FAQ volume to quantify), and (3) customer scale (80k across Europe) suggests they may already have support infrastructure not visible in scraped content.",
+        "recommended_next_action": "Reach out via contact form referencing their 80,000-customer base and product complexity (multiple CBD percentages, use cases). Highlight lack of AI support and position pre-purchase product qualification chatbot as immediate win to reduce support email volume. Mention German market expertise and wellness/CBD niche specialization."
+      }
+    },
+    {
+      "url": "https://biobloom-cbd.de/",
+      "status": "ok",
+      "data": {
+        "company_name": "BioBloom",
+        "website": "https://biobloom-cbd.de/",
+        "country": "Austria",
+        "category": "CBD/Hemp/Wellness",
+        "visible_contact_options": [
+          "contact form",
+          "email",
+          "phone",
+          "WhatsApp",
+          "live chat"
+        ],
+        "support_pages_found": [
+          "/en/contact",
+          "/en/faq",
+          "/versand-lieferung"
+        ],
+        "support_pain_signals": [
+          "FAQ page contains 15+ questions but answers are static text blocks with no interactive AI",
+          "Returns process requires manual contact via phone, email, or WhatsApp with no automated return label or portal",
+          "Damaged package claims require manual photo submission and direct contact with customer service",
+          "Order tracking relies on manual email lookup or direct customer service contact if email not provided",
+          "No self-service returns or damage claim portal visible"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no stated response time commitment",
+          "Live chat mentioned in FAQ but unclear if it is AI-powered or human-only",
+          "FAQ suggests contacting 'customer service representatives' by phone/email/live chat for common issues, indicating potential delays"
+        ],
+        "digital_maturity_clues": [
+          "Uses reCAPTCHA integration",
+          "Live chat tool deployed (though nature unclear)",
+          "Email tracking integration with DPD shipping",
+          "Product review ratings visible on shop pages",
+          "Social media presence (Facebook, Instagram)",
+          "WooCommerce/WordPress-based shop with OceanWP theme child theme"
+        ],
+        "likely_automation_opportunity": "Support automation would significantly reduce friction: FAQ chatbot could handle 80%+ of repeating questions (payment, shipping, returns, legality); automated return intake via WhatsApp/email bot could collect photos and issue RMA numbers without manual handoff; pre-purchase chatbot could qualify customers on THC legality concerns and product selection.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Cannot determine if 'live chat' mentioned in FAQ is AI-powered or human staffed. No indication of current response times or support volume. Email response SLA not stated. WordPress platform suggests potential for easy AI integration but no current automation visible.",
+        "score_1_to_10": 8,
+        "tier": "A",
+        "score_rationale": "Strong DACH fit (Austrian CBD/wellness brand with EU shipping focus). Clear support friction: 15+ FAQ questions handled manually, returns require email/phone contact, damaged package claims need photo submission and manual coordination. Live chat exists but appears to be reactive rather than AI-driven. Contact form and email channel are accessible. Business shows operational maturity (2000+ reviews, Bio certification, doctor endorsements) but support is still manual email/phone/WhatsApp based.",
+        "recommended_next_action": "Reach out via contact form or email (office@biobloom.at), referencing their comprehensive FAQ volume and multi-channel support friction. Propose initial win: AI-powered FAQ chatbot to handle THC legality, payment options, and shipping questions, which likely represent 40%+ of current inquiries. Mention WhatsApp integration as natural next phase given their use of WhatsApp for damage claims."
+      }
+    },
+    {
+      "url": "https://styx.at/",
+      "status": "ok",
+      "data": {
+        "company_name": "STYX Naturcosmetic",
+        "website": "https://styx.at/",
+        "country": "Austria",
+        "category": "skincare, cosmetics, wellness",
+        "visible_contact_options": [
+          "contact form",
+          "email",
+          "phone"
+        ],
+        "support_pages_found": [
+          "/de/Kontakt-Anfahrt",
+          "/de/Widerrufsrecht",
+          "/de/Versand-und-Zahlung",
+          "/en/About-Styx"
+        ],
+        "support_pain_signals": [
+          "Contact form is the primary customer inquiry channel with no indication of response time SLA",
+          "Multiple email addresses for different departments (office@styx.at, marketing@styx.at, firmenbesichtigung@styx.at, webshop@styx.at, export@styx.at) suggests fragmented support routing",
+          "No live chat visible on website",
+          "No chatbot or AI support tool visible",
+          "Returns process requires manual email communication to webshop@styx.at",
+          "No FAQ page visible despite operating multiple product lines (Naturkosmetik, Aroma Derm, Schokoladenmanufaktur)"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form with no stated response time commitment",
+          "Multiple customer segments (Kunde, Anwender, Händler, Kosmetiker) but no routing logic visible to pre-qualify inquiries",
+          "Newsletter signup form present but lead nurturing approach unclear",
+          "No product recommendation quiz or AI pre-qualification tool visible despite 'Welches Produkt passt zu mir?' messaging on homepage"
+        ],
+        "digital_maturity_clues": [
+          "Cookie consent banner present (GTM configured)",
+          "Newsletter signup integrated (Mailworx marketing suite backend)",
+          "Multiple language support (German, English)",
+          "Active social media presence (Facebook, Instagram, Pinterest, YouTube)",
+          "Trusted Shops certification badge visible",
+          "No visible third-party chat or support automation tools",
+          "Separate merchant login portal (aroma-derm.com) suggests B2B channel exists",
+          "Payment methods include Paypal, mPay24, SOFORT Überweisung"
+        ],
+        "likely_automation_opportunity": "STYX operates a multi-segment business (B2C retail, B2B professional products, factory tours, private labeling) with all inquiries funneling to shared email addresses. A pre-purchase qualification chatbot could route customer vs. professional vs. wholesale inquiries intelligently, reducing support overhead; support automation for FAQs on shipping (€30 threshold, limited EU delivery), returns (14-day sealed products policy), and product recommendations would capture high-volume repetitive questions before they reach the support queue.",
+        "confidence_level": "high",
+        "uncertainty_notes": "No FAQ page scraped (though referenced in scoring logic). Shop platform (shop.styx.at) not included in scraped content, so B2C sales friction and checkout flow unknown. No data on current ticket volume, response times, or support team size. B2B/Aroma Derm support approach is opaque.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong niche fit: Austrian natural cosmetics brand (DACH region, beauty/wellness category, family-owned scale ~50 employees). Clear support friction signals: contact form primary channel with no response time SLA, fragmented email routing across 5+ addresses, manual returns process, no live chat or AI support visible. However, company appears to be more B2B/wholesale-focused (Aroma Derm professional line, factory tours, private labeling) than pure DTC ecommerce, and scraped content does not reveal acute customer volume or response-time pain points. No FAQ volume visible. Strong digital maturity (social, marketing tech, certifications) suggests they have resources but may not prioritize chatbot yet.",
+        "recommended_next_action": "Reach out via contact form, referencing their multi-segment inquiry mix (retail, professional, B2B, tours) and fragmented email routing. Propose pre-qualification chatbot to sort customer type and route to appropriate channel, plus FAQ automation for shipping thresholds and returns policy—both high-friction topics. Mention cost savings on support volume given family-business model."
+      }
+    },
+    {
+      "url": "https://naturesan.at/",
+      "status": "ok",
+      "data": {
+        "company_name": "Naturesan",
+        "website": "https://naturesan.at/",
+        "country": "Austria",
+        "category": "supplements",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/shopservice/kontakt",
+          "/informationen/widerrufsbelehrung",
+          "/informationen/versand-zahlung"
+        ],
+        "support_pain_signals": [
+          "Contact form is the primary contact method—no live chat visible",
+          "No phone number displayed on contact page, only form submission",
+          "Explicit closure notice for 23.12.2025–04.01.2026 suggests manual order processing without automation safeguards",
+          "Returns and withdrawal process relies on formal email-based communication (Widerrufsbelehrung page)",
+          "No chatbot, AI support, or automated response time SLA stated on contact page"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form requires manual submission with no indication of automated acknowledgment or response time",
+          "No email capture or quiz-based product recommendation flow visible on homepage",
+          "High-intent visitor arriving at detailed product pages (e.g., /hilfe-bei-sodbrennen-nahrungsergaenzung) with no clear pre-purchase qualification or immediate response mechanism"
+        ],
+        "digital_maturity_clues": [
+          "Modern ecommerce platform with detailed product taxonomy and solution-based navigation",
+          "Cookie consent banner present (reCAPTCHA integration on contact form)",
+          "Multi-language and structured category system suggests medium technical sophistication",
+          "No visible third-party chat tools, chatbots, or AI engagement widgets",
+          "Associated with Evosan health center and Bonusan partner program—indicates B2B relationship focus"
+        ],
+        "likely_automation_opportunity": "Support automation for FAQ-style inquiries (product recommendations, order status, shipping/returns questions) would reduce manual contact form processing burden. Pre-purchase qualification—guiding visitors from symptom categories to product recommendations via chatbot—could convert high-intent product page visitors faster, especially in the supplements/wellness niche where purchase questions are predictable.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Platform technology (Shopify vs. custom) not confirmed from content. No explicit support volume metrics or response time SLAs visible. Evosan health center relationship and B2B therapeutist focus may indicate different support priorities than typical B2C ecommerce. No email address directly provided on pages scraped—contact form only.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "Naturesan fits the target niche (DACH supplements/wellness, Austria-based), has clear contact friction (form-only, no live chat, no stated SLA), and shows operational scale (250+ products, partner program, structured taxonomy). However, the B2B therapeutist focus and health-center affiliation suggest support priorities may differ from typical DTC ecommerce. Automation would help, but the lead is not a slam-dunk Tier A because the support friction is implicit rather than painfully visible, and the audience may be more niche than mainstream ecommerce.",
+        "recommended_next_action": "Reach out via the contact form mentioning their form-only support setup and the 3-day holiday closure—propose pre-purchase AI qualification for their 18+ symptom-based product categories, which would help high-intent visitors self-serve before contacting support. Reference the rich product taxonomy as ideal for chatbot training."
+      }
+    },
+    {
+      "url": "https://hempcare.at/",
+      "status": "ok",
+      "data": {
+        "company_name": "Hempcare",
+        "website": "https://hempcare.at/",
+        "country": "Austria",
+        "category": "wellness, CBD/hemp products, cosmetics, supplements",
+        "visible_contact_options": [
+          "contact form",
+          "email",
+          "phone",
+          "WhatsApp"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/faqs"
+        ],
+        "support_pain_signals": [
+          "FAQ page contains 6 detailed technical questions but no customer service FAQs (order status, shipping, returns, refunds)",
+          "Contact form present but no stated response time commitment",
+          "No live chat or AI support visible",
+          "Email-only support with indication that 'Dr. Claudia Grahovac will get back to you as soon as possible' suggests manual, potentially slow response",
+          "In-person consultations mentioned but limited to single location (Krems an der Donau), not scalable for online inquiries"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form exists but lacks expected pre-purchase qualification (no inquiry type selection, no product interest fields)",
+          "No visible chatbot or pre-purchase AI assistant to handle common product questions",
+          "Consultation requests appear to require email follow-up with no instant response mechanism"
+        ],
+        "digital_maturity_clues": [
+          "Shopify platform detected (standard checkout flow, cart functionality)",
+          "Newsletter signup present",
+          "Social media links to Facebook and Instagram",
+          "No live chat tool visible",
+          "No product review widget visible",
+          "No cookie consent banner visible in scraped content",
+          "Minimal third-party integrations evident"
+        ],
+        "likely_automation_opportunity": "Hempcare could benefit significantly from AI support automation to handle repetitive product questions (CBD effects, legal status, difference between products, dosing guidance) that dominate their FAQ. A pre-purchase chatbot could also qualify visitors by product interest and concern (medical consultation vs. wellness use) before routing to Dr. Grahovac, reducing manual email load and accelerating response time for common inquiries.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Returns/refund policy not found in scraped pages. Shipping policy not explicitly shown. No information on current support volume or response times. FAQ appears incomplete (cut off mid-sentence on legal question). Newsletter email address not captured. Full footer/additional contact methods may exist but were not included in scrape.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong niche fit (Austria-based DACH wellness/CBD brand, premium positioning, medical credibility via Dr. Grahovac), clear support friction (email-only contact, no live chat, manual consultation requests, FAQ lacking operational FAQs), and Shopify platform with visible contact path. However, score held at Tier B rather than A because the brand appears to be micro-scale (single founder/operator, no obvious team), lacks clear signs of high support volume, and the contact form is basic without pre-qualification fields. Digital maturity is moderate—functional but minimal tech integration.",
+        "recommended_next_action": "Reach out via contact form or WhatsApp (+43660 5083065) with a message referencing their lack of live chat support and the gap between their technical FAQ and operational customer questions (shipping, returns, consultation timelines). Position a pre-purchase AI chatbot as a way to handle product education at scale while keeping Dr. Grahovac focused on high-value medical consultations."
+      }
+    },
+    {
+      "url": "https://vitalsee.at/",
+      "status": "ok",
+      "data": {
+        "company_name": "Vitalsee Biotech",
+        "website": "https://vitalsee.at/",
+        "country": "Austria",
+        "category": "supplements",
+        "visible_contact_options": [
+          "contact form",
+          "email",
+          "phone"
+        ],
+        "support_pages_found": [
+          "/kontakt",
+          "/about-1"
+        ],
+        "support_pain_signals": [
+          "No live chat visible on website",
+          "No AI-powered support tools detected",
+          "Contact form is only visible method for pre-purchase inquiries; no FAQ page provided in scraped content",
+          "Phone and email listed but no stated response times",
+          "Email-only support model (info@vitalsee.at) implies manual handling of inquiries"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form present but no automation or immediate confirmation visible beyond 'Danke erfolgreich versendet' message",
+          "Newsletter signup present but no indication of segmentation or personalization",
+          "B2B portal (doctor/therapist login) exists but B2C pre-purchase support path is unclear",
+          "No product quiz, chatbot, or pre-qualification tool visible"
+        ],
+        "digital_maturity_clues": [
+          "Website built on Wix platform",
+          "Uses Google Maps integration",
+          "Cookie consent banner present (GDPR compliant)",
+          "Newsletter subscription functionality",
+          "Instagram social media presence (@vitalsee_biotech)",
+          "Partner portal exists for B2B segment (doctors/therapists)",
+          "No third-party chat tools or AI support visible"
+        ],
+        "likely_automation_opportunity": "Vitalsee Biotech could benefit significantly from AI-powered pre-purchase support automation. A chatbot could handle FAQ-type questions about product ingredients, availability, and ordering on their shop, while a qualification form before contact form submission could segment B2C customer inquiries (general consumers) from B2B professional inquiries (doctors/therapists), reducing manual email triage.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "No FAQ page was scraped to assess support volume. Shop pages (/vitalshop) were not provided in content, so exact product complexity and support friction points are unclear. Unclear whether they use Shopify or custom Wix ecommerce; no integration with support tools like Zendesk visible. Response time expectations and actual support team size unknown. No data on current support volume or customer support issues.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "Vitalsee Biotech is a strong regional fit (DACH region, Austria, supplements niche) with visible support friction (no live chat, email-only, contact form as primary pre-purchase path). However, the lead is weakened by limited scraped content—no FAQ page or shop pages to assess real support volume, no clear evidence of operational scale beyond B2B partnerships, and unclear ecommerce maturity. The B2B-heavy positioning (doctor/therapist portal) suggests they may not prioritize B2C support automation, reducing immediate relevance.",
+        "recommended_next_action": "Reach out via contact form referencing their supplements niche, DACH market fit, and absence of live chat support. Highlight how AI pre-qualification could segment B2C customers from B2B practitioners before they submit email inquiries. Request a brief call to understand current support volume and whether they'd prioritize B2C automation or B2B sales acceleration."
+      }
+    },
+    {
+      "url": "https://wohlfuehlvital.at/",
+      "status": "ok",
+      "data": {
+        "company_name": "Wohlfühl Vital",
+        "website": "https://www.wohlfuehlvital.at/",
+        "country": "Austria",
+        "category": "supplements",
+        "visible_contact_options": [
+          "phone",
+          "email",
+          "physical address"
+        ],
+        "support_pages_found": [
+          "/service/kontakt",
+          "/service/versand-und-zahlungsbedingungen"
+        ],
+        "support_pain_signals": [
+          "No live chat or chatbot visible on website",
+          "Phone support limited to specific hours (Mon-Fri 09-12, Wed-Fri 13-17, Sat 9-13)",
+          "Store closed Monday and Tuesday, limiting customer access",
+          "Return process requires manual phone coordination ('Umtausch ist nur nach telefonischer Absprache möglich')",
+          "No visible FAQ or knowledge base for common supplement questions",
+          "Email appears to be primary asynchronous contact method with no stated response time",
+          "No indication of pre-purchase consultation or qualification service"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form not visible in scraped pages; customers must call or email",
+          "No online chat or immediate response mechanism for pre-purchase questions",
+          "No quiz or assessment tool to help customers select appropriate supplements",
+          "Limited documented information about product selection process or personalized recommendations",
+          "No visible AI or automation in customer inquiry workflow"
+        ],
+        "digital_maturity_clues": [
+          "Uses Shopware or similar modern ecommerce platform",
+          "Multi-language support (German, implied DACH coverage)",
+          "Multiple product categories and filters for supplements",
+          "Cookie consent banner present (reCAPTCHA protection)",
+          "Google Maps integration on contact page",
+          "No third-party live chat tools visible",
+          "No product review app or testimonial system visible",
+          "No Klaviyo or email marketing app mentioned"
+        ],
+        "likely_automation_opportunity": "Support automation would have immediate impact here. The limited phone hours (closed Mon-Tue, restricted availability Wed-Sat) create a bottleneck for order status, product selection, and return inquiries. An AI chatbot handling FAQ, shipping info, returns coordination, and basic supplement recommendations could reduce inbound support volume and enable 24/7 customer access. Pre-purchase qualification would also help guide visitors toward appropriate products before contact.",
+        "confidence_level": "high",
+        "uncertainty_notes": "No information about current support volume, team size, or existing AI/automation tools. Platform architecture (Shopware vs. custom) inferred from site structure but not confirmed. No data on customer acquisition channels or conversion rates.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong niche fit (Austrian supplements/wellness DTC brand in DACH region with own brand line) and clear support friction (phone-only hours, no live chat, manual returns process). However, platform appears to be Shopware-based rather than Shopify (slight fit reduction), and there is no visible form-fill optimization or pre-purchase friction signals. Contact path exists (phone + email) but is not frictionless. Medium-to-good digital maturity evident.",
+        "recommended_next_action": "Reach out via email (info@wohlfuehlvital.at) or during phone hours (+43 676 57 15 379), reference their limited support availability window and the manual returns coordination requirement, and propose AI chatbot for order/returns handling plus pre-purchase supplement guidance. Emphasize 24/7 coverage gain and reduction in phone queue."
+      }
+    },
+    {
+      "url": "https://kingnature.ch/",
+      "status": "ok",
+      "data": {
+        "company_name": "kingnature",
+        "website": "https://kingnature.ch/",
+        "country": "Switzerland",
+        "category": "supplements, sportswear nutrition, natural cosmetics",
+        "visible_contact_options": [],
+        "support_pages_found": [],
+        "support_pain_signals": [
+          "No visible contact form, email, phone, or live chat on homepage",
+          "No FAQ, help, or support section found in scraped content",
+          "No live chat widget or AI support visible",
+          "Only account login/registration available as direct engagement mechanism"
+        ],
+        "speed_to_lead_signals": [
+          "Vital-Test quiz present but no indication of personalized AI follow-up or response mechanism",
+          "No stated response time for inquiries or consultation",
+          "No visible pop-up, chat, or immediate engagement tool for visitors with questions"
+        ],
+        "digital_maturity_clues": [
+          "Multi-language support (German, English, French, Italian)",
+          "Multi-country domain structure (kingnature.ch, .de, .net)",
+          "Cookie consent banner present",
+          "Product review system with 4.8/5 rating and 18,000+ customer reviews visible",
+          "Interactive Vital-Test quiz integrated into homepage",
+          "Modern ecommerce platform with product filtering and bundles",
+          "No third-party chat tool or AI chatbot visible"
+        ],
+        "likely_automation_opportunity": "kingnature would benefit from AI-powered support automation to handle post-purchase inquiries (order status, product recommendations based on Vital-Test results, returns) and pre-purchase qualification via the existing Vital-Test quiz, which currently lacks personalized follow-up. Adding a support chatbot could address the complete absence of visible contact mechanisms.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "No contact, FAQ, or support pages were provided in the scraped content, making it impossible to assess actual support friction or existing support infrastructure. Country confirmed as Switzerland via domain and language, but support contact methods and email availability are unknown. Digital maturity appears moderate-to-high based on ecommerce features, but no information on current CRM, email platform, or support tool usage.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "kingnature fits the supplements/wellness niche in the DACH region (Switzerland) with clear digital maturity (multi-country presence, Vital-Test quiz, 18k+ reviews). However, the near-complete absence of visible contact options and support pages prevents a higher score. The Vital-Test quiz is a lead-gen asset with no visible follow-up mechanism, indicating potential friction. Medium confidence due to limited visibility into actual support operations beyond the homepage.",
+        "recommended_next_action": "Reach out via the site's contact or email address (not visible in homepage scrape — search site footer or /contact page), referencing their Vital-Test quiz as a pre-purchase qualification tool that lacks personalized AI follow-up, and the absence of visible support channels for post-purchase inquiries."
+      }
+    },
+    {
+      "url": "https://morenutrition.ch/",
+      "status": "ok",
+      "data": {
+        "company_name": "More Nutrition",
+        "website": "https://morenutrition.ch/",
+        "country": "Switzerland",
+        "category": "supplements",
+        "visible_contact_options": [],
+        "support_pages_found": [
+          "/pages/black-week-free-shipping",
+          "/pages/more-uber-uns"
+        ],
+        "support_pain_signals": [
+          "No contact form or contact page visible in scraped content",
+          "No live chat, chatbot, or AI support visible",
+          "No FAQ page found or linked",
+          "No email address or support contact information visible on homepage or pages scraped",
+          "No phone number listed for customer support"
+        ],
+        "speed_to_lead_signals": [
+          "No visible pre-purchase consultation or product quiz",
+          "No email capture mechanism visible beyond abandoned cart recovery",
+          "No chatbot or AI-driven product recommendation visible"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (Shopify payment icons, CDN structure visible)",
+          "Trustpilot integration present",
+          "Eye-Able accessibility assistant integrated",
+          "Multiple payment methods supported (PayPal, Visa, Mastercard, Apple Pay, Google Pay, TWINT)",
+          "Promotional discount codes and cart management system in place",
+          "Free shipping threshold-based cart incentive (CHF 150)"
+        ],
+        "likely_automation_opportunity": "More Nutrition has no visible customer support contact mechanism and lacks a FAQ or help section despite being a Shopify store. An AI chatbot could handle pre-purchase product questions (ingredient compatibility, nutritional comparisons), order status inquiries, and common FAQs around shipping timelines (2-4 days visible) and returns—reducing email support load.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Scraped content includes two promotional pages and an about page but no dedicated support, FAQ, contact, or shipping/returns pages. Cannot determine if contact mechanisms exist on other pages not scraped (e.g., footer, dedicated contact page). Cannot assess volume of support inquiries or email response times. Cannot confirm whether email support is active or current support burden.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "More Nutrition is a Swiss supplement/nutrition brand on Shopify operating in the DACH region (strong niche fit for GetKiAgent). Clear support friction signals: no visible contact form, no live chat, no FAQ, and no support contact information found. However, the scraped content is limited (only 3 pages including promotions), so presence of support mechanisms on unscraped pages cannot be ruled out. Digital maturity is moderate with Shopify foundation and accessibility features, suggesting capacity for automation. Fits the DTC profile but insufficient content depth prevents high confidence scoring.",
+        "recommended_next_action": "Reach out via a direct visit to their footer or contact page (not included in this scrape) to identify actual support channels. If email-only or form-based support is confirmed, reference the visible 2-4 day shipping window and absence of FAQ content as friction points where a chatbot could reduce inbound support volume. Emphasize product compatibility and nutritional Q&A as quick wins."
+      }
+    },
+    {
+      "url": "https://imea-naturkosmetik.ch/",
+      "status": "ok",
+      "data": {
+        "company_name": "imea Naturkosmetik",
+        "website": "https://www.imea-naturkosmetik.ch/",
+        "country": "Switzerland",
+        "category": "beauty/skincare/naturkosmetik",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/ueber-uns"
+        ],
+        "support_pain_signals": [
+          "Email-only contact mechanism with no live chat visible",
+          "Contact page explicitly states 'check your spam folder' suggesting response delays or deliverability concerns",
+          "Product consultation requests mentioned (e.g., color matching via photo, skin type advice) handled via email only",
+          "No visible FAQ page or self-service knowledge base for common questions about products, skin types, or shade selection",
+          "Manual consultation process for product selection ('share your skin type, we will advise you')"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form requires manual review and email response with no stated response time SLA",
+          "Consultation requests for product selection (shade matching, skin type advice) routed to email with no immediate guidance",
+          "No pre-purchase chatbot or quiz to qualify visitors or provide instant product recommendations"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (evident from URLs and structure)",
+          "Email list capture with lead magnet (5% discount for first order)",
+          "Product review system integrated (ratings visible on all products)",
+          "YouTube channel strategy for brand education",
+          "No third-party live chat or AI chatbot detected",
+          "Cookie consent banner present",
+          "Newsletter signup prominent on homepage"
+        ],
+        "likely_automation_opportunity": "Pre-purchase AI qualification and support chatbot would have strong impact here. Visitors asking about shade selection, skin type compatibility, and product recommendations currently must email and wait. An AI chatbot handling color-matching questions, skin-type qualification, and FAQ responses (ingredients, certifications, shipping, returns) would reduce support volume and accelerate purchase decisions.",
+        "confidence_level": "high",
+        "uncertainty_notes": "No FAQ page was scraped, so support volume and common questions are unknown. Returns/shipping policies not visible in provided content. No information on current support response times or team size. Whether they use Klaviyo or other email platform not confirmed from content.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong niche fit (Switzerland/DACH, natural beauty/skincare, DTC Shopify), clear support friction (email-only consultation for product selection, no live chat), and visible contact path. However, scored as Tier B rather than A because: (1) Switzerland is adjacent to but not core DACH, (2) no explicit FAQ volume visible to quantify support burden, (3) moderate digital maturity (has reviews, newsletter, YouTube) suggests some operational sophistication already in place. Clear automation opportunity exists, but evidence of pain scale is implied rather than definitively demonstrated.",
+        "recommended_next_action": "Reach out via contact form requesting product consultation. Reference their email-only contact model, lack of live chat for color/type matching, and opportunity to add AI-powered pre-purchase guidance to reduce consultant email load while improving conversion speed."
+      }
+    }
+  ]
+}

@@ -969,8 +969,34 @@
     },
     {
       "url": "https://yves-rocher.de",
-      "status": "error",
-      "error": "Scraping oder Analyse fehlgeschlagen"
+      "status": "ok",
+      "data": {
+        "company_name": "Yves Rocher",
+        "website": "https://yves-rocher.de",
+        "country": "Germany",
+        "category": "skincare",
+        "contact_email": "Not visible in scraped content",
+        "visible_contact_options": [],
+        "support_pages_found": [],
+        "support_pain_signals": [],
+        "speed_to_lead_signals": [],
+        "digital_maturity_clues": [
+          "Enterprise e-commerce platform (Hybris/SAP Commerce)",
+          "Multi-country, multi-language infrastructure",
+          "Professional CDN and media management",
+          "Sophisticated product categorization and filtering",
+          "Newsletter subscription capabilities"
+        ],
+        "likely_automation_opportunity": "None — this is a global enterprise brand with established support infrastructure.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Only homepage content scraped. Contact, FAQ, and support pages not included in provided data. However, Yves Rocher is a multi-billion-euro global cosmetics corporation with centralized, professional customer service operations.",
+        "score_1_to_10": 1,
+        "tier": "C",
+        "score_rationale": "Yves Rocher is a major international beauty conglomerate (L'Oréal subsidiary), not a DTC brand or SME. Enterprise-scale operations, established global support infrastructure, and professional digital maturity indicate they have dedicated customer service teams, likely with AI/chatbot solutions already in place. Pain signals characteristic of GetKiAgent's ICP (no live chat, email-only contact, FAQ gaps) are irrelevant for a corporation of this size. Disqualification: company size, existing enterprise support infrastructure, not an SME struggling with support automation.",
+        "recommended_next_action": "Do not contact. Not a fit for GetKiAgent. This is a Fortune 500 subsidiary with established support operations. Focus prospecting on independent DTC brands and true SMEs in skincare/supplements with <50 staff and no dedicated support team."
+      },
+      "healed_from": "other",
+      "heal_attempt": 1
     },
     {
       "url": "https://grueneerde.com",
@@ -1122,6 +1148,5 @@
         "recommended_next_action": "Reach out via the contact form, reference the FAQ gaps and phone support bottleneck, and propose a support chatbot to handle product usage questions (ätherische Öle definitions, internal use guidelines) and reduce repeat inquiries. Mention the skin quiz as a potential pre-purchase qualification feature to enhance with AI recommendations."
       }
     }
-  ],
-  "retry_at": "2026-04-04T10:46:04.059697+00:00"
+  ]
 }

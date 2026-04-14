@@ -16,7 +16,8 @@ discover_leads.py → batch_analyze.py → generate_outreach.py --draft → n8n 
 
 ### Prompts
 - `prompts/lead_analysis_v1.md` — lead scoring system prompt
-- `prompts/outreach_mail_v1.md` — outreach mail system prompt
+- `prompts/outreach_mail_v1.md` — outreach mail Tier A (Score 8–10), vollständig personalisiert
+- `prompts/outreach_mail_tier_b_v1.md` — outreach mail Tier B (Score 6–7), explorativ/weich
 
 ### Output
 - `leads/batch-results.json` — Wave 1 (7x A, 15x B, 1x C)
@@ -47,21 +48,49 @@ Needs Anthropic API credential on HTTP Request node.
 - AI Layer: Claude/OpenAI API for intent + response
 - Knowledge base per client
 
+## Niche Configuration System
+
+Each niche has a YAML config in `configs/{niche}.yaml` that drives the entire pipeline:
+
+```
+configs/
+├── ecommerce-beauty.yaml   # First niche (Beauty/Supplements/Pet/Vegan/Grooming)
+├── {niche}.yaml             # Future niches
+```
+
+**Schema sections:**
+- `niche` — name, display_name, region, signature_line, demo_url
+- `discovery` — source (duckduckgo), ddg_queries (long-tail search strings)
+- `scoring` — pain_signals, disqualifiers, tier_thresholds
+- `outreach` — prompt file paths, quality_gates, tone
+- `pricing` — setup_fee_eur, monthly_fee_eur
+- `sheet_id` — Google Sheet for tracking
+
+**Usage:** All scripts accept `--niche {name}` flag. Without it: legacy hardcoded behavior.
+- `python scripts/discover_leads.py --niche ecommerce-beauty` → `leads/ecommerce-beauty/`
+- `python scripts/batch_analyze.py urls.txt --niche ecommerce-beauty` → `leads/ecommerce-beauty/`
+- `python scripts/generate_outreach.py leads.json --niche ecommerce-beauty` → `outreach/ecommerce-beauty/`
+
+**Stack decision (2026-04):** Jina AI Reader (primary, free) + crawl4ai (fallback, JS support) for scraping. DuckDuckGo for discovery. DataForSEO + Spider.cloud evaluated but deferred — justified at 100+ leads/day, not before.
+
 ## Tech Stack
-- **Local**: Python + Firecrawl + Claude Haiku + DuckDuckGo
+- **Local**: Python + Jina AI Reader + crawl4ai + Claude Haiku + DuckDuckGo
 - **Automation**: n8n (getkiagent.app.n8n.cloud)
 - **Demo**: Voiceflow
 - **Outreach**: Gmail (manual send), Google Sheet (tracking)
-- **APIs**: Firecrawl, Anthropic, OpenAI (Voiceflow)
+- **APIs**: Anthropic, Jina AI (free), OpenAI (Voiceflow)
 - **No CRM, no database, no UI** — intentional for this phase
 
 ## File Structure
 ```
 /getkiagent
+├── /configs/               # Niche YAML configs (one per niche)
 ├── /scripts/               # Lead engine Python scripts
 ├── /prompts/               # System prompts (versioned)
 ├── /leads/                 # Batch results, discovered URLs
+│   └── /{niche}/           # Niche-specific leads (when --niche used)
 ├── /outreach/              # Generated outreach mails (.txt)
+│   └── /{niche}/           # Niche-specific outreach (when --niche used)
 ├── /demo/                  # GlowLab knowledge base, Loom scripts
 ├── /docs/                  # Briefs and planning docs
 ├── /tasks/                 # Active/completed tasks + lessons.md

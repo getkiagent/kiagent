@@ -1,0 +1,18 @@
+Betreff: Farbberatung bei imea Naturkosmetik
+
+Hi,
+
+ich vermute, dass bei euch täglich Anfragen reinkommen, bei denen jemand Fotos seiner Haut schickt und auf eine Empfehlung wartet — und in der Zwischenzeit vielleicht woanders kauft.
+
+Genau diese Beratungsmomente lassen sich mit einem KI-Agenten abbilden, der Hauttyp und Farbton direkt im Shop qualifiziert.
+
+Ein Agent für Shade-Matching und Produkteignung würde den größten Teil dieser E-Mails abfangen — ohne dass eure Beratungsqualität darunter leidet.
+
+Habt ihr das intern schon mal angeschaut?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

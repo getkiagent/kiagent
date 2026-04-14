@@ -1,0 +1,21 @@
+PFLICHT-GATE — Vorab-Prüfung:
+
+Stärkste Signale: Kein Live-Chat (zweitstärkstes Signal, da kein 404 bestätigt — /faq renderte Homepage-Inhalt, also kein klarer 404). Verstärker: Wochenende ohne Abdeckung (Mo–Fr 9–18 Uhr) bei einer DTC-Brand mit zehntausenden Kunden. Das sind 2 Fakten. ✓
+
+Zahlen-Check: "200.000" NICHT verwenden → "zehntausende Kunden" oder weich formulieren. ✓
+
+Opener-Check: Bereits genutzte Muster: Frage-first, Pain-first (2x), Beobachtung/Nutzen-first, Direkt. Diesmal: Beobachtungs-Muster ("Euer X erzeugt Rückfragen — aber Y fehlt") oder Kontrast. ✓
+
+Brücken-Varianz: Vorherige Mails: "Genau diese Anfragen kann ein KI-Agent...", "Statt dieses Volumen...", "Eure Kunden bekommen in Sekunden...", "Ein KI-Agent direkt im Shop könnte...", "Genau für solche Anfragen bauen wir...". Diesmal: Nutzen-first oder Referenz zum Lead-Kontext. ✓
+
+Fakten-Check Final: Pain = Support nur Mo–Fr 9–18 Uhr, kein Wochenende. Verstärker = DTC-Brand mit zehntausenden Kunden (Höhle der Löwen, Rossmann — impliziert Volumen). Genau 2. ✓
+
+---
+
+Betreff: Wochenend-Support bei Tallow — kurze Frage
+
+Hi,
+
+euer Support läuft werktags bis 18 Uhr — aber wer samstags nach seiner Bestellung oder einem passenden Tallow-Produkt für seinen Hauttyp fragt, wartet bis Montag. Bei einer Brand mit zehntausenden Kunden entstehen dabei Fragen wie "Wo ist meine Bestellung?" oder "Welches Produkt passt zu trockener Haut?" genau dann, wenn niemand antwortet.
+
+Bei einem Sortiment rund um tierische Fette und

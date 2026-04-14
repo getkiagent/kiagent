@@ -1,0 +1,16 @@
+Betreff: Supportanfragen bei Dr. Bronner's
+
+Hi,
+
+ich vermute, dass ein großer Teil eurer Anfragen dieselben Fragen sind: Welche Seife für Haarwäsche? Wie verdünnen? Ist die Variante vegan? — und die trudeln alle außerhalb eurer Erreichbarkeit rein.
+
+Shopify-Brands mit komplexen Produkten automatisieren genau diese Pre-Purchase-Fragen über einen KI-Agenten.
+
+Ein Agent der Anwendungsfall-Fragen zur 18-in-1-Seife plus Bestellstatus für DE/AT/CH-Kunden übernimmt, würde den größten Teil abfangen.
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

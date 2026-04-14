@@ -1,0 +1,18 @@
+Betreff: Pre-Purchase-Anfragen bei hyapur.de
+
+Hi,
+
+ich vermute, dass Fragen wie „welches Serum für Mischhaut?" oder „welche Konzentration bei empfindlicher Haut?" regelmäßig per Mail oder Telefon reinkommen — gerade wenn ihr auch Hotels und Spas beliefert, die vor dem Einkauf konkrete Empfehlungen brauchen.
+
+Diese Beratungsanfragen lassen sich automatisiert beantworten, bevor sie im Postfach landen.
+
+Ein Agent, der Hauttyp-Eignung und Serum-Fragen direkt qualifiziert, würde den manuellen Aufwand deutlich reduzieren.
+
+Habt ihr das intern schon mal angeschaut?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

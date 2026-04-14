@@ -1,0 +1,20 @@
+Betreff: Support-Anfragen bei GÍILINEA BÍO
+
+An: [EMAIL MANUELL EINTRAGEN]
+
+Hi,
+
+ich vermute, dass ein Teil eurer Interessentinnen auf giilinea.com landet, eine Frage zu Hauttyp oder Produktserie hat — und dann abbricht, weil WhatsApp für sie in dem Moment keine Option ist. Die Anfrage kommt nie an.
+
+Genau diesen Moment fangen wir mit einem Web-Chatbot ab.
+
+Ein Agent, der Produktempfehlungen direkt im Browser übernimmt und parallel Versandstatus-Fragen beantwortet, würde hier am meisten bewegen.
+
+Macht Support-Automatisierung für euch gerade Sinn?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

@@ -1,0 +1,20 @@
+Betreff: Produktfragen bei kollagen.shop
+
+An: [EMAIL MANUELL EINTRAGEN]
+
+Hi,
+
+ich wette, dass ein guter Teil eurer Kontaktformular-Eingänge Fragen sind, die sich vor dem Checkout stellen — welcher Kollagen-Typ für welchen Zweck, Dosierung, Inhaltsstoffe. Ohne FAQ oder Chat landet das alles bei euch manuell.
+
+Solche Anfragen lassen sich gut automatisieren, bevor sie überhaupt abgeschickt werden.
+
+Ein Agent, der Besucher beim Produktvergleich begleitet, würde die meisten dieser Anfragen direkt lösen.
+
+Habt ihr das intern schon mal angeschaut?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

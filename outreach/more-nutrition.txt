@@ -1,0 +1,18 @@
+Betreff: Produktfragen bei More Nutrition
+
+Hi,
+
+bei einem Supplement-Brand kommen erfahrungsgemäß viele Fragen vor dem Kauf: Welche Produkte lassen sich kombinieren, was ist der Unterschied zwischen zwei Varianten, für wen ist was geeignet. Ich sehe auf eurer Seite keinen offensichtlichen Weg, wie Kunden das gerade klären können.
+
+Ein KI-Agent könnte genau diese Pre-Purchase-Fragen auffangen — bevor sie als E-Mail reinkommen.
+
+Für euren Sortiment-Mix wäre das vermutlich der größte Hebel, ergänzt durch Versand- und Retourenstatus.
+
+Macht Support-Automatisierung für euch gerade Sinn?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

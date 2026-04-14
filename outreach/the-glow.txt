@@ -1,0 +1,28 @@
+PFLICHT-GATE — Vorab-Prüfung:
+
+Stärkste Signale: /returns 404 (kaputte Seite = stärkstes Signal) + Skincare-Sortiment als Verstärker (Hauttyp-Quiz vorhanden, Inhaltsstoffkomplexität).
+
+Fakten-Check: Pain = /returns 404. Verstärker = Hauttyp-Quiz / Skincare-Komplexität. Das sind 2. ✓
+
+Zahlen-Check: "487" nicht verwenden → "hunderte Bewertungen" oder weglassen. ✓
+
+Opener-Check: Bereits genutzte Muster: "wer bei euch nach X sucht, landet bei Y" (Frage-first) und "eure FAQ-Seite gibt 404" (Pain-first). Nutze diesmal Beobachtungs- oder Kontrast-Muster. ✓
+
+Keine exakten Zahlen, max. 2 Fakten, eigenständige Formulierung. ✓
+
+---
+
+Betreff: Retouren bei The Glow — kurze Frage
+
+Hi,
+
+eure Retourenseite ist aktuell nicht erreichbar — wer eine Rücksendung anstoßen will, steht vor einem 404-Fehler. Bei Skincare-Produkten mit verschiedenen Wirkstoff-Kombinationen und Hauttypen entstehen dabei Fragen wie "Kann ich das Produkt zurückschicken?" oder "Welche Creme passt zu meiner Haut?" — ohne dass Kunden selbst weiterkommen.
+
+Eure Kunden bekommen in Sekunden eine Antwort, wenn ein KI-Agent das direkt im Shop übernimmt — 24/7, auf Deutsch. Kein Skript-Bot, sondern ein Agent der eure Inhaltsstoffe, Hauttyp-Logik und Retourenregeln kennt.
+
+Hier eine kurze Demo (2 Min): https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+Ilias Tebque
+GetKiAgent — KI-Support für E-Commerce

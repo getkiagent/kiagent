@@ -1,0 +1,16 @@
+Betreff: Produktberatung bei dasvitamin.ch
+
+Hi,
+
+ich vermute, dass Fragen zu Mizellentechnologie, Bioverfügbarkeit und Dosierung bei euch regelmäßig per E-Mail oder Telefon reinkommen — und dass ein Teil davon unbeantwortet bleibt, bis jemand im Büro ist.
+
+Genau solche technischen Pre-Purchase-Fragen lassen sich mit einem KI-Agenten direkt im Shop beantworten.
+
+Ein Agent für Inhaltsstoffe, Anwendungshinweise und Dosierung würde den Großteil abfangen, bevor jemand zum Formular greift.
+
+Habt ihr das intern schon mal angeschaut?
+
+P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

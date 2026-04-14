@@ -5,15 +5,23 @@ Usage:
     python scripts/analyze_lead.py <url>
 
 Requires .env with:
-    FIRECRAWL_API_KEY=...
     ANTHROPIC_API_KEY=...
+
+Optional (legacy fallback):
+    FIRECRAWL_API_KEY=...
+
+Scraping stack: Jina AI Reader (primary, free) → crawl4ai (fallback, JS support)
+Install crawl4ai once: pip install crawl4ai && crawl4ai-setup
 """
 
 import sys
 import json
 import os
 import re
+import asyncio
+import requests as _requests
 from pathlib import Path
+from utils import normalize_url
 
 
 class FirecrawlError(Exception):
@@ -42,18 +50,12 @@ def load_and_validate_env():
 
     load_dotenv()
 
-    firecrawl_key = os.getenv("FIRECRAWL_API_KEY", "").strip()
+    firecrawl_key = os.getenv("FIRECRAWL_API_KEY", "").strip()  # optional — legacy
     anthropic_key = os.getenv("ANTHROPIC_API_KEY", "").strip()
 
-    missing = []
-    if not firecrawl_key:
-        missing.append("FIRECRAWL_API_KEY")
     if not anthropic_key:
-        missing.append("ANTHROPIC_API_KEY")
-
-    if missing:
-        print(f"ERROR: Missing required environment variables: {', '.join(missing)}")
-        print("Create a .env file in the project root with these keys set.")
+        print("ERROR: ANTHROPIC_API_KEY fehlt in .env")
+        print("Create a .env file in the project root with ANTHROPIC_API_KEY set.")
         sys.exit(1)
 
     return firecrawl_key, anthropic_key
@@ -140,85 +142,156 @@ def is_soft_404(content: str) -> bool:
     return any(signal in sample for signal in SOFT_404_SIGNALS)
 
 
-def scrape_url(app, url: str, label: str, max_chars: int, seen_lengths: set) -> str | None:
+JINA_BASE = "https://r.jina.ai/"
+JINA_HEADERS = {"Accept": "text/markdown", "X-Return-Format": "markdown"}
+JINA_TIMEOUT = 30
+
+
+def _check_content(content: str, label: str, seen_lengths: set) -> str | None:
+    """Shared validation: length, soft-404, dedup."""
+    content = (content or "").strip()
+    if len(content) < MIN_CONTENT_LENGTH:
+        print(f"  {label}: skipped (zu kurz: {len(content)} chars)")
+        return None
+    if is_soft_404(content):
+        print(f"  {label}: skipped (soft-404)")
+        return None
+    if len(content) in seen_lengths:
+        print(f"  {label}: skipped (Duplikat)")
+        return None
+    seen_lengths.add(len(content))
+    return content
+
+
+def scrape_url_jina(url: str, label: str, max_chars: int, seen_lengths: set) -> str | None:
+    """Scrape via Jina AI Reader — free, no key needed."""
     try:
-        result = app.scrape(url, formats=["markdown"], wait_for=2000)
-        if isinstance(result, dict):
-            content = result.get("markdown") or result.get("content") or ""
-        else:
-            content = getattr(result, "markdown", "") or getattr(result, "content", "") or ""
-
-        content = (content or "").strip()
-
-        if len(content) < MIN_CONTENT_LENGTH:
-            print(f"  {label}: skipped (zu kurz: {len(content)} chars)")
+        r = _requests.get(f"{JINA_BASE}{url}", headers=JINA_HEADERS, timeout=JINA_TIMEOUT)
+        if r.status_code != 200:
+            print(f"  {label}: Jina HTTP {r.status_code}")
             return None
-        if is_soft_404(content):
-            print(f"  {label}: skipped (soft-404)")
-            return None
-        if len(content) in seen_lengths:
-            print(f"  {label}: skipped (Duplikat)")
-            return None
-
-        seen_lengths.add(len(content))
-        print(f"  {label}: {len(content)} chars")
-        return content[:max_chars]
-
+        content = _check_content(r.text, label, seen_lengths)
+        if content:
+            print(f"  {label}: {len(content)} chars (jina)")
+        return content[:max_chars] if content else None
     except Exception as e:
-        err = str(e)
-        err_lower = err.lower()
-        if "timeout" in err_lower or "timed out" in err_lower or "read timed out" in err_lower:
-            raise FirecrawlTimeoutError(f"{label}: {err}")
-        if any(c in err for c in ["404", "403", "Not Found", "Forbidden", "Payment"]):
-            short = "nicht gefunden" if "404" in err or "Not Found" in err else "fehler"
-            print(f"  {label}: {short}")
-        else:
-            print(f"  {label}: failed — {err}")
+        print(f"  {label}: jina fehler — {e}")
         return None
 
 
-def scrape_pages(base_url: str, api_key: str) -> dict[str, str]:
-    try:
-        from firecrawl import FirecrawlApp
-    except ImportError:
-        print("ERROR: firecrawl-py nicht installiert.")
-        sys.exit(1)
+async def _crawl4ai_async(url: str) -> str:
+    from crawl4ai import AsyncWebCrawler
+    async with AsyncWebCrawler(headless=True, verbose=False) as crawler:
+        result = await crawler.arun(url=url)
+        return result.markdown or ""
 
-    app = FirecrawlApp(api_key=api_key)
+
+def scrape_url_crawl4ai(url: str, label: str, max_chars: int, seen_lengths: set) -> str | None:
+    """Fallback scraper via crawl4ai — handles JS-rendered sites."""
+    try:
+        import crawl4ai  # noqa — check installed
+    except ImportError:
+        print(f"  {label}: crawl4ai nicht installiert (pip install crawl4ai && crawl4ai-setup)")
+        return None
+    try:
+        raw = asyncio.run(_crawl4ai_async(url))
+        content = _check_content(raw, label, seen_lengths)
+        if content:
+            print(f"  {label}: {len(content)} chars (crawl4ai)")
+        return content[:max_chars] if content else None
+    except Exception as e:
+        print(f"  {label}: crawl4ai fehler — {e}")
+        return None
+
+
+def discover_subpages(base_url: str) -> list[str]:
+    """Discover subpage URLs from sitemap.xml. Returns empty list on failure."""
+    from xml.etree import ElementTree
+    base = base_url.rstrip("/")
+    for path in ["/sitemap.xml", "/sitemap_index.xml"]:
+        try:
+            r = _requests.get(f"{base}{path}", timeout=10, allow_redirects=True)
+            if r.status_code != 200:
+                continue
+            root = ElementTree.fromstring(r.content)
+            ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+            urls = [loc.text for loc in root.findall(".//sm:loc", ns) if loc.text]
+            if urls:
+                print(f"  sitemap: {len(urls)} URLs gefunden")
+                return urls
+        except Exception:
+            continue
+    print("  sitemap: nicht gefunden — fahre ohne Unterseiten fort")
+    return []
+
+
+def _cache_domain(url: str) -> str:
+    """https://absolem.at/ → absolem.at"""
+    from urllib.parse import urlparse
+    host = urlparse(url).netloc or url
+    return host.replace("www.", "").rstrip("/")
+
+
+def _cache_load(url: str, cache_dir: Path) -> dict | None:
+    """Gibt gecachte pages zurück oder None bei Cache-Miss."""
+    path = cache_dir / f"{_cache_domain(url)}.json"
+    if path.exists():
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+            print(f"  [cache HIT] {_cache_domain(url)}")
+            return data
+        except Exception:
+            pass
+    return None
+
+
+def _cache_save(url: str, pages: dict, cache_dir: Path):
+    """Speichert pages als JSON im Cache-Verzeichnis."""
+    cache_dir.mkdir(parents=True, exist_ok=True)
+    path = cache_dir / f"{_cache_domain(url)}.json"
+    path.write_text(json.dumps(pages, ensure_ascii=False, indent=2), encoding="utf-8")
+
+
+def scrape_pages(base_url: str, api_key: str | None = None, cache_dir: Path | None = None) -> dict[str, str]:
+    """Scrape homepage + subpages. Uses Jina AI (free) with crawl4ai fallback. api_key unused."""
+    if cache_dir is not None:
+        cached = _cache_load(base_url, cache_dir)
+        if cached is not None:
+            return cached
+
     pages = {}
     seen_lengths: set = set()
 
     print(f"\nScraping: {base_url}")
 
-    # 1. Homepage scrapen
-    content = scrape_url(app, base_url, "homepage", MAX_CHARS_HOMEPAGE, seen_lengths)
+    # 1. Homepage — Jina primary, crawl4ai fallback
+    content = scrape_url_jina(base_url, "homepage", MAX_CHARS_HOMEPAGE, seen_lengths)
+    if not content:
+        print("  homepage: jina fehlgeschlagen → versuche crawl4ai")
+        content = scrape_url_crawl4ai(base_url, "homepage", MAX_CHARS_HOMEPAGE, seen_lengths)
     if not content:
         raise FirecrawlError("Homepage nicht erreichbar — leerer oder zu kurzer Inhalt")
     pages["homepage"] = content
 
-    # 2. Sitemap per map() holen (1 Credit) → beste Unterseiten auswählen
-    print(f"  map: Sitemap abrufen...")
-    try:
-        map_result = app.map(base_url, limit=300)
-        all_urls = map_result.links if hasattr(map_result, "links") else []
-        subpages = pick_subpages(all_urls, base_url, MAX_SUBPAGES)
-        print(f"  map: {len(all_urls)} URLs gefunden → {len(subpages)} ausgewählt")
-    except Exception as e:
-        print(f"  map: fehlgeschlagen ({e}) — fahre ohne Unterseiten fort")
-        subpages = []
+    # 2. Subpage discovery via sitemap.xml
+    all_urls = discover_subpages(base_url)
+    subpages = pick_subpages(all_urls, base_url, MAX_SUBPAGES)
+    print(f"  subpages: {len(subpages)} ausgewählt")
 
-    # 3. Ausgewählte Unterseiten scrapen
+    # 3. Scrape subpages
     for url in subpages:
         label = "/" + url.split(base_url.rstrip("/"), 1)[-1].lstrip("/")
-        try:
-            content = scrape_url(app, url, label, MAX_CHARS_SUBPAGE, seen_lengths)
-        except FirecrawlTimeoutError:
-            print(f"  {label}: timeout (übersprungen)")
-            continue
+        content = scrape_url_jina(url, label, MAX_CHARS_SUBPAGE, seen_lengths)
+        if not content:
+            content = scrape_url_crawl4ai(url, label, MAX_CHARS_SUBPAGE, seen_lengths)
         if content:
             pages[label] = content
 
-    print(f"\n  Gesamt: {len(pages)} Seiten | ~{1 + 1 + len(pages) - 1} Credits verbraucht")
+    print(f"\n  Gesamt: {len(pages)} Seiten scraped")
+
+    if cache_dir is not None and pages:
+        _cache_save(base_url, pages, cache_dir)
+
     return pages
 
 
@@ -260,7 +333,7 @@ def extract_json(raw: str) -> dict:
     return None
 
 
-def analyze_with_claude(url: str, pages: dict[str, str], api_key: str) -> dict:
+def analyze_with_claude(url: str, pages: dict[str, str], api_key: str, extra_system_suffix: str = "") -> dict:
     try:
         import anthropic
     except ImportError:
@@ -273,6 +346,8 @@ def analyze_with_claude(url: str, pages: dict[str, str], api_key: str) -> dict:
         sys.exit(1)
 
     system_prompt = prompt_path.read_text(encoding="utf-8")
+    if extra_system_suffix:
+        system_prompt = system_prompt + "\n\n" + extra_system_suffix
     user_message = build_user_message(url, pages)
 
     print("\nAnalyzing with Claude...")
@@ -368,9 +443,7 @@ def main():
         print("Example: python scripts/analyze_lead.py https://example-brand.de")
         sys.exit(1)
 
-    url = sys.argv[1].strip()
-    if not url.startswith("http"):
-        url = "https://" + url
+    url = normalize_url(sys.argv[1])
 
     firecrawl_key, anthropic_key = load_and_validate_env()
 

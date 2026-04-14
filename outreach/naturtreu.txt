@@ -1,0 +1,18 @@
+Betreff: Support-Volumen bei NATURTREU
+
+An: [EMAIL MANUELL EINTRAGEN]
+
+Hi,
+
+mit über 13.000 Bewertungen kommen bei euch täglich Fragen rein — und ich vermute, dass ein guter Teil davon vor dem Kauf entsteht: Welche Dosierung bei welchem Ziel? Verträgt sich das mit Medikament X? Euer Gorgias Help-Center ist eingerichtet, aber noch leer — das bedeutet, diese Fragen landen gerade alle manuell im Posteingang.
+
+Wir automatisieren genau diese vorgelagerte Beratung direkt auf den Produktseiten.
+
+Für Supplements mit komplexem Sortiment wäre ein Agent für Dosierung und Inhaltsstoff-Fragen wahrscheinlich der schnellste Hebel.
+
+Macht Support-Automatisierung für euch gerade Sinn?
+
+P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

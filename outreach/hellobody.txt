@@ -1,0 +1,16 @@
+Betreff: Kundenanfragen bei HelloBody — kurze Frage
+
+An: [EMAIL MANUELL EINTRAGEN]
+
+Hi,
+
+alle Anfragen bei HelloBody — Bestellstatus, Retouren, Tracking — laufen über ein einziges Kontaktformular ohne Live-Chat. Bei 1,5 Millionen Kunden dürfte das regelmäßig Fragen wie "Wo ist meine Bestellung?" oder "Wie starte ich eine Retoure?" erzeugen, die aktuell manuell bearbeitet werden.
+
+Genau diese Anfragen kann ein KI-Agent direkt auf eurer Seite übernehmen — 24/7, auf Deutsch. Kein Skript-Bot, sondern ein Agent der eure Produkte, Versandregeln und Retourenprozesse kennt.
+
+Hier eine kurze Demo (2 Min): https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+Ilias Tebque
+GetKiAgent — KI-Support für E-Commerce

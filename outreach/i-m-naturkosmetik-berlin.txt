@@ -1,0 +1,18 @@
+Betreff: Retouren & FAQ-Prozesse bei i+m NATURKOSMETIK
+
+Hi,
+
+ich wette, dass ein guter Teil eurer eingehenden Mails Fragen betrifft, die in eurem FAQ bereits beantwortet sind — Versandkosten, Widerruf, Zahlungsarten — nur eben nicht im richtigen Moment und ohne Interaktion.
+
+Für genau diesen Bereich bauen wir einen vorgelagerten Agenten, der antwortet bevor die E-Mail an info@ landet.
+
+Bei euch wäre der naheliegendste Einstieg wahrscheinlich ein Agent für Retouren und häufige Bestellfragen — euer bestehendes FAQ-Wissen direkt nutzbar gemacht.
+
+Macht Support-Automatisierung für euch gerade Sinn?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

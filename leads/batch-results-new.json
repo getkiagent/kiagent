@@ -1,0 +1,2514 @@
+{
+  "run_at": "2026-04-11T12:07:02.471048+00:00",
+  "total": 228,
+  "results": [
+    {
+      "url": "https://hoehle-der-loewen.de/shop",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://absolem.at",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://actuallyanna.com/douglas-clean-beauty-departement-now-in-store",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://alpen-cbd.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://alteya.de/collections/bio-korperpflege",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://annahirsiger.ch/livinglibations-schweiz",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://auwaldbio.de/collections/bio-haarpflege",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://beautycatze.de/blog/bakuchiol-serum-rosental-organics-erfahrungen-wirkung-face-test-bewertungen",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://begreenbebetter.de/?srsltid=afmbooouofjrvwijzgvev_wvmi6hxpfxnu5ifon6oz4nlnx1hqod_ptv",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://bestvital.de/bio-nahrungsergaenzungsmittel",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://biobloom.at/shop/bio-cbd-kosmetik",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://biogena.com/de-ch/produkte/vitamine",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://biogo.de/collections/ashwagandha-witania-trage/ashwagandha-(witania-träge)",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://biohof-stoevesandt.de/products/bio-opc-aronia-kapseln",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://biorundum.de/?srsltid=afmbooorbdpdwhmdkaiyy11pdakvlpahh6gccntgkkxi7i0ynnmq-sqs",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://bluvion.com/produkt/deo-spritz-deodorant-50-ml-deodorant",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://buxtrade.de/collections/nahrungsergaenzung",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://cbd-alive.shop",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://cbd-nativ.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://cbd.styx.at",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://cbdshop24.de/collections/cbd-oele",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://cbdwelt.de/shop",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://ch.gruender.de/startups/gruender-geheimnis-4-people-who-care",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://cosa-kosmetik.com",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://cosmondial.com/collections/gesicht",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://dasvitamin.ch",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://de.aliexpress.com",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://de.susannekaufmann.com/collections/vegan",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://drbronner.de/?srsltid=afmboopohbvwhhxvhvbremwywttdt5zjaytagr9pmyk21bzquo4jnhgv",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://drraw.de/produkt-kategorie/alle-produkte/supplements-vitamine",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://edelhanf.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://editorialge.com/german-sustainable-beauty-brands",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://ellis-springs.com/beauty-skincare/nach-beduerfnis-shoppen/niacinamid",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://erui-cosmetics.com/products/intensive-body-balm-bio-korperpflege-mit-sanddorn",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://eshop.wuerth.at/de/de/eur",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://evelia.at",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://fairschenkt.at/kategorie/bad-kueche/haarpflege",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://femtastics.com/business/studio-botanic-naturkosmetik",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://finance.yahoo.com/news/global-clean-beauty-market-analysis-134600599.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://flora-naturprodukte.at/produkt-kategorie/cbd-produkte/cbd-vital-kosmetik",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://gruenesgold.de/collections/cbd-oele?srsltid=afmboooip72m285uco-5k3627x6cvuyfxvbe7brptcado3hcyalrtie1",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://hanfama-shop.terait.at/shop/cbd-kosmetik",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://hempcrew.de/?srsltid=afmboopbdzrv3topotkij6huqc5lo4zousgxsnbmzni1k4dxhtvnjkgn",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://heroshealth.de/collections/bio",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://highsocietyshop.at/collections/cbd-kosmetik",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://hopery.de/pages/uber-uns?srsltid=afmboooi0lc8xn7knewfpmcrxbo5oqqfpgerocthhebnicmd8wwrsznv",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://hulkssupplement.com/viaciaxx-fruchtgummis",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://indyvit.com/en",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://is-clinical-cosmetics.at",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://johannasgarten.at",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://korean-skincare.de/collections/vegane-hautpflege",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://laguna-onlineshop.de/themenwelten/naturkosmetik",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://luckyhemp.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://mahlerundco.ch/infos/eigenmarken?srsltid=afmboopjyz04axupsgjwyp3yffi-yqxdziggsg-is7bfcx5ctadb8nes",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://mana-shop.ch/collections/ashwagandha",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://mannayan.com/bioturm-silber-deo-intensiv-dynamisch/010978",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://marketing-trendinformationen.de/tag/hoehle-der-loewen-kosmetik",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://mitzakoff.de/hyaluron-serum",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://nahtur-design.de/collections/korperpflege-bio",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://naturalcbd.at",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://naturtreu.ch",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://naturtreu.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://nicama.de/?srsltid=afmbooqig99y4alr7daxa-6vztzvitjwipoc49mejgqs7ewygivdhlny",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://numsnaturals.com/collections/soapwalla",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://ogaenics.com",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://orgainic.com",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://p-beauty.shop/haar-contitioner-haarspulung-haarpflege-regeneration-marula-ol-bio-vegan-natur-300ml",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://pe-mal-drei.com/collections/alle",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://peppermynta.de/naturkosmetik/hetkinen-naturkosmetik-plastikfreie-verpackung-zero-waste-skandi",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://pet-beauty-shop.de/products/pet-esthe-bio-skin-care-cleansing-foam-for-dogs-bio-hautpflege-reinigungsschaum-fur-hunde-140ml",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://plantbase.shop",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://quantumleapfitness.de/products/vegan-protein-pulver",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://retipalm-shop.de/products/vita-c-booster?srsltid=afmboorsfl4afi2qca-mqezejjnxgwwlkv1qmlf5ebnxxz0s9aneupwj",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://robertheke.at/nahrungsergaenzung",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://schwatzkatz.com/hyaluron-gel-serum-basisrezept",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://seduction-magazin.de/hautpflege/biomimetic-skincare-der-hautpflege-ansatz-fuer-mehr-balance",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://sedvital.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://shop.puregreen.at/pages/unsere-eigenmarken-nature",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://sonnengruen.com",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://spilanthox.shop/products/high-potency-facelift-booster",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://spinnrad.de/bakuchiol-booster-oel-30-ml-002230250",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://store.reverseskinaging.com",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://supplement-bewertung.com/smartsleep",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://supplementinspektor.de/keto-tropfen-hoehle-der-loewen",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://swissnutritionsolutions.ch/de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://test-vergleiche.com/produkte/satinnaturel-hyaluron-creme",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://thebodyshop.de/collections/vitamin-c",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://thinkbio.at",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://veganfitness.de/wir-ueber-uns",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://vegardians.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://vitamine-bio.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://vitamoment.de/blogs/magazin/adaptogene",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://warentest-deutschland.de/vitamin-c-serum-test",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://whey-protein.ch/collections/vitamine",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://abendblatt.de/hamburg/wirtschaft/article411076736/oyess-naturkosmetik-ihr-wurde-in-der-elternzeit-gekuendigt-dann-gruendete-sie-ein-start-up-1.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://ada-shop.com/de/collections/green-beauty.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://aetui.com/products/anti-aging-hyaluron-serum",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://aiyabeauty.de/products/medicube-niacinamide-15-serum",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://allcura.de/vitamin-c-serum",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://amla.com/de-de/naturkosmetik/gesichtspflege/filter/application-massage-waschen-peeling-reinigen-oel_kur_massage/care_product-reinigungsmilch-gesichtsmassagepulver-creme-gesichtsoel-gele-tonika-gesichtsmaske-serum-seife-peeling.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://aot.de/cosmos.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://aponeo.de/nahrungsergaenzung/haut-haare-naegel/kollagen",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://aportha.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://arigo-versand.de/hersteller/hagina-naturgeist/kraeuter-shampoo:::178_179_485.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://arya-laya.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://asambeauty.com/de-de/m-asam-retinol-intense-24h-gesichtscreme-44342",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://b6-kosmetik.at",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://basicthinking.de/blog/2025/06/02/mon-courage-gruenderin-die-hoehle-der-loewen",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://beautycos.de/my-organics",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://beautyglam.de/en/products/vitamin-c-serum",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://bergamond-birch.com",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://bevegt.de/veganes-proteinpulver-test",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://bio-naturel.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://bio-naturwelt.de/naturkosmetik-marken/c-175.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://biologisch.at/bio-verzeichnis/bio-betriebe/bio-koerperpflege",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://biomaris.com/biomaris-produkte/produktthemen/vegane-pflege",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://bioturm.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://biovegane.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://bipa.at/p/neutrogena-hydro-boost-10--niacinamide-serum/b3-555100",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://bodybote.de/collections/naturkosmetik-online-shop",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://bodystriker.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://boerlind.com/de-de/gesicht/vegane-produkte.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://brigitte.de/beauty/naturkosmetik/mellow-noir-im-test--die-naturkosmetik-aus--die-hoehle-der-loewen--12727062.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://bulksupplements.com/de-ua/collections/bio-nahrungserganzungsmittel",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://burgerstein.ch",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://camassia-naturkosmetik.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://casada.de/supplements-ernaehrung/ashwagandha-ksm-66-/csc-005.1",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://channel21.de/k/automatische-nachlieferung",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://cmd-natur.de/versandkosten",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://conda.ch/was-genau-macht-puresense-so-besonders",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://cosmeterie.com/dr-botanicals",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://dalton-cosmetics.com/de/pflegeprodukte/pflegekategorien/vegane-tierversuchsfreie-produkte-fuer-jede-haut",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://deutsche-manufakturenstrasse.de/manufakturen/annemarie-boerlind",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://deutsche-startups.de/2020/10/21/boom-beauty-startups",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://dienaturcosmetic.com/collections/korperpflege-bio-korperpflege",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://direktbestellung-beratung.de/beauty.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://ecco-verde.at",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://ecco-verde.ch/de-ch/terra-naturi",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://ecco-verde.de/info/beauty-blog/zero-waste-naturkosmetik",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://elbgras.com",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://elisabethgreen.com/shopping/nachhaltige-onlineshops",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://ergomax.de/collections/adaptogenen",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://esn.com/collections/proteine",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://fairganics.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://fairsquared.com/de/zero-waste-und-fair-squared",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://feelgood-shop.com/schoenheit/kollagenpeptide",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://forpeople-skincare.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://fuersie.de/beauty/naturkosmetik-marken-14887.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://galvitamin.de/collections/nahrungsergaenzungsmittel",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://geo.de/natur/nachhaltigkeit/tierversuchsfreie-kosmetik--10-tierfreundliche-marken-33394028.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://gloryfeel.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://gq-magazin.de/artikel/die-hohle-der-lowen-nalu-mochte-fruchtgummi-gesunder-machen",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://grandel.de/retinol-produkte",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://green-shop.ch/de/collections/cosmetique",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://gtworld.de/markengruppe/b/bio-skincare",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://gwcosmeticshop.de/index.php?language=de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://hagel-shop.de/alle-marken",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://hair-shop.com/haarpflege-bartpflege-maenner/haarpflege.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://hanftopia.at/c/premium-cbd-produkte/cbd-vital-bio-kosmetik",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://hellosimple.de/shop",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://hsnstore.de/zutaten/kollagen",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://jelmoli-shop.ch",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://jislaine.de/collections/vegane-kosmetik?srsltid=afmboorrld1vsb6srpo5fgwobaozoibxkvsr4kntqjoiavwi4bpt6mmi",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://judithwilliams.com/de-de/pages/die-hoehle-der-loewen",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://kaufda.de/insights/wo-kann-man-mellow-noir-aus-der-hoehle-der-loewen-kaufen",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://keimling.de/ogaenics-green-energy-plant-based-vitamin-b12-bio-60-kapseln",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://klartext-nahrungsergaenzung.de/wissen/lebensmittel/kennzeichnung-und-inhaltsstoffe/woran-erkennt-man-bionahrungsergaenzungsmittel-27622",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://korodrogerie.de/proteine-vitamine",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://kosmetikfuchs.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://lavera.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://lifeverde.de/nachhaltigkeitsmagazin/news-tipps/zero-waste-kosmetik",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://littlewonderland.de/vegane-hautpflege",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://logocos.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://manor.ch/de/p/10003295434",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://medicom.de/wirkstoffe/adaptogene",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://memolife.de/?srsltid=afmbooog0nw8pgivelv-1jmieup8mpla6ipkwquwafeilf-xydvj4aio",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://merkur.de/produktempfehlung/mal-was-anderes-schenken-die-10-besten-hoehle-der-loewen-produkte-zr-93473783.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://musclegeneration.com",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://muskelmacher-shop.de/supplements/vitamine-mineralstoffe",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://myfairtrade.com/ratgeber/adaptogene-pflanzen.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://myparfumerie.at/naturkosmetik",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://myvitamins.de/c/frauen",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://n-tv.de/wirtschaft/was-ich-nicht-essen-kann-gebe-ich-nicht-auf-meine-haut-article25385646.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://nahrin.ch/de/gesundheit/nahrungsergaenzung",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://narayana-verlag.com/bio-jod-kapseln-150-g-natuerliches-jod-aus-knotentang-braunalgen-365-kapseln-von-unimedica/b25585",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://naturalfoodshop.de/naturkosmetik/koerperpflege/11646/deo-creme-rosentau",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://naturecan.de/collections/kapseln",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://naturgerie.de/?srsltid=afmbooq1n5we8p8szdarofd7zi7ujfedpi_jpdf5jaxdfvcjbchrgurx",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://naturkraftwerke.com/shop/koerperpflege",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://oekotest.de/kosmetik-wellness/naturkosmetik-marken-40-labels-im-ueberblick_109543_1.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://online-kosmetikshop.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://parfuemerie.de/biotherm-blue-pro-retinol-cream",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://parfum.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://pure-schoenheit.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://purenature.de/naturkosmetik-vegan",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://revolutionbeauty.com/intl/de/haut/alle-vegane-hautpflege",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://rtl.de/cms/nui-cosmetics-aus-hoehle-der-loewen-natuerliche-und-vegane-kosmetik-mit-style-4630552.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://santaverde.de/products/hyaluron-serum",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://sante.de/de/index.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://shop-naturpur.de",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://shopping24.de/beauty-gesundheit/koerperpflege-kosmetik/haarpflege/products",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://sk-kosmetik-shop.de/entdecke-deine-pflege/vegan/gesichtspflege",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://sportintegrity.ch/anti-doping/medizin/nahrungsergaenzungsmittel",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://startbase.de/interviews/startup-of-the-month/plantbase",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://startupsfortomorrow.de/startups/junglueck",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://stopperka.de/pflege-styling/pflege",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://stylevana.com/en_eu/skincare/facial-cleanser.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://sunday.at/protein-sport-aminos",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://superio-naturshop.at",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://supersmart.com/de/blog/stress-stimmung/wann-sollte-man-ashwagandha-fur-die-beste-wirkung-einnehmen-s907",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://swp.de/unterhaltung/tv/die-hoehle-der-loewen-viva-maia-kosmetik-pflanzenheilkunde-maya-azteken-preis-shop-folge-3-deal-70240207.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://terrapoint.at",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://testablauf.de/deo-creme",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://transgourmet.at/marken/natuerlich-fuer-uns",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://unisupps.com",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://unser-kraut.at/cbd-koerperpflege?srsltid=afmboorpx43ctsnf4p83zu26qworoq4hylj8vkll33g4acd76lqt2rdj",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://veganblatt.com/a/vegane-kosmetik-marken-guide",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://veggiesearch.de/vegane-naturkosmetik",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://violey.com",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://vitalia-reformhaus.de/naturkosmetik/vegane-naturkosmetik.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://vitaminplus.ch",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://vivat.de/zero-waste-kosmetik-2165983",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://vox.de/sendungen/die-hoehle-der-loewen/die-hoehle-der-loewen-so-funktioniert-die-muttermilchkosmetik-von-memoire-cosmetics-5006301",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://whussa.ch/shop",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://wiwo.de/unternehmen/handel/die-hoehle-der-loewen-unsere-investoren-haben-erkannt-dass-frauengesundheit-keine-nische-ist-/29815816.html",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://wlw.de/de/suche/naturkosmetika",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://wz.de/nrw/wuppertal/wuppertal-naturkosmetik-start-up-verpackmeinnicht-ist-jungunternehmen-des-jahres-2021_aid-63748863",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    },
+    {
+      "url": "https://zurrose-shop.ch/de/vitamine/c/urspwt",
+      "status": "error",
+      "error": "Firecrawl Fehler",
+      "error_detail": {
+        "category": "firecrawl_error",
+        "message": "Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+      },
+      "heal_attempts": 2,
+      "heal_last_error": "FirecrawlError: Homepage nicht erreichbar — leerer oder zu kurzer Inhalt"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+.env
+credentials.json
+token.json
+token.pickle
+__pycache__/
+*.pyc
+.firecrawl/
+.playwright-mcp/
+.bob/
+.agents/
+.augment/

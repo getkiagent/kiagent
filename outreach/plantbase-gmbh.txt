@@ -1,0 +1,16 @@
+Betreff: Pre-Purchase-Fragen bei PlantBase
+
+Hi,
+
+ich wette, dass bei euch regelmäßig Anfragen wie „Verträgt sich das Shampoo mit sensibler Kopfhaut?" oder „Welche Wirkstoffe sind für trockene Haut geeignet?" per Kontaktformular reinkommen — und jede davon manuell beantwortet wird, bevor jemand kauft.
+
+Genau diese Pre-Purchase-Anfragen nehmen wir Naturkosmetik-Shops ab.
+
+Ein KI-Agent für Inhaltsstoff-, Hauttyp- und Anwendungsfragen würde den größten Teil davon direkt im Shop klären — ohne Wartezeit.
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

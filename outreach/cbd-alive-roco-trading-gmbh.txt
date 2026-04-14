@@ -1,0 +1,16 @@
+Betreff: Lieferstatus und Dosierungsfragen bei cbd-alive.shop
+
+Hi,
+
+ich wette, dass ein guter Teil eurer täglichen E-Mails zwei Themen dreht: wo die Bestellung gerade steckt — und welches CBD-Produkt für wen die richtige Wahl ist. Beides landet aktuell im Kontaktformular und wartet auf manuelle Bearbeitung.
+
+Genau das lässt sich für WooCommerce-Shops wie euren direkt automatisieren.
+
+Ein KI-Agent für Tracking-Status und Produkt-Orientierung (Konzentration, Vollspektrum vs. Breitspektrum) würde diese Anfragen abfangen, bevor sie euer Postfach erreichen.
+
+Macht das für euch gerade Sinn?
+
+P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

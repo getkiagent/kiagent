@@ -1,0 +1,18 @@
+Betreff: Produktfragen bei Nature Love
+
+Hi,
+
+ich vermute, dass Dosierungs- und Verträglichkeitsfragen bei euch einen großen Teil des täglichen Kontaktformular-Aufkommens ausmachen — Fragen, die sich wiederholen, aber trotzdem manuell beantwortet werden müssen.
+
+Bei Supplement-Brands in dieser Größenordnung wird genau das zum Flaschenhals.
+
+Ein KI-Agent, der diese Vorfeld-Fragen direkt im Shop abfängt, würde das Kontaktvolumen spürbar reduzieren.
+
+Habt ihr das intern schon mal angeschaut?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

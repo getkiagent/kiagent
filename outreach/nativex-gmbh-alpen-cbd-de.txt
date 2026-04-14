@@ -1,0 +1,16 @@
+Betreff: Pre-Purchase-Anfragen bei alpen-cbd.de
+
+Hi,
+
+CBD-Produkte ziehen naturgemäß viele Fragen an, bevor jemand auf „Kaufen" klickt — Dosierung, Vollspektrum vs. Isolat, Wirkungsweise. Ich wette, ein Teil davon landet täglich manuell bei euch, obwohl die Antworten immer dieselben sind.
+
+Genau diese wiederkehrenden Beratungsanfragen lassen sich automatisieren, ohne den persönlichen Eindruck zu verlieren.
+
+Ein KI-Agent für Produktberatung und Retouren-Intake würde den Großteil davon abfangen.
+
+Macht Support-Automatisierung für euch gerade Sinn?
+
+P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

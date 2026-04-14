@@ -1,0 +1,16 @@
+Betreff: Support-Automatisierung bei Ecco Verde
+
+Hi,
+
+euer Beauty-Blog beantwortet Fragen zu Haarausfall, Zertifizierungen und Inhaltsstoffen — was zeigt, dass diese Themen immer wieder auftauchen. Ich vermute, dieselben Fragen landen parallel auch im Kontaktformular, bevor jemand überhaupt in den Warenkorb legt.
+
+Bei einem Sortiment über mehrere Kategorien hinweg summiert sich das schnell zu viel manuellem Aufwand.
+
+Ein KI-Agent könnte diese Beratungsanfragen direkt im Shop abfangen — Hautverträglichkeit, Bio-Siegel, Produktunterschiede — ohne dass jemand auf eine Antwort warten muss.
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

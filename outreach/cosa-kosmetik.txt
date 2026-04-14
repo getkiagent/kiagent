@@ -1,0 +1,16 @@
+Betreff: Support-Automatisierung bei cosa Kosmetik
+
+Hi,
+
+ich vermute, dass bei euch regelmäßig Fragen reinkommen wie "Welches Produkt passt zu meiner Haut?" oder "Wo ist mein Paket in Italien?" — und die landen alle einzeln im Postfach.
+
+Genau diese Anfragen nehmen wir WooCommerce-Brands ab.
+
+Ein Agent für Produktberatung nach Hauttyp und Versandstatus würde den größten Teil abfangen.
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

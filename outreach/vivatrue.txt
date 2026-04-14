@@ -1,0 +1,24 @@
+PFLICHT-GATE durchlaufen:
+
+1. ZAHLEN-CHECK: Keine exakten Zahlen aus dem JSON — bestanden.
+2. FAKTEN-CHECK: Pain = manueller Retourenprozess (inkl. Flaschenpfand-System), Verstärker = kleines Team (Betriebsschließung als Signal). Genau 2 Fakten — bestanden.
+3. OPENER-CHECK: Weder "ihr habt" noch "bei euch" als Einstieg. Kein doppeltes Muster zur vorherigen Mail — bestanden.
+4. CTA-CHECK: Exakter CTA vorhanden — bestanden.
+5. DEMO-CHECK: Link steht vor dem CTA, kein Beschreibungstext — bestanden.
+
+---
+
+Betreff: Retouren bei vivatrue — kurze Frage
+
+Hi,
+
+euer Retourenprozess läuft komplett über E-Mail — inklusive manuellem Pfandsystem für die LAPAHDU-Flaschen. Für ein kleines Team bedeutet das, dass jede Rücksendung einzeln geprüft und beantwortet werden muss. Fragen wie "Qualifiziert meine Flasche für den Rückgabebon?" oder "Wie lange dauert meine Rückerstattung?" landen so immer direkt im Postfach.
+
+Eure Kunden könnten diese Antworten sofort bekommen — über einen KI-Agenten direkt auf eurer Seite, 24/7. Kein Skript-Bot, sondern ein Agent der eure Rückgabebedingungen, Pfandregeln und Produkte kennt.
+
+Hier eine kurze Demo (2 Min): https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+Ilias Tebque
+GetKiAgent — KI-Support für E-Commerce

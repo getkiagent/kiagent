@@ -1,0 +1,18 @@
+Betreff: Vital-Test-Follow-up bei kingnature
+
+Hi,
+
+ich wette, dass ein Teil eurer Quiz-Teilnehmer das Ergebnis bekommt — und danach nichts mehr passiert. Keine Produktempfehlung, keine Anschlussfrage, kein nächster Schritt.
+
+Das ist genau der Moment, in dem Automatisierung greift: Das Testergebnis wird zum Auslöser für eine personalisierte Empfehlung, ohne dass jemand manuell eingreifen muss.
+
+Dazu käme ein Agent für Post-Purchase-Anfragen — Versandstatus, Retouren — wo ihr aktuell keinen sichtbaren Kanal habt.
+
+Habt ihr das intern schon mal angeschaut?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

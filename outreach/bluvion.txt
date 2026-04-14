@@ -1,0 +1,16 @@
+Betreff: FAQ-Lücke bei bluvion.com
+
+Hi,
+
+eure Kundenbewertungen zeigen immer wieder Fragen zu Allergien, Hautverträglichkeit und Anwendung nach der Rasur — euer FAQ beantwortet genau das nicht. Ich vermute, dass diese Anfragen gerade per E-Mail oder Telefon bei euch ankommen, besonders von Kunden aus DE und CH.
+
+Solche Pre-Purchase-Fragen lassen sich direkt im Shop automatisieren, ohne dass jemand vom Team antworten muss.
+
+Ein KI-Agent für Inhaltsstoff- und Verträglichkeitsfragen würde den größten Teil davon abdecken.
+
+Habt ihr das intern schon mal angeschaut?
+
+P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

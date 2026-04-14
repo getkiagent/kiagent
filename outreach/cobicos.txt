@@ -1,0 +1,18 @@
+Betreff: Produktfragen & Response-Zeit bei cobicos
+
+Hi,
+
+ich wette, dass ein Teil eurer eingehenden Mails Fragen betrifft, die eigentlich schon auf der FAQ-Seite stehen — Inhaltsstoffe, Verträglichkeit, Haltbarkeit. Trotzdem schreiben Kunden lieber, als nachzulesen, und landen dann im 48-Stunden-Fenster.
+
+Genau diese Anfragen qualifizieren wir automatisch, bevor sie ins Postfach kommen.
+
+Ein Agent für Inhaltsstoff- und Retourenfragen würde den Großteil abfangen, ohne dass euer Team jeden Thread selbst anfassen muss.
+
+Habt ihr das intern schon mal angeschaut?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

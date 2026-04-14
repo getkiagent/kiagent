@@ -1,0 +1,18 @@
+Betreff: Versand- und Retourenanfragen bei feels.like
+
+Hi,
+
+ich schätze, dass bei 500+ Reviews und Athleten aus DE, AT, CH und ganz EU regelmäßig Fragen zu Lieferstatus und eurer 100-Tage-Rückgabe reinkommen — die aktuell alle manuell per Mail beantwortet werden müssen.
+
+Wir bauen Shopify-Brands genau dafür einen vorgelagerten Agenten.
+
+Für euch wäre wahrscheinlich ein Einstieg über Versandstatus und Retourenprozess am naheliegendsten — das reduziert die operative Inbox-Last, ohne den Rest anzufassen.
+
+Habt ihr das intern schon mal angeschaut?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

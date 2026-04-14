@@ -1,0 +1,16 @@
+Betreff: Hauttyp-Beratung bei Sonnengrün — kurze Frage
+
+Hi,
+
+ohne FAQ-Seite landet bei euch jede Frage zu Nachtkerzenöl-Verträglichkeit, Deo-Auswahl für empfindliche Haut oder dem Unterschied zwischen fester Seife und Shampoo-Bar direkt im Postfach — und wartet auf manuelle Antwort. Bei handgemachten Produkten mit erklärungsbedürftigen Inhaltsstoffen summiert sich das schnell.
+
+Genau solche Kaufberatungs-Anfragen lassen sich mit einem KI-Agenten im Shopify-Shop abfangen.
+
+Für Sonnengrün würde das konkret bedeuten: Inhaltsstoffe, Hauttyp-Zuordnung und Produktunterschiede werden direkt beantwortet — bevor jemand das Kontaktformular öffnet.
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

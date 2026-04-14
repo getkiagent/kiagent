@@ -1,0 +1,24 @@
+PFLICHT-GATE durchlaufen:
+
+1. ZAHLEN-CHECK: Keine exakten Zahlen aus dem JSON — bestanden.
+2. FAKTEN-CHECK: Pain = kein Live-Chat trotz breitem Supplement-Sortiment mit vielen Produktfragen. Verstärker = Telefon-Support nur Mo-Fr 08:30–17:00, danach keine Erreichbarkeit. Genau 2 Fakten — bestanden.
+3. OPENER-CHECK: Beginnt mit Frage-first-Muster, nicht mit "ihr habt" oder "bei euch". Unterscheidet sich von vorherigen Openers — bestanden.
+4. CTA-CHECK: Exakter CTA vorhanden — bestanden.
+5. DEMO-CHECK: Link steht vor dem CTA, kein Beschreibungstext — bestanden.
+
+---
+
+Betreff: Produktfragen bei Lebenskraftpur — kurze Frage
+
+Hi,
+
+wer abends oder am Wochenende bei Lebenskraftpur eine Frage hat — "Welches Magnesium passt zu mir?" oder "Kann ich das Präparat mit meinem Supplement kombinieren?" — findet aktuell keinen Live-Chat, und der Telefon-Support ist außerhalb der Geschäftszeiten nicht erreichbar.
+
+Ein KI-Agent direkt auf eurer Seite könnte genau diese Anfragen beantworten — 24/7, auf Deutsch. Kein Skript-Bot, sondern ein Agent der eure Produkte, Wirkstoffe und Dosierungsempfehlungen kennt.
+
+Hier eine kurze Demo (2 Min): https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+Ilias Tebque
+GetKiAgent — KI-Support für E-Commerce

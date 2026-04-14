@@ -1,0 +1,18 @@
+Betreff: Quiz-Abbrüche bei Sundt
+
+Hi,
+
+ich wette, dass ein Teil eurer Nutzer das Vitamin-Quiz ausfüllt — und dann trotzdem eine Mail schickt, weil das Ergebnis offene Fragen lässt. Bis euer Team antwortet, ist der Kaufimpuls oft weg.
+
+Das lässt sich direkt im Anschluss ans Quiz auffangen.
+
+Ein KI-Agent, der Quiz-Antworten sofort in eine persönliche Empfehlung übersetzt und Folgefragen zu Dosierung oder Verträglichkeit beantwortet, würde diesen Gap schließen.
+
+Macht das für euch gerade Sinn?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

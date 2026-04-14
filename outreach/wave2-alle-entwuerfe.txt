@@ -1,0 +1,110 @@
+============================================================
+1/6 — BioBloom (office@biobloom.at)
+============================================================
+
+Betreff: Schäden-Meldungen bei BioBloom — kurze Frage
+
+Hi,
+
+beschädigte Pakete müssen bei euch mit Fotos per Email, Telefon oder WhatsApp gemeldet werden — ohne automatisiertes Portal oder Formular. Bei CBD-Produkten wo Qualität und Unversehrtheit kritisch sind, löst das sicher Anfragen wie "Was mache ich bei zerbrochenen Flaschen?" oder "Wie beweise ich den Transportschaden?" aus.
+
+Ein KI-Agent könnte diesen Schadensmeldeprozess komplett digitalisieren — direkt im Shop, 24/7. Kein Skript-Bot, sondern ein Agent der eure CBD-Produkte, Qualitätsstandards und Reklamationsabläufe versteht.
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce
+
+
+============================================================
+2/6 — ruhi-rituals (hello@ruhi-rituals.com)
+============================================================
+
+Betreff: Retouren-Prozess bei ruhi-rituals — kurze Frage
+
+Hi,
+
+wer bei euch eine Retoure starten will, muss erstmal eine E-Mail an hello@ruhi-rituals.com schreiben und auf eine manuelle Antwort warten. Bei über tausend Bewertungen und einer 30-Tage-Garantie kommen wahrscheinlich öfter Fragen wie "Wie starte ich eine Retoure?" oder "Welche Artikel kann ich zurücksenden?"
+
+Statt dieser E-Mail-Pingpong könnte ein KI-Agent diese Fragen sofort auf eurer Seite beantworten — 24/7, auf Deutsch. Kein Skript-Bot, sondern ein Agent der eure Skincare-Produkte, Anwendungshinweise und Garantiebedingungen kennt.
+
+Ich hab eine kurze Demo gebaut — soll ich euch den Link schicken?
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce
+
+
+============================================================
+3/6 — vivatrue (willkommen@vivatrue.de)
+============================================================
+
+Betreff: Pfandflaschen-Rückgabe bei vivatrue — kurze Frage
+
+Hi,
+
+vivatrue arbeitet mit einem LAPAHDU-Pfandsystem für die Glasflaschen — das braucht manuelle Nachverfolgung und Verifizierung bei jeder Rückgabe. Dazu kommen die normalen 30-Tage-Retouren per E-Mail-Vorabsprache. Kunden fragen sich wahrscheinlich: "Wie läuft das mit dem Flaschenpfand?" oder "Muss ich die leere Flasche erst zurückschicken?"
+
+Eure Kunden bekommen in Sekunden eine Antwort — mit einem KI-Agent direkt im Shop, 24/7 auf Deutsch. Kein Skript-Bot, sondern ein Agent der euer Pfandsystem, die Beauty-Produkte und Rückgabefristen erklärt.
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce
+
+
+============================================================
+4/6 — HelloBody ([EMAIL MANUELL EINTRAGEN])
+============================================================
+
+Betreff: Supportanfragen bei HelloBody — kurze Frage
+
+Hi,
+
+bei HelloBody laufen alle Kundenanfragen über ein einzelnes Kontaktformular mit sieben Kategorien — von Bestellstatus bis Retouren. Bei anderthalb Millionen Kunden dürfte das regelmäßig Fragen wie "Wo ist meine Bestellung?" oder "Wie funktioniert der Rückversand?" erzeugen.
+
+Genau diese Anfragen kann ein KI-Agent direkt im Shop übernehmen — 24/7, auf Deutsch. Kein Skript-Bot, sondern ein Agent der eure Produkte, Versandregeln und Retourenprozess kennt.
+
+Kann ich euch in 15 Minuten zeigen wie das für HelloBody aussehen würde?
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce
+
+
+============================================================
+5/6 — das boep (office@dasboep.de)
+============================================================
+
+Betreff: Support-Zeiten bei das boep — kurze Frage
+
+Hi,
+
+wer bei euch außerhalb der Geschäftszeiten nach Rabattcodes oder Retoureninfos sucht, muss bis Montag 9 Uhr warten — Support läuft nur Mo-Fr von 9-15 Uhr. Bei einem aktiven Abo-Modell entstehen solche Fragen wie "Wie ändere ich mein Abo?" oder "Gilt der Code auch für Bundles?" auch am Wochenende.
+
+Ein KI-Agent auf eurer Seite könnte diese Standard-Anfragen rund um die Uhr beantworten — ohne Wartezeit. Kein Skript-Bot, sondern ein Agent der eure Produktpalette und Abo-Logik versteht.
+
+Ich hab eine kurze Demo gebaut — soll ich euch den Link schicken?
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce
+
+
+============================================================
+6/6 — Lebenskraftpur (kundenservice@lebenskraftpur.de)
+============================================================
+
+Betreff: FAQ-Volumen bei Lebenskraftpur — kurze Frage
+
+Hi,
+
+eure FAQ-Seite zeigt über zehn Standard-Fragen zu Supplements — ein klares Zeichen für wiederkehrende Anfragen. Trotzdem landen alle Kundenanfragen bei eurem manuellen Kontaktformular, wo sie erst sortiert und weitergeleitet werden müssen. Das erzeugt bei Fragen wie "Welche Dosierung ist richtig?" oder "Kann ich mehrere Produkte kombinieren?" unnötige Wartezeiten.
+
+Eure Kunden bekommen in Sekunden eine Antwort — durch einen KI-Agent direkt auf der Seite, 24/7. Kein Skript-Bot, sondern ein Agent der eure Supplement-Expertise und Anwendungsempfehlungen kennt.
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

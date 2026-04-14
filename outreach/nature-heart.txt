@@ -1,0 +1,27 @@
+PFLICHT-GATE — Vorab-Prüfung:
+
+Stärkste Signale: Kein Live-Chat (zweitstärkstes Signal, da keine 404-Seite). Verstärker: Aktives Abo-Modell (wiederkehrende, vorhersehbare Supportfragen). Das sind 2 Fakten. ✓
+
+Zahlen-Check: "3.800" NICHT verwenden. ✓
+
+Opener-Check: Bereits genutzte Muster: Frage-first, Pain-first, Beobachtung/Nutzen-first, Direkt/Kontrast. Diesmal: Direkt-Muster ("Pain — bei Verstärker dürfte das..."). ✓
+
+Brücken-Varianz: Vorherige Mails: "Genau diese Anfragen kann ein KI-Agent...", "Statt dieses Volumen...", "Eure Kunden bekommen in Sekunden...", "Ein KI-Agent direkt im Shop könnte...". Diesmal: Referenz zum Sortiment / Pain-Lösung direkt anknüpfen. ✓
+
+Fakten-Check Final: Pain = kein Live-Chat / Kontaktformular als einziger Kanal. Verstärker = Abo-Modell. Genau 2. ✓
+
+---
+
+Betreff: Supportanfragen bei Nature Heart — kurze Frage
+
+An: [EMAIL MANUELL EINTRAGEN]
+
+Hi,
+
+Kontaktformular als einziger Supportkanal, kein Live-Chat — bei einem aktiven Abo-Modell dürfte das regelmäßig Fragen wie "Wie pausiere ich mein Abo?" oder "Welche Dosierung passt zu mir?" auslösen, die Kunden nicht selbst beantworten können.
+
+Genau für solche Anfragen bauen wir KI-Agents die direkt auf eurer Seite antworten — 24/7, auf Deutsch. Kein Skript-Bot, sondern ein Agent der eure Produkte, Dosierungsempfehlungen und Abo-Logik kennt.
+
+Hier eine kurze Demo (2 Min): https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough

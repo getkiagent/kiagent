@@ -1,0 +1,24 @@
+PFLICHT-GATE durchlaufen:
+
+1. ZAHLEN-CHECK: Keine exakten Zahlen aus dem JSON — bestanden.
+2. FAKTEN-CHECK: Pain = Support nur Mo-Fr 9-15 Uhr, kein Live-Chat. Verstärker = Abo-Modell. Genau 2 Fakten — bestanden.
+3. OPENER-CHECK: Beginnt mit Beobachtungs-Muster, nicht mit "ihr habt" oder "bei euch". Unterscheidet sich von vorherigen Openers — bestanden.
+4. CTA-CHECK: Exakter CTA vorhanden — bestanden.
+5. DEMO-CHECK: Link steht vor dem CTA, kein Beschreibungstext — bestanden.
+
+---
+
+Betreff: Support-Erreichbarkeit bei das boep — kurze Frage
+
+Hi,
+
+euer Support ist werktags bis 15 Uhr erreichbar — danach und am Wochenende gibt es keinen Live-Chat, der einspringen könnte. Gerade mit einem aktiven Abo-Modell landen Fragen wie "Wie pausiere ich mein Abo?" oder "Wann wird meine nächste Lieferung verschickt?" dann einfach im Postfach und warten.
+
+Ein KI-Agent auf eurer Seite könnte genau das abfangen — 24/7, auf Deutsch. Kein Skript-Bot, sondern ein Agent der eure Produkte, Abo-Logik und Versandinfos kennt.
+
+Hier eine kurze Demo (2 Min): https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+Ilias Tebque
+GetKiAgent — KI-Support für E-Commerce

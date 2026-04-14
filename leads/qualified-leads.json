@@ -1,0 +1,794 @@
+{
+  "exported_at": "2026-04-13T22:00:33.356444+00:00",
+  "total": 16,
+  "results": [
+    {
+      "url": "https://junglück.de",
+      "status": "ok",
+      "data": {
+        "company_name": "JUNGLÜCK",
+        "website": "https://junglueck.de",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "email"
+        ],
+        "support_pages_found": [
+          "/faq",
+          "/policies/refund-policy",
+          "/policies/shipping-policy"
+        ],
+        "support_pain_signals": [
+          "FAQ page returned a 404 error — no self-service FAQ available to customers",
+          "Returns process requires customers to contact via email (info@junglueck.de) or use a separate returns portal (/pages/return-form), indicating a manual or semi-manual returns workflow",
+          "No live chat visible on homepage or any scraped page",
+          "No AI support tool or chatbot detected",
+          "Refund/return policy references email-only contact for cancellations, creating friction for post-purchase support",
+          "Shipping policy covers multiple countries (DE, AT, NL, BE, FR, IT, LU) — multi-market complexity likely increases support volume around delivery questions"
+        ],
+        "speed_to_lead_signals": [
+          "No pre-purchase chat or qualification tool visible — customers with product questions (e.g. skin type fit, ingredient queries) have no immediate support path",
+          "No stated response time for email inquiries",
+          "Product range includes multiple active-ingredient serums (Niacinamid, Azelain, Hyaluron, Kollagen) — likely generates high pre-purchase ingredient and routine questions with no automated handling"
+        ],
+        "digital_maturity_clues": [
+          "Built on Shopify (CDN URLs confirm junglueck.de/cdn/shop/files/)",
+          "Klarna integrated for BNPL and invoice payments — indicates payment tech sophistication",
+          "Product review ratings visible on product listings — likely using a review app",
+          "Promotional mechanics present (free samples, tiered cart incentives, bundle offers) — suggests active CRO/retention work",
+          "Shop.app reference detected in scraped content — possible Shopify Shop app usage",
+          "Cookie consent infrastructure implied by ERR_BLOCKED_BY_CLIENT patterns (ad/tracking extensions blocked)",
+          "No third-party live chat tools detected"
+        ],
+        "likely_automation_opportunity": "A support chatbot would have immediate impact given the missing FAQ page, email-only contact, and complex multi-country shipping setup that likely drives repetitive order status and delivery questions. Pre-purchase automation is also highly relevant given the active-ingredient product range, which typically generates high volumes of 'which product is right for me' queries that could be handled by a skin-type qualification flow.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "The /faq page returned a 404, so it is unknown whether a help centre exists elsewhere on the site or is hosted on a subdomain. The contact page was not scraped, so the full range of contact options (e.g. a contact form, phone support hours) could not be confirmed beyond what appeared in the refund policy. No social media or WhatsApp support channels could be confirmed. Live chat absence is inferred from scraped pages only — a widget may exist on pages not scraped.",
+        "score_1_to_10": 8,
+        "tier": "A",
+        "score_rationale": "JUNGLÜCK is a German DTC skincare brand on Shopify selling active-ingredient products across DACH and neighbouring EU markets — a near-perfect niche fit. The FAQ page is broken (404), no live chat is present, and returns are handled via email and a separate portal, creating clear support friction signals. Digital maturity is solid (Klarna, review apps, tiered promotions) but no AI or chat tooling is visible, leaving an obvious automation gap.",
+        "recommended_next_action": "Reach out via email to info@junglueck.de, referencing the broken FAQ page as an immediate pain point and the multi-country shipping complexity as a driver of repetitive support volume. Propose a support automation pilot covering order status, returns initiation, and a skin-type pre-purchase qualifier — directly aligned with their active-ingredient product range."
+      }
+    },
+    {
+      "url": "https://puremetics.de",
+      "status": "ok",
+      "data": {
+        "company_name": "puremetics",
+        "website": "https://puremetics.de",
+        "country": "Germany",
+        "category": "skincare / beauty",
+        "visible_contact_options": [
+          "email"
+        ],
+        "support_pages_found": [
+          "/policies/refund-policy",
+          "/policies/shipping-policy"
+        ],
+        "support_pain_signals": [
+          "No live chat visible on any scraped page",
+          "Returns/cancellations handled via email (info@puremetics.de) or physical mail only — fully manual process",
+          "Refund policy requires customers to send written notice by email or post, suggesting high manual handling volume",
+          "FAQ page at /faq returned a 404 error — no self-service FAQ available for customers",
+          "No stated response time for support inquiries anywhere on the site",
+          "Shipping policy is detailed and complex (6 international zones, multiple conditions) — likely generates many inbound shipping/delivery questions"
+        ],
+        "speed_to_lead_signals": [
+          "No contact form found — only email contact listed, creating friction and slow follow-up risk",
+          "No live chat or instant messaging option to answer pre-purchase product questions",
+          "Skin-type recommendation feature on homepage (tabs for dry/mature/blemish/sensitive skin) suggests pre-purchase guidance need, but no interactive AI or quiz tool present"
+        ],
+        "digital_maturity_clues": [
+          "Cookie consent banner present",
+          "Hosted on Shopify (CDN URLs confirm Shopify platform)",
+          "Multiple payment methods supported: PayPal, Klarna, Apple Pay, Google Pay, Visa, Mastercard, etc.",
+          "DHL GoGreen Plus integration shows operational sophistication",
+          "Product review app present (star ratings and review counts visible on product listings)",
+          "Brand has media coverage (Joy, Harper's Bazaar, RTL, Burda, etc.) suggesting established scale",
+          "Over 94,000 stated satisfied customers — significant customer base",
+          "SSL/secure data transmission mentioned",
+          "No third-party live chat tools observed"
+        ],
+        "likely_automation_opportunity": "With no FAQ page live, manual email-only returns handling, and a complex international shipping policy generating predictable questions, support automation would immediately reduce inbound volume. A pre-purchase AI chatbot could also replicate and scale the skin-type recommendation logic already present on the homepage, converting more visitors without human involvement.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "The /faq page returned a 404, so it is unknown whether a functioning FAQ exists elsewhere or is being rebuilt. No contact page was scraped, so additional contact options (e.g. a contact form, phone support beyond what appears in the refund policy) may exist but were not visible. Exact support ticket volume and team size are unknown.",
+        "score_1_to_10": 8,
+        "tier": "A",
+        "score_rationale": "Puremetics is a German DTC beauty/skincare brand on Shopify with over 94,000 customers, strong media presence, and clear operational scale — a near-perfect niche and geography fit. The absence of a live FAQ, email-only support, manual returns process, and no live chat creates strong and specific automation opportunity. Digital maturity is solid (Shopify, multiple payment integrations, review app) without any AI or chat tools currently in place.",
+        "recommended_next_action": "Reach out via email to info@puremetics.de, reference their broken FAQ page (currently a 404), their manual returns process, and the skin-type recommendation feature that could be enhanced with AI — position GetKiAgent as a way to scale support and pre-purchase guidance without adding headcount."
+      }
+    },
+    {
+      "url": "https://provida.de",
+      "status": "ok",
+      "data": {
+        "company_name": "Provida",
+        "website": "https://www.provida.de",
+        "country": "Germany",
+        "category": "skincare / beauty / organic cosmetics",
+        "visible_contact_options": [
+          "contact form"
+        ],
+        "support_pages_found": [
+          "/contact",
+          "/faq"
+        ],
+        "support_pain_signals": [
+          "No live chat visible on any scraped page",
+          "Contact option is contact form only — no email address, phone, or real-time support visible",
+          "FAQ page exists (linked as 'Häufig gestellte Fragen') but actual FAQ content was not rendered in the scrape, making friction volume unknown",
+          "Broad and complex product catalogue (face, body, hair, baby, makeup, skin type filters, product lines) likely generates high pre-purchase product advice queries",
+          "Skin-type and condition navigation (Neurodermitis, Couperose, sensitive skin) suggests customers may have specific questions requiring guidance"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form is the only inbound channel — no stated response time visible",
+          "Skin-type filtering and product line complexity suggest visitors may need pre-purchase guidance before converting, with no real-time qualification path visible",
+          "No quiz or interactive recommendation tool observed despite skin-type categorisation being prominent in navigation"
+        ],
+        "digital_maturity_clues": [
+          "Custom CMS with structured navigation (not obviously Shopify — uses German URL slug structure)",
+          "Blog and newsletter sections present, suggesting content marketing activity",
+          "No third-party live chat or AI support tools visible in scraped content",
+          "No mention of Klaviyo, review apps, or other martech tools in scraped content",
+          "Skin-type and colour-type product filtering suggests some level of ecommerce sophistication"
+        ],
+        "likely_automation_opportunity": "Support automation would have the highest impact here: Provida's wide catalogue of organic skincare, makeup, and speciality products (with skin-type and condition filters) is likely to generate frequent pre-purchase product advice queries that are currently funnelled through a contact form with no live response capability. An AI chatbot could handle skin-type matching, product recommendations, and basic order/returns queries at scale without added headcount.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "The actual body content of the FAQ, contact, help, and shipping pages was not rendered — only navigation HTML was available. As a result, it is unknown how many FAQ entries exist, whether a phone number or email is listed elsewhere, what the returns process looks like, and whether any third-party tools (chat widgets, review apps, martech) are injected via JavaScript and therefore invisible in the scrape. The ecommerce platform could not be confirmed as Shopify. Scale of operations and traffic volume are also unknown.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Provida is a strong niche fit — German organic skincare and beauty brand with a broad catalogue, clear DACH presence, and a contact-form-only support model with no live chat or AI tooling visible. The skin-type and condition-based navigation signals a consultative buying journey that would benefit significantly from AI pre-purchase qualification. The score stops at 7 rather than higher because the scraped page bodies were almost entirely navigation HTML, leaving key signals (FAQ volume, returns process detail, phone/email availability, tech stack) unconfirmed.",
+        "recommended_next_action": "Reach out via the contact form at provida.de/UEber-uns/KONTAKT/, referencing their skin-type-driven product range and the absence of real-time support — pitch an AI chatbot that can guide customers to the right product line (e.g. Jeunesse vs. Mille Fleurs vs. Clear Skin) instantly, reducing contact-form load and improving conversion for first-time visitors."
+      }
+    },
+    {
+      "url": "https://the-glow.com",
+      "status": "ok",
+      "data": {
+        "company_name": "The Glow",
+        "website": "https://the-glow.com",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/faq",
+          "/pages/contact"
+        ],
+        "support_pain_signals": [
+          "No live chat visible anywhere on the site",
+          "FAQ page exists but covers only product/ingredient questions — no order status, shipping, or returns FAQ entries visible",
+          "/returns page returns 404 — returns process is entirely unclear and likely handled via manual email",
+          "/help page returns 404 — no dedicated support hub",
+          "Contact page has only a basic form and email address with no stated response time",
+          "487 customer reviews suggest meaningful order volume, increasing potential support ticket load"
+        ],
+        "speed_to_lead_signals": [
+          "Skin type quiz ('Hauttyp bestimmen') present on homepage but no AI or interactive qualifier — static page likely",
+          "Contact form has no stated response time, creating slow follow-up risk for pre-purchase inquiries",
+          "No live chat to capture in-the-moment purchase intent from visitors"
+        ],
+        "digital_maturity_clues": [
+          "Built on Shopify (myshopify.com subdomain visible in cookie notice)",
+          "Uses Judge.me for product reviews (487 reviews visible)",
+          "hCaptcha on contact form indicates some third-party tooling",
+          "Cookie consent banner present",
+          "No third-party live chat tools visible",
+          "No AI assistant or chatbot visible",
+          "Active on Facebook and Instagram (links present)",
+          "Uses CDN-hosted product images via Shopify"
+        ],
+        "likely_automation_opportunity": "Support automation would have the highest immediate impact: with no live chat, a broken returns page, and a contact form as the only support channel, customer inquiries about order status and returns are likely creating a manual email backlog. A skin type quiz is already present, making pre-purchase qualification automation a natural second step to convert visitors more efficiently.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "No shipping or returns policy page was successfully scraped (both returned 404), so the exact returns process is unknown. It is unclear whether a Klaviyo or email marketing stack is in use. The skin type quiz page (/pages/hauttyp-bestimmen) was not scraped, so its level of interactivity is unknown. Country was inferred from German-language content and EUR pricing — no explicit DACH address was visible in the scraped pages.",
+        "score_1_to_10": 8,
+        "tier": "A",
+        "score_rationale": "Strong fit across all key dimensions: German-language Shopify skincare brand in the DACH region, no live chat or AI support visible, contact limited to a basic form and email with no SLA, and a broken returns page indicating a gap in self-service support. 487 reviews confirm real order volume and customer engagement. The existing skin type quiz signals openness to guided pre-purchase experiences, making automation pitch highly relevant.",
+        "recommended_next_action": "Reach out via the contact form at /pages/contact referencing their broken /returns page, absence of live chat, and the support gap created by their growing review volume (487 reviews). Propose a support automation pilot that handles returns inquiries and order status, and offer to extend the existing skin type quiz into an AI-guided pre-purchase qualifier."
+      }
+    },
+    {
+      "url": "https://raw-naturkosmetik.de",
+      "status": "ok",
+      "data": {
+        "company_name": "RAW Naturkosmetik",
+        "website": "https://raw-naturkosmetik.de",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [],
+        "support_pages_found": [
+          "/faq",
+          "/help",
+          "/shipping",
+          "/returns"
+        ],
+        "support_pain_signals": [
+          "No live chat or AI chatbot visible anywhere on the site",
+          "No contact email, contact form, or phone number found in scraped content",
+          "/help page returns 404 — no dedicated help center exists",
+          "/shipping page returns 404 — shipping information not accessible via direct URL",
+          "/returns page returns 404 — no self-serve returns process found",
+          "/faq page did not render actual FAQ content — only homepage content was shown, suggesting FAQ page may be missing or broken",
+          "Customers shipping-related or returns-related questions have no visible self-service resolution path"
+        ],
+        "speed_to_lead_signals": [
+          "No contact path visible means pre-purchase questions (e.g. product suitability, ingredients) have no fast-response channel",
+          "No stated response time or support SLA visible anywhere on the site",
+          "Store locator page (Marktfinder) present but no AI or guided pre-purchase qualification tool visible"
+        ],
+        "digital_maturity_clues": [
+          "Built on Shopify (cdn/shop/files URL pattern confirms Shopify hosted)",
+          "Multi-language site (German and English) indicating some investment in internationalization",
+          "Ships to multiple DACH-adjacent countries (Germany, Austria, Belgium, Netherlands)",
+          "Active social media presence on Facebook, Instagram, and YouTube",
+          "Customer account login available (/account/login)",
+          "No third-party live chat tools visible",
+          "shop.app reference in scraped pages suggests Shopify Shop app may be integrated",
+          "No cookie consent banner explicitly mentioned in scraped content"
+        ],
+        "likely_automation_opportunity": "Support automation would have the highest immediate impact: the brand has no visible contact channel, no working help/returns/shipping pages, and no live chat — meaning customers with post-purchase questions have nowhere to go. An AI chatbot could cover order status, returns initiation, product FAQs, and ingredient questions, filling a critical gap that likely drives customer frustration today.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "The /faq page did not render actual FAQ content — only homepage content appeared, so it is unclear whether a real FAQ exists or how many questions it covers. No contact email or form was found in any scraped page, but these may exist in the footer or on a /contact page that was not scraped. The size of the brand (order volume, team size) cannot be determined from the available content. No pricing or subscription model signals were visible.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "RAW Naturkosmetik is a strong niche fit — German-language certified natural skincare brand on Shopify, shipping across DACH — and shows clear support friction with broken/missing help, returns, and shipping pages, and zero visible contact options or live chat. The score is capped at 7 (Tier B) rather than Tier A because the brand appears relatively small, no actual FAQ content was confirmed, no contact path was found to reach out through, and overall digital maturity signals are moderate rather than strong.",
+        "recommended_next_action": "Find a contact email via the Shopify store's legal/imprint page (Impressum) or social media profiles, then reach out referencing the broken /help, /returns, and /shipping pages and the complete absence of a live chat or support channel — position AI support automation as an immediate fix for post-purchase customer confusion."
+      }
+    },
+    {
+      "url": "https://naturalsophy.com",
+      "status": "ok",
+      "data": {
+        "company_name": "NATURALSOPHY",
+        "website": "https://naturalsophy.com",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "email",
+          "phone"
+        ],
+        "support_pages_found": [
+          "/pages/about-us",
+          "/policies/refund-policy",
+          "/policies/shipping-policy"
+        ],
+        "support_pain_signals": [
+          "No live chat or AI support visible anywhere on the site",
+          "Returns process requires manual email contact to info@naturalsophy.com",
+          "International shipping queries explicitly directed to email: 'please contact info@naturalsophy.com'",
+          "Refund policy is dense and legally complex — likely generates customer confusion and support tickets",
+          "Shipping policy lists estimated 1-5 day windows with caveats, likely a source of order status inquiries",
+          "No FAQ page found or scraped — common customer questions about organic ingredients, eczema use, returns are unanswered in a structured way"
+        ],
+        "speed_to_lead_signals": [
+          "No stated response time for email inquiries",
+          "International shipping questions routed to email with no SLA or autoresponder indicated",
+          "No pre-purchase chat or qualification tool visible for customers with sensitive skin/baby concerns who may need guidance before buying"
+        ],
+        "digital_maturity_clues": [
+          "Built on Shopify (myshopify.com subdomain visible in URLs and cookie banner)",
+          "Cookie consent banner present",
+          "Promotional discount code active ('hi5' for 5€ off from 60€) — suggests some email/marketing activity",
+          "Free samples offer suggests structured acquisition funnel",
+          "Official partner of Beauty Alliance (B2B distribution) — implies operational scale beyond pure DTC",
+          "No third-party live chat tool visible",
+          "No visible review app widgets in scraped content",
+          "Shop.app blocked by extension — suggests Shopify Shop Pay integration"
+        ],
+        "likely_automation_opportunity": "Support automation would have the most immediate impact: customers buying for sensitive baby/eczema skin likely have many pre- and post-purchase questions (ingredient safety, usage, returns, shipping delays) that are currently handled via email only. An AI chatbot could handle order status, returns initiation, and ingredient FAQs, while also qualifying B2B wholesale inquiries from pharmacies and beauty retailers.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "No contact page or FAQ page was scraped, so the full range of support channels cannot be confirmed. It is unknown whether a contact form exists. No visibility into email volume or support ticket load. B2B/wholesale inquiry flow (Beauty Alliance partnership) could not be assessed in detail. Review app or Klaviyo usage could not be confirmed from available content.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong niche fit: DACH-based (Germany, Eschborn), organic skincare targeting moms and babies, built on Shopify, with clear email-only support and no live chat. The B2B Beauty Alliance partnership and international shipping email routing both suggest meaningful support volume. Score held at 7 rather than 8 because no FAQ page was found, no contact form was confirmed, and digital maturity signals are moderate — no review apps, Klaviyo, or advanced tooling confirmed.",
+        "recommended_next_action": "Reach out via info@naturalsophy.com referencing their reliance on email for both international shipping queries and returns, the absence of live chat, and the high-sensitivity nature of their customer base (parents of babies with eczema) who likely need fast, reassuring pre-purchase answers — position an AI support agent as a trust-builder, not just a cost-saver."
+      }
+    },
+    {
+      "url": "https://teamdrjoseph.com",
+      "status": "ok",
+      "data": {
+        "company_name": "TEAM DR JOSEPH",
+        "website": "https://teamdrjoseph.com",
+        "country": "Italy",
+        "category": "skincare",
+        "visible_contact_options": [
+          "phone",
+          "email",
+          "WhatsApp"
+        ],
+        "support_pages_found": [
+          "/contact",
+          "/faq",
+          "/help",
+          "/shipping"
+        ],
+        "support_pain_signals": [
+          "FAQ page returns a 404 error — no self-service FAQ content available for customers",
+          "Help page returns a 404 error — no help center exists despite being linked",
+          "Shipping page returns a 404 error — customers cannot find shipping info independently",
+          "No live chat visible anywhere on the site",
+          "No AI support tool detected",
+          "Support is limited to phone, email, and WhatsApp — all require human handling",
+          "Phone support has restricted office hours (Mon–Thu 8:00–12:30 / 14:00–17:30, Fri morning only, closed weekends), creating off-hours support gaps",
+          "Brand operates across multiple markets (DE, AT, CH, IT, US, Norway) with separate phone numbers per country, increasing support complexity"
+        ],
+        "speed_to_lead_signals": [
+          "Skin Analysis feature ('Hautanalyse') present in navigation but no AI qualification or instant response mechanism visible",
+          "Partner inquiry form exists but no stated response time",
+          "No live chat or chatbot to capture and qualify pre-purchase visitors in real time",
+          "Multi-language site (DE/EN/IT) serving multiple countries without visible automated routing or qualification"
+        ],
+        "digital_maturity_clues": [
+          "Trustpilot integration with custom widget — 553 reviews, rated 4.9/5",
+          "Cookie consent banner with granular settings present (GDPR-compliant)",
+          "Multi-language site (German, English, Italian) with market-specific routing",
+          "reCAPTCHA used on contact form",
+          "Accessibility tools plugin present (designverign)",
+          "Custom CMS (appears WordPress-based, not Shopify)",
+          "No third-party live chat tools visible",
+          "No visible Klaviyo or marketing automation signals in scraped content",
+          "B Corp certified — signals operational maturity and brand seriousness"
+        ],
+        "likely_automation_opportunity": "With no FAQ page, no help center, and phone/email/WhatsApp as the only support channels — all human-staffed with limited office hours — there is a clear gap for an AI chatbot to handle order status, shipping questions, and product FAQs 24/7 across DE, AT, CH, and IT markets. The Skin Analysis feature also represents an underutilized pre-purchase qualification touchpoint that an AI assistant could activate to guide visitors toward the right products and reduce drop-off.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "The brand is headquartered in South Tyrol, Italy, but operates prominently in DACH markets with dedicated German and Austrian phone lines and a German-language primary site — making it a strong DACH-adjacent lead even if not strictly DACH-incorporated. The platform appears to be a custom CMS or WordPress/WooCommerce rather than Shopify, which may affect integration complexity. No visibility into monthly traffic volume, order volume, or actual support ticket load. Skin Analysis page content was not scraped, so the nature of that tool is unknown.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong niche fit (premium certified natural skincare, established since 1986, B Corp, multi-market DACH presence) with very clear support friction — FAQ, help, and shipping pages all 404, leaving customers with no self-service options and only human-staffed phone/email/WhatsApp during limited office hours. Score held at 7 rather than 8+ because the brand is Italy-headquartered rather than strictly DACH, the platform does not appear to be Shopify, and no marketing automation tools were detected that would indicate higher digital maturity readiness for AI adoption.",
+        "recommended_next_action": "Reach out via the contact form or email (info@teamdrjoseph.com) referencing that their FAQ, help, and shipping pages are all returning 404 errors, leaving customers with no self-service support — and propose an AI chatbot that covers these gaps 24/7 across their German, Austrian, and Swiss markets, including off-hours WhatsApp automation."
+      }
+    },
+    {
+      "url": "https://wesentlich.shop",
+      "status": "ok",
+      "data": {
+        "company_name": "wesentlich.shop",
+        "website": "https://wesentlich.shop",
+        "country": "Germany",
+        "category": "natural skincare / essential oils / wellness",
+        "visible_contact_options": [
+          "contact form"
+        ],
+        "support_pages_found": [
+          "/contact",
+          "/faq",
+          "/help",
+          "/shipping"
+        ],
+        "support_pain_signals": [
+          "Contact page rendered only a cookie consent banner — no actual form content was scraped, suggesting the contact mechanism may be hidden behind JS or cookie acceptance",
+          "FAQ page returned no FAQ content — page appears to exist but rendered empty, meaning customers cannot self-serve effectively",
+          "Help page also returned no usable content, indicating support resources may be sparse or JS-gated",
+          "Shipping page returned no shipping detail content despite being scraped",
+          "Homepage states questions are answered within one business day — no real-time support offered",
+          "No live chat visible anywhere on the site",
+          "B2B section present, implying additional inquiry volume from wholesale customers with no visible dedicated support channel"
+        ],
+        "speed_to_lead_signals": [
+          "Homepage explicitly states response time of 'within one working day' — no instant support available",
+          "B2B portal present with no visible AI or automated qualification for wholesale inquiries",
+          "No live chat or instant messaging option visible — all pre-purchase questions likely routed to email or contact form"
+        ],
+        "digital_maturity_clues": [
+          "Cookie consent banner present with customisation options",
+          "Trusted Shops 'Excellent Shop' badge displayed — indicates third-party trust/review integration",
+          "Custom media CDN in use (media.wesentlich.shop) — suggests technical infrastructure investment",
+          "Custom Shopware-style theme bundle detected (bundles/wesentlichtheme) — likely running Shopware, not Shopify",
+          "Product variant selection visible (multiple size options per product)",
+          "No third-party live chat tools visible",
+          "No visible review app widget beyond Trusted Shops",
+          "No Klaviyo or visible email marketing tool detected in scraped content"
+        ],
+        "likely_automation_opportunity": "Support automation would have strong impact here: the brand explicitly promises 1-business-day response times with no live chat, meaning all customer queries (order status, product usage questions, returns) are handled manually. Given 1.2 million oils sold and a broad multi-category catalogue, query volume is likely high and an AI chatbot could deflect a significant share of repetitive inquiries instantly.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "The /contact, /faq, /help, and /shipping pages all returned near-empty content — likely blocked by cookie consent or rendered via JavaScript. As a result, the actual contact form structure, FAQ question volume, and shipping policy details could not be assessed. The platform appears to be Shopware rather than Shopify, which may affect integration complexity. No email address or phone number was visible in the scraped content.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong niche and geographic fit — German-language wellness/natural skincare brand with over 1.2 million units sold, indicating meaningful scale. The explicit 1-business-day response commitment and total absence of live chat confirm a manual support model ripe for automation. Score is capped at 7 because key support pages returned no content, making it impossible to confirm FAQ depth or contact form structure, and the platform appears to be Shopware rather than Shopify which adds integration uncertainty.",
+        "recommended_next_action": "Reach out via the contact form at wesentlich.shop/contact, referencing their stated '1 working day' response promise and the lack of live chat — position GetKiAgent as a way to answer customer questions instantly 24/7 without adding headcount, especially given the broad product catalogue and B2B channel."
+      }
+    },
+    {
+      "url": "https://fiveskincare.de",
+      "status": "ok",
+      "data": {
+        "company_name": "Five Skincare",
+        "website": "https://fiveskincare.de",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "email"
+        ],
+        "support_pages_found": [
+          "/policies/refund-policy",
+          "/policies/shipping-policy"
+        ],
+        "support_pain_signals": [
+          "No live chat visible on any scraped page",
+          "Returns process is manual email-only — customers must contact hello@fiveskincare.com to initiate a refund or return",
+          "Shipping inquiries directed to service-eu@fiveskincare.com with no stated response time",
+          "No FAQ page found or scraped — support burden likely high given product quiz and multiple skin type variations",
+          "Separate contact emails for different regions (hello@fiveskincare.com vs service-eu@fiveskincare.com) suggests fragmented support handling"
+        ],
+        "speed_to_lead_signals": [
+          "Product finder quiz present but powered by third-party tool (Perfect Product Finder) with no AI follow-up mechanism visible",
+          "Skin consultation page referenced (/pages/hautberatung) but not scraped — unclear if live or async support",
+          "No stated response time for any contact channel",
+          "Pre-purchase questions about skin type likely volume-generating given quiz and 4+ product variants for different skin types"
+        ],
+        "digital_maturity_clues": [
+          "Shopify storefront confirmed (CDN URLs via fiveskincare.de/cdn/shop/)",
+          "Third-party product quiz tool integrated (Perfect Product Finder via storage.googleapis.com)",
+          "Cookie consent banner present",
+          "Newsletter signup with email capture present",
+          "Shop App integration attempted (shop.app blocked by extension)",
+          "DHL shipping integration for tracking emails",
+          "No third-party live chat tools visible",
+          "1000+ customer reviews visible on site — suggests established review app"
+        ],
+        "likely_automation_opportunity": "Support automation would have the highest impact here — Five Skincare handles returns, shipping inquiries, and product questions entirely via email with no live chat or AI layer, creating friction for a brand with 1000+ reviews and multiple skin-type SKUs. A pre-purchase qualification bot tied to the existing skin quiz could also convert consultation traffic more efficiently without requiring human advisor time.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "The /pages/hautberatung (skin consultation) page was referenced but not scraped — it may contain a contact form or booking tool that would be highly relevant to speed-to-lead scoring. No FAQ page was found or scraped, so FAQ volume cannot be confirmed. The Swiss storefront (fiveskincare.ch) was referenced but not analyzed, so full operational scale is unclear.",
+        "score_1_to_10": 8,
+        "tier": "A",
+        "score_rationale": "Five Skincare is a DACH-region skincare DTC brand operating on Shopify with a clearly email-only support setup, no live chat, and a manual returns process — all strong signals of automation opportunity. The brand shows medium-to-high digital maturity (quiz tool, review app, newsletter, DHL integration) while still lacking AI or chat support, making it a well-matched candidate. The unscraped consultation page slightly limits confidence but does not reduce the overall fit.",
+        "recommended_next_action": "Reach out via service-eu@fiveskincare.com referencing their email-only support model and the gap between their skin consultation offering and lack of real-time response capability — specifically position a support automation solution that handles returns and shipping FAQs while also qualifying pre-purchase quiz completers who have follow-up questions."
+      }
+    },
+    {
+      "url": "https://nature-heart.de",
+      "status": "ok",
+      "data": {
+        "company_name": "Nature Heart",
+        "website": "https://nature-heart.de",
+        "country": "Germany",
+        "category": "supplements",
+        "visible_contact_options": [
+          "contact form"
+        ],
+        "support_pages_found": [
+          "/contact",
+          "/faq",
+          "/help",
+          "/shipping"
+        ],
+        "support_pain_signals": [
+          "Contact page routes users to FAQ or returns page before allowing contact form submission — suggests high volume of repetitive inquiries",
+          "No live chat visible on any scraped page",
+          "Returns process requires users to navigate to a separate returns conditions page with no automated return flow visible",
+          "Subscription management exists (/a/subscriptions/login) but no visible support for subscription-related queries beyond a login link — likely a source of recurring support tickets",
+          "FAQ page scraped but actual FAQ content not rendered — suggests it exists to deflect volume but content depth is unknown",
+          "No stated response time on contact form — customers have no expectation of when they will hear back",
+          "Contact form protected by hCaptcha — adds friction with no compensating speed signal"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form is the only direct inquiry path with no stated response time — slow follow-up risk on pre-purchase product questions",
+          "Wide product catalogue across multiple health categories (immune, gut, sleep, fitness, women's health) likely generates many pre-purchase ingredient and compatibility questions with no AI or chat to handle them",
+          "Dosage recommendation page (/pages/einnahmeempfehlung) exists separately — suggests customers frequently ask about intake, a question easily automated"
+        ],
+        "digital_maturity_clues": [
+          "Built on Shopify (cdn/shop/files URL structure confirmed)",
+          "Subscription management system present (/a/subscriptions/login)",
+          "Multiple payment methods supported: PayPal, Klarna, Google Pay, Apple Pay, Visa, Mastercard",
+          "Newsletter signup with new customer discount offer visible",
+          "hCaptcha used on contact form — third-party tool integration",
+          "Cart gift threshold mechanic present (gift unlocked at €40 cart value) — suggests marketing automation in use",
+          "No third-party live chat tool visible across any scraped page",
+          "No AI support widget detected"
+        ],
+        "likely_automation_opportunity": "Support automation would have the highest impact here: Nature Heart sells a broad supplements range with high review volumes (3,800+ on collagen alone), a subscription product line, and a returns process — all classic drivers of repetitive support tickets. An AI chatbot handling order status, subscription changes, returns initiation, and dosage FAQs could significantly reduce contact form volume without requiring live agent involvement.",
+        "confidence_level": "high",
+        "uncertainty_notes": "The FAQ page content did not fully render in the scrape — the actual number and topics of FAQ entries could not be confirmed, which would have strengthened the support friction signal further. No shipping policy page content was rendered despite the URL being scraped. It is also unclear whether Nature Heart uses any email-based support tool (e.g. Gorgias, Zendesk) behind the contact form.",
+        "score_1_to_10": 9,
+        "tier": "A",
+        "recommended_next_action": "Reach out via the contact form on nature-heart.de, referencing their high review volume, broad supplement catalogue, active subscription offering, and complete absence of live chat or AI support — position a support automation chatbot as the immediate win, with subscription query handling and returns automation as the specific use cases most likely to resonate.",
+        "score_rationale": "Nature Heart is a near-perfect target: German DTC supplements brand on Shopify, no live chat or AI support anywhere on the site, contact form as the sole support channel with no response time stated, and clear operational scale evidenced by thousands of product reviews and an active subscription model. The combination of DACH geography, wellness/supplements niche, visible support friction, and medium-high digital maturity justifies a strong Tier A score."
+      }
+    },
+    {
+      "url": "https://tallows.de",
+      "status": "ok",
+      "data": {
+        "company_name": "Tallow",
+        "website": "https://tallows.de",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "email"
+        ],
+        "support_pages_found": [
+          "/pages/contact",
+          "/policies/refund-policy",
+          "/policies/shipping-policy",
+          "/faq"
+        ],
+        "support_pain_signals": [
+          "Support is email-only (support@tallows.de) with no live chat or AI assistant visible",
+          "No stated response time on contact page — only 'wir melden uns so schnell wie möglich zurück' (we'll get back to you as soon as possible)",
+          "Returns process is manual email-based — customers must send written cancellation to a physical address or email",
+          "Order tracking outsourced to third-party link (track.hive.app) rather than handled in-store, likely generating 'where is my order' inquiries",
+          "Service hours limited to Mon–Fri 9:00–18:00, meaning no weekend coverage despite being a DTC brand",
+          "Shipping policy lists multiple country-specific rules and edge cases (customs, return costs) that likely generate repetitive support questions",
+          "200,000+ stated customers suggests significant inbound support volume"
+        ],
+        "speed_to_lead_signals": [
+          "No live chat or pre-purchase qualification tool visible — shoppers with product questions must email and wait",
+          "Skin type navigation (7 categories) exists but no quiz or AI recommendation engine to guide purchase decisions",
+          "No stated response time for support emails — new visitors cannot know how quickly they'll get answers before buying",
+          "Partnership inquiries directed to a separate email with no stated follow-up time"
+        ],
+        "digital_maturity_clues": [
+          "Built on Shopify (CDN URLs and cart structure confirm Shopify platform)",
+          "Loyalty/rewards program visible ('T-Club', T-Punkte) suggesting a third-party loyalty app is in use",
+          "Order tracking via Hive (track.hive.app) — third-party fulfillment/tracking tool",
+          "Fulfillment handled by Hive (c/o Hive, Maulbeerstraße 9, Rangsdorf) — 3PL in use",
+          "Cookie consent and extension-blocking behavior observed during scraping",
+          "Product review ratings visible on homepage (e.g. 5.0, 4.78, 4.93) — review app likely in use",
+          "Multi-language site supported (German and English versions detected)",
+          "Featured on 'Die Höhle der Löwen' (German Shark Tank) — indicates significant brand awareness and likely high traffic volumes",
+          "Available at Rossmann retail chain — omnichannel presence signals operational scale"
+        ],
+        "likely_automation_opportunity": "With 200,000+ customers, email-only support, no live chat, and a manual returns process, Tallow is highly exposed to repetitive support tickets around order status, returns, and product recommendations. An AI support chatbot could immediately deflect WISMO (where is my order) queries and return inquiries, while a pre-purchase qualification bot could replace the static skin-type navigation with an interactive recommendation experience.",
+        "confidence_level": "high",
+        "uncertainty_notes": "The /faq page slug was found but its actual FAQ content was not scraped — it rendered the homepage content instead, so the number and nature of FAQ questions is unknown. No Klaviyo or email marketing tool was directly confirmed. No chat tool was visible but cannot fully rule out scripts not rendered in the scrape.",
+        "score_1_to_10": 9,
+        "tier": "A",
+        "score_rationale": "Tallow is a German DTC skincare brand with 200,000+ customers, Shopify-based, featured on national TV (Höhle der Löwen), and selling at Rossmann — clear operational scale. Support is entirely email-based with limited hours, no live chat, and a manual returns flow, representing textbook support friction. The loyalty program and 3PL usage show solid digital maturity without any AI automation layer present, making this a high-confidence Tier A opportunity.",
+        "recommended_next_action": "Reach out via support@tallows.de referencing their scale (200k+ customers), email-only support model, and limited service hours — position an AI support agent as a solution to handle WISMO queries and return requests 24/7, and a pre-purchase skin recommendation bot to replace their static category navigation."
+      }
+    },
+    {
+      "url": "https://zendou.de",
+      "status": "ok",
+      "data": {
+        "company_name": "Zendou",
+        "website": "https://zendou.de",
+        "country": "Germany",
+        "category": "wellness",
+        "visible_contact_options": [
+          "contact form"
+        ],
+        "support_pages_found": [
+          "/faq",
+          "/help",
+          "/shipping",
+          "/returns"
+        ],
+        "support_pain_signals": [
+          "FAQ page exists at /pages/info but actual FAQ content was not successfully scraped — suggests customers must navigate there manually with no AI assistance",
+          "No live chat visible anywhere on the site",
+          "Dedicated contact page exists but no stated response time or support hours",
+          "Shipping and returns pages returned 404 errors, meaning customers cannot self-serve on key post-purchase questions and likely escalate to contact form",
+          "No returns portal or automated returns flow visible — process appears to be manual",
+          "Brand claims 40,000+ happy customers, indicating meaningful order volume with no visible automated support layer"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form is the only inbound channel — no stated SLA or response time visible",
+          "B2B/Geschäftskunden section present with a dedicated page, but no live chat or instant qualification for wholesale inquiries",
+          "Newsletter signup present but no chatbot or interactive pre-purchase guidance to help visitors choose between 5 product variants"
+        ],
+        "digital_maturity_clues": [
+          "Built on Shopify (cdn.shopify.com asset URLs and Shopify store structure confirmed)",
+          "Shop.app integration visible (blocked by extension during scrape, but URL present)",
+          "Customer account login available",
+          "Newsletter page present suggesting email marketing is active",
+          "Slideshow/hero banners and discount mechanic (Spare 5%) suggest some CRO tooling",
+          "No third-party live chat tools visible",
+          "No visible AI assistant or chatbot",
+          "Cookie consent or Klaviyo not confirmed from available content"
+        ],
+        "likely_automation_opportunity": "Support automation would have the highest immediate impact: with 40,000+ customers, no live chat, and broken self-serve pages for shipping and returns, inbound support volume is likely high and entirely manual. An AI chatbot handling order status, scent selection guidance, and returns FAQs would reduce load significantly.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "The actual FAQ content at /pages/info was not scraped — its depth and question volume are unknown. Shipping, returns, and help pages all returned 404 errors so their content is unavailable. No contact page content was scraped so it is unknown whether an email address or response time is stated. Third-party tools like Klaviyo or review apps could not be confirmed. Returns process details are entirely unknown.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Zendou is a German DTC wellness brand on Shopify with 40,000+ customers and a product line that generates natural support questions around scent selection, usage, and gifting. There is no live chat, no AI, and the self-serve pages for shipping and returns are broken (404), creating clear support friction. The score is held at 7 rather than 8+ because the actual FAQ page content could not be confirmed, no email address or hard support friction evidence was directly observed in scraped text, and digital maturity signals are moderate rather than strong.",
+        "recommended_next_action": "Reach out via the contact form at zendou.de/pages/contact, referencing their 40,000+ customer base, the absence of live chat, and the broken shipping/returns self-serve pages as a specific pain point — position an AI support chatbot as a way to handle post-purchase queries and scent selection questions at scale."
+      }
+    },
+    {
+      "url": "https://pure-soul-shop.de",
+      "status": "ok",
+      "data": {
+        "company_name": "PURE SOUL Naturkosmetik",
+        "website": "https://www.pure-soul-shop.de",
+        "country": "Germany",
+        "category": "natural cosmetics / personal care (deodorant)",
+        "visible_contact_options": [
+          "customer service page (link visible, content not scraped)"
+        ],
+        "support_pages_found": [
+          "/pages/faq",
+          "/policies/refund-policy",
+          "/policies/shipping-policy",
+          "/pages/kundenservice"
+        ],
+        "support_pain_signals": [
+          "FAQ page exists but its actual content was not rendered in the scrape — cannot confirm question volume",
+          "No live chat widget visible on any scraped page",
+          "No email address or phone number surfaced in scraped content",
+          "Customer service is routed through a dedicated page (/pages/kundenservice) suggesting manual handling",
+          "Refund and shipping policy pages present but actual policy content was not rendered, suggesting customers likely contact support for these queries",
+          "Over 30,000 users claimed — volume suggests meaningful inbound support load"
+        ],
+        "speed_to_lead_signals": [
+          "Product quiz present ('Unsicher welches Produkt? Quiz starten') with no visible AI follow-up or instant recommendation engine — pre-purchase qualification opportunity",
+          "B2B portal linked separately (puresoul-naturkosmetik.com) suggesting wholesale inquiries that may go unanswered quickly",
+          "No stated response time visible anywhere in scraped content"
+        ],
+        "digital_maturity_clues": [
+          "Built on Shopify (CDN URLs confirm Shopify platform)",
+          "Product review app in use (review counts visible on product listings)",
+          "Product quiz feature present on homepage",
+          "Bilingual site (German and English) suggesting some international ambition",
+          "Blog section present",
+          "Cookie consent banner character visible (Γ at top of pages, likely consent tool render artifact)",
+          "No third-party live chat tools visible in scraped content",
+          "AI-generated images referenced in file names (ChatGPT_Image references in CDN)"
+        ],
+        "likely_automation_opportunity": "A support automation chatbot would have strong impact here: with 30,000+ customers, a Shopify store, and a dedicated customer service page but no visible live chat, inbound questions about product selection, shipping, and returns are likely handled manually. The existing product quiz also signals pre-purchase qualification potential that an AI layer could convert more effectively.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "The FAQ page content, refund policy content, shipping policy content, and customer service page content were all scraped but rendered as navigation/boilerplate only — actual text of these pages was not available. This means FAQ question volume, return process details, and contact methods (email, form, phone) on the /pages/kundenservice page could not be confirmed. No third-party app scripts (e.g. Klaviyo, Gorgias, Zendesk) were visible in the scraped output.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "PURE SOUL is a German DTC natural cosmetics brand on Shopify with 30,000+ users and clear operational scale, placing it squarely in the target profile. No live chat is visible and support appears to be manually handled via a dedicated page. However, the actual content of the FAQ, contact, and policy pages was not rendered in the scrape, preventing confirmation of specific friction signals like form-only contact or high FAQ volume — limiting confidence for a Tier A rating.",
+        "recommended_next_action": "Visit /pages/kundenservice directly to identify the contact method (email or form), then reach out referencing their quiz tool, 30,000+ customer base, and absence of live chat — positioning support automation as the natural next step to their existing self-service efforts."
+      }
+    },
+    {
+      "url": "https://nooideo.de",
+      "status": "ok",
+      "data": {
+        "company_name": "nooi",
+        "website": "https://nooideo.de",
+        "country": "Germany",
+        "category": "beauty - deodorant/skincare",
+        "visible_contact_options": [
+          "contact form",
+          "email"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/policies/shipping-policy",
+          "/pages/agbs-nooi",
+          "/pages/datenschutzerklarung",
+          "/pages/impressum",
+          "/pages/about-nooi-deo"
+        ],
+        "support_pain_signals": [
+          "Email-only support with 24-48 hour response time stated",
+          "No live chat or AI support visible on contact page",
+          "Contact form requires manual response (no stated automation)",
+          "Single email address (hello@nooideo.com) for all inquiries suggests small support team",
+          "Shipping/returns policy is static document link, no self-service returns portal visible"
+        ],
+        "speed_to_lead_signals": [
+          "Contact form on /kontakt page with no mention of chatbot or instant response",
+          "Newsletter signup present but no post-purchase automation signals",
+          "Pre-order countdown visible on homepage but no AI-driven product recommendation or qualification funnel",
+          "No evidence of quiz, consultation, or AI chatbot pre-purchase"
+        ],
+        "digital_maturity_clues": [
+          "Shopify store with modern design and branding",
+          "Uses hCaptcha on contact form (indicates anti-spam awareness)",
+          "Product review app integrated (JudgeMe - showing 835 reviews)",
+          "Subscription management functionality present",
+          "No visible third-party live chat tools (Intercom, Drift, etc.)",
+          "Newsletter signup but no apparent email automation platform visible"
+        ],
+        "likely_automation_opportunity": "Support automation would have immediate impact — email-only support with stated 24-48 hour response creates friction on a growing brand with 835+ reviews. An AI chatbot handling order status, shipping inquiries, product questions, and returns inquiries could reduce support ticket volume significantly.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Could not determine: Klaviyo or other ESP integration, exact monthly order volume, current support ticket volume, whether they use SMS or WhatsApp for customer communication. Some page content was blocked by browser extension in scrape. No information about current pain points with support team size.",
+        "score_1_to_10": 8,
+        "tier": "A",
+        "score_rationale": "Strong DACH fit (German DTC beauty/skincare brand) with clear operational scale (835+ reviews, bundle offers, subscription product). Visible support friction: email-only with 24-48hr response on contact page, no live chat, no AI support, and manual contact form submission. Product category (natural deodorant) aligns with wellness/beauty niche. Modern Shopify store with JudgeMe reviews shows digital maturity but conspicuous absence of chat automation suggests readiness for solution. Contact path is clear and accessible.",
+        "recommended_next_action": "Reach out via contact form with subject 'Support automation for nooi' — reference their 835+ customer reviews, email-only support model with 24-48hr response time, and opportunity to reduce support burden while scaling. Mention specific use case: order status inquiries, shipping questions, and product guidance (sensitive skin, scent preferences) that could be handled by AI chatbot."
+      }
+    },
+    {
+      "url": "https://plantsarepurple.de",
+      "status": "ok",
+      "data": {
+        "company_name": "Plants are Purple",
+        "website": "https://plantsarepurple.de",
+        "country": "Germany",
+        "category": "skincare",
+        "visible_contact_options": [
+          "email",
+          "contact form",
+          "DM on social media"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/faqs",
+          "/pages/versand-retouren",
+          "/pages/versand-rucksendungen"
+        ],
+        "support_pain_signals": [
+          "FAQ page contains 20+ questions across multiple sections (shipping, returns, products, account, payment)",
+          "Support email-only with stated 48-hour response time (potential friction for urgent issues)",
+          "No live chat visible on website",
+          "Telephone contact marked 'folgt' (coming soon) — currently no phone support",
+          "Manual return process requiring customer to initiate 'Rückgabe anfragen' in account portal",
+          "Returns address changed between pages (versand-retouren vs kontakt), suggests ongoing operational confusion"
+        ],
+        "speed_to_lead_signals": [
+          "Shade Finder quiz (Typeform) exists but no stated response time or AI qualification",
+          "Contact form present but no indication of automated initial response or AI pre-qualification",
+          "No chatbot or AI-assisted pre-purchase guidance visible despite skincare product complexity (multiple skin types, serums, foundations)"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-based store (visible from URL structure and checkout flow)",
+          "Typeform integration for Shade Finder quiz",
+          "SSL encryption visible",
+          "Multiple payment methods integrated (PayPal, Klarna, Google Pay, Apple Pay, Shop Pay, iDeal)",
+          "Dermatest, PETA, and Green Point certifications displayed",
+          "Cookie consent banner present",
+          "No third-party AI chat or support tool visible",
+          "Newsletter signup not prominently featured in scraped content"
+        ],
+        "likely_automation_opportunity": "Support automation would have highest impact: FAQs are extensive (shipping, returns, products, accounts, payments) and support is email-only with 48-hour SLA. An AI chatbot handling order status, return inquiries, and product/skin-type questions could dramatically reduce support volume. Secondary opportunity: pre-purchase qualification via AI-enhanced Shade Finder to reduce returns and support load.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Live chat tool absence confirmed by absence from navigation and support pages. Phone support explicitly marked 'coming soon'. Newsletter/SMS signup not visible in scraped content. Exact current support volume and response time adherence unknown. No information on existing chatbot or automation tools.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "Strong niche fit: German DTC skincare brand (DACH region, clean beauty/wellness vertical). Clear support friction: email-only with 48-hour SLA, no live chat, extensive FAQ indicating high support volume. Visible contact path and good digital maturity (Shopify, Typeform, certifications). However, score held at B rather than A because: (1) no explicit signs of extreme operational scale visible in content, (2) returns process partly self-service (mitigating some friction), (3) pre-purchase qualification signals are modest (basic Typeform quiz, not complex sales funnel).",
+        "recommended_next_action": "Reach out via contact form referencing their extensive FAQ coverage (20+ support questions) and email-only support model. Highlight ROI potential of AI chatbot for order status and returns inquiries, especially for pre-purchase Shade Finder qualification to reduce returns. Mention DACH market expertise and skincare automation experience."
+      }
+    },
+    {
+      "url": "https://iplusm.berlin",
+      "status": "ok",
+      "data": {
+        "company_name": "i+m NATURKOSMETIK BERLIN",
+        "website": "https://iplusm.berlin",
+        "country": "Germany",
+        "category": "skincare, beauty, natural cosmetics",
+        "visible_contact_options": [
+          "contact form",
+          "email (info@iplusm.berlin)",
+          "physical address"
+        ],
+        "support_pages_found": [
+          "/kontakt",
+          "/faq",
+          "/widerruf",
+          "/versand__lieferung"
+        ],
+        "support_pain_signals": [
+          "FAQ page lists multiple detailed questions about shipping, payment, returns, and discounts but appears to require manual reading rather than interactive chat",
+          "No live chat visible on contact page",
+          "Contact page shows Chatarmin widget placeholder (requires user click to unlock) and Klaviyo newsletter form—no instant support visible",
+          "Returns process requires email to info@iplusm.berlin with manual return label generation",
+          "FAQ structure is text-heavy and static rather than AI-driven or chatbot-assisted",
+          "Support questions about order status, returns, and shipping would likely require email communication"
+        ],
+        "speed_to_lead_signals": [
+          "AI skin analysis tool present on homepage (/ki-hautanalyse/) suggests pre-purchase qualification capability, but no indication of AI-driven follow-up after quiz completion",
+          "Newsletter signup (Klaviyo) visible on multiple pages, but no stated response time for inquiries",
+          "Contact form gated behind Chatarmin widget, which may slow initial inquiry submission",
+          "No visible chatbot or instant response mechanism for product questions or consultation requests"
+        ],
+        "digital_maturity_clues": [
+          "Uses Klaviyo for email marketing and newsletter (visible on multiple pages)",
+          "Implements AI skin analysis tool on homepage for personalized product recommendations",
+          "Has Chatarmin widget integrated for contact (though gated behind acceptance)",
+          "WordPress-based site with modern e-commerce setup",
+          "Cookie consent banner present",
+          "No third-party live chat tool (Intercom, Drift, etc.) visible",
+          "Review aggregation via Reviews.io (2,449+ reviews visible)",
+          "Structured shipping and returns documentation"
+        ],
+        "likely_automation_opportunity": "Support automation for FAQ-heavy queries (shipping, returns, payment, product details) via AI chatbot would reduce email load on info@iplusm.berlin. Pre-purchase qualification via enhanced AI skin analysis with instant product recommendations and follow-up messaging could accelerate conversion from the quiz stage. Speed-to-lead via automated response routing for consultation inquiries.",
+        "confidence_level": "high",
+        "uncertainty_notes": "Contact form backend (Chatarmin widget) is gated and not fully visible in scraped content—actual form fields and response workflow unknown. Monthly offer and coupon strategy visible but long-term support volume/staffing unknown. No direct evidence of current support response times or ticket backlog.",
+        "score_1_to_10": 7,
+        "tier": "B",
+        "score_rationale": "i+m is a strong niche fit: established DACH skincare/beauty brand (German-based, serving DE/AT), certified organic/vegan cosmetics with 46+ years history, clear support friction (email-only for returns, gated contact form, FAQ-heavy but no live chat). Digital maturity is solid (Klaviyo, AI skin analysis tool, reviews integration), but lacks live chat or visible AI-driven support automation. Support pages exist but are manual/static. Contact path is present but not frictionless. Moderate confidence due to clear niche fit and visible pain signals, but score reflects lack of obvious advanced support automation already in place.",
+        "recommended_next_action": "Reach out via info@iplusm.berlin or contact form referencing their FAQ volume on returns/shipping and lack of live chat support. Highlight that AI chatbot could handle 80%+ of their FAQ traffic (shipping costs, return process, payment methods, product recommendations post-skin-analysis). Mention potential to integrate with their Klaviyo workflows for speed-to-lead on quiz completions."
+      }
+    }
+  ]
+}

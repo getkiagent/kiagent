@@ -1,0 +1,16 @@
+# GetKiAgent — Unscored Clean URLs (DTC E-Commerce only)
+# Generiert: 2026-04-09 | Gefiltert aus unscored-urls.txt (13 entfernt, 13 übrig)
+
+https://amazingy.com/de/
+https://at.iherb.com/pr/himalaya-organic-ashwagandha-90-caplets/83135
+https://beautypython.ch/collections/savondine-bio-naturkosmetik
+https://erlebe-naturseife.de/collections/neuste-artikel/products/zero-waste-kosmetik
+https://ksisters.de/product/anua-niacinamide-10-txa-4-dark-spot-correcting-serum
+https://shop.natuvisan.ch/collections/naturkosmetik?srsltid=AfmBOooOXRN5YkMpzNJitIUCD1-MwtDS94N5DKZZgYHzUYpzRS4LnaS_
+https://www.avocadostore.de/wellness-und-pflege/kosmetik
+https://www.bauhaus.ch/
+https://www.coop.ch/de/kosmetik-gesundheit/koerperpflege/naturkosmetik/c/m_9844?srsltid=AfmBOooE4XDQtkZn1BK1YxXQCUvDDN-5QJxSU2aFKbOv6pHAT9V-dS3a
+https://www.decathlon.de/sporternahrung/nahrungserganzung
+https://www.kraeuterbeer.ch/
+https://www.parfum.de/
+https://www.slimcenter.de/ashwagandha.html

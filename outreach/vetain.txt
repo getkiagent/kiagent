@@ -1,0 +1,18 @@
+Betreff: Self-Service-Ausbau bei Vetain
+
+Hi,
+
+eure Forms-Strategie ist clever — aber ich vermute, dass Anfragen zu Inhaltsstoffen, Veganität oder Flavor-Empfehlungen trotzdem vor dem Kauf im Postfach landen, weil sie nicht in eine Form passen.
+
+Genau diese Lücke zwischen Self-Service und Kaufentscheidung schließen wir.
+
+Ein KI-Agent, der Pre-Purchase-Fragen direkt im Shop qualifiziert und Post-Purchase-Status proaktiv beantwortet, würde euren bestehenden Prozess verlängern — nicht ersetzen.
+
+Habt ihr das intern schon mal angeschaut?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

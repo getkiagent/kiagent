@@ -1,0 +1,18 @@
+Betreff: Selbstservice-Lücke bei TEAM DR JOSEPH
+
+Hi,
+
+mir ist aufgefallen, dass eure FAQ-, Help- und Shipping-Seiten aktuell alle auf 404 laufen — das heißt, jede Frage zu Versand, Retouren oder Produkten landet direkt bei eurem Team. Bei eingeschränkten Bürozeiten und Kunden aus DE, AT, CH und IT gleichzeitig dürfte das einiges an manuellem Aufwand bedeuten.
+
+Genau diese Anfragen decken wir für Multi-Markt-Brands ab.
+
+Ein Agent für Versandstatus, Rückgaben und Produkt-FAQs würde den Großteil abfangen — auch außerhalb eurer Erreichbarkeit.
+
+Habt ihr das intern schon mal angeschaut?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

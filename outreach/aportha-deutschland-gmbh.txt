@@ -1,0 +1,16 @@
+Betreff: Versandanfragen außerhalb der Öffnungszeiten bei APOrtha
+
+Hi,
+
+wer freitagabend fragt, was die Lieferung nach Österreich kostet oder welche Rücksendeadresse für Polen gilt, wartet bei euch bis Montagmorgen. Ich vermute, dass sich genau solche Anfragen bei Multi-Country-Versand regelmäßig stauen.
+
+Diese Lücke zwischen Öffnungszeiten und Kundenanfragen schließen wir für DTC-Brands mit eigenem Shop.
+
+Ein Agent, der Versandkosten, Lieferzeiten und länderspezifische Retouren-Informationen rund um die Uhr beantwortet, würde den größten Teil davon abfangen.
+
+Habt ihr das intern schon mal angeschaut?
+
+P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

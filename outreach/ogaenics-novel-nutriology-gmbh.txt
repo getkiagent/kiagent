@@ -1,0 +1,16 @@
+Betreff: Pre-Purchase-Fragen bei Ogaenics
+
+Hi,
+
+wer 24-48 Stunden auf eine Antwort zu Wechselwirkungen oder Dosierung wartet, hat bis dahin oft woanders gekauft. Ich wette, dass ein guter Teil eurer eingehenden Mails genau diese Fragen sind — strukturiert, wiederholbar, aber trotzdem manuell beantwortet.
+
+Wir bauen KI-Agenten, die solche Supplement-Fragen direkt auf der Produktseite in Echtzeit beantworten.
+
+Für euer Sortiment wäre ein Agent rund um Inhaltsstoffe und Verzehrempfehlungen wahrscheinlich der relevanteste Einstieg.
+
+Macht das für euch gerade Sinn?
+
+P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

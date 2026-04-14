@@ -1,0 +1,20 @@
+Betreff: Post-Purchase-Anfragen bei Zendou
+
+An: [EMAIL MANUELL EINTRAGEN]
+
+Hi,
+
+bei 40.000+ Kunden und gleichzeitig nicht erreichbaren Versand- und Retouren-Seiten vermute ich, dass ein Großteil eurer Kontaktformular-Eingänge Fragen beantwortet, die eigentlich niemanden im Team beschäftigen sollten.
+
+Wir automatisieren genau diese Anfragen für Shopify-Brands.
+
+Ein Agent für Bestellstatus und Rückgaben würde den Großteil abfangen, bevor er überhaupt euer Postfach erreicht.
+
+Habt ihr das intern schon mal angeschaut?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

@@ -1,0 +1,18 @@
+Betreff: Kontaktformular & Produktberatung bei Hautwohl
+
+Hi,
+
+ich vermute, dass Kundinnen, die unsicher sind welche Seife zu ihrem Hauttyp passt, gerade denselben Weg nehmen wie jemand mit einer Reklamation — einmal ins Formular, dann warten.
+
+Solche Beratungsanfragen lassen sich gut automatisieren, bevor sie überhaupt beim Team ankommen.
+
+Ein Agent für Hauttyp-Empfehlungen, Inhaltsstoffe und Versandinfos würde den größten Teil des Formularvolumens abfangen.
+
+Habt ihr über einen solchen Ansatz schon mal nachgedacht?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

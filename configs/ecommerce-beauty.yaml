@@ -1,0 +1,202 @@
+niche:
+  name: "ecommerce-beauty"
+  display_name: "E-Commerce Beauty & Supplements"
+  vertical: "E-Commerce DTC"
+  region: "DACH"
+  signature_line: "Ilias Ism | GetKiAgent"
+  demo_url: "https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e"
+
+discovery:
+  source: "duckduckgo"
+  ddg_queries:
+    # Skincare DE — Long-Tail
+    - "Naturkosmetik online Shop versandkostenfrei"
+    - "vegane Hautpflege Serum kaufen"
+    - "clean beauty Shop Deutschland"
+    - "nachhaltige Kosmetik Shop Deutschland"
+    - "zero waste Kosmetik online kaufen"
+    - "Naturkosmetik Marke gegründet"
+    - "Bio Gesichtspflege zertifiziert COSMOS BDIH kaufen"
+    - "plastikfreie Naturkosmetik online Shop"
+    # Ingredient-basierte Queries
+    - "Hyaluron Serum kaufen"
+    - "Niacinamid Serum kaufen"
+    - "Retinol Creme online kaufen"
+    - "Vitamin C Serum Shop Deutschland"
+    - "Bakuchiol Serum kaufen"
+    # Supplements DE
+    - "Nahrungsergänzungsmittel Shop Kollagen Abo"
+    - "vegane Proteinpulver Eigenmarke online kaufen"
+    - "adaptogene Ashwagandha Nahrungsergänzung kaufen"
+    - "Bio Supplements Vitamine Kapseln Online Shop"
+    - "Vitamin Supplements Shop schweiz"
+    # Wellness / CBD DE
+    - "Bio Skincare Abo bestellen"
+    - "CBD Kosmetik Shop Österreich"
+    - "CBD Öl Naturprodukte Shop online kaufen"
+    # Natural Cosmetics / Hair / Body
+    - "vegane Naturkosmetik ohne Tierversuche Shop"
+    - "Haarpflege Bio Shampoo Conditioner Online Shop"
+    - "Naturkosmetik Deo vegan kaufen"
+    - "Bio Körperpflege Shop nachhaltig"
+    # Höhle der Löwen / Startup-Signals
+    - "Höhle der Löwen Kosmetik"
+    - "Höhle der Löwen Supplements"
+    - "Startup Naturkosmetik Deutschland gegründet"
+    # AT
+    - "Naturkosmetik versandkostenfrei kaufen Eigenmarke site:.at"
+    - "Nahrungsergänzungsmittel Bio Vitamine Shop site:.at"
+    - "CBD Kosmetik Shop Österreich site:.at"
+    # CH
+    - "Naturkosmetik Schweiz online Shop Eigenmarke site:.ch"
+    - "Nahrungsergänzungsmittel Supplements kaufen site:.ch"
+    # Beauty / Kosmetik DTC
+    - "Beauty Brand Eigenmarke Deutschland online kaufen"
+    - "Kosmetik Eigenmarke DTC direct-to-consumer Shop"
+    - "Lippenstift Lipgloss Eigenmarke Shop Deutschland"
+    - "Foundation Concealer Eigenmarke online kaufen"
+    - "Parfum Eigenmarke Online Shop Deutschland"
+    - "Körperpflege Eigenmarke DTC nachhaltiger Shop"
+    - "Make-up Eigenmarke vegan cruelty-free online kaufen"
+    - "Beauty Startup gegründet Eigenmarke Shop Deutschland"
+    - "Haarpflege Eigenmarke Shop Österreich"
+    - "Beauty Kosmetik Eigenmarke Schweiz DTC shop"
+    # Supplements DACH — Long-Tail
+    - "Magnesium Bisglycinat Kapseln Eigenmarke kaufen"
+    - "Omega 3 Algenöl vegan Abo bestellen Deutschland"
+    - "Kollagen Peptide Trinkampullen Eigenmarke Shop"
+    - "Pre Workout Booster vegan Eigenmarke online kaufen"
+    - "Nootropika Fokus Kapseln Shop Deutschland"
+    - "Probiotika Darmflora Kapseln Eigenmarke kaufen"
+    - "Vitamin D3 K2 Tropfen hochdosiert online Shop"
+    - "Startup Nahrungsergänzung gegründet Deutschland Eigenmarke"
+    - "Bio Superfood Pulver Adaptogen Shop versandkostenfrei"
+    - "Nahrungsergänzung Abo Box Deutschland bestellen"
+    # Supplements AT
+    - "Vitamine Mineralstoffe Eigenmarke Abo site:.at"
+    - "Bio Supplements Kapseln online Shop Österreich site:.at"
+    # Supplements CH
+    - "Nahrungsergänzungsmittel Eigenmarke Schweiz Abo site:.ch"
+    # Pet Care DTC
+    - "Bio Hundefutter Abo Eigenmarke kaufen"
+    - "Insektenprotein Hundefutter nachhaltig Shop Deutschland"
+    - "getreidefreies Katzenfutter Eigenmarke Abo bestellen"
+    - "kaltgepresstes Hundefutter direkt Hersteller kaufen"
+    - "Nassfutter Katze hoher Fleischanteil Eigenmarke Shop"
+    - "BARF Rohfutter Hund Eigenmarke online kaufen"
+    - "Nahrungsergänzung Hund Gelenke Lachsöl Shop"
+    - "Höhle der Löwen Hundefutter Startup"
+    - "Startup Pet Food gegründet Deutschland Eigenmarke"
+    - "Bio Hundesnacks getreidefrei Abo versandkostenfrei"
+    # Pet Care AT
+    - "Premium Hundefutter Eigenmarke online kaufen site:.at"
+    - "Bio Katzenfutter Abo Österreich site:.at"
+    # Pet Care CH
+    - "Hundefutter Eigenmarke Schweiz DTC site:.ch"
+    # Vegan Food DTC
+    - "vegane Fleischalternative Eigenmarke online kaufen"
+    - "pflanzliche Milchalternative Haferdrink Eigenmarke Shop"
+    - "vegane Fertiggerichte Abo bestellen Deutschland"
+    - "Bio veganer Käse Eigenmarke online kaufen"
+    - "plant based Protein Riegel DTC Shop Deutschland"
+    - "vegane Bio Snacks Abo versandkostenfrei Deutschland"
+    - "Tempeh Tofu Eigenmarke Hersteller direkt kaufen"
+    - "Höhle der Löwen vegan Food Startup"
+    - "Startup vegane Lebensmittel gegründet Deutschland"
+    - "vegane Schokolade Manufaktur Eigenmarke online kaufen"
+    # Vegan Food AT
+    - "vegane Lebensmittel Eigenmarke Abo site:.at"
+    - "Bio vegan Shop Österreich versandkostenfrei site:.at"
+    # Vegan Food CH
+    - "vegane Produkte Eigenmarke Schweiz online site:.ch"
+    # Mens Grooming
+    - "Bartöl Bartpflege Eigenmarke online kaufen"
+    - "Herren Pflegeset Rasur Abo bestellen Deutschland"
+    - "Rasierhobel Rasierklingen Eigenmarke Shop Deutschland"
+    - "Männer Gesichtspflege Serum Eigenmarke online kaufen"
+    - "nachhaltiger Herren Duschgel Shampoo DTC Shop"
+    - "Herrenparfum Manufaktur Eigenmarke direkt kaufen"
+    - "Bartpflege Abo Box versandkostenfrei Deutschland"
+    - "Höhle der Löwen Männerpflege Startup"
+    - "Startup Herrenkosmetik gegründet Deutschland Eigenmarke"
+    - "Naturkosmetik Männer vegan Eigenmarke Shop"
+    # Mens Grooming AT
+    - "Herren Pflege Bartöl Eigenmarke site:.at"
+    - "Männerkosmetik online Shop Österreich site:.at"
+    # Mens Grooming CH
+    - "Männerpflege Eigenmarke Schweiz DTC site:.ch"
+    # Shopify / WooCommerce Store Signals
+    - "Naturkosmetik Shop \"Powered by Shopify\" Deutschland"
+    - "Beauty Kosmetik Eigenmarke Shopify Store DACH"
+    - "Kosmetik WooCommerce Shop Eigenmarke Deutschland"
+    - "Skincare Beauty Brand Shopify gegründet"
+    - "Naturkosmetik beauty brand direct consumer shopify"
+  export_limit: 100
+
+scoring:
+  pain_signals:
+    - "Kein Live-Chat sichtbar"
+    - "Nur E-Mail-Kontakt oder Kontaktformular"
+    - "FAQ-Seite fehlt, ist lückenhaft oder gibt 404"
+    - "Retourenabwicklung läuft manuell (E-Mail/Formular)"
+    - "Mehrsprachig oder Multi-Country — höheres Supportvolumen"
+    - "Abo-Modell vorhanden — wiederkehrende Support-Queries"
+    - "Komplexe Produkte (Inhaltsstoffe, Dosierung, Wirkung) — Pre-Purchase-Fragen"
+    - "Keine Pre-Purchase-Beratung (kein Chat, kein Quiz, kein Konfigurator)"
+    - "Keine sichtbare Reaktionszeit bei Kontaktanfragen"
+    - "Keine Chatbot-Infrastruktur erkennbar"
+  opportunity_signals:
+    - "Active website with regular updates"
+    - "Visible customer testimonials"
+    - "Multiple contact channels mentioned"
+    - "Service area clearly defined"
+  disqualifiers:
+    - "Marktplatz, Aggregator, Blog (kein eigener Shop)"
+    - "Konzern oder Retail-Kette (>200 MA, hat eigenes Support-Team)"
+    - "Bereits Live-Chat oder KI-Support sichtbar"
+    - "Shop ist inaktiv oder gibt Fehler"
+    - "Website under construction"
+    - "No visible contact information"
+  tier_thresholds:
+    tier_a_min: 7
+    tier_b_min: 4
+    tier_c_min: 1
+
+outreach:
+  tier_a_prompt_file: "prompts/outreach_mail_v1.md"
+  tier_b_prompt_file: "prompts/outreach_mail_tier_b_v1.md"
+  cold_email_angle: "Support-Automatisierung für Bestellstatus, Retouren und Produkt-FAQ"
+  tone: "professional, concise, German business etiquette"
+  quality_gates:
+    max_main_body_words_tier_a: 120
+    max_main_body_words_tier_b: 100
+    require_ps_with_demo: true
+    forbidden_phrases:
+      - "Kein Skript-Bot"
+      - "24/7, auf Deutsch"
+    require_company_name_in_subject: true
+    single_cta_only: true
+    no_denglisch: true
+    no_flattery: true
+    no_feature_bullet_lists: true
+
+followups:
+  sequence_days: [3, 7, 14]
+  day_3_type: "Process Insight"
+  day_7_type: "Industry Comparison"
+  day_14_type: "Quick Win"
+  quality_gates:
+    max_words_per_followup: 100
+    must_add_new_value: true
+    no_apologies: true
+    fixed_cta: "Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?"
+
+delivery:
+  channel: "gmail_drafts"
+
+pricing:
+  setup_fee_eur: 2000
+  monthly_fee_eur: 500
+  minimum_contract_months: 3
+
+sheet_id: "1OReC3rBa6bMImrw96dbTryW5LlB0SYWnbpn_t7x0-u0"

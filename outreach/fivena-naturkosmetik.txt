@@ -1,0 +1,18 @@
+Betreff: Versandkosten-Anfragen bei Fivena Naturkosmetik
+
+Hi,
+
+ich wette, dass schwere Bestellungen bei euch regelmäßig im Kontaktformular landen — weil eure Shipping-Seite für genau diesen Fall auf manuelle Anfrage verweist. Das bedeutet: Kunde wartet, euer Team antwortet individuell, obwohl die Frage oft dieselbe ist.
+
+Solche wiederkehrenden Versandlogik-Anfragen lassen sich gut automatisieren.
+
+Ein Agent, der Versandkosten nach Gewicht und Lieferzone direkt berechnet und nebenbei Inhaltsstoff-Fragen beantwortet, würde den größten Teil abfangen.
+
+Macht Support-Automatisierung für euch gerade Sinn?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

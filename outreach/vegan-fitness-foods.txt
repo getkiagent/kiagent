@@ -1,0 +1,16 @@
+Betreff: Produktberatung bei Vegan Fitness & Foods
+
+Hi,
+
+ich vermute, dass ein guter Teil eurer Kontaktformular-Anfragen noch vor dem Kauf reinkommt — jemand überlegt zwischen zwei Proteinen, fragt nach Unverträglichkeiten oder will wissen, welche Aminosäuren-Kombination zu seinem Ziel passt. Alles Fragen, die eine Kaufentscheidung blockieren, bis jemand antwortet.
+
+Solche Beratungsmomente lassen sich gut aus dem Formular herauslösen.
+
+Ein KI-Agent der Protein-Typ, Verträglichkeit und Dosierung direkt im Shop klärt, verkürzt den Weg vom Interesse zum Kauf.
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

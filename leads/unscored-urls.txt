@@ -1,0 +1,29 @@
+# GetKiAgent — Unscored URLs (nicht in batch-results*.json)
+# Generiert: 2026-04-09 | Quelle: discovered-urls.txt vs batch-results.json + wave2 + wave3
+
+https://amazingy.com/de/
+https://at.iherb.com/pr/himalaya-organic-ashwagandha-90-caplets/83135
+https://beautypython.ch/collections/savondine-bio-naturkosmetik
+https://erlebe-naturseife.de/collections/neuste-artikel/products/zero-waste-kosmetik
+https://girlsvanitytablede.com/die-geschichte-der-naturkosmetik-in-deutschland-von-tradition-bis-moderne/
+https://healthcare24hrs.com/figur-hohle-der-lowen/
+https://justinekeptcalmandwentvegan.com/2017/04/ein-naturkosmetik-deo-das-wirklich-wirkt-weleda/
+https://ksisters.de/product/anua-niacinamide-10-txa-4-dark-spot-correcting-serum
+https://shop.natuvisan.ch/collections/naturkosmetik?srsltid=AfmBOooOXRN5YkMpzNJitIUCD1-MwtDS94N5DKZZgYHzUYpzRS4LnaS_
+https://test-vergleiche.com/produkte/satinnaturel-hyaluron-creme/
+https://vegconomist.de/handel-e-commerce/online-marktplatz-shop-like-you-give-a-damn/
+https://vitamister.ch/health-wellbeing/vitamins-supplements
+https://www.avocadostore.de/wellness-und-pflege/kosmetik
+https://www.bauhaus.ch/
+https://www.bing.com/aclick?ld=e8K0doktMbKixIwIxCBsmULzVUCUzthKeX_3g_2NrARJz3n8um02TJDXO_Sj46si4ZSCMQTaETGsPneuCJ1Z8jX05WjEsQHFAz_2BtQ0DKnoMDrEJC9pzAjXkV7sNNK0XxCaRngzeWbuQtpEWx-1DO7ZCcipMPGkBy1e2osZBB3OpRrpN-aETC3ELN1oeOgU0UBqk6wg&u=aHR0cHMlM2ElMmYlMmZ3d3cuY29tcGFuaXN0by5jb20lM2ZpY19hZHdvcmRzJTNkeWVzJTI2bXNjbGtpZCUzZGI3OWMwZTc1NjAxYzFmMWYwYzMzNjdhMmY2MDMxOWVhJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX2NhbXBhaWduJTNkREFDSC1Ob25CcmFuZCUyNnV0bV90ZXJtJTNkc3RhcnR1cHMlMjUyMGRldXRzY2hsYW5kJTI2dXRtX2NvbnRlbnQlM2RTdGFydHVwc19JbnZlc3RpZXJlbg&rlid=b79c0e75601c1f1f0c3367a2f60319ea
+https://www.businessinsider.com/guides/beauty/clean-beauty-brands-at-target
+https://www.buzzfeed.com/victoriakuglin/clean-beauty-sephora
+https://www.coop.ch/de/kosmetik-gesundheit/koerperpflege/naturkosmetik/c/m_9844?srsltid=AfmBOooE4XDQtkZn1BK1YxXQCUvDDN-5QJxSU2aFKbOv6pHAT9V-dS3a
+https://www.decathlon.de/sporternahrung/nahrungserganzung
+https://www.fitbook.de/ernaehrung/corridge-dhdl-deal
+https://www.kosmetik-vegan.de/erbse/das-naturkosmetik-label-cosmos-im-ueberblick/
+https://www.kraeuterbeer.ch/
+https://www.migros.ch/
+https://www.parfum.de/
+https://www.peta.de/veganleben/naturkosmetik-vegan-tierversuchsfrei/
+https://www.slimcenter.de/ashwagandha.html

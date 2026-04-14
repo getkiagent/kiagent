@@ -1,0 +1,18 @@
+Betreff: Pre-Purchase-Beratung bei Hempcare
+
+Hi,
+
+ich vermute, dass ein Teil eurer Anfragen Fragen sind, die Besucher eigentlich vor dem Kauf klären möchten — Wirkungsweise, Dosierung, Produktunterschiede — und die aktuell bei Dr. Grahovac landen, statt direkt beantwortet zu werden.
+
+Diese Fragen lassen sich sehr gut automatisieren, damit qualifizierte Beratungsanfragen priorisiert bleiben.
+
+Ein Agent, der die gängigen Produktfragen sofort beantwortet und nur komplexe Fälle weiterleitet, würde den Unterschied machen.
+
+Macht Support-Automatisierung für euch gerade Sinn?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

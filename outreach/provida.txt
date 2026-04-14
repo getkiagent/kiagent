@@ -1,0 +1,20 @@
+Betreff: Support-Automatisierung bei Provida
+
+An: [EMAIL MANUELL EINTRAGEN]
+
+Hi,
+
+ich vermute, dass regelmäßig Anfragen reinkommen wie „Welche Linie passt zu meiner Haut?" — und die landen gerade alle im Kontaktformular statt sofort eine Antwort zu bekommen.
+
+Bei einem Katalog mit Hauttyp-Filtern und spezialisierten Linien ist das vor dem Kauf oft entscheidend.
+
+Genau solche Beratungsanfragen — plus Bestellstatus — lassen sich mit einem KI-Agenten direkt im Shop abfangen.
+
+Habt ihr das intern schon mal angeschaut?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

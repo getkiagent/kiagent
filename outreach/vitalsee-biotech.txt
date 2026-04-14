@@ -1,0 +1,18 @@
+Betreff: Kontaktformular-Triage bei Vitalsee Biotech
+
+Hi,
+
+ich vermute, dass ein guter Teil der Nachrichten, die über info@vitalsee.at reinkommen, Fragen zu Inhaltsstoffen oder Verträglichkeit sind — Anfragen, die eigentlich keine menschliche Bearbeitung brauchen, aber trotzdem in derselben Queue landen wie Arzt- und Therapeutenanfragen.
+
+Genau diese zwei Ebenen lassen sich sauber trennen, bevor überhaupt jemand die Inbox öffnet.
+
+Ein Agent, der B2C-Produktfragen sofort beantwortet und B2B-Anfragen separat weiterleitet, würde den manuellen Sortieraufwand deutlich reduzieren.
+
+Habt ihr das intern schon mal angeschaut?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

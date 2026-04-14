@@ -1,0 +1,18 @@
+Betreff: Rückgabeprozess bei SHEKO
+
+Hi,
+
+ich wette, dass ein spürbarer Teil eurer Support-Mails direkt aus dem Rückgabeprozess kommt — Kunden fragen, ob ihre Bestellung überhaupt retournierbar ist, bevor sie überhaupt die Post bemühen.
+
+Solche Vorfeld-Anfragen lassen sich automatisieren, bevor sie im Posteingang landen.
+
+Ein Agent, der Rückgabeberechtigung prüft und gleichzeitig Produktfragen vor dem Kauf beantwortet, würde den größten Teil abfangen.
+
+Macht Support-Automatisierung für euch gerade Sinn?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

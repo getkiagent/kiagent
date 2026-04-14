@@ -1,0 +1,18 @@
+Betreff: Produktnavigation bei PuraZell
+
+Hi,
+
+ich vermute, dass Kunden, die sich zwischen euren liposomalen Produkten noch nicht sicher sind, gerade zwischen mehreren Infoseiten springen — und die Frage "Was ist für mich richtig?" trotzdem unbeantwortet bleibt.
+
+Genau dieser Moment vor dem Kauf lässt sich heute gut automatisieren.
+
+Ein KI-Agent, der nach Health-Concern fragt und dann gezielt in den Bundle-Konfigurator führt, würde das am direktesten lösen.
+
+Macht Support-Automatisierung für euch gerade Sinn?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

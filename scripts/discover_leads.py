@@ -66,6 +66,87 @@ SEARCH_QUERIES = [
     # ── CH ────────────────────────────────────────────────────────────────────
     ("Naturkosmetik Schweiz online Shop Eigenmarke site:.ch", "ch-de"),
     ("Nahrungsergänzungsmittel Supplements kaufen site:.ch", "ch-de"),
+    # ── Beauty / Kosmetik DTC ─────────────────────────────────────────────────
+    ("Beauty Brand Eigenmarke Deutschland online kaufen", "de-de"),
+    ("Kosmetik Eigenmarke DTC direct-to-consumer Shop", "de-de"),
+    ("Lippenstift Lipgloss Eigenmarke Shop Deutschland", "de-de"),
+    ("Foundation Concealer Eigenmarke online kaufen", "de-de"),
+    ("Parfum Eigenmarke Online Shop Deutschland", "de-de"),
+    ("Körperpflege Eigenmarke DTC nachhaltiger Shop", "de-de"),
+    ("Make-up Eigenmarke vegan cruelty-free online kaufen", "de-de"),
+    ("Beauty Startup gegründet Eigenmarke Shop Deutschland", "de-de"),
+    ("Haarpflege Eigenmarke Shop Österreich", "at-de"),
+    ("Beauty Kosmetik Eigenmarke Schweiz DTC shop", "ch-de"),
+    # ── Supplements DACH — Long-Tail / Nische ────────────────────────────────
+    ("Magnesium Bisglycinat Kapseln Eigenmarke kaufen", "de-de"),
+    ("Omega 3 Algenöl vegan Abo bestellen Deutschland", "de-de"),
+    ("Kollagen Peptide Trinkampullen Eigenmarke Shop", "de-de"),
+    ("Pre Workout Booster vegan Eigenmarke online kaufen", "de-de"),
+    ("Nootropika Fokus Kapseln Shop Deutschland", "de-de"),
+    ("Probiotika Darmflora Kapseln Eigenmarke kaufen", "de-de"),
+    ("Vitamin D3 K2 Tropfen hochdosiert online Shop", "de-de"),
+    ("Startup Nahrungsergänzung gegründet Deutschland Eigenmarke", "de-de"),
+    ("Bio Superfood Pulver Adaptogen Shop versandkostenfrei", "de-de"),
+    ("Nahrungsergänzung Abo Box Deutschland bestellen", "de-de"),
+    # ── Supplements AT ────────────────────────────────────────────────────────
+    ("Vitamine Mineralstoffe Eigenmarke Abo site:.at", "at-de"),
+    ("Bio Supplements Kapseln online Shop Österreich site:.at", "at-de"),
+    # ── Supplements CH ────────────────────────────────────────────────────────
+    ("Nahrungsergänzungsmittel Eigenmarke Schweiz Abo site:.ch", "ch-de"),
+    # ── Pet Care DTC — Long-Tail / Nische ────────────────────────────────────
+    ("Bio Hundefutter Abo Eigenmarke kaufen", "de-de"),
+    ("Insektenprotein Hundefutter nachhaltig Shop Deutschland", "de-de"),
+    ("getreidefreies Katzenfutter Eigenmarke Abo bestellen", "de-de"),
+    ("kaltgepresstes Hundefutter direkt Hersteller kaufen", "de-de"),
+    ("Nassfutter Katze hoher Fleischanteil Eigenmarke Shop", "de-de"),
+    ("BARF Rohfutter Hund Eigenmarke online kaufen", "de-de"),
+    ("Nahrungsergänzung Hund Gelenke Lachsöl Shop", "de-de"),
+    ("Höhle der Löwen Hundefutter Startup", "de-de"),
+    ("Startup Pet Food gegründet Deutschland Eigenmarke", "de-de"),
+    ("Bio Hundesnacks getreidefrei Abo versandkostenfrei", "de-de"),
+    # ── Pet Care AT ───────────────────────────────────────────────────────────
+    ("Premium Hundefutter Eigenmarke online kaufen site:.at", "at-de"),
+    ("Bio Katzenfutter Abo Österreich site:.at", "at-de"),
+    # ── Pet Care CH ───────────────────────────────────────────────────────────
+    ("Hundefutter Eigenmarke Schweiz DTC site:.ch", "ch-de"),
+    # ── Vegan Food DTC — Long-Tail / Nische ──────────────────────────────────
+    ("vegane Fleischalternative Eigenmarke online kaufen", "de-de"),
+    ("pflanzliche Milchalternative Haferdrink Eigenmarke Shop", "de-de"),
+    ("vegane Fertiggerichte Abo bestellen Deutschland", "de-de"),
+    ("Bio veganer Käse Eigenmarke online kaufen", "de-de"),
+    ("plant based Protein Riegel DTC Shop Deutschland", "de-de"),
+    ("vegane Bio Snacks Abo versandkostenfrei Deutschland", "de-de"),
+    ("Tempeh Tofu Eigenmarke Hersteller direkt kaufen", "de-de"),
+    ("Höhle der Löwen vegan Food Startup", "de-de"),
+    ("Startup vegane Lebensmittel gegründet Deutschland", "de-de"),
+    ("vegane Schokolade Manufaktur Eigenmarke online kaufen", "de-de"),
+    # ── Vegan Food AT ─────────────────────────────────────────────────────────
+    ("vegane Lebensmittel Eigenmarke Abo site:.at", "at-de"),
+    ("Bio vegan Shop Österreich versandkostenfrei site:.at", "at-de"),
+    # ── Vegan Food CH ─────────────────────────────────────────────────────────
+    ("vegane Produkte Eigenmarke Schweiz online site:.ch", "ch-de"),
+    # ── Mens Grooming — Long-Tail / Nische ───────────────────────────────────
+    ("Bartöl Bartpflege Eigenmarke online kaufen", "de-de"),
+    ("Herren Pflegeset Rasur Abo bestellen Deutschland", "de-de"),
+    ("Rasierhobel Rasierklingen Eigenmarke Shop Deutschland", "de-de"),
+    ("Männer Gesichtspflege Serum Eigenmarke online kaufen", "de-de"),
+    ("nachhaltiger Herren Duschgel Shampoo DTC Shop", "de-de"),
+    ("Herrenparfum Manufaktur Eigenmarke direkt kaufen", "de-de"),
+    ("Bartpflege Abo Box versandkostenfrei Deutschland", "de-de"),
+    ("Höhle der Löwen Männerpflege Startup", "de-de"),
+    ("Startup Herrenkosmetik gegründet Deutschland Eigenmarke", "de-de"),
+    ("Naturkosmetik Männer vegan Eigenmarke Shop", "de-de"),
+    # ── Mens Grooming AT ──────────────────────────────────────────────────────
+    ("Herren Pflege Bartöl Eigenmarke site:.at", "at-de"),
+    ("Männerkosmetik online Shop Österreich site:.at", "at-de"),
+    # ── Mens Grooming CH ──────────────────────────────────────────────────────
+    ("Männerpflege Eigenmarke Schweiz DTC site:.ch", "ch-de"),
+    # ── Shopify / WooCommerce Store Signals ───────────────────────────────────
+    ("Naturkosmetik Shop \"Powered by Shopify\" Deutschland", "de-de"),
+    ("Beauty Kosmetik Eigenmarke Shopify Store DACH", "de-de"),
+    ("Kosmetik WooCommerce Shop Eigenmarke Deutschland", "de-de"),
+    ("Skincare Beauty Brand Shopify gegründet", "de-de"),
+    ("Naturkosmetik beauty brand direct consumer shopify", "de-de"),
 ]
 
 # ── Filter ────────────────────────────────────────────────────────────────────
@@ -106,6 +187,17 @@ DOMAIN_BLOCKLIST = {
     "mynewsdesk", "presseportal", "businesswire", "prnewswire",
     "t-online", "spiegel", "focus", "stern", "zeit", "faz", "handelsblatt",
     "cosmopolitan", "vogue", "elle", "instyle", "glamour",
+    # Supplements DACH — retailers & aggregators
+    "fitnessking", "sportnahrung-engel", "sportnahrung24", "powerstar-food",
+    "sanct-bernhard", "fatburnerking", "apodiscounter", "medikamente-per-klick",
+    # Pet Care — retailers & marketplaces
+    "fressnapf", "zooplus", "bitiba", "zooroyal", "das-futterhaus",
+    "futterhaus", "kolle-zoo", "maxizoo", "tiierisch", "hundeland",
+    # Vegan Food — retailers & aggregators
+    "alles-vegetarisch", "vantastic-foods", "veganversand", "vekoop",
+    "kokku-online", "reformhaus-shop",
+    # Mens Grooming — retailers & big brands
+    "gillette", "wilkinson", "braun-shop", "mankind", "mrporter", "hairshop24",
 }
 
 # Bereits analysierte Domains (aus batch-results.json) — nie erneut vorschlagen
@@ -206,9 +298,27 @@ def load_existing_urls(paths: list[str]) -> set[str]:
     return known
 
 
-def discover(num_queries: int, results_per_query: int) -> list[str]:
-    queries = SEARCH_QUERIES[:min(num_queries, len(SEARCH_QUERIES))]
+def _detect_region(query: str) -> str:
+    """Detect DDG region from query string: site:.at → at-de, site:.ch → ch-de, else de-de."""
+    if "site:.at" in query:
+        return "at-de"
+    if "site:.ch" in query:
+        return "ch-de"
+    return "de-de"
+
+
+def discover(num_queries: int, results_per_query: int, niche_queries: list[str] | None = None, leads_dir: str = "leads") -> list[str]:
+    if niche_queries is not None:
+        # Config-driven: list of query strings, region auto-detected
+        queries = [(q, _detect_region(q)) for q in niche_queries[:num_queries]]
+    else:
+        # Legacy: hardcoded SEARCH_QUERIES tuples
+        queries = SEARCH_QUERIES[:min(num_queries, len(SEARCH_QUERIES))]
+
     existing = load_existing_urls([
+        f"{leads_dir}/urls.txt",
+        f"{leads_dir}/batch-results.json",
+        f"{leads_dir}/discovered-urls.txt",
         "leads/urls.txt",
         "leads/batch-results.json",
         "leads/discovered-urls.txt",
@@ -229,7 +339,7 @@ def discover(num_queries: int, results_per_query: int) -> list[str]:
                 continue
             if not is_relevant_domain(domain):
                 continue
-            found_domains[domain] = url
+            found_domains[domain] = f"https://{domain}"
             new += 1
         print(f"           {new} neue Kandidaten")
         time.sleep(1)  # Rate-limit respektieren
@@ -253,7 +363,7 @@ def _sync_urls_to_sheet(urls: list[str]):
     """Trägt neue URLs mit leerem Status ins Sheet ein (Lead URL Scorer holt sie ab)."""
     import os
     import requests as req
-    webhook_url = os.getenv("N8N_OUTREACH_WEBHOOK")
+    webhook_url = os.getenv("N8N_DISCOVERY_WEBHOOK")
     if not webhook_url:
         return
     try:
@@ -271,31 +381,51 @@ def _sync_urls_to_sheet(urls: list[str]):
 
 
 def main():
+    from niche_config import load_niche_config
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--queries", type=int, default=99, help="Anzahl Suchqueries (Standard: alle)")
     parser.add_argument("--results", type=int, default=15, help="Ergebnisse pro Query")
-    parser.add_argument("--output", default="leads/discovered-urls.txt")
+    parser.add_argument("--output", default=None, help="Output path (auto-set when --niche used)")
+    parser.add_argument("--niche", default=None, help="Niche name — loads queries from configs/{niche}.yaml")
     args = parser.parse_args()
 
-    num_queries = min(args.queries, len(SEARCH_QUERIES))
-    print(f"\nLead Discovery gestartet ({num_queries} von {len(SEARCH_QUERIES)} Queries)")
+    config = load_niche_config(args.niche)
+    niche_queries = None
+    leads_dir = "leads"
+
+    if config:
+        niche_queries = config.get("discovery", {}).get("ddg_queries", [])
+        if not niche_queries:
+            print(f"ERROR: Keine ddg_queries in configs/{args.niche}.yaml gefunden")
+            sys.exit(1)
+        leads_dir = f"leads/{args.niche}"
+        total_queries = len(niche_queries)
+        print(f"\nNiche-Modus: {args.niche} ({total_queries} Queries in Config)")
+    else:
+        total_queries = len(SEARCH_QUERIES)
+
+    output = args.output or f"{leads_dir}/discovered-urls.txt"
+    num_queries = min(args.queries, total_queries)
+
+    print(f"\nLead Discovery gestartet ({num_queries} von {total_queries} Queries)")
     print(f"  {num_queries} Queries x {args.results} Ergebnisse = max. {num_queries * args.results} URLs\n")
 
-    urls = discover(num_queries, args.results)
+    urls = discover(num_queries, args.results, niche_queries=niche_queries, leads_dir=leads_dir)
 
     if not urls:
         print("\nKeine neuen Kandidaten gefunden.")
         return
 
-    save_discovered(urls, args.output)
+    save_discovered(urls, output)
     _sync_urls_to_sheet(urls)
 
     print(f"\n{'=' * 50}")
     print(f"  {len(urls)} neue Domains gefunden")
-    print(f"  Gespeichert in: {args.output}")
+    print(f"  Gespeichert in: {output}")
     print(f"{'=' * 50}")
     print("\nNaechster Schritt:")
-    print(f"  python scripts/batch_analyze.py {args.output}")
+    print(f"  python scripts/batch_analyze.py {output}" + (f" --niche {args.niche}" if args.niche else ""))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,101 @@
+{
+  "run_at": "2026-04-13T21:57:45.651757+00:00",
+  "total": 3,
+  "results": [
+    {
+      "url": "https://drbronner.de",
+      "status": "ok",
+      "data": {
+        "company_name": "Dr. Bronner's Deutschland",
+        "website": "https://drbronner.de",
+        "country": "Germany",
+        "category": "skincare",
+        "contact_email": "Not visible in scraped content",
+        "visible_contact_options": [],
+        "support_pages_found": [],
+        "support_pain_signals": [],
+        "speed_to_lead_signals": [],
+        "digital_maturity_clues": [
+          "Shopify CDN URLs detected (cdn/shop/)",
+          "Professional e-commerce setup with product collections",
+          "Newsletter subscription integrated",
+          "Blog/content marketing (ALL-ONE BLOG)"
+        ],
+        "likely_automation_opportunity": "N/A - Global brand with established support infrastructure",
+        "confidence_level": "low",
+        "uncertainty_notes": "Scraped content only shows homepage. No contact page, FAQ, support channels, or customer service information visible in provided data. Cannot determine if live chat, chatbot, or other support infrastructure exists. Dr. Bronner's is a global, established brand — likely has dedicated support team but cannot confirm from this limited scrape.",
+        "score_1_to_10": 1,
+        "tier": "C",
+        "score_rationale": "Dr. Bronner's is a well-established, global natural soap brand with significant brand recognition and resources. While the scraped homepage shows Shopify infrastructure and professional setup, the company is clearly operating at scale far beyond GetKiAgent's target SME segment (5–200 employees). No disqualifying signals found in the limited scrape, but this is a Tier C lead because: (1) Global corporation with likely 200+ employees and existing support infrastructure; (2) No contact/support information visible suggests support is handled elsewhere or through other channels; (3) Not a target DTC startup or growing niche e-commerce brand. This is a brand that likely already has customer service operations in place.",
+        "recommended_next_action": "Do not contact. This lead falls outside GetKiAgent's target customer profile (small to mid-market DTC brands, 5–200 employees). Dr. Bronner's is an established global brand that almost certainly has existing support infrastructure. Resources better spent on true SME e-commerce brands without support operations."
+      }
+    },
+    {
+      "url": "https://kosmetikfuchs.de",
+      "status": "ok",
+      "data": {
+        "company_name": "Kosmetikfuchs",
+        "website": "https://kosmetikfuchs.de",
+        "country": "Germany",
+        "category": "skincare",
+        "contact_email": "not_found",
+        "visible_contact_options": [
+          "phone"
+        ],
+        "support_pages_found": [],
+        "support_pain_signals": [
+          "Nur Telefon-Kontakt sichtbar (0 2432 - 90 49 450), keine E-Mail-Adresse auf Homepage",
+          "Keine FAQ-Seite im gescrapten Content erkannt",
+          "Keine Kontaktformular-URL gefunden",
+          "Keine Live-Chat-Integration erkennbar",
+          "Kein Rückgabe/Retouren-Prozess dokumentiert",
+          "Komplexe Produktkategorie (Kosmetikberatung) mit Fokus auf Fachberatung deutet auf hohe Pre-Purchase-Fragen"
+        ],
+        "speed_to_lead_signals": [
+          "Telefon-Beratung ist manuell und skaliert nicht automatisiert",
+          "Keine Self-Service-Optionen wie Chat, Quiz oder Produktfinder erkennbar",
+          "Fachberatung wird als Verkaufspunkt hervorgehoben, ist aber personell gebunden"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-Backend vermutet (moderne URL-Struktur, Account-Login, Wishlist)",
+          "Mehrsprachige Navigation vorhanden",
+          "Markenpartnerschaft mit etablierten Kosmetik-Brands (BABOR, Weleda, Dr. Hauschka etc.)",
+          "Magazin und Institut-Links deuten auf Content-Marketing"
+        ],
+        "likely_automation_opportunity": "Pre-Purchase-Beratung für häufige Fragen zu Inhaltsstoffen, Hauttypen-Matching und Produktempfehlungen könnte über einen KI-Chatbot teilautomatisiert werden, ohne die bestehende Telefon-Fachberatung zu ersetzen. Dadurch könnten Beraterinnen Zeit sparen und Kunden sofort Antworten erhalten.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Gescrapter Content endet abrupt bei der Pflege-Navigation. Keine dedizierte Kontakt-, FAQ- oder Support-Seite im Material enthalten. Tatsächliche Größe des Support-Teams unbekannt. Existenz von Live-Chat oder Chatbot-Lösung kann nicht vollständig ausgeschlossen werden, da nur Homepage und Navigations-HTML vorhanden.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "Kosmetikfuchs zeigt mehrere positive Signale: DTC-Beauty-Shop mit Fokus auf Fachberatung, hohe Produktkomplexität, etablierte Markenpartnerschaften und Mehrsprachigkeit deuten auf significantes Support-Volumen. Allerdings deutet das explizite Hervorheben von 'Kosmetischer Fachberatung' und das Telefon-CTA auf der Homepage darauf hin, dass Support bereits als Differenzierungsfaktor positioniert ist. Die begrenzte Information über Support-Infrastruktur (nur Telefon sichtbar), kombiniert mit der Unsicherheit über bestehende Automation oder Team-Größe, verhindert höhere Bewertung. Kein klares Disqualifikator vorhanden, aber auch keine überzeugenden Indicatoren für sofortige Automatisierungslücke erkennbar.",
+        "recommended_next_action": "LinkedIn-Recherche durchführen, um Team-Größe, Support-Struktur und aktuelle Tech-Stack zu verifizieren. Dann entweder: (1) direkter Anruf unter 0 2432 - 90 49 450 mit Pain-Hook 'Incoming-Chat-Anfragen während Öffnungszeiten automatisieren' oder (2) E-Mail-Recherche für Geschäftsführung/Manager durchführen und mit Angebot für kostenloses Audit zur Supportlast-Analyse kontaktieren."
+      }
+    },
+    {
+      "url": "https://lavera.de",
+      "status": "ok",
+      "data": {
+        "company_name": "lavera Naturkosmetik",
+        "website": "https://www.lavera.de",
+        "country": "Germany",
+        "category": "skincare",
+        "contact_email": "Not visible in provided content",
+        "visible_contact_options": [],
+        "support_pages_found": [],
+        "support_pain_signals": [],
+        "speed_to_lead_signals": [],
+        "digital_maturity_clues": [
+          "Shopify erkannt (CDN-URLs mit cdn/shop/files)",
+          "Mehrsprachig und Multi-Country Setup (Pflegeserien, Mehrsprachigkeit angedeutet)"
+        ],
+        "likely_automation_opportunity": "Nicht bewertbar — unzureichende Daten.",
+        "confidence_level": "low",
+        "uncertainty_notes": "Der gescrapte Content ist unvollständig und bricht ab. Keine Kontaktseite, FAQ, Livechat-Integration oder Support-Signale sichtbar. Homepage zeigt nur Navigation und Produktkategorien. Keine Informationen über Company Size, Support-Struktur, Retourenabwicklung oder Support-Kontakt vorhanden. Lavera ist eine etablierte Naturkosmetik-Marke, aber ohne vollständigen Content-Scrape kann Qualifizierung nicht seriös durchgeführt werden.",
+        "score_1_to_10": 2,
+        "tier": "C",
+        "score_rationale": "Lavera ist ein etabliertes, größeres Naturkosmetik-Unternehmen (nicht DTC-Startup/KMU wie typische GetKiAgent-Zielkunden). Der Content-Scrape ist unvollständig und zeigt keine Support-Pain-Signals. Ohne Kontaktseite, FAQ, Livechat-Status oder Support-Informationen kann nicht beurteilt werden, ob ein echtes Support-Lücken-Problem vorliegt. Die fehlenden Daten und die Größe des Unternehmens führen zu niedriger Konfidenz und Tier-C-Einstufung.",
+        "recommended_next_action": "Nicht verfolgen. Besuche https://www.lavera.de/pages/kontakt (oder ähnlich) um Kontaktseite, Support-Struktur und ggf. vorhandene Chat-Lösung zu prüfen. Falls lavera ein Konzern ist oder bereits Support-Infrastruktur hat, ist es kein Fit. Für ein sauberes Re-Assessment vollständigen Website-Scrape durchführen."
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+Betreff: Post-Purchase-Fragen bei RAW Naturkosmetik
+
+An: [EMAIL MANUELL EINTRAGEN]
+
+Hi,
+
+ich vermute, dass Kunden nach dem Kauf gerade schlicht keine Anlaufstelle finden — kein Kontaktformular, keine Retourenseite, keine Versandinfos. Bei einer Naturkosmetik-Brand kommen dazu noch Fragen zu Inhaltsstoffen und Verträglichkeit, die schnell eine Antwort brauchen.
+
+Diese Lücke schließen wir für Shopify-Shops im DACH-Raum.
+
+Ein KI-Agent für Bestellstatus, Rückgaben und Produkt-FAQ würde genau das abdecken.
+
+Habt ihr das intern schon mal angeschaut?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

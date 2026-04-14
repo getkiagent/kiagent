@@ -1,0 +1,18 @@
+Betreff: Retouren & Versandkomplexität bei Coos Cosmetics
+
+Hi,
+
+ich wette, dass ein guter Teil eurer WhatsApp-Nachrichten und Formular-Einreichungen um denselben Themenkomplex kreist: Wie läuft die Retoure ab, und wann kommt das Label?
+
+Wir bauen Agents, die genau diese Schritte — von der Rückgabeprüfung bis zur regionalen Versandinfo für DE, AT oder BE — ohne Wartezeit abwickeln.
+
+Für euch wäre wahrscheinlich ein Kombination aus Retouren-Triage und Versandauskunft am relevantesten, direkt im bestehenden WhatsApp-Kanal.
+
+Habt ihr das intern schon mal angeschaut?
+
+Hier eine kurze Demo, wie das konkret aussehen kann:
+https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+
+Ilias
+GetKiAgent — KI-Support für E-Commerce

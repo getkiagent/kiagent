@@ -1,0 +1,23 @@
+PFLICHT-GATE — Vorab-Prüfung:
+
+Stärkste Signale: Kein Live-Chat + manueller Email-only-Prozess für Retouren. Kein 404 vorhanden, also zweitstärkstes Signal: manueller Prozess. Verstärker: Hautberatungs-Quiz mit mehreren Hauttyp-Varianten (vorhandener Quiz = Pre-Purchase-Fragen).
+
+Fakten-Check: Pain = Email-only Retouren / kein Live-Chat. Verstärker = Hauttyp-Quiz / mehrere Hauttyp-SKUs. Das sind 2. ✓
+
+Zahlen-Check: "1000+" nicht verwenden → "tausende Bewertungen" oder weglassen. ✓
+
+Opener-Check: Bereits genutzte Muster: Frage-first ("wer bei euch nach X sucht"), Pain-first ("eure FAQ-Seite gibt 404"), Beobachtung/Nutzen-first ("eure Retourenseite ist nicht erreichbar"). Diesmal: Direkt oder Kontrast-Muster. ✓
+
+Brücken-Varianz: Vorherige Mails nutzen "Genau diese Anfragen kann ein KI-Agent...", "Statt dieses Volumen manuell abzuarbeiten...", "Eure Kunden bekommen in Sekunden...". Diesmal anderen Ansatz wählen. ✓
+
+---
+
+Betreff: Hautberatung bei Five Skincare — kurze Frage
+
+Hi,
+
+ihr bietet einen Hauttyp-Quiz und eine Beratungsseite an — aber wer danach noch Fragen zu Retouren oder Produkten hat, muss eine E-Mail schreiben und auf Antwort warten. Bei Skincare mit mehreren Hauttyp-Varianten entstehen genau dabei Fragen wie "Passt das Produkt zu sensibler Haut?" oder "Wie läuft eine Rücksendung ab?"
+
+Ein KI-Agent direkt im Shop könnte diese Anfragen nahtlos weiterführen — 24/7, auf Deutsch. Kein Skript-Bot, sondern ein Agent der eure Produkte, Hauttyp-Logik und Retourenregeln kennt.
+
+Hier eine kurze Demo (2 Min): https://

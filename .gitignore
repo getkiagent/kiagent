@@ -9,3 +9,7 @@ __pycache__/
 .bob/
 .agents/
 .augment/
+.claude/scheduled_tasks.lock
+.claude/worktrees/
+tasks/*.log
+deep-research-skills/

@@ -1,0 +1,158 @@
+{
+  "id": "M1",
+  "name": "E-Commerce AI Support Automation (existing)",
+  "description": "AI chatbots / ticket automation for Shopify and WooCommerce shops in DACH. Honest evaluation of the operator's existing, pre-revenue project.",
+
+  "fit_feasibility": {
+    "operator_fit_1_10": {
+      "score": 6,
+      "rationale": "Tooling fit is strong (n8n, Voiceflow, Firecrawl, Claude APIs cover the entire build). Delivery complexity for a Shopify/Woo support bot sits at 3/10 for dev-skill — a trained no-code operator can ship it. The real drag is non-technical: the operator lacks B2B sales background, no audience, and no existing e-commerce network in DACH. After several months, 0 paying customers with 119 outreach drafts and Wave 1-3 done is the single most important signal: the bottleneck is not the product, it is distribution and positioning in a commoditized category."
+    },
+    "time_to_first_euro_weeks": {
+      "value": "12-20 weeks from a clean restart with a narrower niche, a written reference case, and a paid pilot offer. For the current setup as-is: realistically 8-16 more weeks if Wave 2-3 converts, otherwise infinite — pre-revenue for 'months' with full pipeline is the tell."
+    },
+    "startup_capital_required_eur": {
+      "value": "80-180 EUR/month for the active stack (n8n Cloud ~20, Voiceflow starter ~50, Firecrawl ~20, Claude/OpenAI API ~30-60, Vercel/domain ~5-10, Apollo/Instantly optional +40-100). Fits under the 200 EUR/month hard filter."
+    }
+  },
+
+  "revenue_economics": {
+    "revenue_month_6_conservative_eur": {
+      "value": 0,
+      "rationale": "Baseline is the observed reality: several months in, 119 drafts sent, 0 paying customers. Conservative month-6 from today, given no case study and no referenceable client, is 0-500 EUR/month. Cold email reply rates for DACH B2B e-commerce are ~3-5%, positive-reply ~0.5-1.5%, close rates 5-15% of positive replies — a solo operator without case study lands on the low end."
+    },
+    "revenue_month_6_optimistic_eur": {
+      "value": 2500,
+      "rationale": "Optimistic-but-defensible: 2 Tier-A clients at ~1.5k EUR setup amortized + ~500-800 EUR/month retainer. This matches Emil-on-Voiceflow-style solo agency benchmarks (500-1000 USD retainer + setup) and requires hitting industry-typical 1-2% qualified-meeting rate plus closing every other meeting — aggressive for a first case."
+    },
+    "revenue_month_12_conservative_eur": {
+      "value": 1500,
+      "rationale": "Conservative 12-month: 2-3 retained clients at 500-700 EUR/month. Assumes one churn, one solid anchor case. Realistic given a single case study usually unlocks the next 2-3 wins, not 10."
+    },
+    "revenue_month_12_optimistic_eur": {
+      "value": 6000,
+      "rationale": "Optimistic 12-month: 6-8 retainers at 600-900 EUR/month plus occasional setup. This mirrors the 'solo running 10-12 retainers at 750-1k' case studies reported in 2025 solo-agency breakdowns — but in DACH with zero audience, that pace usually takes 18-24 months, not 12. 5-8k EUR/month is the realistic ceiling at 12 months with heads-down execution and a strong niche case."
+    },
+    "pricing_model": {
+      "value": "Setup + Retainer (productized). Setup 1.5-3k EUR covers bot build, content ingestion, Shopify/Woo integration, training. Retainer 400-900 EUR/month covers model costs, monthly tuning, small changes, basic analytics. Pure project pricing fails (one-shot revenue, no compounding). Performance pricing (per deflected ticket) sounds smart but requires analytics plumbing most SMB shops don't have — kills the sales cycle. SaaS is ruled out: the operator is a no-code integrator, not a product company, and the category is fully saturated by Tidio, Gorgias, Chatarmin, moinAI, Zendesk, Intercom, HeiChat, Zipchat, VanChat, SmartBot, Oscar Chat, Rep AI, and 20 more Shopify-app-store competitors."
+    },
+    "typical_setup_eur": {
+      "value": "1500-3000"
+    },
+    "typical_mrr_eur": {
+      "value": "400-900"
+    }
+  },
+
+  "acquisition": {
+    "primary_channel": {
+      "value": "Cold email with deep personalization (Firecrawl + Claude — the existing lead engine IS the unfair advantage here). LinkedIn works as warm-up layer, not primary: DACH e-commerce founders are on LinkedIn inconsistently. Shopify Plus / WooCommerce Germany meetups (eCommerce Berlin EXPO, Online Marketing Rockstars, K5) are the highest-leverage warm channel but require live attendance. Communities (Shopify German Slack groups, FB groups) are saturated with competing agencies. Content/partner route (Shopify Expert listing, agency directories) is slow but compounds.",
+      "best_mix": "70% cold outbound with niche-specific teardown video, 20% Shopify Partner / agency directory listing, 10% event networking. Ads are out per hard filter."
+    },
+    "icp_detailed": {
+      "value": "DACH D2C brand, Shopify or Shopware, 1-5M EUR annual revenue (the band that has ticket volume pain but cannot afford Zendesk+Intercom stack), 50-5000 orders/month, 1-3 person founder-led support team, single niche: natural cosmetics, supplements, CBD, or pet food (already in operator's lead DB). Decision maker: Founder/Geschäftsführer or Head of Customer Service. Budget signal: uses Gorgias/Zendesk/Freshdesk (~paying 200+ EUR/month already), ticket backlog visible on Trustpilot, German-language support with 24-48h response time complaints."
+    },
+    "linkedin_or_apollo_filters": {
+      "value": "Apollo: Industry = Consumer Goods OR Cosmetics OR Health/Wellness; Headcount 5-50; Country = DE/AT/CH; Keywords (company) = 'Shopify' OR 'Shopware' OR 'WooCommerce'; Title = Founder OR Geschäftsführer OR Head of Customer Service OR E-Commerce Manager; Revenue 1M-10M USD. LinkedIn Sales Navigator: same filters + 'Posted on LinkedIn past 30 days' + 'Years at current company 1-5'. Tech-stack filter via BuiltWith/Storeleads for 'Gorgias' or 'Zendesk Chat' installed — these shops already pay for support tooling."
+    },
+    "opening_message_template": {
+      "value": "Subject: '{FirstName}, 3 Tickets die euer Support gestern verloren hat' — then one-paragraph body referencing 2-3 ACTUAL questions pulled from their Trustpilot reviews or live chat via Firecrawl, showing a 20-second Loom of the bot answering those exact tickets in German with their product data. Closes with 'Pilot: 4 Wochen, 0 EUR, nur wenn >40% Ticketvolumen deflektieren.' Works because it is not a pitch — it is a demo of the deliverable before they sign anything. This is the operator's actual moat: nobody else in DACH is combining live scrape + Claude + video personalization at this level for a 50-EUR touch cost."
+    },
+    "contacts_per_week_needed": {
+      "value": "150-250 personalized first-touches/week to generate 3-6 qualified calls, 1-2 pilots started, 1 paying client every 4-6 weeks — this is the realistic cadence for an unknown solo operator with no case study in DACH SMB e-commerce."
+    },
+    "realistic_conversion_rate": {
+      "value": "Contact -> reply: 4-6% (Mailshake 2025 DACH benchmark 3.1% EU avg, personalized deep outreach reaches 5-8%). Reply -> call: 25-35%. Call -> pilot: 30-50%. Pilot -> paying: 30-50%. End-to-end: ~0.2-0.5% contact->customer. The existing pipeline (119 drafts, 0 customers) is statistically consistent with either (a) conversion is happening but you haven't shipped enough volume yet, OR (b) the offer/ICP is wrong. Given Wave 1 is sent and Wave 2/3 drafted with no bites: offer and proof, not volume, is the suspect."
+    },
+    "sales_cycle_days": {
+      "value": "21-45 days median from first touch to signed pilot; 45-75 days to paid retainer. Fits within the 30-60 day hard filter only if the operator runs parallel pilots, not sequential."
+    }
+  },
+
+  "delivery_risk": {
+    "delivery_complexity_solo_1_10": {
+      "score": 4,
+      "rationale": "Build: easy on Voiceflow/n8n. Integration with Shopify and Shopware is documented. The real delivery pain is ongoing: German-language edge cases, product catalog drift, seasonal FAQ spikes, hallucination monitoring, and handoff-to-human flows. 5 clients is manageable solo; 10 starts to break without better observability and scripted maintenance. Add model-cost surprises (LLM token blowouts during sales events) — these eat margin if retainer is flat-fee."
+    },
+    "scale_ceiling_solo": {
+      "value": "8-12 retainers solo before quality drops. Past that, either hire a part-time ops/support VA or productize hard (same bot template across niche, minimal customization)."
+    },
+    "churn_risk_6m": {
+      "value": "Medium-High. Drivers: (1) in-sourcing — once the bot works, the shop's e-com manager understands Voiceflow in a weekend; (2) native Shopify AI — Shopify's 'Sidekick' + Agentic Commerce (launched March 2026) plus free-tier Shopify chatbot apps pull the floor out from under standalone agency bots for small shops; (3) seasonality — shops cancel in Q1 after Christmas peak. Retention anchor: integration depth (CRM, order status, returns flow) and German-language tuning Shopify native cannot match per-shop."
+    },
+    "moat_1_10": {
+      "score": 3,
+      "rationale": "Low structural moat. Everything in the stack is available to the next person who watches two YouTube tutorials. The operator's actual moat is the combination of (a) live lead-analysis engine + (b) fast demo-site-per-prospect system + (c) German-language tuning. That is workflow moat, not technology moat — valuable for acquisition, not for retention or pricing power. A funded Shopify-native entrant with the same approach erases it."
+    },
+    "commoditization_risk": {
+      "value": "High and accelerating. Price-to-zero trajectory is visible in the Shopify app store: Chatty, SmartBot, Zipchat, HeiChat, VanChat, Flyweight, Crisp, Tidio all offer free or sub-50-EUR/month tiers with German support. Chatarmin and moinAI dominate the DACH-compliant mid-market natively. Gorgias + Intercom Fin lock the top. The 'solo agency builds you a chatbot for 2k setup + 600/month' pitch is being underpriced by apps at 29-99 EUR/month and over-served by enterprise at 500-2500 EUR/month. The 400-900 EUR/month retainer band survives only with (a) niche specialization and (b) genuine integration/ops work the apps don't do."
+    }
+  },
+
+  "evidence": {
+    "dach_cases_verified": {
+      "value": "Thin. Direct proof of solo DACH operators hitting 5k+ EUR/month net with exactly this model (custom Shopify/Woo chatbot retainers, no employees, no ads) within 6-12 months is not publicly documented in the searches performed. Chatarmin, moinAI, Lime-Technologies, Qualimero, BOTfriends, Vivid Planet (Salzburg), botschaft.digital, meine-bots.de, ki-helden.net exist as DACH chatbot providers but are companies with teams, not solo operators, and most position enterprise/mid-market not SMB-Shopify. No verifiable solo DACH case with published MRR found in this research pass.",
+      "marked_uncertain": true
+    },
+    "us_uk_reference_cases": {
+      "value": "My AskAI (UK, Mike and Alex Heap) — AI customer support agents integrated with Intercom/Zendesk/Gorgias, 75k+ support chats/month, ~40k USD MRR / ~500k USD ARR with two founders (not solo, not DACH, but closest product-category match). Chatbase (product, not agency) — scaled from 64k USD MRR in May 2023 to 5M USD ARR, proves category demand. Voiceflow's own agency-program data cites Emil-style operators running 500-1000 USD/month retainers with one-time setup. No single US/UK solo case with verifiable published numbers matching <6 months to 5k USD/month for a custom Shopify support bot agency surfaced in this research pass.",
+      "marked_uncertain": true
+    },
+    "public_revenue_proof": {
+      "value": "No public MRR screenshot, IndieHackers profile, podcast interview, or LinkedIn post found for a solo-operator DACH e-commerce AI support agency hitting 5k+ EUR/month within this research window. The Voiceflow agency program claims '700+ agencies signed up' but does not disclose per-agency revenue distribution. Callin.io and Reddit r/AI_Agents threads have anonymous claims of 5-20k USD/month but no verifiable DACH-specific, solo, no-ads case with real numbers. This absence of evidence, after several searches including German-language queries, is itself the most important finding for this model.",
+      "marked_uncertain": true
+    }
+  },
+
+  "honest_verdict": {
+    "structural_assessment": "Structurally viable as a low-end lifestyle business (1.5-6k EUR/month ceiling at 12 months), structurally broken as a path to 'quit the job' level income (15k+/month) within 6-12 months for a solo no-code operator in DACH. The category is past the land-grab phase: Shopify native AI (agentic commerce launched March 2026), 40+ Shopify app-store competitors, DACH-specialists (Chatarmin, moinAI) with VC money and teams, and ChatGPT/OpenAI moving toward agentic storefronts all compress the middle where this model lives.",
+    "what_would_need_to_be_true_to_continue": [
+      "Narrow to ONE vertical (supplements OR natural cosmetics OR CBD — not all three) and get ONE paying reference case within 45 days.",
+      "Reposition from 'chatbot agency' to integration/ops (returns automation + WISMO + German-tuned FAQ) where apps fall short.",
+      "Shift pricing upward: 3-5k setup + 900-1500/month anchored to deflection KPI, not presence of a widget.",
+      "Abandon Wave 4+ if Wave 2 closes zero — that means the offer is wrong, not the volume."
+    ],
+    "what_to_salvage_if_pivoting": [
+      "Firecrawl + Claude lead-analysis engine transfers 1:1 to M3 (Outbound for agencies) and M4 (Lead-Gen-as-a-Service) — these monetize the ACTUAL moat directly.",
+      "Demo-site-system transfers to M2 (Voice) and M5 (Receptionist) — show a live demo with their data before first call.",
+      "E-commerce domain knowledge keeps value only if wrapped into a productized niche play; without a case, it is inventory not asset."
+    ],
+    "recommendation_vs_other_models": "Do not quit the job for M1 alone. Either (a) finish one paid pilot in the next 45 days on existing Wave 2 leads to generate the first case, then decide, or (b) redirect the Firecrawl+Claude engine into M3/M4 where the operator's moat (lead analysis + personalization at scale) is the product, not a discovery tool for a commoditized product."
+  },
+
+  "uncertain": [
+    "revenue_month_6_optimistic_eur",
+    "revenue_month_12_conservative_eur",
+    "revenue_month_12_optimistic_eur",
+    "contacts_per_week_needed",
+    "realistic_conversion_rate",
+    "sales_cycle_days",
+    "scale_ceiling_solo",
+    "dach_cases_verified",
+    "us_uk_reference_cases",
+    "public_revenue_proof"
+  ],
+
+  "sources": [
+    {"title": "One-Person Agency, 10x Output: How Solo Marketers Use AI to Scale in 2025 - Unkoa", "url": "https://www.unkoa.com/one-person-agency-10x-output-how-solo-marketers-use-ai-to-scale-in-2025/"},
+    {"title": "ConvoCore - Make Money with Voiceflow (agency pricing benchmarks 3-20k USD/month, 500-1000 USD retainer)", "url": "https://convocore.ai/make-money-with-ai/voiceflow"},
+    {"title": "Voiceflow - Start an AI Agency that's Built to Last (700+ agencies in program)", "url": "https://www.voiceflow.com/pathways/start-an-ai-agency-thats-built-to-last"},
+    {"title": "Chatarmin - Chatbot Pricing 2026 (DACH mid-market 500-2500 EUR/month + 2k-15k setup)", "url": "https://chatarmin.com/en/blog/chatbot-costs"},
+    {"title": "Chatarmin - Top 7 Chatbot Providers 2026 (DACH players moinAI, Cognigy, Parloa, Lime, BOTfriends)", "url": "https://chatarmin.com/en/blog/chatbot-provider"},
+    {"title": "moinAI - Chatbot Providers at a Glance (no-code SME focus, self-learning)", "url": "https://www.moin.ai/en/chatbot-wiki/chatbot-providers-at-a-glance"},
+    {"title": "My AskAI - Indie Hackers journey (40k USD MRR, 75k chats/month, 2 founders)", "url": "https://www.indiehackers.com/post/tech/bootstrapping-to-40k-mrr-after-his-vc-backed-startup-failed-LF1CwRs1vL3oVLcuoIoE"},
+    {"title": "Martal - B2B Cold Email Statistics 2026 (4% avg B2B response, e-commerce ~4.8%)", "url": "https://martal.ca/b2b-cold-email-statistics-lb/"},
+    {"title": "LevelUp Leads - Cold Email Benchmarks 2025 (DACH/EU 3.1% avg response)", "url": "https://levelupleads.io/blog/cold-email-benchmarks-2025-key-stats-every-marketer-should-know/"},
+    {"title": "Shopify - Agentic Commerce Momentum (millions of merchants, AI-attributed orders +11x Jan25-Jan26)", "url": "https://www.shopify.com/news/agentic-commerce-momentum"},
+    {"title": "Shopify - OpenAI Commerce (ChatGPT checkout, agentic storefronts March 2026)", "url": "https://www.shopify.com/news/shopify-open-ai-commerce"},
+    {"title": "Interconnectd - 2026 Guide to Surviving Market Commoditization (one-person AI engine)", "url": "https://interconnectd.com/blog/28/the-definitive-2026-guide-to-surviving-market-commoditization-and-building-/"},
+    {"title": "Mixflow - AI Models Commoditization Second-Order Effects 2026", "url": "https://mixflow.ai/blog/ai-models-commoditization-second-order-effects-2026/"},
+    {"title": "Storeleads - Shopify Vitamins & Supplements (45k+ stores, 169% YoY growth, 38% US)", "url": "https://storeleads.app/reports/shopify/category/Health/Nutrition/Vitamins%20&%20Supplements"},
+    {"title": "Qualimero - German Chatbot Complete Business Guide 2025/2026 (Sie vs Du, Shopware)", "url": "https://qualimero.com/en/blog/german-chatbot-complete-business-guide-2025"},
+    {"title": "Fin.ai - Best AI Agents for Shopify Customer Service 2026 (Gorgias ~50% of top 1500 stores)", "url": "https://fin.ai/learn/best-ai-agents-shopify"},
+    {"title": "AgentiveAIQ - AI Chatbot Cost for E-Commerce (39-129 USD no-code vs 15k+ custom)", "url": "https://agentiveaiq.com/blog/how-much-does-an-ai-chatbot-cost-e-commerce-guide"},
+    {"title": "Chipp - AI Chatbot Pricing Guide 2026 (client charging)", "url": "https://chipp.ai/blog/ai-chatbot-pricing-guide-how-much-charge/"},
+    {"title": "Callin.io - AI Automation Agency Reddit 2025 (saturation and survival signals)", "url": "https://callin.io/ai-automation-agency-reddit/"},
+    {"title": "xmethod.de - Top KI Agenturen 2026 in Deutschland (DACH agency hourly 100-200 EUR)", "url": "https://www.xmethod.de/blog/besten-ki-agenturen"}
+  ]
+}

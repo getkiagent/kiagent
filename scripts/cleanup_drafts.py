@@ -20,9 +20,9 @@ Usage:
 import argparse
 import base64
 import os
-import random
+import re
 import sys
-from email import message_from_bytes
+import time
 from pathlib import Path
 
 # Force UTF-8 on Windows
@@ -36,10 +36,12 @@ except ImportError:
     sys.exit(1)
 
 try:
+    from google.auth.exceptions import RefreshError
     from google.auth.transport.requests import Request
     from google.oauth2.credentials import Credentials
     from google_auth_oauthlib.flow import InstalledAppFlow
     from googleapiclient.discovery import build
+    from googleapiclient.errors import HttpError
 except ImportError:
     print("ERROR: Google libraries not installed.")
     print("Run: pip install google-auth-oauthlib google-api-python-client")
@@ -53,7 +55,7 @@ CREDENTIALS_FILE = PROJECT_ROOT / os.getenv("GMAIL_CREDENTIALS_JSON", "credentia
 TOKEN_FILE = PROJECT_ROOT / "token.json"
 
 LOOM_URL = "https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e"
-LOOM_PS = f"P.S. Hier eine kurze Demo, wie das konkret aussehen kann: {LOOM_URL}"
+LOOM_PS = f"▶ Kurze Demo (Loom, 2 Min.): {LOOM_URL}"
 
 
 def get_gmail_service():
@@ -62,15 +64,20 @@ def get_gmail_service():
 
     if TOKEN_FILE.exists():
         creds = Credentials.from_authorized_user_file(str(TOKEN_FILE), SCOPES)
+        if creds and creds.scopes and set(SCOPES) - set(creds.scopes):
+            print("WARN: token.json scope mismatch — re-authentifiziere.")
+            creds = None
 
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
-            creds.refresh(Request())
+            try:
+                creds.refresh(Request())
+            except RefreshError as e:
+                print(f"ERROR: Gmail auth expired — refresh token.json manually. Details: {e}")
+                sys.exit(1)
         else:
             if not CREDENTIALS_FILE.exists():
                 print(f"ERROR: credentials.json nicht gefunden: {CREDENTIALS_FILE}")
-                print("Lade OAuth2-Client-Credentials von Google Cloud Console herunter.")
-                print(f"Setze GMAIL_CREDENTIALS_JSON in .env oder lege credentials.json im Projektroot ab.")
                 sys.exit(1)
             flow = InstalledAppFlow.from_client_secrets_file(str(CREDENTIALS_FILE), SCOPES)
             creds = flow.run_local_server(port=0)
@@ -80,6 +87,18 @@ def get_gmail_service():
         print(f"Token gespeichert: {TOKEN_FILE}")
 
     return build("gmail", "v1", credentials=creds)
+
+
+def delete_draft_with_retry(service, draft_id: str, max_retries: int = 3) -> None:
+    for attempt in range(max_retries):
+        try:
+            service.users().drafts().delete(userId="me", id=draft_id).execute()
+            return
+        except HttpError as e:
+            if e.resp.status in (429, 500, 502, 503, 504) and attempt < max_retries - 1:
+                time.sleep(2 ** (attempt + 1))
+                continue
+            raise
 
 
 def decode_body(raw: str) -> str:
@@ -201,16 +220,44 @@ def main():
         action="store_true",
         help="Lösche alle Drafts ohne Empfänger (no_recipient Liste)",
     )
+    parser.add_argument(
+        "--filter-subject",
+        default=None,
+        help="Regex-Filter auf Betreff — nur Drafts die matchen werden bearbeitet (Safety-Filter)",
+    )
+    parser.add_argument(
+        "--yes",
+        action="store_true",
+        help="Skip Sicherheits-Bestätigung wenn kein Subject-Filter gesetzt ist",
+    )
     args = parser.parse_args()
 
     if args.dry_run:
         print("[DRY-RUN] Keine Änderungen werden vorgenommen.\n")
+
+    if not args.filter_subject and not args.dry_run and not args.yes:
+        print("WARNUNG: Kein --filter-subject gesetzt — das Script bearbeitet ALLE Gmail-Drafts.")
+        print("Für Stage-5-Drafts empfohlen: --filter-subject 'kurze Frage|GetKiAgent'")
+        if input("Trotzdem fortfahren? (y/N): ").strip().lower() != "y":
+            print("Abgebrochen.")
+            sys.exit(0)
+
+    subject_re = re.compile(args.filter_subject, re.IGNORECASE) if args.filter_subject else None
 
     service = get_gmail_service()
 
     print("Lade alle Drafts...")
     all_drafts = fetch_all_drafts(service)
     print(f"Gefunden: {len(all_drafts)} Drafts total\n")
+
+    if subject_re:
+        def _subj(d):
+            for h in d.get("message", {}).get("payload", {}).get("headers", []):
+                if h.get("name", "").lower() == "subject":
+                    return h.get("value", "")
+            return ""
+        all_drafts = [d for d in all_drafts if subject_re.search(_subj(d))]
+        print(f"Nach Subject-Filter: {len(all_drafts)} Drafts\n")
 
     if not all_drafts:
         print("Keine Drafts vorhanden.")
@@ -241,7 +288,10 @@ def main():
                     subject = h.get("value", "")
             print(f"  - ID {d['id']} | Betreff: {subject or '(kein Betreff)'}")
             if args.delete_empty and not args.dry_run:
-                service.users().drafts().delete(userId="me", id=d["id"]).execute()
+                try:
+                    delete_draft_with_retry(service, d["id"])
+                except HttpError as e:
+                    print(f"    FEHLER: {e}")
         if args.delete_empty:
             stats["deleted_empty"] = len(no_recipient)
         print()
@@ -251,8 +301,17 @@ def main():
     for recipient, drafts in sorted(groups.items()):
         print(f"\nEmpfänger: {recipient} ({len(drafts)} Drafts)")
 
-        # Pick 1 random draft to keep
-        kept = random.choice(drafts)
+        # Deterministic choice: prefer drafts with Loom PS already present, else pick newest by internalDate
+        def _has_loom(d):
+            body, _ = get_draft_body_part(d.get("message", {}).get("payload", {}))
+            return LOOM_URL in body
+
+        def _internal_date(d):
+            return int(d.get("message", {}).get("internalDate", "0") or "0")
+
+        with_loom = [d for d in drafts if _has_loom(d)]
+        candidates = with_loom if with_loom else drafts
+        kept = max(candidates, key=_internal_date)
         to_delete = [d for d in drafts if d["id"] != kept["id"]]
 
         # Extract subject of kept draft
@@ -292,8 +351,13 @@ def main():
                     subj = h.get("value", "")
             print(f"  LÖSCHEN: ID {d['id']} | {subj or '(kein Betreff)'}")
             if not args.dry_run:
-                service.users().drafts().delete(userId="me", id=d["id"]).execute()
-            stats["deleted"] += 1
+                try:
+                    delete_draft_with_retry(service, d["id"])
+                    stats["deleted"] += 1
+                except HttpError as e:
+                    print(f"    FEHLER: {e}")
+            else:
+                stats["deleted"] += 1
 
     print(f"\n{'=' * 60}")
     print("ZUSAMMENFASSUNG" + (" [DRY-RUN]" if args.dry_run else ""))

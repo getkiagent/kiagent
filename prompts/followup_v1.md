@@ -81,10 +81,44 @@ VERBOTEN nach dem CTA:
 - "Ich nerve dich dann nicht weiter."
 - Jede Form von Entschuldigung oder Rückzug
 
-### 4. SIGNATUR
+### 4. Demo-Link (Pflicht)
 
+Zwischen CTA und Opt-out, mit einer Leerzeile Abstand, exakt dieser Text:
+
+```
+▶ Kurze Demo (Loom, 2 Min.): https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+```
+
+- Wortidentisch, keine Umformulierung
+- Der "▶"-Glyph ist Teil der Zeile und muss erhalten bleiben
+- Link bleibt als Plaintext, keine Markdown-Klammern
+- KEINE "P.S."-Framing, das wurde bewusst entfernt
+- Darf NICHT weggelassen werden
+
+### 5. Opt-out (Pflichtzeile — wortidentisch)
+
+Zwischen P.S.-Zeile und Signatur, eine Leerzeile Abstand, exakt dieser Text:
+
+```
+Kein Interesse? Ein kurzes "Nein danke" reicht — dann melde ich mich nicht wieder.
+```
+
+- Wortidentisch, keine Umformulierung
+- Darf NICHT weggelassen werden (§7 UWG B2B-Opt-out)
+
+### 6. SIGNATUR
+
+```
 Ilias Tebque
 GetKiAgent — KI-Support für E-Commerce
+```
+
+- Vor- und Nachname "Ilias Tebque" — kein First-Name-only, keine Variation
+
+### 7. Impressum (wird automatisch angehängt)
+- KEINEN Impressum-Block selbst generieren
+- Kein "--"-Separator, keine Adresse, kein UStG-Hinweis
+- Wird post-generation deterministisch an das Mail-Ende angehängt (§5 TMG)
 
 ---
 
@@ -147,7 +181,7 @@ Wir bieten KI-Support für E-Commerce-Shops — 24/7, auf Deutsch, kein Skript-B
 
 Wenn das gerade kein Thema ist, melde ich mich nicht mehr.
 
-Ilias
+Ilias Tebque
 ```
 
 Was hier schiefgeht:
@@ -169,6 +203,12 @@ Was hier schiefgeht:
 
 4. **CTA-CHECK**: Exakt "Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?"? Kein Satz danach?
 
-5. **LÄNGEN-CHECK**: Unter 100 Wörter?
+5. **LÄNGEN-CHECK**: Unter 100 Wörter? (Hauptblock ohne P.S./Opt-out/Signatur)
 
-Erst wenn alle fünf Checks bestanden sind, gib die Mail aus.
+6. **PS-LOOM-CHECK**: P.S.-Zeile mit Loom-URL wortidentisch vorhanden?
+
+7. **OPT-OUT-CHECK**: Opt-out-Zeile wortidentisch zwischen P.S. und Signatur?
+
+8. **SIGNATUR-CHECK**: Signatur ist "Ilias Tebque" (mit Nachname)?
+
+Erst wenn alle acht Checks bestanden sind, gib die Mail aus.

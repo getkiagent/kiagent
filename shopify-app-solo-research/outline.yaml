@@ -1,0 +1,68 @@
+topic: Shopify App Store als Solo-No-Code-Revenue-Modell für DACH-Operator ohne Coding-Skills
+description: >
+  Validierung, ob eine Shopify App der richtige Pivot für einen DACH-basierten
+  Solo-No-Code-Operator mit Firecrawl/Claude/n8n-Stack ist. Ziel: konkrete App-Idee
+  mit höchster Base Rate für 5-25k USD MRR in 12-18 Monaten identifizieren.
+
+date: 2026-04-17
+
+items:
+  - id: I1
+    name: Unterversorgte Shopify App-Kategorien 2026 (inkl. Shopify-Native-Kill-List)
+    focus: >
+      Welche Kategorien haben bewiesene Nachfrage (z.B. StoreInspect 376k-Store-Analyse),
+      aber niedrige Incumbent-Dichte oder Qualitätslücken? Welche Kategorien werden von
+      Shopify Magic / Agentic Commerce bis 2027 absorbiert und müssen vermieden werden?
+      Schließt Checkout UI Extensions + Functions als Green-Field mit ein.
+
+  - id: I2
+    name: Solo-No-Code-Build mit Shopify AI Toolkit + Claude Code
+    focus: >
+      Ist ein vollständiger App-Build end-to-end mit dem offiziellen Shopify AI Toolkit
+      (MCP-Integration April 2026) + Claude Code realistisch für einen Non-Coder?
+      TinyTwo "ReviewMate" Case analysieren. Lernkurve, Grenzen, Production-Readiness,
+      Build-Zeit, Stack-Alternativen (Gadget.dev, Remix-Boilerplate).
+
+  - id: I3
+    name: Solo-MRR-Cases und Portfolio-Strategie (letzte 12 Monate)
+    focus: >
+      Dokumentierte Solo-Cases bei $2-25k MRR in 2025/2026. Single-App-Bet vs.
+      Portfolio-Ansatz (Kaching Appz, 7-App-Solo-Dev Irland, 30-App-Portfolio $22k/mo).
+      Welche Strategie hat bessere Base Rate für No-Code-Solo-Entrants?
+      Acquisition-Kanal, Build-Zeit, Time-to-First-Dollar.
+
+  - id: I4
+    name: Discovery + Ranking + Built-for-Shopify Badge
+    focus: >
+      Wie rankt eine neue App 2026? Algorithmus-Faktoren, App-Store-SEO, Review-Velocity,
+      Built-for-Shopify-Badge als Ranking-Multiplikator (Kriterien + Solo-Feasibility).
+      Third-Party-Acquisition (SEO-Content, Google Ads, Partner). Erwartete CAC und
+      Time-to-First-100-Installs.
+
+  - id: I5
+    name: Compliance, Support-SLA, Economics und Exit-Markt DACH
+    focus: >
+      DACH-Compliance-Overhead (GDPR, TDDDG, AVV, Mandatory Privacy Webhooks) als
+      EUR-Kostenschätzung. Technology Partner Track Support-SLA (30-min-Response)
+      und Solo-Machbarkeit. Shopify Revenue Share 2025+ (100% bis 1M USD, 85% danach).
+      Acquire.com / MicroAcquire Exit-Multiples 2025/2026 für Shopify-Apps.
+
+execution:
+  batch_size: 3
+  items_per_agent: 2
+  bundling:
+    - agent: A1
+      items: [I1, I2]
+      rationale: Markt-Chance + technische Machbarkeit gehören zusammen
+    - agent: A2
+      items: [I3, I4]
+      rationale: Strategie-Wahl + Discovery-Mechanik interagieren
+    - agent: A3
+      items: [I5]
+      rationale: Compliance / Economics / Exit als Risk-Bucket zusammen
+  output_dir: ./results
+
+deliverable: >
+  Shortlist aus 3-5 konkreten App-Ideen mit Evidenz (Kategorie, Demand-Signal,
+  Build-Feasibility, MRR-Benchmark, Compliance-Cost), gerankt nach Base Rate für
+  5-25k USD MRR in 12 Monaten. Direkter Input für 90-Tage-Build-Plan in Plan Mode.

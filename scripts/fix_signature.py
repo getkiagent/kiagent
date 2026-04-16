@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fix signature in Gmail drafts: 'Ilias\n' → 'Ilias Tebque\n'"""
+"""Fix signature in Gmail drafts: normalize to 'Ilias Tebque\nGetKiAgent — KI-Support für E-Commerce'"""
 
 import os
 import base64
@@ -12,8 +12,16 @@ SCOPES = ["https://www.googleapis.com/auth/gmail.modify"]
 TOKEN = os.path.expanduser("~/Desktop/getkiagent/token.pickle")
 CREDS = os.path.expanduser("~/Desktop/getkiagent/credentials.json")
 
-OLD_SIG = "Ilias\nGetKiAgent"
-NEW_SIG = "Ilias Tebque\nGetKiAgent"
+CANONICAL_SIG = "Ilias Tebque\nGetKiAgent — KI-Support für E-Commerce"
+
+# All known wrong variants to normalize. Order matters — doubled suffix must be
+# caught before the plain first-name-only variant, and never list a prefix of
+# CANONICAL_SIG here (it would re-match after replacement and append the suffix twice).
+WRONG_SIGS = [
+    "Ilias Tebque\nGetKiAgent — KI-Support für E-Commerce — KI-Support für E-Commerce",
+    "Ilias\nGetKiAgent — KI-Support für E-Commerce — KI-Support für E-Commerce",
+    "Ilias\nGetKiAgent — KI-Support für E-Commerce",
+]
 
 
 def get_service():
@@ -68,8 +76,11 @@ def main():
 
         decoded = base64.urlsafe_b64decode(body_data).decode("utf-8")
 
-        if OLD_SIG in decoded and NEW_SIG not in decoded:
-            new_body = decoded.replace(OLD_SIG, NEW_SIG)
+        needs_fix = CANONICAL_SIG not in decoded and any(s in decoded for s in WRONG_SIGS)
+        if needs_fix:
+            new_body = decoded
+            for wrong in WRONG_SIGS:
+                new_body = new_body.replace(wrong, CANONICAL_SIG)
             encoded = base64.urlsafe_b64encode(new_body.encode("utf-8")).decode("ascii")
 
             # Rebuild

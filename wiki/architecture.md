@@ -1,4 +1,11 @@
+---
+tags: [projekt/getkiagent, typ/wiki, thema/architektur]
+related: [[index]], [[business]], [[lessons]]
+---
+
 # Architecture
+
+Technisches Fundament von [[business|GetKiAgent]]. Lessons aus Iterationen: [[lessons]].
 
 ## Lead Engine (lokal)
 
@@ -27,6 +34,7 @@ discover_leads.py → batch_analyze.py → generate_outreach.py --draft → n8n 
 | Outreach Agent | `zVvZmfOWADGcN6kp` | Sheet → Filter Tier A+B → Claude Sonnet → Gmail Draft |
 | Gmail Status Sync | `PP2vkOQDsNcZcrig` | Status-Abgleich |
 | Follow-up Checker | `Ox1mvhTkhVrJoaox` | Follow-up-Logik |
+| Reply Watcher | `qTptgWEJF5fvCkwj` | Cron 30min, Sheet → Telegram-Alert |
 
 ## Demo
 
@@ -42,3 +50,5 @@ discover_leads.py → batch_analyze.py → generate_outreach.py --draft → n8n 
 - **Outreach:** Gmail + Google Sheets
 - **APIs:** Firecrawl, Anthropic, OpenAI
 - **Kein CRM, keine DB, kein UI** — bewusst für diese Phase
+
+Siehe auch: [[claude-managed-agents]] — warum Managed Agents aktuell nicht passen.

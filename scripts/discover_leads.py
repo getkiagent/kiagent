@@ -250,25 +250,34 @@ def extract_domain(url: str) -> str | None:
         parsed = urlparse(url if url.startswith("http") else "https://" + url)
         domain = parsed.netloc.lower().removeprefix("www.")
         return domain if domain else None
-    except Exception:
+    except (ValueError, AttributeError):
         return None
 
 
 # ── Discovery ─────────────────────────────────────────────────────────────────
 
 def search_ddg(query: str, region: str, max_results: int) -> list[str]:
+    """DDG search with PLAN.md rate-limit handling: 30s wait + retry once, skip on failure."""
     try:
         from ddgs import DDGS
     except ImportError:
         print("ERROR: ddgs nicht installiert. Run: pip install ddgs")
         sys.exit(1)
 
-    try:
-        results = DDGS().text(query, region=region, max_results=max_results)
-        return [r.get("href", "") for r in results if r.get("href")]
-    except Exception as e:
-        print(f"  Suche fehlgeschlagen: {e}")
-        return []
+    for attempt in range(2):
+        try:
+            results = DDGS().text(query, region=region, max_results=max_results)
+            return [r.get("href", "") for r in results if r.get("href")]
+        except Exception as e:
+            msg = str(e).lower()
+            is_rate_limit = any(s in msg for s in ("ratelimit", "rate limit", "429", "202", "too many"))
+            if is_rate_limit and attempt == 0:
+                print(f"  Rate-Limit — warte 30s und versuche erneut...")
+                time.sleep(30)
+                continue
+            print(f"  Suche fehlgeschlagen: {e}")
+            return []
+    return []
 
 
 def load_existing_urls(paths: list[str]) -> set[str]:
@@ -293,8 +302,8 @@ def load_existing_urls(paths: list[str]) -> set[str]:
                     d = extract_domain(r.get("url", ""))
                     if d:
                         known.add(d)
-            except Exception:
-                pass
+            except (json.JSONDecodeError, OSError) as e:
+                print(f"  WARN: {p.name} nicht lesbar: {e}")
     return known
 
 
@@ -351,7 +360,7 @@ def discover(num_queries: int, results_per_query: int, niche_queries: list[str] 
 
 def save_discovered(urls: list[str], output_path: str):
     p = Path(output_path)
-    p.parent.mkdir(exist_ok=True)
+    p.parent.mkdir(parents=True, exist_ok=True)
     lines = ["# GetKiAgent — Discovered Leads (automatisch generiert)", ""]
     lines += [url for url in sorted(urls)]
     p.write_text("\n".join(lines), encoding="utf-8")

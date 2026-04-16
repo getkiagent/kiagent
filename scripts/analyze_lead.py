@@ -164,7 +164,7 @@ def _check_content(content: str, label: str, seen_lengths: set) -> str | None:
 
 
 def scrape_url_jina(url: str, label: str, max_chars: int, seen_lengths: set) -> str | None:
-    """Scrape via Jina AI Reader — free, no key needed."""
+    """Scrape via Jina AI Reader — free, no key needed. Raises FirecrawlTimeoutError on timeout."""
     try:
         r = _requests.get(f"{JINA_BASE}{url}", headers=JINA_HEADERS, timeout=JINA_TIMEOUT)
         if r.status_code != 200:
@@ -174,7 +174,10 @@ def scrape_url_jina(url: str, label: str, max_chars: int, seen_lengths: set) -> 
         if content:
             print(f"  {label}: {len(content)} chars (jina)")
         return content[:max_chars] if content else None
-    except Exception as e:
+    except _requests.exceptions.Timeout as e:
+        print(f"  {label}: jina timeout — {e}")
+        raise FirecrawlTimeoutError(f"Jina timeout for {url}") from e
+    except _requests.RequestException as e:
         print(f"  {label}: jina fehler — {e}")
         return None
 
@@ -219,7 +222,7 @@ def discover_subpages(base_url: str) -> list[str]:
             if urls:
                 print(f"  sitemap: {len(urls)} URLs gefunden")
                 return urls
-        except Exception:
+        except (_requests.RequestException, ElementTree.ParseError):
             continue
     print("  sitemap: nicht gefunden — fahre ohne Unterseiten fort")
     return []
@@ -240,8 +243,8 @@ def _cache_load(url: str, cache_dir: Path) -> dict | None:
             data = json.loads(path.read_text(encoding="utf-8"))
             print(f"  [cache HIT] {_cache_domain(url)}")
             return data
-        except Exception:
-            pass
+        except (json.JSONDecodeError, OSError) as e:
+            print(f"  [cache MISS] {_cache_domain(url)} — {e}")
     return None
 
 
@@ -261,15 +264,22 @@ def scrape_pages(base_url: str, api_key: str | None = None, cache_dir: Path | No
 
     pages = {}
     seen_lengths: set = set()
+    had_timeout = False
 
     print(f"\nScraping: {base_url}")
 
     # 1. Homepage — Jina primary, crawl4ai fallback
-    content = scrape_url_jina(base_url, "homepage", MAX_CHARS_HOMEPAGE, seen_lengths)
+    try:
+        content = scrape_url_jina(base_url, "homepage", MAX_CHARS_HOMEPAGE, seen_lengths)
+    except FirecrawlTimeoutError:
+        had_timeout = True
+        content = None
     if not content:
         print("  homepage: jina fehlgeschlagen → versuche crawl4ai")
         content = scrape_url_crawl4ai(base_url, "homepage", MAX_CHARS_HOMEPAGE, seen_lengths)
     if not content:
+        if had_timeout:
+            raise FirecrawlTimeoutError("Homepage timeout — retry empfohlen")
         raise FirecrawlError("Homepage nicht erreichbar — leerer oder zu kurzer Inhalt")
     pages["homepage"] = content
 
@@ -278,10 +288,13 @@ def scrape_pages(base_url: str, api_key: str | None = None, cache_dir: Path | No
     subpages = pick_subpages(all_urls, base_url, MAX_SUBPAGES)
     print(f"  subpages: {len(subpages)} ausgewählt")
 
-    # 3. Scrape subpages
+    # 3. Scrape subpages (subpage timeouts are non-fatal — homepage already OK)
     for url in subpages:
         label = "/" + url.split(base_url.rstrip("/"), 1)[-1].lstrip("/")
-        content = scrape_url_jina(url, label, MAX_CHARS_SUBPAGE, seen_lengths)
+        try:
+            content = scrape_url_jina(url, label, MAX_CHARS_SUBPAGE, seen_lengths)
+        except FirecrawlTimeoutError:
+            content = None
         if not content:
             content = scrape_url_crawl4ai(url, label, MAX_CHARS_SUBPAGE, seen_lengths)
         if content:

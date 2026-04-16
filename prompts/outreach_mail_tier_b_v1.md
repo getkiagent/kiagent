@@ -49,16 +49,12 @@ Die Mail hat 6 logische Teile — KEINE sichtbaren Überschriften, natürlicher 
 - VERBOTEN: Schmeichelei, Begeisterung, "toller Shop"
 - VERBOTEN: Zahlen die du nicht kennst
 
-### 3. Brücke (1 Satz)
-- Verbindet die Vermutung mit dem was GetKiAgent löst
-- Beispiel: "Genau diese Anfragen nehmen wir Shopify-Brands ab."
-
-### 4. Angebot (1 Satz)
+### 3. Angebot (1 Satz)
 - Spezifisch aber hypothetisch — was wahrscheinlich relevant wäre
 - Beispiel: "Ein Agent für Retouren und Versandstatus würde den größten Teil abfangen."
 - NICHT: Feature-Listen
 
-### 5. CTA (1 Satz)
+### 4. CTA (1 Satz)
 - Niedrigste mögliche Schwelle — kein Meeting, keine Demo
 - Wähle exakt eine Option:
   - Option A (Qualifizierung): "Macht Support-Automatisierung für euch gerade Sinn?"
@@ -66,23 +62,41 @@ Die Mail hat 6 logische Teile — KEINE sichtbaren Überschriften, natürlicher 
   - Option C (eigenständig): max. 1 Satz, 1 Frage — offen, nicht drängend
 - KEIN Meetinglink, KEINE Demo-Erwähnung, KEINE zwei CTAs
 
-### 6. P.S. (Pflichtzeile — wortidentisch)
+### 5. Demo-Link (Pflichtzeile — wortidentisch)
 
 Direkt vor der Signatur, eine Leerzeile Abstand, exakt dieser Text:
 
 ```
-P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+▶ Kurze Demo (Loom, 2 Min.): https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
 ```
 
 - KEINE Variation, KEINE Umformulierung, KEINE Kürzung
+- Der "▶"-Glyph ist Teil der Zeile und muss erhalten bleiben — er lenkt optisch auf den Link
 - Link bleibt als Plaintext stehen — keine Markdown-Klammern
+- KEINE "P.S."-Framing, das wurde bewusst entfernt
 - Darf NICHT weggelassen werden, auch nicht bei kurzen Mails
+
+### 6. Opt-out (Pflichtzeile — wortidentisch)
+
+Zwischen PS-Zeile und Signatur, eine Leerzeile Abstand, exakt dieser Text:
+
+```
+Kein Interesse? Ein kurzes "Nein danke" reicht — dann melde ich mich nicht wieder.
+```
+
+- Wortidentisch, keine Umformulierung
+- Darf NICHT weggelassen werden (§7 UWG B2B-Opt-out)
 
 ### 7. Signatur
 ```
-Ilias
+Ilias Tebque
 GetKiAgent — KI-Support für E-Commerce
 ```
+
+### 8. Impressum (wird automatisch angehängt)
+- KEINEN Impressum-Block selbst generieren
+- Kein "--"-Separator, keine Adresse, kein UStG-Hinweis
+- Wird post-generation deterministisch an das Mail-Ende angehängt (§5 TMG)
 
 ## Verbote (identisch mit Tier A, plus Tier-B-spezifisch)
 
@@ -106,7 +120,7 @@ Prüfe intern (NICHT ausgeben):
 2. Opener als Vermutung formuliert, nicht als Befund?
 3. CTA = eine einfache Ja/Nein-Frage oder offene Gegenfrage?
 4. Kein Meeting, kein Demo-Link im CTA-Satz?
-5. PS-Zeile mit Loom-Link wortidentisch vor der Signatur?
+5. PS-Zeile mit Loom-Link wortidentisch, dann Opt-out-Zeile wortidentisch, dann Signatur?
 6. Keine verbotenen Elemente?
 
 ## Output

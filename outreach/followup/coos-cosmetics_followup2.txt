@@ -1,0 +1,19 @@
+Betreff: Re: Retouren & Versandkomplexität bei Coos Cosmetics
+
+Hi,
+
+letzte Woche hatte ich euch wegen Retouren und EU-Versandkomplexität geschrieben — eine kurze Ergänzung dazu.
+
+Was mir beim nochmaligen Durchschauen aufgefallen ist: euer Return-Portal läuft über einen externen Drittanbieter, aber die Label-Generierung hängt trotzdem an einer manuellen E-Mail-Bestätigung. Das heißt, selbst Kunden die alles richtig machen warten auf einen Menschen — für etwas, das sich vollständig automatisieren lässt, bevor ein Ticket entsteht.
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+▶ Kurze Demo (Loom, 2 Min.): https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Kein Interesse? Ein kurzes "Nein danke" reicht — dann melde ich mich nicht wieder.
+
+Ilias Tebque
+GetKiAgent — KI-Support für E-Commerce
+
+--
+Ilias Tebque · Eichelstr. 87, 40599 Düsseldorf · getkiagent@gmail.com · +49 170 4092435 · Kleinunternehmer §19 UStG

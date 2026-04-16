@@ -1,0 +1,14 @@
+{
+  "id": "DXKPGA_DTKX",
+  "title": "Video by leadgenman",
+  "uploader": "Manthan Patel | Lead Gen Man",
+  "uploader_id": "70853607699",
+  "duration": 81.223,
+  "view_count": null,
+  "like_count": 148,
+  "description": "Hooks quietly became the most important part of my Claude Code setup.\n\nAuto commit saves every successful edit,\nfile protection blocks touches to my .env,\nauto screenshots catch UI mistakes,\nauto deploy pings me a Vercel preview,\nand notifications ring when a long task finishes ⚡\n\nFive minutes to set up, lives inside your .claude folder, and you never babysit Claude again... \n\ncomment “HOOKS” and I’ll send the whole setup.",
+  "url": "https://www.instagram.com/p/DXKPGA_DTKX/",
+  "language": "en",
+  "text": "Stop focusing on Cloud.MD file and start focusing more on hooks. Cloud.MD is just a documentation file, but hooks are actually what enforces your rules. Hooks are common set run at system level, so Cloud cannot ignore them at all. Let me show you 5 hooks that I use. First is auto commit. Every time Cloud makes a successful edit, my hooks automatically stage and commits the change and I don't have to drag it anymore. Everything is committed without me having to think about it, then comes file protection. I have this pre-tool use hook so that it will block Cloud automatically from touching specific files like my.env, production configuration or my super based migration folder. It just gets cancelled before it actually run. Third is auto screen shot. Every time Cloud makes a change in my UI, my hooks automatically take a screenshot of the app so that Cloud can see what mistakes it did manually and fix them immediately. Fourth is auto deploy. After every working build, my hooks goes straight to the word cell preview link and I can see the result live within seconds without opening my word cell dashboard and lastly notification. So when Cloud finishes a long running task, it thinks me on my mac so I'm not just sitting and staring at the blank terminal, I can go do something else and come back when it's done. All of this hooks lives inside your Cloud folder and they take about 5 minutes to set them up. If you want all of these hooks ready to copy paste, just commit hooks and I will send it your way.",
+  "timestamp": "20260416_004434"
+}

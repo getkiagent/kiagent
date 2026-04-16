@@ -50,17 +50,13 @@ Die Mail hat 6 logische Teile — KEINE sichtbaren Überschriften, nur natürlic
 - VERBOTEN: Schmeichelei jeder Art
 - Der Empfänger muss den Pain-Point sofort als real erkennen
 
-### 3. Brücke zum Angebot (1 Satz)
-- Verbindet den Pain-Point mit dem was GetKiAgent tut
-- Beispiel: "Genau solche Anfragen automatisieren wir mit KI-Chatbots für Shopify-Brands."
-
-### 4. Konkreter Vorschlag (1-2 Sätze)
+### 3. Konkreter Vorschlag (1-2 Sätze)
 - Was GetKiAgent konkret tun würde — abgeleitet aus likely_automation_opportunity
 - Spezifisch auf die Brand zugeschnitten
 - Beispiel: "Ein Agent der Retouren, Versandstatus und Produktfragen sofort beantwortet — ohne dass euer Team jede Mail einzeln beantworten muss."
 - NICHT: Feature-Listen mit 5+ Punkten
 
-### 5. CTA (1 Satz)
+### 4. CTA (1 Satz)
 - Niedrigschwellig, eine klare Handlung — KEINE zwei CTAs
 - Wähle exakt eine Option:
   - Option A (Meeting): "Kann ich euch in 15 Minuten zeigen wie das für [Brand] aussehen würde?"
@@ -68,23 +64,41 @@ Die Mail hat 6 logische Teile — KEINE sichtbaren Überschriften, nur natürlic
 - "Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?" ist VERBOTEN als Formulierung — zu generisch
 - KEIN Demo-/Loom-Link im CTA — der Loom-Link gehört ausschließlich in die PS-Zeile (siehe Punkt 6)
 
-### 6. P.S. (Pflichtzeile — wortidentisch)
+### 5. Demo-Link (Pflichtzeile — wortidentisch)
 
 Direkt vor der Signatur, eine Leerzeile Abstand, exakt dieser Text:
 
 ```
-P.S. Hier eine kurze Demo, wie das konkret aussehen kann: https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+▶ Kurze Demo (Loom, 2 Min.): https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
 ```
 
 - KEINE Variation, KEINE Umformulierung, KEINE Kürzung
+- Der "▶"-Glyph ist Teil der Zeile und muss erhalten bleiben — er lenkt optisch auf den Link
 - Link bleibt als Plaintext stehen — keine Markdown-Klammern
+- KEINE "P.S."-Framing, das wurde bewusst entfernt
 - Darf NICHT weggelassen werden, auch nicht bei kurzen Mails
+
+### 6. Opt-out (Pflichtzeile — wortidentisch)
+
+Zwischen PS-Zeile und Signatur, eine Leerzeile Abstand, exakt dieser Text:
+
+```
+Kein Interesse? Ein kurzes "Nein danke" reicht — dann melde ich mich nicht wieder.
+```
+
+- Wortidentisch, keine Umformulierung
+- Darf NICHT weggelassen werden (§7 UWG B2B-Opt-out)
 
 ### 7. Signatur
 ```
-Ilias
+Ilias Tebque
 GetKiAgent — KI-Support für E-Commerce
 ```
+
+### 8. Impressum (wird automatisch angehängt)
+- KEINEN Impressum-Block selbst generieren
+- Kein "--"-Separator, keine Adresse, kein UStG-Hinweis
+- Wird post-generation deterministisch an das Mail-Ende angehängt (§5 TMG)
 
 ## Personalisierungs-Tiefe
 
@@ -127,7 +141,7 @@ Bevor du die Mail ausgibst, prüfe intern (NICHT ausgeben):
 2. Enthält der Opener einen konkreten, verifizierbaren Pain-Point?
 3. Ist der Vorschlag spezifisch für diese Brand?
 4. Ist der CTA eine einzelne, klare Handlung? (nicht Demo-Link + Meeting-Frage)
-5. PS-Zeile mit Loom-Link wortidentisch direkt vor der Signatur?
+5. PS-Zeile mit Loom-Link wortidentisch, dann Opt-out-Zeile wortidentisch, dann Signatur?
 6. Enthält die Mail KEINE der verbotenen Elemente? Besonders: "Kein Skript-Bot", "24/7, auf Deutsch", doppelte Beispiel-Fragen, Nachname in Signatur?
 7. Kommt "Kein Skript-Bot" oder eine Variante davon vor? → Streichen, neu formulieren.
 

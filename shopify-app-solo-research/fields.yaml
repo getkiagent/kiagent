@@ -1,0 +1,132 @@
+field_categories:
+
+  basic:
+    name:
+      description: App-Idee / Kategorie-Name
+      detail_level: brief
+    description:
+      description: Was tut die App in 1-2 Sätzen
+      detail_level: brief
+    category_slug:
+      description: Shopify-App-Store-Kategorie (z.B. sales-channels, marketing, analytics)
+      detail_level: brief
+
+  market:
+    demand_signal:
+      description: Konkrete Evidenz dass Nachfrage existiert (Store-Count, Review-Velocity, Search-Volume)
+      detail_level: detailed
+    competitor_count:
+      description: Anzahl existierender Apps in direkter Konkurrenz
+      detail_level: moderate
+    top_competitor_review_count:
+      description: Reviews der Top-3-Apps (Indikator für Marktgröße und Eintritts-Barriere)
+      detail_level: moderate
+    category_growth:
+      description: Wächst die Kategorie? (Shopify-Metriken, Trendsignale)
+      detail_level: moderate
+    review_velocity_benchmark:
+      description: Reviews/Monat der Top-Apps der Kategorie
+      detail_level: moderate
+
+  build:
+    ai_toolkit_buildable_bool:
+      description: Realistisch end-to-end mit Claude Code + Shopify AI Toolkit baubar (Non-Coder)?
+      detail_level: detailed
+    build_time_weeks_solo_nocode:
+      description: Wochen bis MVP für Solo mit AI-Toolkit-Stack (konservativ + optimistisch)
+      detail_level: detailed
+    required_skills:
+      description: Skills, die tatsächlich nötig bleiben (GraphQL-Lesen, JSON-Config, Prompt-Engineering)
+      detail_level: moderate
+    api_deprecation_exposure:
+      description: Abhängigkeit von APIs mit Deprecation-Frist (Scripts 30.06.2026, Legacy Custom Apps 01.01.2026)
+      detail_level: moderate
+    maintenance_hours_per_week:
+      description: Steady-State-Wartung bei 100 / 500 / 1000 Installs
+      detail_level: moderate
+    checkout_extensibility_surface_bool:
+      description: Nutzt die App Checkout UI Extensions / Functions (Green-Field-Indikator)?
+      detail_level: brief
+
+  economics:
+    documented_mrr_range:
+      description: Dokumentierte MRR-Range für vergleichbare Apps solo betrieben
+      detail_level: detailed
+    pricing_model_typical:
+      description: Typisches Pricing (flat monthly, usage-based, tiered, freemium)
+      detail_level: moderate
+    install_to_paid_conversion:
+      description: Benchmark-Conversion in der Kategorie
+      detail_level: moderate
+    revenue_share_band:
+      description: Shopify-Revenue-Share-Situation (0% bis 1M USD, 15% darüber)
+      detail_level: brief
+    exit_multiple_benchmark_ttm_revenue:
+      description: Acquire.com / MicroAcquire Median-Multiple für Kategorie (z.B. 3-5x TTM)
+      detail_level: moderate
+
+  acquisition:
+    primary_channel:
+      description: Hauptakquisitions-Kanal (App-Store-Search, SEO-Content, Ads, Partner)
+      detail_level: detailed
+    store_ranking_mechanism:
+      description: Wodurch rankt eine neue App (Installs, Reviews, Performance, BFS-Badge)
+      detail_level: detailed
+    paid_ads_viability:
+      description: Ist bezahlter Traffic rentabel (CPC, erwartete Conversion, Payback)
+      detail_level: moderate
+    cac_estimate:
+      description: Geschätzte Kundengewinnungskosten (EUR / USD)
+      detail_level: moderate
+    built_for_shopify_feasibility_1_10:
+      description: Realistische Chance auf BFS-Badge in 12 Monaten (Performance, Design, Rating)
+      detail_level: detailed
+
+  risk:
+    platform_risk_score_1_10:
+      description: Wie stark kann Shopify die Kategorie absorbieren / deprecaten
+      detail_level: detailed
+    shopify_native_absorption_horizon_months:
+      description: Geschätzte Monate bis Shopify-native-Feature kannibalisiert (less than 12 rot, 12-24 gelb, greater than 24 grün)
+      detail_level: detailed
+    competition_risk:
+      description: Wie leicht können Copies / VC-gefundete Konkurrenz eintreten
+      detail_level: moderate
+
+  compliance_dach:
+    compliance_cost_eur_eu:
+      description: Einmal + laufend Kosten für GDPR / TDDDG / AVV-Setup DACH
+      detail_level: detailed
+    mandatory_webhooks_complexity:
+      description: Komplexität der Mandatory Privacy Webhooks (1-5 Scale)
+      detail_level: moderate
+    dach_localization_advantage_score:
+      description: Vorsprung durch DACH-Muttersprache + lokale Integrationen (Trusted Shops, Idealo, Billbee, Lexoffice). 1-10
+      detail_level: detailed
+
+  operations:
+    support_sla_required:
+      description: Technology Partner Track verlangt 30-min-Response (ja / nein und wie kritisch)
+      detail_level: moderate
+    portfolio_compatibility_bool:
+      description: Eignet sich die App als Teil eines 5-10-App-Portfolios (shared Codebase / Support)
+      detail_level: moderate
+    merchant_tier_fit:
+      description: Zielt auf Basic / Shopify / Advanced / Plus Merchants
+      detail_level: moderate
+
+  evidence:
+    sources:
+      description: Liste von Quellen-URLs mit Datum
+      detail_level: detailed
+    confidence_level:
+      description: high / medium / low Einordnung der Evidenz
+      detail_level: brief
+    uncertain:
+      description: Explizit gekennzeichnete Unsicherheiten und Annahmen
+      detail_level: moderate
+
+detail_level_hierarchy:
+  - brief
+  - moderate
+  - detailed

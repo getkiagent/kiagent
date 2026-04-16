@@ -1,0 +1,21 @@
+Betreff: Haut-Analyse bei Xeno Naturkosmetik — kurze Frage
+
+Hi,
+
+wer mit Rosacea oder perioraler Dermatitis auf euren Shop kommt, muss ein Formular ausfüllen und auf eine manuelle Rückmeldung warten — bevor er überhaupt weiß, ob Azelain oder Niacinamide für ihn passt. Das ist viel Friction genau an dem Punkt, wo die Kaufentscheidung fällt.
+
+Wir automatisieren diese Art von Hauttyp-Zuordnung direkt im Shop.
+
+Konkret: ein KI-gesteuerter Agent, der Rosacea, Neurodermitis und Unreinheiten in Sekunden einem Wirkstoff-Cluster zuordnet und sofort die passende Produktempfehlung liefert — ohne Wartezeit auf euer Team.
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+▶ Kurze Demo (Loom, 2 Min.): https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Kein Interesse? Ein kurzes "Nein danke" reicht — dann melde ich mich nicht wieder.
+
+Ilias Tebque
+GetKiAgent — KI-Support für E-Commerce
+
+--
+Ilias Tebque · Eichelstr. 87, 40599 Düsseldorf · getkiagent@gmail.com · +49 170 4092435 · Kleinunternehmer §19 UStG

@@ -1,0 +1,86 @@
+{
+  "total": 2,
+  "results": [
+    {
+      "url": "https://fiveskincare.ch",
+      "status": "ok",
+      "data": {
+        "company_name": "Five Skincare",
+        "website": "https://fiveskincare.ch",
+        "country": "Switzerland",
+        "category": "skincare",
+        "contact_email": "Not explicitly visible on homepage",
+        "visible_contact_options": [
+          "contact_form"
+        ],
+        "support_pages_found": [
+          "/pages/kontakt",
+          "/pages/hautberatung",
+          "/pages/bewertungen"
+        ],
+        "support_pain_signals": [
+          "Kein Live-Chat auf Homepage sichtbar",
+          "E-Mail Hautberatung läuft über Formular, keine synchrone Kommunikation erkennbar",
+          "Komplexe Produkte (Inhaltsstoffe, Hauttypen, Dosierung) erfordern Pre-Purchase-Beratung",
+          "Quiz vorhanden, aber asynchrone E-Mail-Beratung deutet auf manuellen Support-Prozess hin"
+        ],
+        "speed_to_lead_signals": [
+          "E-Mail-basierte Hautberatung statt Echtzeit-Chat könnte zu verzögerter Response führen",
+          "Produktfinder-Quiz ist vorhanden, aber kein Live-Support für Follow-Up-Fragen erkennbar"
+        ],
+        "digital_maturity_clues": [
+          "Shopify-basiert (CDN-URLs erkannt: cdn/shop/files/)",
+          "Produktfinder-Quiz integriert",
+          "Newsletter-Funktion vorhanden",
+          "4.8★ bei 1000+ Reviews auf Trustpilot/interner Bewertungsseite",
+          "Mehrsprachig (DE/CH-Varianten erkennbar)"
+        ],
+        "likely_automation_opportunity": "Häufig gestellte Fragen zu Hauttypen, Inhaltsstoffen, Verträglichkeit und Anwendung könnten durch KI-Chatbot beantwortet werden, statt via E-Mail-Formular. Dies würde Response-Zeiten drastisch senken und Pre-Purchase-Conversion erhöhen.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "E-Mail-Adresse nicht auf Homepage sichtbar. Kontaktkanal ist nur das /pages/kontakt Formular. Größe des Teams und aktuelles Support-Volumen sind nicht bekannt. Unklar, ob bereits Chat-Integration in Arbeit ist. Homepage zeigt nur Ausschnitt; vollständige Kontaktseite nicht gescraped.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "Five Skincare ist ein etablierter, erfolgreicher DTC-Brand (1000+ 5-Sterne-Reviews, Shopify, Multi-Country) mit nachgewiesener Kundenaffinität. Die asynchrone E-Mail-Beratung und fehlende Live-Chat-Sichtbarkeit deuten auf Support-Lücke hin. Allerdings: Quiz und Beratungsressourcen sind bereits vorhanden, was zeigt, dass Support wichtig ist. Die Tatsache, dass kein sichtbarer Live-Chat existiert, könnte auch bedeuten, dass Volumen oder Strategie noch nicht dafür vorgesehen ist. Medium Confidence wegen fehlender direkter Kontakt-Daten und unklarer aktueller Support-Last.",
+        "recommended_next_action": "LinkedIn-Recherche zu Gründer/CEO (Nadja Kur oder ähnlich). Ansprache via LinkedIn oder über Kontaktformular /pages/kontakt mit Hook: 'Wir sehen, dass Eure Kunden viele Fragen zu Hauttypen und Inhaltsstoffen haben — wir können die Pre-Purchase-Beratung mit KI beschleunigen und Konversionsrate erhöhen, ohne E-Mail-Team zu belasten.' Konkret: Demo mit Beispiel-Fragen zu Mischhaut/trockene Haut anbieten."
+      }
+    },
+    {
+      "url": "https://nooiiproducts.com",
+      "status": "ok",
+      "data": {
+        "company_name": "nooii",
+        "website": "https://nooiiproducts.com",
+        "country": "Switzerland",
+        "category": "skincare",
+        "contact_email": "not_found_in_homepage",
+        "visible_contact_options": [],
+        "support_pages_found": [],
+        "support_pain_signals": [
+          "Keine Live-Chat-Funktion sichtbar auf der Homepage",
+          "Keine Kontakt- oder Support-Seite im gescrapten Content gefunden",
+          "Keine FAQ-Seite verlinkt oder sichtbar",
+          "Multi-national & Multi-language Shop (DE/FR/EN/IT/AR) deutet auf hohes internationales Supportvolumen",
+          "Komplexe Skincare-Produkte mit Inhaltsstoffen (Rosehip Oil, etc.) → Pre-Purchase-Fragen wahrscheinlich",
+          "Lifestyle-Membership-Modell deutet auf wiederkehrende Support-Queries hin"
+        ],
+        "speed_to_lead_signals": [
+          "Keine sichtbare Pre-Purchase-Beratung (kein Chat, kein Quiz, kein Konfigurator)",
+          "Keine Chatbot-Infrastruktur erkennbar",
+          "Keine Reaktionszeit-Infos bei Kontaktanfragen verfügbar"
+        ],
+        "digital_maturity_clues": [
+          "Shopify erkannt (myshopify.com URLs und CDN-Struktur)",
+          "Mehrsprachig und Multi-Currency (CHF, €) → etablierter Tech-Stack",
+          "Kein erkanntes CRM oder Support-Tool"
+        ],
+        "likely_automation_opportunity": "Automatisierung von Pre-Purchase-Fragen zu Inhaltsstoffen, Skincare-Routine-Beratung und Produktempfehlungen basierend auf Hauttyp — plus FAQ-Chatbot für häufige Fragen zu Versand, Retourenrichtlinien und Membership.",
+        "confidence_level": "medium",
+        "uncertainty_notes": "Kontakt-Email und Support-Seiten nicht im gescrapten Homepage-Content enthalten. Können auf separaten Seiten existieren. Größe des Teams unbekannt. Kann nicht bestätigt werden, ob bereits Support-Team vorhanden ist.",
+        "score_1_to_10": 6,
+        "tier": "B",
+        "score_rationale": "nooii ist ein Premium-Skincare-Brand mit Shopify-Setup und internationaler Reichweite, was auf Support-Bedarf hindeutet. Jedoch: Keine Kontakt-Informationen oder Support-Seiten im Homepage-Content sichtbar → Unsicherheit über aktuellen Support-Status. Multi-Language & Lifestyle-Membership deuten auf Automatisierungs-Potenzial hin. Zu konservativ für Tier A ohne Bestätigung fehlender Chat/FAQ.",
+        "recommended_next_action": "Besuche /kontakt oder /about-nooii um Email-Adresse und aktuellen Support-Setup zu verifizieren. Hook: 'Wir helfen Premium-Skincare-Brands wie euch, Pre-Purchase-Fragen zu Inhaltsstoffen & Hauttyp-Beratung 24/7 zu automatisieren — ohne Chat-Agenten.' Kontaktiere idealerweise über Website-Kontaktformular oder LinkedIn (Company)."
+      }
+    }
+  ]
+}

@@ -1,6 +1,13 @@
+---
+tags: [projekt/getkiagent, typ/wiki, typ/konzept, thema/ai-platforms]
+related: [[index]], [[architecture]], [[business]]
+source: Corey Ganim + Nick (BZAC), X-Video, 2026-04-09
+---
+
 # Claude Managed Agents
 
-Quelle: Corey Ganim + Nick (BZAC), X-Video, 2026-04-09
+Relevant für [[business|GetKiAgent-Monetarisierung]], aktuell nicht im [[architecture|Stack]].
+
 Artefakt: `reels/20260411_151641_2042613085672812544.json`
 
 ## Was es ist
@@ -24,10 +31,10 @@ Kein eigenes Infra-Management nötig.
 
 ## Relevanz für GetKiAgent
 
-**Jetzt: Skip.** Pipeline läuft auf n8n + lokalen Python-Scripts → klassischer "eigene Infra"-Case, bleibt günstiger.
+**Jetzt: Skip.** Pipeline läuft auf n8n + lokalen Python-Scripts ([[architecture]]) → klassischer "eigene Infra"-Case, bleibt günstiger.
 
 **Wiedervorlage sobald:**
-- Erster zahlender Pilot läuft
+- Erster zahlender Pilot läuft (siehe [[business#Phase & Status (April 2026)]])
 - Bezahlter Deliverable isolierbar (z.B. AI-Audit, Custom-Support-Agent als Service-Package)
 - Dann: Token-Kosten durchreichen, Marge bleibt trivial bei Setup-Preisen >€2k
 

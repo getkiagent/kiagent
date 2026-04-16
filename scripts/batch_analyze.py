@@ -362,7 +362,7 @@ def preflight_check(output_file: str, niche_config: dict | None = None):
 
     # 3. Output-Pfad schreibbar
     output_path = Path(output_file)
-    output_path.parent.mkdir(exist_ok=True)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     try:
         test_file = output_path.parent / ".preflight_write_test"
         test_file.write_text("ok", encoding="utf-8")
@@ -486,7 +486,7 @@ def main():
     print(f"Starte Batch-Analyse ({len(urls)} URLs)...\n")
 
     output_path = Path(output_file)
-    output_path.parent.mkdir(exist_ok=True)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     run_at = datetime.now(timezone.utc).isoformat()
 
     results = []

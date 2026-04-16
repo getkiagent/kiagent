@@ -18,7 +18,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 from batch_analyze import analyze_one, prefilter_urls, print_batch_summary, DELAY_BETWEEN_URLS
 from analyze_lead import load_and_validate_env
 
-RESULTS_PATH = Path("leads/batch-results.json")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+RESULTS_PATH = PROJECT_ROOT / "leads" / "batch-results.json"
 
 
 def main():

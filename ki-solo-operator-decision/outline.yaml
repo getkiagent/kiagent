@@ -1,0 +1,59 @@
+topic: "Optimales KI-Geschäftsmodell für Solo-Operator ohne Dev-Background (DACH) — Quit-or-Stay-Analyse"
+time_range: "2025-2026 only"
+primary_market: "DACH (DE/AT/CH)"
+reference_market: "US/UK (nur zum Abgleich)"
+
+operator_constraints:
+  has:
+    - "n8n, Voiceflow, Make.com, Lovable, Retell/Vapi, Relevance AI, Firecrawl, Claude/OpenAI APIs"
+    - "Prototype-in-Tagen Fähigkeit, Prompt Engineering, Multi-Model-Orchestrierung"
+    - "BWL + B2C Management Background"
+    - "Live Lead-Analyse-Engine (Firecrawl+Claude), Demo-Site-System, Vercel, eigene Domain, n8n Cloud"
+    - "Vorprojekt: E-Commerce AI Support Automation (pre-revenue, Demos stehen, 0 zahlende Kunden nach Monaten)"
+    - "Standort Düsseldorf"
+  lacks:
+    - "Klassische Programmierkenntnisse"
+    - "Team, Investor, Ad-Budget"
+    - "Custom Backend / DevOps Fähigkeit"
+    - "B2B-Netzwerk, Sales-Background"
+    - "Audience / Content-Reichweite"
+
+hard_filters:
+  - "No-Code/Low-Code/AI-assisted umsetzbar"
+  - "Tools-Kosten < 200€/Monat, keine Ads"
+  - "Zielkunden über kostenlose Kanäle erreichbar"
+  - "Sales Cycle ≤ 30-60 Tage, Einzelentscheider"
+  - "Solo-Delivery für mindestens 5-10 Kunden"
+
+items:
+  - id: "M1"
+    name: "E-Commerce AI Support Automation (bestehend)"
+    description: "KI-Chatbots/Ticket-Automation für Shopify/Woo DACH. Teil 3 — ehrliche Bewertung."
+  - id: "M2"
+    name: "AI-Voice-Agent für KMU (Retell/Vapi)"
+    description: "24/7 Terminbuchung/Inbound-Calls für Ärzte, Handwerker, Kliniken, Kanzleien, Autohäuser."
+  - id: "M3"
+    name: "Outbound-Automation-Retainer für Agenturen"
+    description: "White-Label n8n/Instantly/Apollo-Setups mit AI-Personalisierung. Retainer-Modell."
+  - id: "M4"
+    name: "Lead-Generation-as-a-Service (DACH B2B)"
+    description: "Firecrawl+Claude DB → qualifizierte Lead-Listen für B2B-Sales-Teams und Agenturen."
+  - id: "M5"
+    name: "AI-Receptionist für Local Services"
+    description: "24/7 Voice+SMS für Restaurants, Physios, Studios, Salons, Handwerker. Terminierung + FAQ."
+
+cross_cutting_sections:
+  - id: "C3"
+    name: "Teil 3 — Bewertung bestehendes Projekt"
+  - id: "C4"
+    name: "Teil 4 — Quit-Your-Job Entscheidungsmatrix"
+  - id: "C5"
+    name: "Teil 5 — Dokumentierte Vorbilder"
+  - id: "C6"
+    name: "Teil 6 — Anti-Hype-Filter"
+
+execution:
+  batch_size: 5
+  items_per_agent: 1
+  output_dir: "./results"
+  cross_cutting_after_items: true

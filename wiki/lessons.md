@@ -1,4 +1,11 @@
+---
+tags: [projekt/getkiagent, typ/wiki, typ/lesson, thema/audit]
+related: [[index]], [[architecture]], [[business]]
+---
+
 # Lessons Learned
+
+Bezieht sich auf [[architecture]] (Scripts/Ordner) und [[business]] (Prozess).
 
 ## 2026-04-09 | Projekt-Audit & Strukturbereinigung
 

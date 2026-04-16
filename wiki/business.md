@@ -1,4 +1,11 @@
+---
+tags: [projekt/getkiagent, typ/wiki, thema/business]
+related: [[index]], [[architecture]], [[lessons]]
+---
+
 # Business
+
+Technisches Setup: [[architecture]]. Strategische Learnings: [[lessons]].
 
 ## Produkt
 
@@ -26,7 +33,7 @@ KI-gestützte Customer-Support-Automatisierung für Shopify/WooCommerce-Shops.
 ## Phase & Status (April 2026)
 
 - Pre-Revenue
-- Lead Engine: aktiv
+- Lead Engine: aktiv — siehe [[architecture#Lead Engine (lokal)]]
 - Wave 1: 7 Tier-A versendet
 - Wave 2: 6 Tier-A drafted
 
@@ -36,3 +43,5 @@ KI-gestützte Customer-Support-Automatisierung für Shopify/WooCommerce-Shops.
 - Backend: n8n
 - AI: Claude/OpenAI
 - KB: pro Kunde individuell
+
+Siehe auch: [[claude-managed-agents]] — Wiedervorlage nach erstem Piloten.

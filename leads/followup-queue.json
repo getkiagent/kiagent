@@ -1,0 +1,562 @@
+[
+  {
+    "url": "https://junglueck.de",
+    "company": "JUNGLÜCK",
+    "followup_stage": 1,
+    "email": "kooperationen@junglueck.de",
+    "age_days": 6,
+    "original_subject": "KI-gestützter Support für junglück — Weiterleitung von Jacqueline"
+  },
+  {
+    "url": "https://www.musclegeneration.com/",
+    "company": "G2B GmbH / Muscle Generation",
+    "followup_stage": 1,
+    "email": "office@musclegeneration.com",
+    "age_days": 4,
+    "original_subject": "Supplement-Beratung bei Muscle Generation"
+  },
+  {
+    "url": "https://plantbase.shop/",
+    "company": "PlantBase GmbH",
+    "followup_stage": 1,
+    "email": "hello@plantbase.shop",
+    "age_days": 4,
+    "original_subject": "Pre-Purchase-Fragen bei PlantBase"
+  },
+  {
+    "url": "https://cosa-kosmetik.com/",
+    "company": "cosa Kosmetik",
+    "followup_stage": 1,
+    "email": "kundenservice@cosa-kosmetik.com",
+    "age_days": 4,
+    "original_subject": "Support-Automatisierung bei cosa Kosmetik"
+  },
+  {
+    "url": "https://absolem.at/",
+    "company": "Absolem e.U.",
+    "followup_stage": 1,
+    "email": "info@absolem.at",
+    "age_days": 4,
+    "original_subject": "Support-Automatisierung bei Absolem"
+  },
+  {
+    "url": "https://cbd.styx.at/",
+    "company": "STYX Naturcosmetic GmbH",
+    "followup_stage": 1,
+    "email": "office@styx.at",
+    "age_days": 4,
+    "original_subject": "Pre-Purchase-Anfragen bei STYX Naturcosmetic"
+  },
+  {
+    "url": "https://dasvitamin.ch/",
+    "company": "dasvitamin.ch",
+    "followup_stage": 1,
+    "email": "info@dasvitamin.ch",
+    "age_days": 4,
+    "original_subject": "Produktberatung bei dasvitamin.ch"
+  },
+  {
+    "url": "https://edelhanf.de/",
+    "company": "Edelhanf / Endower GmbH",
+    "followup_stage": 1,
+    "email": "info@edelhanf.de",
+    "age_days": 4,
+    "original_subject": "Dosierungsberatung bei Edelhanf"
+  },
+  {
+    "url": "https://johannasgarten.at/",
+    "company": "Johannas Kräutergarten (JHKG Health GmbH)",
+    "followup_stage": 1,
+    "email": "office@johannasgarten.at",
+    "age_days": 4,
+    "original_subject": "Fragen nach Ladenschluss bei Johannas Kräutergarten"
+  },
+  {
+    "url": "https://ogaenics.com/",
+    "company": "Ogaenics | Novel Nutriology GmbH",
+    "followup_stage": 1,
+    "email": "hello@ogaenics.com",
+    "age_days": 4,
+    "original_subject": "Pre-Purchase-Fragen bei Ogaenics"
+  },
+  {
+    "url": "https://spinnrad.de/bakuchiol-booster-oel-30-ml-002230250",
+    "company": "Spinnrad GmbH",
+    "followup_stage": 1,
+    "email": "info@spinnrad.de",
+    "age_days": 4,
+    "original_subject": "Pre-Purchase-Beratung bei Spinnrad"
+  },
+  {
+    "url": "https://vegardians.de/",
+    "company": "Vegardians GmbH",
+    "followup_stage": 1,
+    "email": "info@vegardians.de",
+    "age_days": 4,
+    "original_subject": "Produktfragen vor dem Kauf bei Vegardians"
+  },
+  {
+    "url": "https://bluvion.com/produkt/deo-spritz-deodorant-50-ml-deodorant/",
+    "company": "bluvion",
+    "followup_stage": 1,
+    "email": "wecare@bluvion.com",
+    "age_days": 4,
+    "original_subject": "FAQ-Lücke bei bluvion.com"
+  },
+  {
+    "url": "https://www.camassia-naturkosmetik.de/",
+    "company": "Camassia Naturkosmetik",
+    "followup_stage": 1,
+    "email": "info@camassia-naturkosmetik.de",
+    "age_days": 4,
+    "original_subject": "Inhaltsstoff-Fragen bei Camassia Naturkosmetik"
+  },
+  {
+    "url": "https://cbd-alive.shop/",
+    "company": "CBD ALIVe (ROCO Trading GmbH)",
+    "followup_stage": 1,
+    "email": "office@cbd-alive.shop",
+    "age_days": 4,
+    "original_subject": "Lieferstatus und Dosierungsfragen bei cbd-alive.shop"
+  },
+  {
+    "url": "https://coos-cosmetics.com/",
+    "company": "Coos Cosmetics",
+    "followup_stage": 1,
+    "email": "info@coos-cosmetics.com",
+    "age_days": 4,
+    "original_subject": "Retouren & Versandkomplexität bei Coos Cosmetics"
+  },
+  {
+    "url": "https://evelia.at/",
+    "company": "Evelia Kosmetik",
+    "followup_stage": 1,
+    "email": "entwicklung@evelia.at",
+    "age_days": 4,
+    "original_subject": "Support-Entlastung bei Evelia Kosmetik"
+  },
+  {
+    "url": "https://hairlust.de/",
+    "company": "Hairlust",
+    "followup_stage": 1,
+    "email": "info@hairlust.de",
+    "age_days": 4,
+    "original_subject": "Retouren-Prozess & Produktfragen bei Hairlust"
+  },
+  {
+    "url": "https://hyapur.de/",
+    "company": "Hyapur Deutschland GmbH",
+    "followup_stage": 1,
+    "email": "info@hyapur.de",
+    "age_days": 4,
+    "original_subject": "Pre-Purchase-Anfragen bei hyapur.de"
+  },
+  {
+    "url": "https://indyvit.com/en",
+    "company": "indyvit",
+    "followup_stage": 1,
+    "email": "info@indyvit.com",
+    "age_days": 4,
+    "original_subject": "Fragen zu Bluttests und Inhaltsstoffen bei indyvit"
+  },
+  {
+    "url": "https://myrto-naturalcosmetics.de/",
+    "company": "Myrto Naturkosmetik",
+    "followup_stage": 1,
+    "email": "info@myrto-naturalcosmetics.de",
+    "age_days": 4,
+    "original_subject": "Merchant-Anfragen & FAQ-Volumen bei Myrto Naturkosmetik"
+  },
+  {
+    "url": "https://lynx-cosmetics.com/",
+    "company": "Lynx Cosmetics",
+    "followup_stage": 1,
+    "email": "info@lynx-cosmetics.com",
+    "age_days": 4,
+    "original_subject": "KapazitÃ¤t & Kundenfragen bei Lynx Cosmetics"
+  },
+  {
+    "url": "https://naturalcbd.at/",
+    "company": "NaturalCBD (Organic Performance GmbH)",
+    "followup_stage": 1,
+    "email": "info@naturalcbd.at",
+    "age_days": 4,
+    "original_subject": "Dosierungsberatung bei NaturalCBD"
+  },
+  {
+    "url": "https://nicama.de/?srsltid=AfmBOoqig99y4ALr7daxA-6vZtZVitjWIpoC49MeJgQs7ewYgivdHlnY",
+    "company": "NICAMA (Apinima GmbH)",
+    "followup_stage": 1,
+    "email": "info@nicama.de",
+    "age_days": 4,
+    "original_subject": "Produktberatung bei NICAMA"
+  },
+  {
+    "url": "https://nkm-atelier.de/",
+    "company": "nkm – Naturkosmetik Atelier",
+    "followup_stage": 1,
+    "email": "hallo@nkm-atelier.de",
+    "age_days": 4,
+    "original_subject": "Support-Anfragen"
+  },
+  {
+    "url": "https://ruhi-rituals.com/",
+    "company": "ruhi-rituals",
+    "followup_stage": 1,
+    "email": "hello@ruhi-rituals.com",
+    "age_days": 4,
+    "original_subject": "Retouren bei ruhi-rituals — kurze Frage"
+  },
+  {
+    "url": "https://wohlfuehlvital.at/",
+    "company": "Wohlfühl Vital",
+    "followup_stage": 1,
+    "email": "info@wohlfuehlvital.at",
+    "age_days": 4,
+    "original_subject": "Erreichbarkeit außerhalb der Telefonzeiten bei Wohlfühl Vital"
+  },
+  {
+    "url": "https://vitalsee.at/",
+    "company": "Vitalsee Biotech",
+    "followup_stage": 1,
+    "email": "info@vitalsee.at",
+    "age_days": 4,
+    "original_subject": "Kontaktformular-Triage bei Vitalsee Biotech"
+  },
+  {
+    "url": "https://viovero-naturkosmetik.com/",
+    "company": "VioVero Naturkosmetik",
+    "followup_stage": 1,
+    "email": "info@viovero-naturkosmetik.com",
+    "age_days": 4,
+    "original_subject": "Retourenstatus & Erstanfragen bei VioVero Naturkosmetik"
+  },
+  {
+    "url": "https://vetain.de/",
+    "company": "Vetain",
+    "followup_stage": 1,
+    "email": "support@vetain.de",
+    "age_days": 4,
+    "original_subject": "Self-Service-Ausbau bei Vetain"
+  },
+  {
+    "url": "https://sheko.com/",
+    "company": "SHEKO",
+    "followup_stage": 1,
+    "email": "info@sheko.com",
+    "age_days": 4,
+    "original_subject": "RÃ¼ckgabeprozess bei SHEKO"
+  },
+  {
+    "url": "https://sedvital.de/",
+    "company": "SedVital",
+    "followup_stage": 1,
+    "email": "info@sedvital.de",
+    "age_days": 4,
+    "original_subject": "Kundenanfragen vor dem Kauf bei SedVital"
+  },
+  {
+    "url": "https://satinnaturel.com/",
+    "company": "Satin Naturel",
+    "followup_stage": 1,
+    "email": "info@satinnaturel.com",
+    "age_days": 4,
+    "original_subject": "Produktanfragen bei Satin Naturel"
+  },
+  {
+    "url": "https://rosenrot.de/",
+    "company": "Rosenrot",
+    "followup_stage": 1,
+    "email": "info@rosenrot.de",
+    "age_days": 4,
+    "original_subject": "Produktfit-Fragen bei Rosenrot"
+  },
+  {
+    "url": "https://vitamine-bio.de/",
+    "company": "Products and More GmbH (vitamine-bio.de)",
+    "followup_stage": 1,
+    "email": "info@vitamine-bio.de",
+    "age_days": 4,
+    "original_subject": "Retourenschein-Anfragen bei vitamine-bio.de"
+  },
+  {
+    "url": "https://dasboep.de/",
+    "company": "das boep",
+    "followup_stage": 2,
+    "email": "office@dasboep.de",
+    "age_days": 11,
+    "original_subject": "Support-Zeiten bei das boep — kurze Frage"
+  },
+  {
+    "url": "https://ruhi-rituals.com/",
+    "company": "ruhi-rituals",
+    "followup_stage": 2,
+    "email": "hello@ruhi-rituals.com",
+    "age_days": 11,
+    "original_subject": "Retouren-Prozess bei ruhi-rituals — kurze Frage"
+  },
+  {
+    "url": "https://biobloom.at/shop/bio-cbd-kosmetik/",
+    "company": "BiO Bloom",
+    "followup_stage": 2,
+    "email": "office@biobloom.at",
+    "age_days": 11,
+    "original_subject": "Schäden-Meldungen bei BioBloom — kurze Frage"
+  },
+  {
+    "url": "https://lebenskraftpur.de/",
+    "company": "Lebenskraftpur",
+    "followup_stage": 2,
+    "email": "kundenservice@lebenskraftpur.de",
+    "age_days": 10,
+    "original_subject": "FAQ-Volumen bei Lebenskraftpur — kurze Frage"
+  },
+  {
+    "url": "https://morenutrition.de",
+    "company": "More Nutrition",
+    "followup_stage": 2,
+    "email": "service@morenutrition.de",
+    "age_days": 8,
+    "original_subject": "Kundenanfragen bei More Nutrition — kurze Frage"
+  },
+  {
+    "url": "https://kingnature.ch/",
+    "company": "kingnature",
+    "followup_stage": 2,
+    "email": "info@kingnature.ch",
+    "age_days": 8,
+    "original_subject": "Vital-Test bei kingnature — kurze Frage"
+  },
+  {
+    "url": "https://wohlfuehlvital.at/",
+    "company": "Wohlfühl Vital",
+    "followup_stage": 2,
+    "email": "info@wohlfuehlvital.at",
+    "age_days": 8,
+    "original_subject": "Retouren bei Wohlfühl Vital — kurze Frage"
+  },
+  {
+    "url": "https://vitalsee.at/",
+    "company": "Vitalsee Biotech",
+    "followup_stage": 2,
+    "email": "info@vitalsee.at",
+    "age_days": 8,
+    "original_subject": "Produktanfragen bei Vitalsee Biotech — kurze Frage"
+  },
+  {
+    "url": "https://naturesan.at/",
+    "company": "Naturesan",
+    "followup_stage": 2,
+    "email": "office@naturesan.at",
+    "age_days": 8,
+    "original_subject": "Produktberatung bei Naturesan — kurze Frage"
+  },
+  {
+    "url": "https://cbd.styx.at/",
+    "company": "STYX Naturcosmetic GmbH",
+    "followup_stage": 2,
+    "email": "office@styx.at",
+    "age_days": 8,
+    "original_subject": "Anfragen bei STYX Naturcosmetic — kurze Frage"
+  },
+  {
+    "url": "https://cantura.de/",
+    "company": "Cantura",
+    "followup_stage": 2,
+    "email": "wecare@cantura.de",
+    "age_days": 8,
+    "original_subject": "Produktfragen bei Cantura — kurze Frage"
+  },
+  {
+    "url": "https://hempamed.de/",
+    "company": "Hempamed",
+    "followup_stage": 2,
+    "email": "service@hempamed.de",
+    "age_days": 8,
+    "original_subject": "Supportzeiten bei Hempamed — kurze Frage"
+  },
+  {
+    "url": "https://nordicoil.de/",
+    "company": "Nordic Oil",
+    "followup_stage": 2,
+    "email": "info@nordicoil.de",
+    "age_days": 8,
+    "original_subject": "Supportzeiten bei Nordic Oil — kurze Frage"
+  },
+  {
+    "url": "https://rosavie-shop.com/",
+    "company": "ROSAVIE",
+    "followup_stage": 2,
+    "email": "support@rosavie-shop.com",
+    "age_days": 8,
+    "original_subject": "Abo-Fragen bei ROSAVIE — kurze Frage"
+  },
+  {
+    "url": "https://vetain.de/",
+    "company": "Vetain",
+    "followup_stage": 2,
+    "email": "support@vetain.de",
+    "age_days": 8,
+    "original_subject": "Selbstservice-Formulare bei Vetain — kurze Frage"
+  },
+  {
+    "url": "https://nutri-plus.de/",
+    "company": "nutri+",
+    "followup_stage": 2,
+    "email": "info@nutri-plus.de",
+    "age_days": 8,
+    "original_subject": "Supportkanal bei nutri+ — kurze Frage"
+  },
+  {
+    "url": "https://sundt.de/",
+    "company": "Sundt",
+    "followup_stage": 2,
+    "email": "info@sundt.de",
+    "age_days": 8,
+    "original_subject": "Produktquiz bei Sundt — kurze Frage"
+  },
+  {
+    "url": "https://qidosha.com/",
+    "company": "QIDOSHA",
+    "followup_stage": 2,
+    "email": "service@qidosha.com",
+    "age_days": 8,
+    "original_subject": "Chatbot bei QIDOSHA — kurze Frage"
+  },
+  {
+    "url": "https://purazell.de/",
+    "company": "PuraZell",
+    "followup_stage": 2,
+    "email": "info@purazell.de",
+    "age_days": 8,
+    "original_subject": "Produktberatung bei PuraZell — kurze Frage"
+  },
+  {
+    "url": "https://nature-love.de/",
+    "company": "Nature Love",
+    "followup_stage": 2,
+    "email": "service@nature-love.de",
+    "age_days": 8,
+    "original_subject": "Produktfragen bei Nature Love — kurze Frage"
+  },
+  {
+    "url": "https://sheko.com/",
+    "company": "SHEKO",
+    "followup_stage": 2,
+    "email": "info@sheko.com",
+    "age_days": 8,
+    "original_subject": "Retouren bei SHEKO — kurze Frage"
+  },
+  {
+    "url": "https://brain-effect.com/",
+    "company": "BRAINEFFECT",
+    "followup_stage": 2,
+    "email": "info@brain-effect.com",
+    "age_days": 8,
+    "original_subject": "Kontaktweg bei BRAINEFFECT — kurze Frage"
+  },
+  {
+    "url": "https://kastenbeinundbosch.com/",
+    "company": "Kastenbein und Bosch",
+    "followup_stage": 2,
+    "email": "shop@kastenbeinundbosch.com",
+    "age_days": 8,
+    "original_subject": "B2B-Anfragen bei Kastenbein und Bosch — kurze Frage"
+  },
+  {
+    "url": "https://hairlust.de/",
+    "company": "Hairlust",
+    "followup_stage": 2,
+    "email": "info@hairlust.de",
+    "age_days": 8,
+    "original_subject": "Retouren bei Hairlust — kurze Frage"
+  },
+  {
+    "url": "https://rosenrot.de/",
+    "company": "Rosenrot",
+    "followup_stage": 2,
+    "email": "info@rosenrot.de",
+    "age_days": 8,
+    "original_subject": "Retouren bei Rosenrot — kurze Frage"
+  },
+  {
+    "url": "https://hautwohl.de/",
+    "company": "Hautwohl",
+    "followup_stage": 2,
+    "email": "info@hautwohl.de",
+    "age_days": 8,
+    "original_subject": "Kontaktformular bei Hautwohl — kurze Frage"
+  },
+  {
+    "url": "https://coos-cosmetics.com/",
+    "company": "Coos Cosmetics",
+    "followup_stage": 2,
+    "email": "info@coos-cosmetics.com",
+    "age_days": 8,
+    "original_subject": "Retourenregeln bei Coos Cosmetics — kurze Frage"
+  },
+  {
+    "url": "https://lynx-cosmetics.com/",
+    "company": "Lynx Cosmetics",
+    "followup_stage": 2,
+    "email": "info@lynx-cosmetics.com",
+    "age_days": 8,
+    "original_subject": "Bestellanfragen bei Lynx Cosmetics — kurze Frage"
+  },
+  {
+    "url": "https://myrto-naturalcosmetics.de/",
+    "company": "Myrto Naturkosmetik",
+    "followup_stage": 2,
+    "email": "info@myrto-naturalcosmetics.de",
+    "age_days": 8,
+    "original_subject": "Kundenanfragen bei Myrto Naturkosmetik — kurze Frage"
+  },
+  {
+    "url": "https://viovero-naturkosmetik.com/",
+    "company": "VioVero Naturkosmetik",
+    "followup_stage": 2,
+    "email": "info@viovero-naturkosmetik.com",
+    "age_days": 8,
+    "original_subject": "Retouren bei VioVero Naturkosmetik — kurze Frage"
+  },
+  {
+    "url": "https://hyapur.de/",
+    "company": "Hyapur Deutschland GmbH",
+    "followup_stage": 2,
+    "email": "info@hyapur.de",
+    "age_days": 8,
+    "original_subject": "Produktanfragen bei Hyapur — kurze Frage"
+  },
+  {
+    "url": "https://cobicos.de/",
+    "company": "cobicos",
+    "followup_stage": 2,
+    "email": "info@cobicos.de",
+    "age_days": 8,
+    "original_subject": "Antwortzeiten bei cobicos — kurze Frage"
+  },
+  {
+    "url": "https://rosental.de/",
+    "company": "Rosental",
+    "followup_stage": 2,
+    "email": "contact@rosental.de",
+    "age_days": 8,
+    "original_subject": "Kontaktmöglichkeiten bei Rosental — kurze Frage"
+  },
+  {
+    "url": "https://nkm-atelier.de/",
+    "company": "nkm – Naturkosmetik Atelier",
+    "followup_stage": 2,
+    "email": "hallo@nkm-atelier.de",
+    "age_days": 8,
+    "original_subject": "Retouren bei nkm Atelier — kurze Frage"
+  },
+  {
+    "url": "https://satinnaturel.com/",
+    "company": "Satin Naturel",
+    "followup_stage": 2,
+    "email": "info@satinnaturel.com",
+    "age_days": 8,
+    "original_subject": "Supportanfragen bei Satin Naturel — kurze Frage"
+  }
+]

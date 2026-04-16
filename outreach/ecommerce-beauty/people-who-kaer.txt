@@ -1,0 +1,21 @@
+Betreff: Sparabo-Verwaltung bei people who kaer — kurze Frage
+
+Hi Ellmar,
+
+bei 40.000+ Kunden und einem flexiblen Sparabo landet ein guter Teil des Tagesvolumens vermutlich bei Fragen wie „Wie pausiere ich mein Abo?" oder „Kann ich die Lieferadresse noch ändern?" — die alle einzeln übers Kontaktformular reinkommen und manuell bearbeitet werden müssen.
+
+Genau diese Verwaltungsanfragen lassen sich per KI-Agent self-service-fähig machen.
+
+Für people who kaer konkret: ein Agent, der Abo-Änderungen, Pausierungen und Versandfragen eigenständig klärt — und gleichzeitig vor dem Kauf Dosierungsfragen nach Hundegröße beantwortet, bevor jemand zum Telefon greift.
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+▶ Kurze Demo (Loom, 2 Min.): https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Kein Interesse? Ein kurzes "Nein danke" reicht — dann melde ich mich nicht wieder.
+
+Ilias Tebque
+GetKiAgent — KI-Support für E-Commerce
+
+--
+Ilias Tebque · Eichelstr. 87, 40599 Düsseldorf · getkiagent@gmail.com · +49 170 4092435 · Kleinunternehmer §19 UStG

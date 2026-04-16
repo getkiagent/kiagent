@@ -53,7 +53,8 @@ def validate_lead(data: dict) -> list[str]:
             errors.append(f"tier must be A, B, or C, got: {data['tier']!r}")
 
     if "confidence_level" in data:
-        if data["confidence_level"].lower() not in VALID_CONFIDENCE:
-            errors.append(f"confidence_level must be high/medium/low, got: {data['confidence_level']!r}")
+        cl = data["confidence_level"]
+        if not isinstance(cl, str) or cl.lower() not in VALID_CONFIDENCE:
+            errors.append(f"confidence_level must be high/medium/low, got: {cl!r}")
 
     return errors

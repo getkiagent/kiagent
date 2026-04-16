@@ -1,19 +1,32 @@
-# Wiki Schema
+# Wiki Rules — GetKiAgent
+
+Gilt **zusätzlich** zur Vault-Root `CLAUDE.md`. Backlink-Pflicht daher auch hier.
 
 ## Structure
-- wiki/index.md — master index, one line per page
-- wiki/log.md — append-only ingest log
-- wiki/[topic].md — individual pages
+- `index.md` — Master-Index, eine Zeile pro Seite
+- `log.md` — Append-only Ingest-Log
+- `[topic].md` — individuelle Seiten
 
-## Rules
-- Always read wiki/index.md FIRST before any query
-- Only load pages that are directly relevant
-- Never load raw/ unless explicitly asked
-- Keep pages under 300 words
+## Navigation Rules
+- Immer `index.md` ZUERST lesen vor jeder Query
+- Nur Seiten laden die direkt relevant sind
+- Seiten unter 300 Wörtern halten
+- Links **immer als Wikilinks**: `[[architecture]]` statt `[architecture.md](architecture.md)`
+
+## Backlink-Pflicht
+Jede neue Wiki-Seite muss:
+1. Im `index.md` verlinkt sein
+2. Mindestens 2 andere Wiki-Seiten via `[[...]]` referenzieren
+3. Von mindestens einer anderen Seite zurückverlinkt sein
 
 ## GetKiAgent Context
 - Business: AI Customer Support Automation für E-Commerce (Shopify/WooCommerce)
-- Revenue model: €2k-10k Setup + monatliche Retainer
+- Revenue Model: €2k-10k Setup + monatliche Retainer
 - Stack: n8n, Voiceflow, Claude API, Make.com, Firecrawl
 - Phase: Erste Demo → erster zahlender Kunde
 - Acquisition: 3-4 funktionierende Demos, kein Content
+
+## Tags für Wiki-Seiten
+- `#projekt/getkiagent` Pflicht
+- `#typ/wiki`
+- Thema-Tag je nach Seite (`#thema/architektur`, `#thema/business`, etc.)

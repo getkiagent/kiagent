@@ -56,6 +56,38 @@ FOLLOWUP_DIR = PROJECT_ROOT / "outreach" / "followup"
 
 CTA = "Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?"
 
+# PLAN.md Stage 4 hardcoded Quality Gates
+SIGNATURE_REQUIRED = "Ilias Tebque\nGetKiAgent — KI-Support für E-Commerce"
+IMPRESSUM_SEPARATOR = "\n\n--\n"
+
+
+def _impressum_from_config(config: dict | None) -> str | None:
+    """Return canonical impressum line from niche config (or None)."""
+    if not config:
+        return None
+    line = config.get("niche", {}).get("impressum_line")
+    return line.strip() if line else None
+
+
+def _ensure_impressum(mail_text: str, config: dict | None) -> str:
+    """Append impressum block deterministically if missing. Keeps trailing newline."""
+    imp = _impressum_from_config(config)
+    if not imp or imp in mail_text:
+        return mail_text
+    return mail_text.rstrip() + IMPRESSUM_SEPARATOR + imp + "\n"
+
+
+def _strip_premature_signature(mail_text: str) -> str:
+    """Remove stray 'Ilias' line inserted between CTA and P.S. block (LLM pattern)."""
+    import re as _re
+    pattern = _re.compile(r"(\?\s*\n)\s*\nIlias(?:\s+Tebque)?\s*\n\s*\n(?=(?:P\.S\.|▶))", _re.MULTILINE)
+    return pattern.sub(r"\1\n", mail_text)
+LOOM_URL_SUBSTR = "loom.com/share/a243a6f8c920487a9db15e9c9816c36e"
+PS_REQUIRED_SUBSTR = "▶ Kurze Demo (Loom"
+OPTOUT_REQUIRED_SUBSTR = "Kein Interesse? Ein kurzes \"Nein danke\" reicht"
+HARDCODED_FORBIDDEN = ["Kein Skript-Bot", "24/7, auf Deutsch"]
+NO_EMAIL_QUEUE_FILE = PROJECT_ROOT / "leads" / "no-email-queue.txt"
+
 
 def load_leads(path: Path) -> list[dict]:
     """Load leads from batch-results JSON."""
@@ -147,7 +179,7 @@ def extract_email_via_jina(website: str) -> str | None:
                         if e.lower().startswith(prefix):
                             return e
                 return valid[0]
-        except Exception as e:
+        except requests.RequestException as e:
             print(f"  -> Jina-Fehler bei {url}: {str(e)[:200]}")
             continue
 
@@ -155,7 +187,15 @@ def extract_email_via_jina(website: str) -> str | None:
 
 
 def extract_email(lead_data: dict) -> str | None:
-    """Extract email: contact_email field → regex fallback → Firecrawl."""
+    """Extract email: Apollo enriched contact → contact_email → regex fallback → Firecrawl."""
+    # Step 0: Apollo enriched contact email (preferred — named recipient)
+    enriched = lead_data.get("enriched_contact") or {}
+    apollo_email = (enriched.get("apollo_email") or "").strip()
+    if apollo_email:
+        match = EMAIL_RE.fullmatch(apollo_email)
+        if match and _is_valid_email(match.group(0)):
+            return match.group(0)
+
     # Step 1: contact_email set by Claude during lead analysis
     contact_email = lead_data.get("contact_email")
     if contact_email:
@@ -181,11 +221,16 @@ def extract_email(lead_data: dict) -> str | None:
 
 
 def slugify(name: str) -> str:
-    """Convert company name to filename-safe slug."""
-    slug = name.lower().strip()
-    slug = re.sub(r"[^a-z0-9äöüß]+", "-", slug)
-    slug = slug.strip("-")
-    return slug or "unbekannt"
+    """Convert company name to filename-safe ASCII slug (umlaut-aware)."""
+    import unicodedata
+    s = name.strip()
+    for src, dst in [("ä","ae"),("ö","oe"),("ü","ue"),("Ä","ae"),("Ö","oe"),("Ü","ue"),("ß","ss")]:
+        s = s.replace(src, dst)
+    s = unicodedata.normalize("NFD", s)
+    s = "".join(c for c in s if unicodedata.category(c) != "Mn")
+    s = s.lower()
+    s = re.sub(r"[^a-z0-9]+", "-", s)
+    return s.strip("-") or "unbekannt"
 
 
 def find_original_mail(company_name: str) -> str | None:
@@ -229,6 +274,56 @@ def generate_meta_prompt(lead_data: dict, client: anthropic.Anthropic) -> str:
     return response.content[0].text
 
 
+def _build_enrichment_block(lead_data: dict) -> str:
+    """Return a fact-block with named contact + observations, or empty string."""
+    enriched = lead_data.get("enriched_contact") or {}
+    observations = lead_data.get("observations") or {}
+    if not enriched and not observations:
+        return ""
+
+    first_name = (enriched.get("first_name") or "").strip()
+    title = (enriched.get("title") or "").strip()
+
+    facts: list[str] = []
+    if first_name:
+        facts.append(f"- Ansprechpartner: {first_name}" + (f" ({title})" if title else ""))
+        facts.append(f"- Anrede: Mail MUSS mit \"Hallo {first_name},\" beginnen — kein \"Hallo zusammen\".")
+
+    chat = observations.get("chat_widget")
+    faq = observations.get("faq") or {}
+    contact = observations.get("contact") or {}
+
+    obs_facts: list[str] = []
+    if chat:
+        obs_facts.append(f"Live-Chat-Widget aktiv: {chat}")
+    elif chat is None and observations:
+        obs_facts.append("Kein Live-Chat-Widget auf der Homepage erkennbar")
+    if faq.get("found"):
+        count = faq.get("item_count") or 0
+        if count:
+            obs_facts.append(f"FAQ-Seite vorhanden ({count} Fragen)")
+        else:
+            obs_facts.append("FAQ-Seite vorhanden")
+    elif faq and not faq.get("found"):
+        obs_facts.append("Keine FAQ-Seite gefunden")
+    channels = []
+    if contact.get("email"): channels.append("E-Mail")
+    if contact.get("phone"): channels.append("Telefon")
+    if contact.get("whatsapp"): channels.append("WhatsApp")
+    if contact.get("contact_form"): channels.append("Kontaktformular")
+    if channels:
+        obs_facts.append("Kontakt-Kanäle: " + ", ".join(channels))
+
+    if obs_facts:
+        facts.append("- Website-Observations (verifiziert): " + "; ".join(obs_facts))
+        facts.append("- Im Mail-Body MUSS genau eine dieser Observations als konkrete Beobachtung referenziert werden (z.B. \"Aufgefallen beim Besuch eurer Seite: …\").")
+
+    if not facts:
+        return ""
+
+    return "\n\nENRICHED-FAKTEN (verbindlich):\n" + "\n".join(facts) + "\n"
+
+
 def generate_mail(lead: dict, system_prompt: str, cta_index: int, previous_mails: list[str], original_mail: str | None = None, inject_cta: bool = True) -> str:
     """Call Claude API to generate outreach or follow-up mail (with meta-prompting)."""
     lead_data = lead.get("data", {})
@@ -249,6 +344,9 @@ def generate_mail(lead: dict, system_prompt: str, cta_index: int, previous_mails
         f"{meta_briefing}"
     )
 
+    # Named-contact + website-observations (if lead has been enriched)
+    enrichment_block = _build_enrichment_block(lead_data)
+
     # Build context about previous mails to enforce uniqueness (max 3 to avoid token bloat)
     uniqueness_block = ""
     recent_mails = previous_mails[-3:]
@@ -268,6 +366,7 @@ def generate_mail(lead: dict, system_prompt: str, cta_index: int, previous_mails
             f"Generiere eine Follow-Up Mail für diesen Lead.\n\n"
             f"ERSTMAIL (Betreff und Inhalt — für Bezug und Neuwert-Differenzierung):\n{original_mail}\n\n"
             f"Lead-Daten:\n```json\n{json.dumps(lead_data, ensure_ascii=False)}\n```"
+            f"{enrichment_block}"
             f"{uniqueness_block}"
         )
     else:
@@ -345,35 +444,57 @@ def parse_body(mail_text: str) -> str:
     return mail_text
 
 
-def validate_quality_gates(mail_text: str, config: dict) -> list[str]:
-    """Validate mail against niche config quality gates. Returns list of failures."""
-    gates = config.get("outreach", {}).get("quality_gates", {})
-    if not gates:
-        return []
-
+def validate_quality_gates(mail_text: str, config: dict | None, company_name: str) -> list[str]:
+    """Validate mail against PLAN.md Stage 4 gates + optional niche config gates."""
     failures = []
-    # Word count (body only — exclude Betreff, P.S., Signatur)
-    body = parse_body(mail_text)
-    body_lines = [l for l in body.splitlines() if not l.strip().startswith("P.S.") and l.strip() not in ("Ilias", "GetKiAgent — KI-Support für E-Commerce", "")]
-    word_count = sum(len(l.split()) for l in body_lines)
-    max_words = gates.get("max_main_body_words_tier_a", 120)
-    if word_count > max_words:
-        failures.append(f"Body {word_count} Wörter (max {max_words})")
 
-    # Forbidden phrases
-    for phrase in gates.get("forbidden_phrases", []):
+    # PLAN.md Gate 1: Demo-Link line with canonical Loom URL
+    if PS_REQUIRED_SUBSTR not in mail_text:
+        failures.append(f"Demo-Link-Zeile fehlt ('{PS_REQUIRED_SUBSTR}')")
+    if LOOM_URL_SUBSTR not in mail_text:
+        failures.append("Loom-URL fehlt")
+    if OPTOUT_REQUIRED_SUBSTR not in mail_text:
+        failures.append("Opt-out-Zeile fehlt (§7 UWG)")
+
+    # PLAN.md Gate 2: hardcoded forbidden phrases
+    for phrase in HARDCODED_FORBIDDEN:
         if phrase.lower() in mail_text.lower():
             failures.append(f"Verbotene Phrase: '{phrase}'")
 
-    # Company name in subject
-    if gates.get("require_company_name_in_subject"):
-        subject = parse_subject(mail_text)
-        # Can't validate without knowing company name — skip here
+    # PLAN.md Gate 3: subject contains company name
+    subject = parse_subject(mail_text)
+    if company_name and company_name.lower() not in subject.lower():
+        failures.append(f"Firmenname '{company_name}' fehlt im Betreff ('{subject}')")
 
-    # P.S. with demo
-    if gates.get("require_ps_with_demo"):
-        if "P.S." not in mail_text:
-            failures.append("P.S.-Zeile fehlt")
+    # PLAN.md Gate 4: signature + optional impressum at end
+    imp = _impressum_from_config(config)
+    if imp:
+        if imp not in mail_text:
+            failures.append("Impressum-Zeile fehlt (§5 TMG)")
+        elif not mail_text.rstrip().endswith(imp):
+            failures.append("Impressum nicht am Ende")
+        if SIGNATURE_REQUIRED not in mail_text:
+            failures.append("Signatur fehlt (vor Impressum)")
+    else:
+        if not mail_text.rstrip().endswith(SIGNATURE_REQUIRED):
+            failures.append("Signatur nicht wortidentisch am Ende")
+
+    # Optional niche-config-specific gates
+    if config:
+        gates = config.get("outreach", {}).get("quality_gates", {})
+        if gates:
+            body = parse_body(mail_text)
+            imp_line = imp or ""
+            body_lines = [l for l in body.splitlines() if not l.strip().startswith("P.S.") and not l.strip().startswith("▶ Kurze Demo") and not l.strip().startswith("Kein Interesse?") and l.strip() not in ("Ilias", "Ilias Tebque", "GetKiAgent — KI-Support für E-Commerce", "--", imp_line, "")]
+            word_count = sum(len(l.split()) for l in body_lines)
+            max_words = gates.get("max_main_body_words_tier_a", 120)
+            if word_count > max_words:
+                failures.append(f"Body {word_count} Wörter (max {max_words})")
+            for phrase in gates.get("forbidden_phrases", []):
+                if phrase in HARDCODED_FORBIDDEN:
+                    continue
+                if phrase.lower() in mail_text.lower():
+                    failures.append(f"Verbotene Phrase (niche): '{phrase}'")
 
     return failures
 
@@ -480,20 +601,35 @@ def main():
         print(f"Draft-Modus aktiv — Webhook: {webhook_url[:50]}...")
 
     previous_mails: list[str] = []
-    stats = {"generated": 0, "drafted": 0, "no_email": 0, "errors": 0}
+    stats = {"generated": 0, "drafted": 0, "no_email": 0, "errors": 0, "skipped": 0}
+
+    output_dir.mkdir(parents=True, exist_ok=True)
 
     for i, lead in enumerate(tier_a):
         lead_data = lead.get("data", {})
         company = lead_data.get("company_name", "Unknown")
         score = lead_data.get("score_1_to_10", "?")
-        email = extract_email(lead_data)
+        slug = slugify(company)
+        filepath = output_dir / f"{slug}.txt"
 
         print(f"\n{'='*60}")
         print(f"[{i+1}/{len(tier_a)}] {company} — Score {score}/10")
+
+        if filepath.exists() and not args.force:
+            print(f"  -> SKIP: {filepath.name} existiert bereits (PLAN.md Stage 4)")
+            stats["skipped"] += 1
+            continue
+
+        email = extract_email(lead_data)
         if email:
             print(f"  Email: {email}")
         else:
-            print(f"  Email: NICHT GEFUNDEN — wird manuell eingetragen")
+            NO_EMAIL_QUEUE_FILE.parent.mkdir(parents=True, exist_ok=True)
+            with open(NO_EMAIL_QUEUE_FILE, "a", encoding="utf-8") as nef:
+                nef.write(f"{company}\t{lead_data.get('website', '')}\tscore={score}\n")
+            print(f"  -> SKIP: Keine Email — eingetragen in {NO_EMAIL_QUEUE_FILE.name}")
+            stats["no_email"] += 1
+            continue
 
         # Per-lead prompt selection: score 7 → Tier B, score 8+ → Tier A
         if not args.followup and not args.prompt and not args.force:
@@ -522,32 +658,41 @@ def main():
             print(f"  -> WARNUNG: Keine Erstmail gefunden für {company} — generiere ohne Kontext")
         try:
             mail_text = generate_mail(lead, active_prompt, cta_index=i, previous_mails=previous_mails, original_mail=original_mail, inject_cta=args.prompt is None)
+            mail_text = _strip_premature_signature(mail_text)
+            mail_text = _ensure_impressum(mail_text, niche_config)
         except RuntimeError as e:
             print(f"  -> FEHLER: {e} — überspringe {company}")
             stats["errors"] += 1
             continue
-        previous_mails.append(mail_text)  # only append on success
 
-        # If no email, add placeholder
-        if not email:
-            mail_text = mail_text.replace("Hi,", "An: [EMAIL MANUELL EINTRAGEN]\n\nHi,", 1)
-            stats["no_email"] += 1
+        # PLAN.md Stage 4: Quality gate validation + regenerate once on failure
+        gate_failures = validate_quality_gates(mail_text, niche_config, company)
+        if gate_failures:
+            print(f"  -> Quality Gate FAIL (Versuch 1):")
+            for gf in gate_failures:
+                print(f"     - {gf}")
+            try:
+                mail_text_retry = generate_mail(lead, active_prompt, cta_index=i, previous_mails=previous_mails, original_mail=original_mail, inject_cta=args.prompt is None)
+                mail_text_retry = _strip_premature_signature(mail_text_retry)
+                mail_text_retry = _ensure_impressum(mail_text_retry, niche_config)
+            except RuntimeError as e:
+                print(f"  -> FEHLER bei Retry: {e} — überspringe {company}")
+                stats["errors"] += 1
+                continue
+            retry_failures = validate_quality_gates(mail_text_retry, niche_config, company)
+            if retry_failures:
+                print(f"  -> Quality Gate FAIL auch nach Retry — überspringe {company}:")
+                for gf in retry_failures:
+                    print(f"     - {gf}")
+                stats["errors"] += 1
+                continue
+            mail_text = mail_text_retry
+            print(f"  -> Quality Gate PASS nach Retry")
 
-        # Quality gate validation (niche config)
-        if niche_config:
-            gate_failures = validate_quality_gates(mail_text, niche_config)
-            if gate_failures:
-                print(f"  -> Quality Gate WARN:")
-                for f in gate_failures:
-                    print(f"     - {f}")
+        previous_mails.append(mail_text)
 
-        # Save locally
-        output_dir.mkdir(parents=True, exist_ok=True)
-        slug = slugify(company)
-        filename = f"{slug}.txt"
-        filepath = output_dir / filename
-        with open(filepath, "w", encoding="utf-8") as f:
-            f.write(mail_text)
+        with open(filepath, "w", encoding="utf-8") as mail_f:
+            mail_f.write(mail_text)
         print(f"  -> Gespeichert: {filepath}")
         stats["generated"] += 1
 
@@ -572,9 +717,10 @@ def main():
     print(f"\n{'='*60}")
     print(f"FERTIG")
     print(f"  Generiert: {stats['generated']} Mails")
-    print(f"  Ohne Email: {stats['no_email']} (manuell nachtragen)")
+    print(f"  Übersprungen (existiert): {stats['skipped']}")
+    print(f"  Ohne Email (no-email-queue.txt): {stats['no_email']}")
     if stats["errors"]:
-        print(f"  Fehler: {stats['errors']} Mails nicht generiert (API-Fehler)")
+        print(f"  Fehler: {stats['errors']} (API oder Quality Gate FAIL nach Retry)")
     if args.draft:
         print(f"  Gmail-Entwürfe: {stats['drafted']}")
     print(f"  Ausgabeverzeichnis: {output_dir}/")

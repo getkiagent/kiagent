@@ -1,0 +1,21 @@
+Betreff: Pre-Purchase-Fragen bei Biotikur — kurze Frage
+
+Hi,
+
+eure 160+ Reviews zeigen ein klares Muster: Kunden kaufen Biotikur nicht spontan — sie haben Fragen zu Wechselwirkungen mit Antibiotika, zur Dosierung bei bestehenden Beschwerden, zu Inhaltsstoffen. All das landet gerade im Kontaktformular und wartet auf eine Antwort, die nach Geschäftsschluss niemand gibt.
+
+Wir trainieren KI-Agenten auf genau solche Supplement-spezifischen Anfragen.
+
+Für Biotikur konkret: ein Agent, der Fragen zu Kontraindikationen, Einnahmeempfehlungen und Abo-Verwaltung automatisch beantwortet — für Kunden in Deutschland, der EU und der Schweiz, rund um die Uhr.
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+▶ Kurze Demo (Loom, 2 Min.): https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Kein Interesse? Ein kurzes "Nein danke" reicht — dann melde ich mich nicht wieder.
+
+Ilias Tebque
+GetKiAgent — KI-Support für E-Commerce
+
+--
+Ilias Tebque · Eichelstr. 87, 40599 Düsseldorf · getkiagent@gmail.com · +49 170 4092435 · Kleinunternehmer §19 UStG

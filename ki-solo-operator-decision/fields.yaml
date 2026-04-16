@@ -1,0 +1,123 @@
+fields:
+  fit_feasibility:
+    - name: "operator_fit_1_10"
+      description: "Passung zu Solo+NoCode+DACH. Dev-Skill-Pflicht ≤ 3/10."
+      detail_level: "moderate"
+    - name: "time_to_first_euro_weeks"
+      description: "Realistische Wochen bis erster Rechnung (nicht optimistisch)."
+      detail_level: "brief"
+    - name: "startup_capital_required_eur"
+      description: "Mindest-Budget Tools+Extras pro Monat."
+      detail_level: "brief"
+
+  revenue_economics:
+    - name: "revenue_month_6_conservative_eur"
+      description: "€/Monat Netto-Cashflow Monat 6, konservatives Szenario."
+      detail_level: "moderate"
+    - name: "revenue_month_6_optimistic_eur"
+      description: "€/Monat Monat 6, optimistisch aber belegbar."
+      detail_level: "moderate"
+    - name: "revenue_month_12_conservative_eur"
+      description: "€/Monat Monat 12, konservativ."
+      detail_level: "moderate"
+    - name: "revenue_month_12_optimistic_eur"
+      description: "€/Monat Monat 12, optimistisch."
+      detail_level: "moderate"
+    - name: "pricing_model"
+      description: "Setup+Retainer / Projekt / Performance / SaaS — was trägt."
+      detail_level: "detailed"
+    - name: "typical_setup_eur"
+      description: "Typische Einmalgebühr."
+      detail_level: "brief"
+    - name: "typical_mrr_eur"
+      description: "Typischer Retainer pro Kunde."
+      detail_level: "brief"
+
+  acquisition:
+    - name: "primary_channel"
+      description: "LinkedIn / Cold Email / Community / Partner — einer primär."
+      detail_level: "detailed"
+    - name: "icp_detailed"
+      description: "Branche + Größe + Rolle Entscheider + sichtbares Budget-Signal."
+      detail_level: "detailed"
+    - name: "linkedin_or_apollo_filters"
+      description: "Konkrete Filter-Strings."
+      detail_level: "detailed"
+    - name: "opening_message_template"
+      description: "Konkreter erster Satz / Betreffzeile, warum sie funktioniert."
+      detail_level: "detailed"
+    - name: "contacts_per_week_needed"
+      description: "Volumen für realistischen Deal-Flow."
+      detail_level: "brief"
+    - name: "realistic_conversion_rate"
+      description: "Kontakt → Call → Kunde, belegt mit Benchmarks."
+      detail_level: "moderate"
+    - name: "sales_cycle_days"
+      description: "Median Tage Erstkontakt → Vertragsunterschrift."
+      detail_level: "brief"
+
+  delivery_risk:
+    - name: "delivery_complexity_solo_1_10"
+      description: "Kann Solo-NoCode-Operator Qualität halten?"
+      detail_level: "moderate"
+    - name: "scale_ceiling_solo"
+      description: "Max Kundenzahl bevor Team/Sub nötig wird."
+      detail_level: "brief"
+    - name: "churn_risk_6m"
+      description: "low/med/high + Grund (Insource-Risiko, Saisonalität)."
+      detail_level: "moderate"
+    - name: "moat_1_10"
+      description: "Verteidigbarkeit vs Copycat nächste Woche."
+      detail_level: "moderate"
+    - name: "commoditization_risk"
+      description: "Wie schnell Preis gegen Null."
+      detail_level: "moderate"
+
+  evidence:
+    - name: "dach_cases_verified"
+      description: "Namen + Link zu DACH-Solopreneuren die nachweislich mit genau diesem Modell verdienen."
+      detail_level: "detailed"
+    - name: "us_uk_reference_cases"
+      description: "2-3 US/UK Referenzfälle mit Zahlen."
+      detail_level: "moderate"
+    - name: "public_revenue_proof"
+      description: "MRR-Screenshot, Interview, Indie-Hackers-Thread, Podcast."
+      detail_level: "detailed"
+
+uncertain: []
+
+cross_cutting_prompts:
+  C3_existing_project:
+    - "Tragfähig oder strukturell kaputt? Vergleichbare Anbieter mit Revenue?"
+    - "Wenn tragfähig: fehlt Case / Positionierung / Pricing / Akquise / ICP?"
+    - "Wenn kaputt: welche Assets (Lead Engine, Demo-System, E-Com-Wissen) in welches Modell überführen?"
+    - "Pivot innerhalb E-Com-AI mit besserer Aussicht?"
+
+  C4_quit_matrix:
+    - "30/60/90-Tage-Meilensteine die rational Vollzeit rechtfertigen (konkrete €/Kunden-Zahlen)"
+    - "Minimaler Runway in Monaten bei DE-Lebenshaltung"
+    - "Ehrlicher Worst Case nach 6 Monaten Vollzeit"
+    - "Objektive Abbruchkriterien"
+    - "Hybrid-Pfad: Teilzeit/Befristung + Side-Business — rational überlegen?"
+    - "Retrospektiven vergleichbarer Solo-NoCode-DACH-Gründer"
+
+  C5_precedents:
+    - "3-5 Fälle: Solo, kein CS-Background, <6 Monate auf >5k€/Monat Netto, DACH/EU, NoCode-Stack"
+    - "Je Fall: was verkauft, an wen, Kanal, Preis, konkreter Wendepunkt"
+    - "Nur nachprüfbare Quellen: Interview, Podcast, LinkedIn-Post, Medienbericht"
+
+  C6_anti_hype:
+    - "Modelle die an No-Code-Limits scheitern trotz guter Optik"
+    - "Modelle mit zwingend hohen Akquisekosten"
+    - "Commodity-Modelle mit Margen gegen Null"
+    - "Enterprise-Sales-Zyklen die Solo nicht trägt"
+    - "Konkrete Hype-Modelle 2025/2026 explizit ausschließen"
+
+meta_constraints:
+  - "Quellen ab 2024, bevorzugt 2025/2026"
+  - "Konkrete Zahlen, keine ungestützten Schätzungen"
+  - "Jede Empfehlung muss erklären, warum Solo+NoCode+€0-Ads — nicht Funded-Startup"
+  - "DACH primär, US/UK nur Referenz"
+  - '"funktioniert in Theorie" vs "nachweislich funktioniert" klar trennen'
+  - "Wenn Antwort = Festanstellung nehmen, dann so sagen mit Begründung"
+  - "Keine Motivations-Frameworks"

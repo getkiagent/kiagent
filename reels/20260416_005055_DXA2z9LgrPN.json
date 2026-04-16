@@ -1,0 +1,14 @@
+{
+  "id": "DXA2z9LgrPN",
+  "title": "Video by sebastianhardy_",
+  "uploader": "Sebastian Hardy",
+  "uploader_id": "292636162",
+  "duration": 55.076,
+  "view_count": null,
+  "like_count": 2186,
+  "description": "Everyone’s Using Obsidian With Claude Wrong, Here’s The Fix\n\nThe power of Obsidian isn’t the notes themselves. It’s the network of connections between them. Backlinks turn isolated information into a knowledge graph that AI can actually navigate and understand. But Claude won’t create those connections automatically unless you train it to.\n\nYou need to configure Claude’s memory files to actively search for related notes and link them every time it saves something. Otherwise, you’re dumping information into a vault with no structure, and AI can’t find the connections between your client projects, your processes, or your research.\n\nMost people set up Obsidian, connect it to Claude, and wonder why it’s not performing like the demos they saw. The backlink system is what makes the entire setup valuable. Without it, you’re just using an expensive note-taking app.\n\nConfigure it right once and Claude builds a connected knowledge system for you automatically. Skip this step and you’re wasting time on a setup that doesn’t work.\n\nAre you using Obsidian with Claude?\nComment below if you set up backlinks properly.\n\n#Obsidian #ClaudeCode #AITools #KnowledgeManagement #ProductivityHacks",
+  "url": "https://www.instagram.com/p/DXA2z9LgrPN/",
+  "language": "en",
+  "text": "So many people are posting about obsidian and cloud code, but nobody is telling you how to use it that it actually works. The reason why obsidian is so powerful is because it has a network of links, and it literally does not forget anything. However, this will only work if you put those right settings in place. And the setting that I'm talking about is the backlink feature. Go into your cloud code. In its instructions and the memory files, the cloud MD files, you need to specifically train it to link your files with other proper files. That means every time it goes in it files something into your obsidian vault, it should go look for all the other related files, and it should properly link them in your file. If it does not do that, the entire feature of this memory collection within obsidian is useless, and you won't be able to use it in the way that it's intended to be used. If you want to know more things like this, follow for more daily AI content.",
+  "timestamp": "20260416_005055"
+}

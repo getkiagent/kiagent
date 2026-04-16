@@ -1,6 +1,12 @@
+---
+tags: [projekt/getkiagent, typ/wiki, thema/index]
+related: [[architecture]], [[business]], [[lessons]], [[claude-managed-agents]]
+---
+
 # Wiki Index — GetKiAgent
 
-- [architecture.md](architecture.md) — Lead Engine, n8n Workflows, Tech Stack, Demo
-- [business.md](business.md) — Produkt, Pricing, Zielgruppe, Phase & Status
-- [lessons.md](lessons.md) — Lessons Learned aus Projekt-Audits
-- [claude-managed-agents.md](claude-managed-agents.md) — Was es ist, Pricing, Personas, Relevanz für GetKiAgent
+- [[architecture]] — Lead Engine, n8n Workflows, Tech Stack, Demo
+- [[business]] — Produkt, Pricing, Zielgruppe, Phase & Status
+- [[lessons]] — Lessons Learned aus Projekt-Audits
+- [[claude-managed-agents]] — Was es ist, Pricing, Personas, Relevanz für GetKiAgent
+- [[log]] — Append-only Ingest-Log

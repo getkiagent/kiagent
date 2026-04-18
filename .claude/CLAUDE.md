@@ -28,8 +28,15 @@ Niche configs: `configs/{niche}.yaml` — drives discovery queries, scoring, out
 - "schnell" → deliver directly. "sauber" → Plan Mode, verify first.
 - Vor Implementierung: Success Criteria in 1-2 Sätzen formulieren.
 - Multi-Step Tasks: kurzer Plan mit Verify-Check pro Schritt.
+- 3+ Schritte oder architektonische Entscheidung → Plan Mode automatisch, nicht nur bei `sauber`.
 - "Fix the bug" → erst reproduzieren, dann fixen, dann verifizieren.
 - Never mark done without proving it works.
+- Vor "done": "Würde ein Staff Engineer das so abnehmen?" — wenn nein, nachbessern.
+
+## Subagents
+- Research, Exploration, parallele Analysen → Subagent (Explore/general-purpose), nicht inline im Main-Context.
+- Ein Task pro Subagent. Bei Multi-File-Debugs oder >3 Grep/Glob-Runden: delegieren.
+- Builder-Validator bei n8n-Workflows und Scripts >20 Zeilen (siehe `rules/builder-validator.md`).
 
 ## Reel/Video Analysis
 - Bei Instagram/TikTok/YouTube-Shorts/YouTube URLs im Prompt → sofort `python tools/summarize_reel.py <url>` ausführen, dann Transkript analysieren. Keine Rückfrage.
@@ -62,13 +69,11 @@ Niche configs: `configs/{niche}.yaml` — drives discovery queries, scoring, out
 - CLAUDE.md darf nur wachsen wenn gleichzeitig etwas entfernt oder zusammengeführt wird.
 
 ### What counts as loggable
-- Shell/Python command that errors out
-- Wrong file path, missing file, wrong data structure assumption
-- API call failure (wrong params, auth, rate limits, unexpected response shape)
-- n8n node config that doesn't validate or behaves unexpectedly
-- Any task where Ilias had to correct Claude
-- Dependency/install issue (pip, npm, missing package)
-- Prompt that produced wrong output format or content
+- Command-Fehler (Shell, Python, Dependency/Install)
+- Falsche Annahme über Pfade, Datenstrukturen, API-Responses
+- n8n Node-Config fehlerhaft oder unerwartetes Verhalten
+- Prompt mit falschem Output-Format/-Inhalt
+- Jede Korrektur durch Ilias
 
 # Pipeline Control
 

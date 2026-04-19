@@ -13,3 +13,19 @@ __pycache__/
 .claude/worktrees/
 tasks/*.log
 deep-research-skills/
+
+# Generated/ephemeral artifacts — keep out of git status noise
+reels/*.json
+screenshot-*.png
+sensitivitaets-dashboard-*.html
+60-tage-plan-*.md
+PRE-FLIGHT-CHECKS-*.md
+business-case-2026/
+intel/
+market-gap-research/
+archive/
+ki-solo-operator-decision/
+shopify-app-solo-research/
+scripts/extract-dashboard.js
+wiki/claude-code-stack-optimierung.md
+wiki/self-healing-agents.md

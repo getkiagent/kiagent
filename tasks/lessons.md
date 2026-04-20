@@ -1,5 +1,50 @@
 # Tasks & Lessons
 
+### 2026-04-20 — Batch-Reel-Verarbeitung ohne API-Budget-Check verbrannte 10 URLs
+**Error:** `process_reel.py` in Schleife über 21 URLs. Nach URL 11 greift Anthropic API-Usage-Limit (reset 2026-05-01 00:00 UTC). Posts 12–21 (1× X, 8× IG, 1× X) failten mit `invalid_request_error` in der Sonnet-Call-Stufe. Wiki-Einträge entstanden nicht, da die Analyse vorher abbricht.
+**Root cause:** (1) Kein Pre-Check auf verfügbares Monatsbudget vor Batch-Start. (2) Kein Early-Exit im Loop: bei `api-usage-limit`-Error wurden die restlichen 9 URLs unnötig durchgeschickt, jedes Mal erst Download via yt-dlp → dann Sonnet-Fail. Auch `ERROR summarize`-Zeilen in IG-URLs sind täuschend: die urllib3-Dependency-Warning ist harmlos, der eigentliche Fehler ist immer der API-Limit.
+**Fix:** (1) Pending-URLs in `tasks/reels_pending.txt` sichern, nach Reset nachfahren. (2) Für zukünftige Batches: Loop-Wrapper soll bei `api-usage-limit`-Error SOFORT abbrechen und die restlichen URLs in Pending-Queue schreiben statt durchzubrennen. Optional: Pre-Check mit einer 1-Token-Probe.
+
+### 2026-04-20 — Social-Media-Claims zu Anthropic-Features vor Übernahme kontextualisieren
+**Error:** Aus X-Thread „Opus 4.7 — 95% less token usage, no context limits" in erster Iteration als binär falsch eingestuft. Tatsächlich ist der Claim halb-richtig, aber ohne Kontext irreführend.
+**Root cause:** Engagement-Posts verkürzen Mehrteiler-Facts. „95% less tokens" bezieht sich auf 4.7 **in Kombination** mit dem offiziellen Memory-Tool (`memory_20250818`), wo Claude just-in-time Memory-Files liest statt Context-Historie zu tragen. Pro Einzel-API-Call verbraucht 4.7 durch neuen Tokenizer 0–35% MEHR (Claude-lash). „No context limits" ist analog: Context bleibt 1M, aber mit Memory+Compaction effektiv unbegrenzt. Zusätzliche Präzisierungen in derselben Session: „Boris Turnie" (heißt Cherny), „15 Guides" (sind 17), „motion.size.ai" (heißt motion.dev).
+**Fix:** Bei Reel-/Thread-Claims mit Produkt-Relevanz zwei Fragen trennen: (1) stimmt der Claim in irgendeinem Setup? (2) stimmt er für unseren Setup? Primärquellen: `docs.claude.com/en/agents-and-tools/tool-use/memory-tool`, `platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7`. Als Regel in process_reel.py-Prompt: Bei Feature-Claims den Kontext extrahieren, in dem der Claim gilt. Korrigierte Faktenlage in wiki/claude-ecosystem-2026-04-20.md Abschnitt 0.
+
+### 2026-04-19 11:45 — W3 Merge-by-Position blockiert bei Node-Fehler
+**Error:** W3 Dashboard-Data-Webhook HTTP 200 aber Body size 0 nach Upgrade auf native Google-Sheets-Node + parallele Notion+Sheets Branches mit Merge-by-Position.
+**Root cause:** n8n Merge (combine mode, combineByPosition) wartet auf Items aus ALLEN Inputs. Failt eine Branch (egal ob credential-issue, sheet-tab-name-mismatch, oder anderer Error), triggert Respond-to-Webhook nie → HTTP 200 mit leerem Body (Webhook-Default wenn Respond nicht feuert).
+**Fix:** Rollback zur Notion-only Sequential-Chain-Variante. Merge-by-Position für Dashboard-Aggregation ungeeignet solange einzelne Branches nicht error-safe gemacht sind. Künftig: Try/Catch im Code-Node pro Branch, ODER Sequential-Chain mit `$(previousNode).first()`-Lookup statt Merge.
+
+### 2026-04-19 10:40 — n8n update_workflow via MCP → UI-Save nötig
+**Error:** Nach `mcp__claude_ai_n8n__update_workflow` Response zeigt weiter alten Code (erkennbar an spezifischen String-Literals).
+**Root cause:** MCP-Update ändert Workflow-Definition in n8n-DB, aber aktive Version bleibt unverändert bis UI-Save. active-version !== latest-version.
+**Fix:** Nach jedem MCP-Update User-Step: Workflow in n8n-UI öffnen → `Save` (Cmd+S) → Toggle aus/an. Sonst läuft alte Version.
+
+### 2026-04-19 10:15 — n8n HTTP Header Auth: Header NAME ≠ Credential-Label
+**Error:** n8n Credential-Save returnte: `Header name must be a valid HTTP token ["Notion Integration Token"]`.
+**Root cause:** User tippte vorgeschlagenen Credential-Display-Label in das HTTP-Header-NAME-Feld. n8n validiert Header-Name als HTTP-Token (RFC 7230), Leerzeichen nicht erlaubt.
+**Fix:** Anleitung klar trennen: "Credential-Name/Label" (frei wählbar) vs "Header Name" (muss HTTP-Token sein: Authorization, x-api-key, etc.). In künftigen Guides immer Tabelle mit beiden Feldern.
+
+### 2026-04-19 02:40 — Command Deck Stage B: Windows cp1252 UnicodeEncodeError
+**Error:** `import_tr_csv.py` crashte mit `UnicodeEncodeError 'charmap' codec can't encode '\u2192'` beim print.
+**Root cause:** Windows Python 3.11 default stdout-Encoding = cp1252. Unicode-Chars (→, €) in print() crashen.
+**Fix:** Unicode-Symbole in print() durch ASCII ersetzt (`->`, `EUR`). JSON-Output behält utf-8 via `encoding="utf-8"` file-open. Merkhilfe: alle Windows-kompatiblen Python-Scripts nur ASCII in print/logging.
+
+### 2026-04-19 02:15 — Command Deck Stage A: .env.example blockiert
+**Error:** `Write` auf `intel/.env.example` → PreToolUse-Hook `protect_sensitive.py` blockiert alle `.env*` Dateien.
+**Root cause:** Hook schützt Dateien mit `.env` Prefix pauschal (unabhängig von `.example`-Suffix).
+**Fix:** Template als `intel/ENV_TEMPLATE.md` geschrieben statt `.env.example`. Gleiche Funktion, kein Hook-Trigger. In HANDOVER.md Verweis darauf.
+
+### 2026-04-19 — summarize_reel.py: Carousel-Posts failten mit "no file for id"
+**Error:** IG-Carousel `DXH5vv_GJji` → `ERROR download: yt-dlp finished but no file for id DXH5vv_GJji`. yt-dlp lud 901 KiB korrekt, Script fand Datei aber nicht.
+**Root cause:** In `download_media` überschrieb `playlist_fields` (das `id` enthielt) die Entry-ID nach Merge `{**entries[0], **playlist_fields}`. yt-dlp speichert Carousel-Entries aber unter der Entry-Media-ID (z.B. `DXH5i2OjF_h.mp4`), nicht unter der Post-Shortcode-ID (`DXH5vv_GJji`). Glob suchte Shortcode → nix gefunden.
+**Fix:** `tools/summarize_reel.py:132` — `"id"` aus `playlist_fields`-Liste entfernt. Entry-ID bleibt erhalten, Description/Uploader/Title kommen weiter vom Playlist-Level.
+
+### 2026-04-18 — Claude Artifact HTMLs standalone hosten
+**Error:** `sensitivitaets-dashboard-*.html` aus Claude-Artifact-Link auf Vercel deployed → leere Seite im Browser.
+**Root cause:** 3 getrennte Probleme: (1) Artifact-Bundles nutzen `<script type="__bundler/manifest">` (base64+gzip Assets) + `<script type="__bundler/template">` (JSON-escaped App-HTML) + Runtime-Loader der UUIDs zu Blob-URLs entpackt und `window.claude`/postMessage an `https://claude.ai` braucht → außerhalb claude.ai stumm. (2) In `scripts/extract-dashboard.js` war die Regex `new RegExp(\`url\\("${id}"\\)\`)` falsch — Template-Literal schluckt `\(` zu `(`, Regex wurde zur Capture-Group `url("UUID")` die nur `url"UUID"` matcht, nie `url("UUID")`. Gefixt mit `split().join()` statt Regex. (3) Node-on-Windows mapt `/tmp/` zu `C:\tmp\`, git-bash zu `C:\Users\...\AppData\Local\Temp\` — erst durch `stat`+`node fs.readFileSync` Vergleich entdeckt dass vercel aus der bash-tmp deployt während Node-Script in C:\tmp schreibt.
+**Fix:** `scripts/extract-dashboard.js` mit gefixter String-Ersetzung. Input-Pfade via git-bash-tmp (`/tmp/`) oder absoluten Windows-Pfad, damit vercel dieselbe Location sieht. Verified headless: beide Dashboards rendern (H1 "Hallo Janin./Ilda.", 42-48KB DOM, 0 Errors außer kosmetischem favicon 404).
+
 ### 2026-04-16 — research-deep + web-search-agent
 `research-deep` + `web-search-agent` für strategische Selbstanalyse = massive Overshoot. Nur für echte Produkt-/Markt-Discovery verwenden, wo Websuche zwingend nötig ist.
 
@@ -143,3 +188,14 @@
 **Fix hotfix:** Neues Script `append_impressum.py` appendet Impressum lokal zu .txt-Files. `update_drafts_impressum.py` (existing) patched 11 Gmail-Drafts in-place. Kein Neu-Versand nötig.
 **Permanent fix (TODO):** In `run_followups.py` → `generate_followup_mail()` `--niche ecommerce-beauty` mitgeben, damit generate_outreach.py Impressum automatisch anhängt.
 **No-match recipients (28):** Domain-Mismatch zwischen Sent-Email und Lead-URL im batch-results (z.B. sent to `info@village-cosmetics.de` aber Lead-URL ist `drbronner.de`). Kein Follow-up generiert für diese. Nachfüllen manuell wenn Priorität.
+
+### 2026-04-17 — Research-Plan zu Shopify-App-Build ohne Cashflow-Check
+**Error:** 90-150-Tage-Shopify-App-Plan bei <€5k Runway empfohlen, ohne Time-to-First-Euro als Hard-Constraint zu prüfen.
+**Root cause:** Research-Scope nahm finanzielle Slack an, User aber hat Cashflow-Druck in ersten Wochen. Claude ankerte auf Research-Empfehlung statt auf User-Realität.
+**Fix:** Vor jedem Plan → Runway + Cashflow-Bedarf + laufende Kosten als Upfront-Constraints setzen. Bei User-Feedback "wir drehen uns im Kreis" → kompletter Scope-Reset, nicht Nachbesserung der alten Idee.
+
+### 2026-04-17 — Sub-Agent Plan-Mode-Vererbung blockt Ausführung
+**Error:** Sub-Agents via background Agent-Tool erben Plan-Mode vom Parent, ignorieren "execute directly"-Prompt, schreiben nur Meta-Pläne statt Research-Output.
+**Root cause:** Harness-Level-Restriction schlägt Prompt-Instruction. Nicht umgehbar via Prompt-Engineering.
+**Fix:** Vor jedem Sub-Agent-Launch sicherstellen, dass Parent-Session NICHT in Plan Mode ist (User via Shift+Tab oder Exit-Button). Sonst Agent-Zyklus ins Leere.
+

@@ -14,7 +14,10 @@ Output:
 
 import sys
 import argparse
+import os
+import tempfile
 import time
+from contextlib import contextmanager
 from pathlib import Path
 from urllib.parse import urlparse
 
@@ -237,10 +240,16 @@ def is_relevant_domain(domain: str) -> bool:
     # Bereits analysierte Domains ausschließen
     if domain in ANALYZED_DOMAINS:
         return False
-    # Blocklist prüfen
-    for blocked in DOMAIN_BLOCKLIST:
-        if blocked in domain:
-            return False
+    # Blocklist prüfen: Einträge mit "." matchen exakt auf Domain,
+    # sonst gegen Host-Labels + Hyphen-Splits. Verhindert False Positives
+    # wie "hm" in "meritbeauty.com" oder "dm" in "dmlab.de".
+    exact_blocks = {b for b in DOMAIN_BLOCKLIST if "." in b}
+    if domain in exact_blocks:
+        return False
+    registrable = domain.split(".", 1)[0]
+    tokens = {registrable, *registrable.split("-")}
+    if tokens & (DOMAIN_BLOCKLIST - exact_blocks):
+        return False
     # TLD prüfen
     return any(domain.endswith(tld) for tld in ALLOWED_TLDS)
 
@@ -256,28 +265,38 @@ def extract_domain(url: str) -> str | None:
 
 # ── Discovery ─────────────────────────────────────────────────────────────────
 
+class SearchError(RuntimeError):
+    """DDG-Suche ist hart fehlgeschlagen (kein Rate-Limit) — Run als fehlerhaft markieren."""
+
+
 def search_ddg(query: str, region: str, max_results: int) -> list[str]:
-    """DDG search with PLAN.md rate-limit handling: 30s wait + retry once, skip on failure."""
+    """DDG search with PLAN.md rate-limit handling: 30s wait + retry once.
+
+    Leere Result-Liste = wirklich 0 Treffer.
+    SearchError = Netzwerk-/API-Fehler — Caller entscheidet, ob Run weiter läuft oder abbricht.
+    """
     try:
         from ddgs import DDGS
     except ImportError:
         print("ERROR: ddgs nicht installiert. Run: pip install ddgs")
         sys.exit(1)
 
+    last_error: Exception | None = None
     for attempt in range(2):
         try:
             results = DDGS().text(query, region=region, max_results=max_results)
             return [r.get("href", "") for r in results if r.get("href")]
         except Exception as e:
+            last_error = e
             msg = str(e).lower()
             is_rate_limit = any(s in msg for s in ("ratelimit", "rate limit", "429", "202", "too many"))
             if is_rate_limit and attempt == 0:
                 print(f"  Rate-Limit — warte 30s und versuche erneut...")
                 time.sleep(30)
                 continue
-            print(f"  Suche fehlgeschlagen: {e}")
-            return []
-    return []
+            # Rate-Limit nach Retry oder anderer harter Fehler → propagieren
+            raise SearchError(f"DDG-Suche fehlgeschlagen: {e}") from e
+    raise SearchError(f"DDG-Suche fehlgeschlagen: {last_error}") from last_error
 
 
 def load_existing_urls(paths: list[str]) -> set[str]:
@@ -335,10 +354,17 @@ def discover(num_queries: int, results_per_query: int, niche_queries: list[str] 
     print(f"  Bereits bekannte Domains: {len(existing)}")
 
     found_domains: dict[str, str] = {}  # domain -> full url
+    failed_queries = 0
 
     for i, (query, region) in enumerate(queries, 1):
         print(f"\n  [{i}/{len(queries)}] {query}")
-        urls = search_ddg(query, region, results_per_query)
+        try:
+            urls = search_ddg(query, region, results_per_query)
+        except SearchError as e:
+            failed_queries += 1
+            print(f"           FEHLER: {e}")
+            time.sleep(1)
+            continue
         new = 0
         for url in urls:
             domain = extract_domain(url)
@@ -353,6 +379,14 @@ def discover(num_queries: int, results_per_query: int, niche_queries: list[str] 
         print(f"           {new} neue Kandidaten")
         time.sleep(1)  # Rate-limit respektieren
 
+    # Wenn alle Queries fehlgeschlagen sind: Run ist nicht vertrauenswürdig
+    if queries and failed_queries == len(queries):
+        raise SearchError(
+            f"Alle {failed_queries} Queries fehlgeschlagen — DDG unerreichbar oder blockiert."
+        )
+    if failed_queries:
+        print(f"\n  WARN: {failed_queries}/{len(queries)} Queries fehlgeschlagen")
+
     return list(found_domains.values())
 
 
@@ -363,7 +397,46 @@ def save_discovered(urls: list[str], output_path: str):
     p.parent.mkdir(parents=True, exist_ok=True)
     lines = ["# GetKiAgent — Discovered Leads (automatisch generiert)", ""]
     lines += [url for url in sorted(urls)]
-    p.write_text("\n".join(lines), encoding="utf-8")
+    # Atomic write: erst tmp, dann rename — verhindert halb-geschriebene Dateien
+    fd, tmp_name = tempfile.mkstemp(prefix=p.name + ".", suffix=".tmp", dir=p.parent)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            f.write("\n".join(lines))
+        os.replace(tmp_name, p)
+    except Exception:
+        try:
+            os.unlink(tmp_name)
+        except OSError:
+            pass
+        raise
+
+
+@contextmanager
+def run_lock(leads_dir: str):
+    """Lockfile-Guard: verhindert, dass zwei Discovery-Runs parallel dieselbe Niche bearbeiten.
+
+    Race ohne Lock: beide Runs lesen denselben Cache, finden dieselben Domains,
+    überschreiben discovered-urls.txt und syncen Duplikate ans Sheet.
+    """
+    lock_dir = Path(leads_dir)
+    lock_dir.mkdir(parents=True, exist_ok=True)
+    lock_path = lock_dir / ".discover.lock"
+    try:
+        fd = os.open(str(lock_path), os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+    except FileExistsError:
+        raise RuntimeError(
+            f"Discovery-Run läuft bereits ({lock_path}). "
+            f"Falls das ein Überbleibsel ist, Datei manuell löschen."
+        )
+    try:
+        with os.fdopen(fd, "w") as f:
+            f.write(f"pid={os.getpid()} started={int(time.time())}\n")
+        yield
+    finally:
+        try:
+            lock_path.unlink()
+        except OSError:
+            pass
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
@@ -389,12 +462,22 @@ def _sync_urls_to_sheet(urls: list[str]):
         print(f"  → Sheet sync FEHLER: {e}")
 
 
+def _positive_int(raw: str) -> int:
+    try:
+        n = int(raw)
+    except ValueError:
+        raise argparse.ArgumentTypeError(f"muss eine Ganzzahl sein, nicht {raw!r}")
+    if n <= 0:
+        raise argparse.ArgumentTypeError(f"muss > 0 sein, nicht {n}")
+    return n
+
+
 def main():
     from niche_config import load_niche_config
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--queries", type=int, default=99, help="Anzahl Suchqueries (Standard: alle)")
-    parser.add_argument("--results", type=int, default=15, help="Ergebnisse pro Query")
+    parser.add_argument("--queries", type=_positive_int, default=99, help="Anzahl Suchqueries (Standard: alle)")
+    parser.add_argument("--results", type=_positive_int, default=15, help="Ergebnisse pro Query")
     parser.add_argument("--output", default=None, help="Output path (auto-set when --niche used)")
     parser.add_argument("--niche", default=None, help="Niche name — loads queries from configs/{niche}.yaml")
     args = parser.parse_args()
@@ -420,14 +503,22 @@ def main():
     print(f"\nLead Discovery gestartet ({num_queries} von {total_queries} Queries)")
     print(f"  {num_queries} Queries x {args.results} Ergebnisse = max. {num_queries * args.results} URLs\n")
 
-    urls = discover(num_queries, args.results, niche_queries=niche_queries, leads_dir=leads_dir)
+    try:
+        with run_lock(leads_dir):
+            urls = discover(num_queries, args.results, niche_queries=niche_queries, leads_dir=leads_dir)
 
-    if not urls:
-        print("\nKeine neuen Kandidaten gefunden.")
-        return
+            if not urls:
+                print("\nKeine neuen Kandidaten gefunden.")
+                return
 
-    save_discovered(urls, output)
-    _sync_urls_to_sheet(urls)
+            save_discovered(urls, output)
+            _sync_urls_to_sheet(urls)
+    except SearchError as e:
+        print(f"\nERROR: {e}")
+        sys.exit(2)
+    except RuntimeError as e:
+        print(f"\nERROR: {e}")
+        sys.exit(3)
 
     print(f"\n{'=' * 50}")
     print(f"  {len(urls)} neue Domains gefunden")

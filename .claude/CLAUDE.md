@@ -17,6 +17,16 @@ Vault: `C:\Users\ilias\obsidian-vault\` — Rules siehe dort, Wiki unter `projec
 - Reply Watcher — `qTptgWEJF5fvCkwj` (Cron 30min, Sheet → Telegram)
 - Outreach Draft Batch Send — `TQMPiSl8a8hHtbq7` (Mo-Fr 9 Uhr, 30/Tag; Manual = Dry Run)
 
+### Command Deck (intel/ — siehe intel/HANDOVER.md)
+- W1 Daily Intel — `oN1j5kZPFJ5ckrBU` (07:00 Cron)
+- W2 Saved from TG — `KKkJi7oDoldTocPS`
+- W3 Dashboard Data — `1RXVyWuUlk798N2X` (GET /dashboard/data)
+- W4 Bank Sync — `eYnr8tfbimJUmrCG`
+- W5 API Usage — `ISOOBIfLHCF7ElXW`
+- W6 Todos CRUD — `xdkB9zjglUIN431c` (POST /todos)
+- W7 Quick Ask — `38oir22pcVYOmDUj` (POST /ask)
+- W8 Weekly Intel Digest — `2ip4SnqJT2YeMfvv` (Mo 08:00, reads saved-intel)
+
 Reference docs: `/docs/architecture.md`, `/docs/business.md`, `/docs/delivery-checklist.md`, `PLAN.md`.
 Niche configs: `configs/{niche}.yaml` — drives discovery queries, scoring, outreach prompts, pricing.
 
@@ -32,7 +42,8 @@ Niche configs: `configs/{niche}.yaml` — drives discovery queries, scoring, out
 - Never mark done without proving it works.
 
 ## Reel/Video Analysis
-- Bei Instagram/TikTok/YouTube-Shorts/YouTube URLs im Prompt → sofort `python tools/summarize_reel.py <url>` ausführen, dann Transkript analysieren. Keine Rückfrage.
+- Bei Instagram/TikTok/YouTube-Shorts/YouTube/X URLs im Prompt → sofort `python tools/process_reel.py <url>` ausführen. Keine Rückfrage.
+- process_reel.py analysiert, speichert Wiki-Eintrag in Obsidian und entscheidet über lessons.md — kein manueller Nachschritt nötig.
 
 ## Code Standards
 - Simplicity first. English comments, descriptive names, no magic numbers.

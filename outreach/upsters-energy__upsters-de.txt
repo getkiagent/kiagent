@@ -1,0 +1,16 @@
+Betreff: Bundle-Abbrüche bei Upsters Energy — kurze Frage
+
+Hi,
+
+wer sich auf upsters.de ein Bundle zusammenstellt und dann fragt "Kann ich Koffein-Shots mit Elektrolyten kombinieren oder ist das zu viel?", bekommt aktuell keine Antwort — zumindest nicht sofort. Kein Chat, kein Konfigurations-Assistent, nur ein Kontaktformular. Bei Produkten mit konkreten Dosierungsangaben ist das genau der Moment, wo Leute abspringen.
+
+Ein KI-Agent direkt im Bundle-Builder könnte Kombinationsfragen, Dosierungshinweise und Club-Bestellstatus sofort klären — bevor die Anfrage als E-Mail bei euch landet.
+
+Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?
+
+▶ Kurze Demo (Loom, 2 Min.): https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e
+
+Kein Interesse? Ein kurzes "Nein danke" reicht — dann melde ich mich nicht wieder.
+
+Ilias Tebque
+GetKiAgent — KI-Support für E-Commerce

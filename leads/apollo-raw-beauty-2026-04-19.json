@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Spirit of Rügen Naturkosmetik Manufaktur",
+    "website_url": "http://www.spirit-of-ruegen.de",
+    "primary_domain": "spirit-of-ruegen.de",
+    "estimated_num_employees": null,
+    "annual_revenue_printed": null,
+    "technology_names": null,
+    "phone": null,
+    "primary_phone": {}
+  },
+  {
+    "name": "Yepoda",
+    "website_url": "http://www.yepoda.com",
+    "primary_domain": "yepoda.com",
+    "estimated_num_employees": null,
+    "annual_revenue_printed": null,
+    "technology_names": null,
+    "phone": "+49 1525 5417709",
+    "primary_phone": {
+      "number": "+49 1525 5417709",
+      "source": "Account",
+      "sanitized_number": "+4915255417709"
+    }
+  },
+  {
+    "name": "KLAPP Skin Care Science",
+    "website_url": "http://www.klapp-skincare.com",
+    "primary_domain": "klapp-skincare.com",
+    "estimated_num_employees": null,
+    "annual_revenue_printed": null,
+    "technology_names": null,
+    "phone": "+49 5602 93590",
+    "primary_phone": {
+      "number": "+49 5602 93590",
+      "source": "Owler",
+      "sanitized_number": "+49560293590"
+    }
+  },
+  {
+    "name": "JUNGLÜCK",
+    "website_url": "http://www.junglueck.de",
+    "primary_domain": "junglueck.de",
+    "estimated_num_employees": null,
+    "annual_revenue_printed": null,
+    "technology_names": null,
+    "phone": "+49 89 255525663",
+    "primary_phone": {
+      "number": "+49 89 255525663",
+      "source": "Account",
+      "sanitized_number": "+4989255525663"
+    }
+  },
+  {
+    "name": "Théobroma Beauty",
+    "website_url": "http://www.theobromabeauty.com",
+    "primary_domain": "theobromabeauty.com",
+    "estimated_num_employees": null,
+    "annual_revenue_printed": null,
+    "technology_names": null,
+    "phone": null,
+    "primary_phone": {}
+  }
+]

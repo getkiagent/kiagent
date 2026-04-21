@@ -55,6 +55,8 @@ OUTREACH_DIR = PROJECT_ROOT / "outreach"
 FOLLOWUP_DIR = PROJECT_ROOT / "outreach" / "followup"
 
 CTA = "Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?"
+HIRING_CTA_TIER_A = "Vor der Einstellung kurz anschauen — 30 Minuten, diese Woche ein Slot?"
+HIRING_CTA_TIER_B = "Macht Support-Automatisierung vor der Einstellung Sinn für euch?"
 
 # PLAN.md Stage 4 hardcoded Quality Gates
 SIGNATURE_REQUIRED = "Ilias Tebque\nGetKiAgent — KI-Support für E-Commerce"
@@ -369,7 +371,7 @@ def generate_meta_prompt(lead_data: dict, client: anthropic.Anthropic) -> str:
         response = client.messages.create(
             model=META_PROMPT_MODEL,
             max_tokens=400,
-            system=META_PROMPT_SYSTEM,
+            system=[{"type": "text", "text": META_PROMPT_SYSTEM, "cache_control": {"type": "ephemeral"}}],
             messages=[{"role": "user", "content": user_content}],
         )
     except anthropic.APIError as e:
@@ -427,11 +429,21 @@ def _build_enrichment_block(lead_data: dict) -> str:
     return "\n\nENRICHED-FAKTEN (verbindlich):\n" + "\n".join(facts) + "\n"
 
 
-def generate_mail(lead: dict, system_prompt: str, cta_index: int, previous_mails: list[str], original_mail: str | None = None, inject_cta: bool = True) -> str:
+def generate_mail(lead: dict, system_prompt: str, cta_index: int, previous_mails: list[str], original_mail: str | None = None, inject_cta: bool = True, niche_config: dict | None = None) -> str:
     """Call Claude API to generate outreach or follow-up mail (with meta-prompting)."""
     lead_data = lead.get("data", {})
     company = lead_data.get("company_name", "Unknown")
-    cta = CTA
+
+    outreach_cfg = (niche_config or {}).get("outreach", {})
+    _model = outreach_cfg.get("model", MODEL)
+    _cta_default = outreach_cfg.get("cta_default", CTA)
+    _cta_hiring_a = outreach_cfg.get("cta_hiring_tier_a", HIRING_CTA_TIER_A)
+    _cta_hiring_b = outreach_cfg.get("cta_hiring_tier_b", HIRING_CTA_TIER_B)
+
+    if lead_data.get("hiring_signal"):
+        cta = _cta_hiring_b if lead_data.get("score_1_to_10", 0) == 7 else _cta_hiring_a
+    else:
+        cta = _cta_default
 
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
@@ -495,9 +507,9 @@ def generate_mail(lead: dict, system_prompt: str, cta_index: int, previous_mails
     # Step 2: Sonnet generates mail using enhanced prompt
     try:
         response = client.messages.create(
-            model=MODEL,
+            model=_model,
             max_tokens=600,
-            system=enhanced_prompt,
+            system=[{"type": "text", "text": enhanced_prompt, "cache_control": {"type": "ephemeral"}}],
             messages=[{"role": "user", "content": user_message}],
         )
     except anthropic.APIError as e:
@@ -517,17 +529,14 @@ def save_mail(company_name: str, mail_text: str) -> Path:
 
 def send_draft(webhook_url: str, to: str, subject: str, body: str, company: str) -> bool:
     """Send mail as Gmail draft via n8n webhook. Returns True on success."""
+    from utils import post_with_retry
     payload = {"to": to, "subject": subject, "body": body}
-    try:
-        resp = requests.post(webhook_url, json=payload, timeout=15)
-        if resp.ok:
-            print(f"  -> Gmail-Entwurf erstellt für {company}")
-            return True
-        print(f"  -> WARNUNG: Webhook-Fehler für {company}: {resp.status_code} {resp.text[:200]}")
-        return False
-    except requests.RequestException as e:
-        print(f"  -> WARNUNG: Webhook fehlgeschlagen für {company}: {e}")
-        return False
+    ok, detail = post_with_retry(webhook_url, payload, timeout=15, label=f"draft:{company}")
+    if ok:
+        print(f"  -> Gmail-Entwurf erstellt für {company} ({detail})")
+        return True
+    print(f"  -> WARNUNG: Webhook fehlgeschlagen für {company}: {detail}")
+    return False
 
 
 def parse_subject(mail_text: str) -> str:
@@ -814,7 +823,7 @@ def main():
         if args.followup and not original_mail:
             print(f"  -> WARNUNG: Keine Erstmail gefunden für {company} — generiere ohne Kontext")
         try:
-            mail_text = generate_mail(lead, active_prompt, cta_index=i, previous_mails=previous_mails, original_mail=original_mail, inject_cta=args.prompt is None)
+            mail_text = generate_mail(lead, active_prompt, cta_index=i, previous_mails=previous_mails, original_mail=original_mail, inject_cta=args.prompt is None, niche_config=niche_config)
             mail_text = _strip_premature_signature(mail_text)
             mail_text = _ensure_signature(mail_text)
             mail_text = _ensure_impressum(mail_text, niche_config)
@@ -830,7 +839,7 @@ def main():
             for gf in gate_failures:
                 print(f"     - {gf}")
             try:
-                mail_text_retry = generate_mail(lead, active_prompt, cta_index=i, previous_mails=previous_mails, original_mail=original_mail, inject_cta=args.prompt is None)
+                mail_text_retry = generate_mail(lead, active_prompt, cta_index=i, previous_mails=previous_mails, original_mail=original_mail, inject_cta=args.prompt is None, niche_config=niche_config)
                 mail_text_retry = _strip_premature_signature(mail_text_retry)
                 mail_text_retry = _ensure_signature(mail_text_retry)
                 mail_text_retry = _ensure_impressum(mail_text_retry, niche_config)

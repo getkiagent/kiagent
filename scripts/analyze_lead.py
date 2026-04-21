@@ -64,8 +64,8 @@ def load_and_validate_env():
 # ── Scraping ─────────────────────────────────────────────────────────────────
 
 MAX_SUBPAGES = 4           # max. Unterseiten zusätzlich zur Homepage
-MAX_CHARS_HOMEPAGE = 8000
-MAX_CHARS_SUBPAGE = 5000
+MAX_CHARS_HOMEPAGE = 4000
+MAX_CHARS_SUBPAGE = 2500
 MIN_CONTENT_LENGTH = 300
 
 # Keyword → Prioritätsscore für URL-Auswahl aus der Sitemap (DE + EN)
@@ -368,8 +368,8 @@ def analyze_with_claude(url: str, pages: dict[str, str], api_key: str, extra_sys
 
     response = client.messages.create(
         model="claude-haiku-4-5-20251001",
-        max_tokens=2048,
-        system=system_prompt,
+        max_tokens=800,
+        system=[{"type": "text", "text": system_prompt, "cache_control": {"type": "ephemeral"}}],
         messages=[{"role": "user", "content": user_message}],
     )
 

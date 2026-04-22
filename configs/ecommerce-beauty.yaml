@@ -5,7 +5,7 @@ niche:
   region: "DACH"
   signature_line: "Ilias\nGetKiAgent — KI-Support für E-Commerce"
   impressum_line: "Ilias Tebque · Eichelstr. 87, 40599 Düsseldorf · getkiagent@gmail.com · +49 170 4092435 · Kleinunternehmer §19 UStG"
-  demo_url: "https://www.loom.com/share/a243a6f8c920487a9db15e9c9816c36e"
+  demo_url: "https://www.loom.com/share/633d48e8cc574fc9be8ccb43c217dae1"
 
 discovery:
   source: "duckduckgo"
@@ -133,6 +133,20 @@ discovery:
     - "Skincare Beauty Brand Shopify gegründet"
     - "Naturkosmetik beauty brand direct consumer shopify"
   export_limit: 100
+  apollo_keywords:
+    - "beauty"
+    - "skincare"
+    - "cosmetics"
+    - "skin care"
+    - "naturkosmetik"
+    - "kosmetik"
+    - "personal care"
+    - "direct-to-consumer"
+    - "dtc"
+    - "subscription box"
+    - "clean beauty"
+    - "vegan cosmetics"
+    - "indie beauty"
 
 scoring:
   pain_signals:
@@ -160,12 +174,16 @@ scoring:
     - "No visible contact information"
   tier_thresholds:
     tier_a_min: 7
-    tier_b_min: 4
+    tier_b_min: 6
     tier_c_min: 1
 
 outreach:
   tier_a_prompt_file: "prompts/outreach_mail_v1.md"
   tier_b_prompt_file: "prompts/outreach_mail_tier_b_v1.md"
+  model: "claude-sonnet-4-6"
+  cta_default: "Habt ihr diese Woche 15 Minuten für einen kurzen Walkthrough?"
+  cta_hiring_tier_a: "Vor der Einstellung kurz anschauen — 30 Minuten, diese Woche ein Slot?"
+  cta_hiring_tier_b: "Macht Support-Automatisierung vor der Einstellung Sinn für euch?"
   cold_email_angle: "Support-Automatisierung für Bestellstatus, Retouren und Produkt-FAQ"
   tone: "professional, concise, German business etiquette"
   quality_gates:
@@ -180,6 +198,7 @@ outreach:
     no_denglisch: true
     no_flattery: true
     no_feature_bullet_lists: true
+
 
 followups:
   sequence_days: [3, 7, 14]

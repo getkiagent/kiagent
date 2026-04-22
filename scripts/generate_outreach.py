@@ -48,8 +48,7 @@ if not ANTHROPIC_API_KEY:
     sys.exit(1)
 
 MODEL = "claude-sonnet-4-6"
-PROMPT_FILE = PROJECT_ROOT / "prompts" / "outreach_mail_v1.md"
-PROMPT_TIER_B_FILE = PROJECT_ROOT / "prompts" / "outreach_mail_tier_b_v1.md"
+PROMPT_FILE = PROJECT_ROOT / "prompts" / "outreach_mail.md"
 FOLLOWUP_PROMPT_FILE = PROJECT_ROOT / "prompts" / "followup_v1.md"
 OUTREACH_DIR = PROJECT_ROOT / "outreach"
 FOLLOWUP_DIR = PROJECT_ROOT / "outreach" / "followup"
@@ -105,7 +104,9 @@ def _ensure_signature(mail_text: str) -> str:
     for p in trailing_patterns:
         text = _re.sub(p, "", text, flags=_re.IGNORECASE).rstrip()
     return text + "\n\n" + SIGNATURE_REQUIRED + "\n"
-LOOM_URL_SUBSTR = "loom.com/share/a243a6f8c920487a9db15e9c9816c36e"
+LOOM_GENERAL_URL = "https://www.loom.com/share/633d48e8cc574fc9be8ccb43c217dae1"
+LOOM_HIRING_URL = "https://www.loom.com/share/e8ac437b7991496d814b51e37945954e"
+LOOM_URL_SUBSTR = "loom.com/share/"  # accepts both general + hiring URLs
 PS_REQUIRED_SUBSTR = "▶ Kurze Demo (Loom"
 OPTOUT_REQUIRED_SUBSTR = "Kein Interesse? Ein kurzes \"Nein danke\" reicht"
 HARDCODED_FORBIDDEN = ["Kein Skript-Bot", "24/7, auf Deutsch"]
@@ -193,8 +194,8 @@ def extract_email_via_jina(website: str) -> str | None:
             if not content:
                 continue
 
-            emails = EMAIL_RE.findall(content)
-            valid = [e for e in emails if _is_valid_email(e)]
+            emails = [e.rstrip(".,;:)") for e in EMAIL_RE.findall(content)]
+            valid = [e for e in emails if e and _is_valid_email(e)]
             if valid:
                 preferred_prefixes = ["info@", "kontakt@", "contact@", "hello@", "office@", "support@"]
                 for prefix in preferred_prefixes:
@@ -336,6 +337,14 @@ def _extract_text(response) -> str:
     raise RuntimeError(f"Claude-Response enthält keinen nutzbaren Text (Blöcke: {types})")
 
 
+def _read_cache_write(usage) -> int:
+    """Handles both old cache_creation_input_tokens int and new CacheCreation object."""
+    cc = getattr(usage, "cache_creation", None)
+    if cc is not None:
+        return (getattr(cc, "ephemeral_5m_input_tokens", 0) or 0) + (getattr(cc, "ephemeral_1h_input_tokens", 0) or 0)
+    return getattr(usage, "cache_creation_input_tokens", 0) or 0
+
+
 META_PROMPT_MODEL = "claude-haiku-4-5-20251001"
 
 META_PROMPT_SYSTEM = """Du bist ein B2B-Sales-Stratege für KI-Kundenservice-Automatisierung im DACH-E-Commerce.
@@ -376,6 +385,12 @@ def generate_meta_prompt(lead_data: dict, client: anthropic.Anthropic) -> str:
         )
     except anthropic.APIError as e:
         raise RuntimeError(f"Claude API-Fehler (Haiku): {e}") from e
+    usage = response.usage
+    cw = _read_cache_write(usage)
+    cr = getattr(usage, "cache_read_input_tokens", 0) or 0
+    cache_note = f" cache_write={cw}" if cw else (f" cache_read={cr}" if cr else "")
+    cost = (usage.input_tokens * 0.80 + cw * 1.00 + cr * 0.08 + usage.output_tokens * 4.00) / 1_000_000
+    print(f"  -> Haiku meta: in={usage.input_tokens} out={usage.output_tokens}{cache_note} | ${cost:.4f}")
     return _extract_text(response)
 
 
@@ -429,7 +444,7 @@ def _build_enrichment_block(lead_data: dict) -> str:
     return "\n\nENRICHED-FAKTEN (verbindlich):\n" + "\n".join(facts) + "\n"
 
 
-def generate_mail(lead: dict, system_prompt: str, cta_index: int, previous_mails: list[str], original_mail: str | None = None, inject_cta: bool = True, niche_config: dict | None = None) -> str:
+def generate_mail(lead: dict, system_prompt: str, cta_index: int, previous_mails: list[str], original_mail: str | None = None, inject_cta: bool = True, niche_config: dict | None = None, faq_data: dict | None = None) -> str:
     """Call Claude API to generate outreach or follow-up mail (with meta-prompting)."""
     lead_data = lead.get("data", {})
     company = lead_data.get("company_name", "Unknown")
@@ -447,20 +462,28 @@ def generate_mail(lead: dict, system_prompt: str, cta_index: int, previous_mails
 
     client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
+    # Swap Loom URL for hiring-signal leads — system prompt stays static (cache-friendly)
+    active_system_prompt = system_prompt
+    if lead_data.get("hiring_signal"):
+        active_system_prompt = system_prompt.replace(LOOM_GENERAL_URL, LOOM_HIRING_URL)
+
     # Step 1: Meta-prompt — Haiku generates a lead-specific briefing
     print(f"  -> Meta-Prompt: Haiku analysiert {company}...")
     meta_briefing = generate_meta_prompt(lead_data, client)
     print(f"  -> Briefing generiert ({len(meta_briefing)} Zeichen)")
 
-    # Merge: base system prompt + dynamic briefing
-    enhanced_prompt = (
-        f"{system_prompt}\n\n"
-        f"## LEAD-SPEZIFISCHES BRIEFING (von Sales-Stratege erstellt)\n\n"
-        f"{meta_briefing}"
-    )
-
     # Named-contact + website-observations (if lead has been enriched)
     enrichment_block = _build_enrichment_block(lead_data)
+
+    # V2 FAQ block — injected verbatim so model uses the exact question
+    faq_block = ""
+    if faq_data and faq_data.get("pointed_question"):
+        faq_block = (
+            f"\n\nV2-PERSONALISIERUNG (direkt verwenden — wortnah in Mail übernehmen):\n"
+            f"pointed_question: \"{faq_data['pointed_question']}\"\n"
+            f"question_source_page: {faq_data.get('question_source_page', 'unknown')}\n"
+            f"volume_hint: {faq_data.get('volume_hint', '')}\n"
+        )
 
     # Build context about previous mails to enforce uniqueness (max 3 to avoid token bloat)
     uniqueness_block = ""
@@ -480,40 +503,61 @@ def generate_mail(lead: dict, system_prompt: str, cta_index: int, previous_mails
     safe_json = json.dumps(safe_data, ensure_ascii=False)
     lead_block = f"{_DATA_ONLY_NOTICE}Lead-Daten:\n```json\n{safe_json}\n```"
 
+    # meta_briefing goes into user message — keeps system_prompt static → cache hits after lead 1
+    briefing_header = (
+        f"## LEAD-SPEZIFISCHES BRIEFING (Sales-Stratege)\n\n{meta_briefing}\n\n"
+        f"---\n\n"
+    )
+
     if original_mail:
         user_message = (
+            f"{briefing_header}"
             f"Generiere eine Follow-Up Mail für diesen Lead.\n\n"
             f"ERSTMAIL (Betreff und Inhalt — für Bezug und Neuwert-Differenzierung):\n{original_mail}\n\n"
             f"{lead_block}"
             f"{enrichment_block}"
+            f"{faq_block}"
             f"{uniqueness_block}"
         )
     elif inject_cta:
         user_message = (
+            f"{briefing_header}"
             f"Generiere eine Outreach-Mail für diesen Lead.\n\n"
             f"PFLICHT-CTA (verwende genau diesen CTA, angepasst an den Brand-Namen): {cta}\n\n"
             f"{lead_block}"
             f"{enrichment_block}"
+            f"{faq_block}"
             f"{uniqueness_block}"
         )
     else:
         user_message = (
+            f"{briefing_header}"
             f"Generiere eine Outreach-Mail für diesen Lead.\n\n"
             f"{lead_block}"
             f"{enrichment_block}"
+            f"{faq_block}"
             f"{uniqueness_block}"
         )
 
-    # Step 2: Sonnet generates mail using enhanced prompt
+    # Step 2: Sonnet generates mail — system_prompt is now static → cache hits from lead 2+
     try:
         response = client.messages.create(
             model=_model,
             max_tokens=600,
-            system=[{"type": "text", "text": enhanced_prompt, "cache_control": {"type": "ephemeral"}}],
+            system=[{"type": "text", "text": active_system_prompt, "cache_control": {"type": "ephemeral"}}],
             messages=[{"role": "user", "content": user_message}],
         )
     except anthropic.APIError as e:
         raise RuntimeError(f"Claude API-Fehler (Sonnet): {e}") from e
+
+    usage = response.usage
+    cw = _read_cache_write(usage)
+    cr = getattr(usage, "cache_read_input_tokens", 0) or 0
+    cache_note = f" cache_write={cw}" if cw else (f" cache_read={cr}" if cr else "")
+    # Sonnet pricing: $3/1M in, $15/1M out, $3.75/1M cache-write, $0.30/1M cache-read
+    cost = (usage.input_tokens * 3.00 + cw * 3.75 + cr * 0.30 + usage.output_tokens * 15.00) / 1_000_000
+    print(f"  -> Sonnet: in={usage.input_tokens} out={usage.output_tokens}{cache_note} | ${cost:.4f}")
+
     return _extract_text(response)
 
 
@@ -598,6 +642,32 @@ def _company_in_subject(company_name: str, subject: str) -> bool:
     return bool(company_tokens & subject_tokens)
 
 
+def validate_quality_gates_v2(mail_text: str, faq_data: dict) -> list[str]:
+    """Additional gates for --v2 mails: word count + pointed_question presence."""
+    failures = []
+    body = parse_body(mail_text)
+    # Strip PS, opt-out, sig, impressum lines for word count
+    body_lines = [
+        l for l in body.splitlines()
+        if l.strip()
+        and not l.strip().startswith("P.S.")
+        and not l.strip().startswith("▶")
+        and "Nein danke" not in l
+        and "Opt-out" not in l
+        and l.strip() not in ("Ilias", "Ilias Tebque", "GetKiAgent — KI-Support für E-Commerce", "--")
+        and "getkiagent@gmail.com" not in l
+    ]
+    word_count = sum(len(l.split()) for l in body_lines)
+    if word_count > 100:
+        failures.append(f"V2 Body {word_count} Wörter (max 100)")
+    pq = faq_data.get("pointed_question", "")
+    if pq and pq not in mail_text:
+        # Accept first 30 chars as partial match (Claude may rephrase slightly)
+        if pq[:30] not in mail_text:
+            failures.append(f"V2: pointed_question nicht im Mail-Body gefunden")
+    return failures
+
+
 def validate_quality_gates(mail_text: str, config: dict | None, company_name: str) -> list[str]:
     """Validate mail against PLAN.md Stage 4 gates + optional niche config gates."""
     failures = []
@@ -609,12 +679,17 @@ def validate_quality_gates(mail_text: str, config: dict | None, company_name: st
         unique = sorted(set(placeholders))[:5]
         failures.append(f"Unersetzte Platzhalter in Mail: {unique}")
 
-    # PLAN.md Gate 1: Demo-Link line with canonical Loom URL
-    if PS_REQUIRED_SUBSTR not in mail_text:
-        failures.append(f"Demo-Link-Zeile fehlt ('{PS_REQUIRED_SUBSTR}')")
-    if LOOM_URL_SUBSTR not in mail_text:
-        failures.append("Loom-URL fehlt")
-    if OPTOUT_REQUIRED_SUBSTR not in mail_text:
+    # PLAN.md Gate 1: Demo-Link / Opt-out
+    # v2-Mails nutzen Permission-CTA ("Darf ich Ihnen einen 2-Minuten-Clip schicken?")
+    # statt Loom-PS — Loom-URL taucht erst in der Antwort auf. Erkenne v2 am CTA.
+    is_v2_permission_mail = "2-Minuten-Clip" in mail_text or "Darf ich Ihnen" in mail_text
+    if not is_v2_permission_mail:
+        if PS_REQUIRED_SUBSTR not in mail_text:
+            failures.append(f"Demo-Link-Zeile fehlt ('{PS_REQUIRED_SUBSTR}')")
+        if LOOM_URL_SUBSTR not in mail_text:
+            failures.append("Loom-URL fehlt")
+    # Opt-out: beide Prompt-Versionen nutzen "Nein danke"
+    if "Nein danke" not in mail_text and OPTOUT_REQUIRED_SUBSTR not in mail_text:
         failures.append("Opt-out-Zeile fehlt (§7 UWG)")
 
     # PLAN.md Gate 2: hardcoded forbidden phrases
@@ -670,18 +745,34 @@ def main():
     parser.add_argument("--followup", action="store_true", help="Generate follow-up mails using followup_v1.md prompt")
     parser.add_argument("--only", nargs="+", help="Only process leads whose website contains one of these strings")
     parser.add_argument("--force", action="store_true", help="Skip score filter, process all leads regardless of score")
-    parser.add_argument("--min-score", type=int, default=7, help="Minimum score to include (default: 7)")
+    parser.add_argument("--min-score", type=int, default=6, help="Minimum score to include (default: 6 — Tier B activated)")
     parser.add_argument("--max-score", type=int, default=10, help="Maximum score to include (default: 10)")
     parser.add_argument("--prompt", type=str, default=None, help="Path to custom system prompt file (overrides default)")
     parser.add_argument("--niche", default=None, help="Niche name — loads config from configs/{niche}.yaml")
+    parser.add_argument("--v2", action="store_true", help="Use FAQ data from leads/faqs/ + V2 quality gates + output to outreach/v2/")
     args = parser.parse_args()
 
     niche_config = load_niche_config(args.niche)
     batch_path = Path(args.batch_file)
     leads = load_leads(batch_path)
 
+    faqs_dir = PROJECT_ROOT / "leads" / "faqs"
+
+    # --v2 mode: override output dir (prompt is always outreach_mail.md)
+    if args.v2 and not args.followup:
+        v2_prompt_path = PROMPT_FILE
+        if not v2_prompt_path.exists():
+            print(f"ERROR: Prompt nicht gefunden: {v2_prompt_path}")
+            sys.exit(1)
+        with open(v2_prompt_path, "r", encoding="utf-8") as f:
+            system_prompt = f.read()
+        v2_base = PROJECT_ROOT / "outreach" / "v2"
+        output_dir = v2_base / args.niche if args.niche else v2_base
+        output_dir.mkdir(parents=True, exist_ok=True)
+        print(f"V2-Modus: prompt={v2_prompt_path.name} | output={output_dir}")
+
     # Determine output dir and prompt based on niche config
-    if niche_config and not args.followup and not args.prompt:
+    elif niche_config and not args.followup and not args.prompt:
         output_dir = niche_outreach_dir(args.niche)
 
         # Check Guard Rail 5: demo_url required
@@ -691,16 +782,12 @@ def main():
             sys.exit(1)
 
         # Load prompt from config paths
-        outreach_cfg = niche_config.get("outreach", {})
-        tier_a_path = PROJECT_ROOT / outreach_cfg.get("tier_a_prompt_file", "prompts/outreach_mail_v1.md")
-        tier_b_path = PROJECT_ROOT / outreach_cfg.get("tier_b_prompt_file", "prompts/outreach_mail_tier_b_v1.md")
-
-        if not tier_a_path.exists():
-            print(f"ERROR: Tier-A-Prompt nicht gefunden: {tier_a_path}")
+        if not PROMPT_FILE.exists():
+            print(f"ERROR: Prompt nicht gefunden: {PROMPT_FILE}")
             sys.exit(1)
-        with open(tier_a_path, "r", encoding="utf-8") as f:
+        with open(PROMPT_FILE, "r", encoding="utf-8") as f:
             system_prompt = f.read()
-        print(f"Niche-Modus: {args.niche} | Prompt: {tier_a_path.name} | Output: {output_dir}")
+        print(f"Niche-Modus: {args.niche} | Prompt: {PROMPT_FILE.name} | Output: {output_dir}")
     elif args.followup:
         if not FOLLOWUP_PROMPT_FILE.exists():
             print(f"ERROR: Follow-up prompt not found at {FOLLOWUP_PROMPT_FILE}")
@@ -781,6 +868,28 @@ def main():
             stats["skipped"] += 1
             continue
 
+        # V2: load FAQ data; skip lead if file missing (must run enrich_lead_faqs.py first)
+        faq_data = None
+        if args.v2:
+            faq_slug = slugify(company)
+            faq_path = faqs_dir / f"{faq_slug}.json"
+            if not faq_path.exists():
+                print(f"  -> SKIP: kein FAQ-File ({faq_path.name}) — erst enrich_lead_faqs.py laufen lassen")
+                stats["skipped"] += 1
+                continue
+            try:
+                with open(faq_path, "r", encoding="utf-8") as fq:
+                    faq_data = json.load(fq)
+                pq = faq_data.get("pointed_question", "")
+                print(f"  FAQ geladen: {pq[:70]!r}")
+            except Exception as e:
+                print(f"  -> WARN: FAQ-Datei nicht lesbar ({e}) — ohne FAQ-Block")
+            # Skip fallback FAQs — these are not real customer questions and break V2 structure
+            if faq_data and faq_data.get("pointed_question", "").startswith("Frage zu"):
+                print(f"  -> SKIP V2: Fallback-FAQ (kein echter FAQ-Inhalt scrapbar) — Lead für V1 reservieren")
+                stats["skipped"] += 1
+                continue
+
         email = extract_email(lead_data)
         if email:
             print(f"  Email: {email}")
@@ -792,26 +901,8 @@ def main():
             stats["no_email"] += 1
             continue
 
-        # Per-lead prompt selection: score 7 → Tier B, score 8+ → Tier A
-        if not args.followup and not args.prompt and not args.force:
-            if score <= 7:
-                # Determine Tier B prompt path (niche config or default)
-                if niche_config:
-                    tier_b_file = PROJECT_ROOT / niche_config.get("outreach", {}).get(
-                        "tier_b_prompt_file", "prompts/outreach_mail_tier_b_v1.md")
-                else:
-                    tier_b_file = PROMPT_TIER_B_FILE
-                if not tier_b_file.exists():
-                    print(f"  -> WARNUNG: Tier-B-Prompt nicht gefunden ({tier_b_file}) — nutze Tier-A")
-                    active_prompt = system_prompt
-                else:
-                    with open(tier_b_file, "r", encoding="utf-8") as f:
-                        active_prompt = f.read()
-                    print(f"  -> Tier B Prompt aktiv (Score {score})")
-            else:
-                active_prompt = system_prompt
-        else:
-            active_prompt = system_prompt
+        # Prompt handles Tier A/B logic internally via `tier` field in lead JSON
+        active_prompt = system_prompt
 
         # Generate mail — Erstmail muss im aktuellen output_dir-Kontext gesucht werden.
         # Bei Niche-Mode liegt die Erstmail unter niche_outreach_dir/, nicht OUTREACH_DIR.
@@ -823,7 +914,7 @@ def main():
         if args.followup and not original_mail:
             print(f"  -> WARNUNG: Keine Erstmail gefunden für {company} — generiere ohne Kontext")
         try:
-            mail_text = generate_mail(lead, active_prompt, cta_index=i, previous_mails=previous_mails, original_mail=original_mail, inject_cta=args.prompt is None, niche_config=niche_config)
+            mail_text = generate_mail(lead, active_prompt, cta_index=i, previous_mails=previous_mails, original_mail=original_mail, inject_cta=args.prompt is None, niche_config=niche_config, faq_data=faq_data)
             mail_text = _strip_premature_signature(mail_text)
             mail_text = _ensure_signature(mail_text)
             mail_text = _ensure_impressum(mail_text, niche_config)
@@ -834,12 +925,14 @@ def main():
 
         # PLAN.md Stage 4: Quality gate validation + regenerate once on failure
         gate_failures = validate_quality_gates(mail_text, niche_config, company)
+        if args.v2 and faq_data:
+            gate_failures += validate_quality_gates_v2(mail_text, faq_data)
         if gate_failures:
             print(f"  -> Quality Gate FAIL (Versuch 1):")
             for gf in gate_failures:
                 print(f"     - {gf}")
             try:
-                mail_text_retry = generate_mail(lead, active_prompt, cta_index=i, previous_mails=previous_mails, original_mail=original_mail, inject_cta=args.prompt is None, niche_config=niche_config)
+                mail_text_retry = generate_mail(lead, active_prompt, cta_index=i, previous_mails=previous_mails, original_mail=original_mail, inject_cta=args.prompt is None, niche_config=niche_config, faq_data=faq_data)
                 mail_text_retry = _strip_premature_signature(mail_text_retry)
                 mail_text_retry = _ensure_signature(mail_text_retry)
                 mail_text_retry = _ensure_impressum(mail_text_retry, niche_config)
@@ -848,6 +941,8 @@ def main():
                 stats["errors"] += 1
                 continue
             retry_failures = validate_quality_gates(mail_text_retry, niche_config, company)
+            if args.v2 and faq_data:
+                retry_failures += validate_quality_gates_v2(mail_text_retry, faq_data)
             if retry_failures:
                 print(f"  -> Quality Gate FAIL auch nach Retry — überspringe {company}:")
                 for gf in retry_failures:

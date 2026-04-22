@@ -1,0 +1,105 @@
+niche:
+  name: "sports"
+  display_name: "E-Commerce Sports & Outdoor"
+  vertical: "E-Commerce DTC"
+  region: "DACH"
+  signature_line: "Ilias
+GetKiAgent — KI-Support für E-Commerce"
+  impressum_line: "Ilias Tebque · Eichelstr. 87, 40599 Düsseldorf · getkiagent@gmail.com · +49 170 4092435 · Kleinunternehmer §19 UStG"
+  demo_url: "https://www.loom.com/share/633d48e8cc574fc9be8ccb43c217dae1"
+
+discovery:
+  source: "apollo"
+  ddg_queries:
+    - "Sports Equipment Eigenmarke DTC Shop Deutschland"
+    - "Outdoor Ausrüstung Eigenmarke Online Shop DACH"
+    - "Sportartikel Eigenmarke Online Shop Österreich site:.at"
+    - "Sports Outdoor Eigenmarke Schweiz DTC site:.ch"
+  export_limit: 100
+  apollo_keywords:
+    - "sports"
+    - "sporting goods"
+    - "fitness"
+    - "athletic apparel"
+    - "outdoor"
+    - "outdoor equipment"
+    - "camping"
+    - "cycling"
+    - "running"
+    - "yoga"
+    - "sportartikel"
+    - "sportausruestung"
+    - "outdoor-ausruestung"
+    - "fitness-equipment"
+
+scoring:
+  pain_signals:
+    - "Kein Live-Chat sichtbar"
+    - "Nur E-Mail-Kontakt oder Kontaktformular"
+    - "FAQ-Seite fehlt, ist lückenhaft oder gibt 404"
+    - "Retourenabwicklung läuft manuell (E-Mail/Formular)"
+    - "Mehrsprachig oder Multi-Country — höheres Supportvolumen"
+    - "Abo-Modell vorhanden — wiederkehrende Support-Queries"
+    - "Komplexe Produkte (technische Specs, Passform, Kompatibilität) — Pre-Purchase-Fragen"
+    - "Keine Pre-Purchase-Beratung (kein Chat, kein Quiz, kein Konfigurator)"
+    - "Keine sichtbare Reaktionszeit bei Kontaktanfragen"
+    - "Keine Chatbot-Infrastruktur erkennbar"
+  opportunity_signals:
+    - "Active website with regular updates"
+    - "Visible customer testimonials"
+    - "Multiple contact channels mentioned"
+    - "Service area clearly defined"
+  disqualifiers:
+    - "Marktplatz, Aggregator, Blog (kein eigener Shop)"
+    - "Konzern oder Retail-Kette (>200 MA, hat eigenes Support-Team)"
+    - "Bereits Live-Chat oder KI-Support sichtbar"
+    - "Shop ist inaktiv oder gibt Fehler"
+    - "Website under construction"
+    - "No visible contact information"
+  tier_thresholds:
+    tier_a_min: 7
+    tier_b_min: 6
+    tier_c_min: 1
+
+outreach:
+  tier_a_prompt_file: "prompts/outreach_mail_v2.md"
+  tier_b_prompt_file: "prompts/outreach_mail_tier_b_v1.md"
+  model: "claude-sonnet-4-6"
+  cta_default: "Darf ich Ihnen einen 2-Minuten-Clip schicken?"
+  cta_hiring_tier_a: "Vor der Einstellung kurz anschauen — 30 Minuten, diese Woche ein Slot?"
+  cta_hiring_tier_b: "Macht Support-Automatisierung vor der Einstellung Sinn für euch?"
+  cold_email_angle: "Support-Automatisierung für Produktberatung, Bestellstatus und Retouren"
+  tone: "professional, concise, German business etiquette"
+  quality_gates:
+    max_main_body_words_tier_a: 120
+    max_main_body_words_tier_b: 100
+    require_ps_with_demo: true
+    forbidden_phrases:
+      - "Kein Skript-Bot"
+      - "24/7, auf Deutsch"
+    require_company_name_in_subject: true
+    single_cta_only: true
+    no_denglisch: true
+    no_flattery: true
+    no_feature_bullet_lists: true
+
+followups:
+  sequence_days: [3, 7, 14]
+  day_3_type: "Process Insight"
+  day_7_type: "Industry Comparison"
+  day_14_type: "Quick Win"
+  quality_gates:
+    max_words_per_followup: 100
+    must_add_new_value: true
+    no_apologies: true
+    fixed_cta: "Darf ich Ihnen einen 2-Minuten-Clip schicken?"
+
+delivery:
+  channel: "gmail_drafts"
+
+pricing:
+  setup_fee_eur: 2000
+  monthly_fee_eur: 500
+  minimum_contract_months: 3
+
+sheet_id: "1OReC3rBa6bMImrw96dbTryW5LlB0SYWnbpn_t7x0-u0"

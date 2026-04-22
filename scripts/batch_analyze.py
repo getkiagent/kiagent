@@ -27,6 +27,12 @@ from analyze_lead import (
 )
 
 DELAY_BETWEEN_URLS = 3  # Sekunden Pause zwischen Requests
+MAX_URLS_PER_RUN = 50   # Sicherheitslimit — überschreiben mit --limit N
+CIRCUIT_BREAKER_LIMIT = 5  # Consecutive api_errors → Run abort with exit-code 2
+
+# Pricing (USD per 1M tokens)
+_HAIKU_IN = 0.80; _HAIKU_OUT = 4.00; _HAIKU_CW = 1.00; _HAIKU_CR = 0.08
+MAX_RUN_COST_USD = 2.0  # Hard-Stop: Run abbr. wenn Kosten dieses Limit überschreiten
 
 
 def _base_domain(domain: str) -> str:
@@ -58,8 +64,11 @@ def prefilter_urls(urls: list[str]) -> list[str]:
     for url in urls:
         domain = extract_domain(url) or ""
 
-        # 1. Blacklist-Check
-        if any(blocked in domain for blocked in DOMAIN_BLOCKLIST):
+        # 1. Blacklist-Check (token-based, same logic as discover_leads.py)
+        exact_blocks = {b for b in DOMAIN_BLOCKLIST if "." in b}
+        registrable = domain.split(".", 1)[0]
+        tokens = {registrable, *registrable.split("-")}
+        if domain in exact_blocks or bool(tokens & (DOMAIN_BLOCKLIST - exact_blocks)):
             print(f"  SKIP (blacklist)    : {url}")
             skipped += 1
             continue
@@ -118,15 +127,41 @@ def load_urls(path: str) -> list[str]:
     return urls
 
 
+def detect_hiring_signal(path: str) -> bool:
+    """
+    Scannt ALLE führenden Kommentarzeilen (#) im URL-File auf den Marker
+    '# hiring_signal: true'. Bricht beim ersten non-comment line ab.
+    """
+    p = Path(path)
+    if not p.exists():
+        return False
+    for line in p.read_text(encoding="utf-8").splitlines():
+        stripped = line.strip()
+        if not stripped:
+            continue
+        if not stripped.startswith("#"):
+            break
+        if stripped.lower().replace(" ", "") == "#hiring_signal:true":
+            return True
+    return False
+
+
 def analyze_one(url: str, firecrawl_key: str, anthropic_key: str,
-                cache_dir: Path | None = None, extra_suffix: str = "") -> dict:
+                cache_dir: Path | None = None, extra_suffix: str = "",
+                run_stats: dict | None = None) -> dict:
     """Gibt ein Result-Objekt zurück — auch bei Fehler. Bei Timeout: 1 Retry."""
     for attempt in range(2):
         try:
             pages = scrape_pages(url, firecrawl_key, cache_dir=cache_dir)
-            result = analyze_with_claude(url, pages, anthropic_key,
-                                         extra_system_suffix=extra_suffix)
+            result, usage = analyze_with_claude(url, pages, anthropic_key,
+                                                extra_system_suffix=extra_suffix)
             validate_result(result)
+            if run_stats is not None:
+                for k in ("input_tokens", "output_tokens", "cache_creation_input_tokens", "cache_read_input_tokens"):
+                    run_stats[k] = run_stats.get(k, 0) + usage.get(k, 0)
+                cost = (usage["input_tokens"] * _HAIKU_IN + usage.get("cache_creation_input_tokens", 0) * _HAIKU_CW +
+                        usage.get("cache_read_input_tokens", 0) * _HAIKU_CR + usage["output_tokens"] * _HAIKU_OUT) / 1_000_000
+                run_stats["cost_usd"] = run_stats.get("cost_usd", 0.0) + cost
             return {"url": url, "status": "ok", "data": result}
         except FirecrawlTimeoutError as e:
             if attempt == 0:
@@ -158,16 +193,22 @@ def analyze_one(url: str, firecrawl_key: str, anthropic_key: str,
             }
         except Exception as e:
             error_type = type(e).__name__
-            if any(kw in error_type for kw in ("APIError", "RateLimitError", "AuthenticationError")):
+            msg = str(e)
+            # Catch Anthropic usage-limit (400), rate-limits, overloads, and any API-level errors
+            api_msg_keywords = (
+                "usage limit", "credit balance", "402", "usage_limit_reached",
+                "invalid_request_error", "error code: 400", "rate_limit", "overloaded_error",
+            )
+            if (any(kw in error_type for kw in ("APIError", "RateLimitError", "AuthenticationError", "BadRequest", "OverloadedError"))
+                    or any(kw in msg.lower() for kw in api_msg_keywords)):
                 category = "claude_api_error"
             else:
                 category = "unknown_error"
             return {
                 "url": url, "status": "error",
-                "error": str(e)[:80],
-                "error_detail": {"category": category, "message": str(e)},
+                "error": msg[:80],
+                "error_detail": {"category": category, "message": msg},
             }
-    # Sollte nie erreicht werden
     return {"url": url, "status": "error", "error": "Unbekannter Fehler", "error_detail": {"category": "unknown_error", "message": ""}}
 
 
@@ -186,24 +227,69 @@ def _classify_error(result: dict) -> str:
         return "parse_error"
     if category == "claude_api_error":
         return "api_error"
+    # Catch API-level errors that ended up as unknown_error due to exception type mismatch
+    api_msg_keywords = (
+        "usage limit", "credit balance", "usage_limit_reached", "402",
+        "invalid_request_error", "error code: 400", "rate_limit", "overloaded_error",
+    )
+    if any(kw in message for kw in api_msg_keywords):
+        return "api_error"
     if category == "firecrawl_error":
-        # Soft-404: Seite antwortet, aber kein brauchbarer Content
-        if any(kw in message for kw in ("404", "not found", "no content", "empty", "blocked")):
-            return "soft_404"
         return "soft_404"
     return "other"
 
 
-def _persist(results: list[dict], output_path: Path, run_at: str):
+def _persist(results: list[dict], output_path: Path, run_at: str, hiring_signal_run: bool = False):
     output_path.write_text(
-        json.dumps({"run_at": run_at, "total": len(results), "results": results}, indent=2, ensure_ascii=False),
+        json.dumps(
+            {
+                "run_at": run_at,
+                "hiring_signal_run": hiring_signal_run,
+                "total": len(results),
+                "results": results,
+            },
+            indent=2,
+            ensure_ascii=False,
+        ),
         encoding="utf-8",
     )
 
 
+def _write_failed_leads(results: list[dict], output_path: Path, reason: str, last_error: str = ""):
+    """Persist failed leads (status==error) to failed-leads.json next to batch results."""
+    failed = [r for r in results if r.get("status") == "error"]
+    if not failed:
+        return
+    target = output_path.parent / "failed-leads.json"
+    payload = {
+        "written_at": datetime.now(timezone.utc).isoformat(),
+        "reason": reason,
+        "last_error": last_error[:500],
+        "total": len(failed),
+        "results": failed,
+    }
+    target.write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
+    print(f"  → {len(failed)} failed leads written to: {target}")
+
+
+def _append_no_email_queue(results: list[dict], reason: str):
+    """Append failed-lead URLs to leads/no-email-queue.txt with reason tag."""
+    failed_urls = [r["url"] for r in results if r.get("status") == "error"]
+    if not failed_urls:
+        return
+    queue_path = Path("leads") / "no-email-queue.txt"
+    queue_path.parent.mkdir(parents=True, exist_ok=True)
+    ts = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    with queue_path.open("a", encoding="utf-8") as f:
+        for url in failed_urls:
+            f.write(f"{url}\treason={reason}\tdate={ts}\n")
+    print(f"  → {len(failed_urls)} URLs appended to: {queue_path}")
+
+
 def heal_errors(results: list[dict], firecrawl_key: str, anthropic_key: str,
                 output_path: Path, run_at: str,
-                cache_dir: Path | None = None) -> list[dict]:
+                cache_dir: Path | None = None,
+                hiring_signal_run: bool = False) -> list[dict]:
     """
     Scannt results nach status=="error", klassifiziert jeden Fehler und retried
     mit Exponential Backoff (5s, 15s). Bei parse_error wird der System-Prompt um
@@ -229,6 +315,11 @@ def heal_errors(results: list[dict], firecrawl_key: str, anthropic_key: str,
         print(f"\n[heal] {url}")
         print(f"  Kategorie: {kind}")
 
+        # api_error (usage limit) heilt sich nicht durch Retry — sofort überspringen
+        if kind == "api_error":
+            print(f"  → SKIP: api_error wird nicht retried (Usage-Limit heilt sich nicht)")
+            continue
+
         success = False
         for attempt, wait_s in enumerate(backoff_schedule, 1):
             print(f"  Retry {attempt}/{len(backoff_schedule)} nach {wait_s}s...")
@@ -237,10 +328,12 @@ def heal_errors(results: list[dict], firecrawl_key: str, anthropic_key: str,
             try:
                 pages = scrape_pages(url, firecrawl_key, cache_dir=cache_dir)
                 if kind == "parse_error":
-                    data = analyze_with_claude(url, pages, anthropic_key, extra_system_suffix=parse_suffix)
+                    data, _usage = analyze_with_claude(url, pages, anthropic_key, extra_system_suffix=parse_suffix)
                 else:
-                    data = analyze_with_claude(url, pages, anthropic_key)
+                    data, _usage = analyze_with_claude(url, pages, anthropic_key)
                 validate_result(data)
+                if hiring_signal_run:
+                    data["hiring_signal"] = True
                 results[idx] = {
                     "url": url, "status": "ok", "data": data,
                     "healed_from": kind, "heal_attempt": attempt,
@@ -259,7 +352,7 @@ def heal_errors(results: list[dict], firecrawl_key: str, anthropic_key: str,
                         "heal_last_error": err_msg,
                     }
 
-        _persist(results, output_path, run_at)
+        _persist(results, output_path, run_at, hiring_signal_run=hiring_signal_run)
         if not success:
             print(f"  → endgültig fehlgeschlagen")
 
@@ -292,23 +385,21 @@ def _export_qualified(results: list[dict], output_path: Path):
 def _sync_to_sheet(results: list[dict], run_at: str):
     """Postet analysierte Leads an n8n Outreach Agent (Sync-Modus)."""
     import os
-    import requests as req
+    from utils import post_with_retry
     webhook_url = os.getenv("N8N_RESULTS_WEBHOOK")
     if not webhook_url:
         return
     ok_count = sum(1 for r in results if r.get("status") == "ok")
-    try:
-        resp = req.post(
-            webhook_url,
-            json={"sync": True, "results": results, "run_at": run_at},
-            timeout=30,
-        )
-        if resp.status_code == 200:
-            print(f"  → Sheet sync OK: {ok_count} Leads eingetragen")
-        else:
-            print(f"  → Sheet sync WARN: HTTP {resp.status_code}")
-    except Exception as e:
-        print(f"  → Sheet sync FEHLER: {e}")
+    ok, detail = post_with_retry(
+        webhook_url,
+        {"sync": True, "results": results, "run_at": run_at},
+        timeout=30,
+        label="sheet-sync",
+    )
+    if ok:
+        print(f"  → Sheet sync OK: {ok_count} Leads eingetragen ({detail})")
+    else:
+        print(f"  → Sheet sync FEHLGESCHLAGEN: {detail}")
 
 
 def print_batch_summary(results: list[dict]):
@@ -357,8 +448,34 @@ def preflight_check(output_file: str, niche_config: dict | None = None):
         errors.append(f"  FEHLT: {prompt_path}  (→ alle Claude-Analysen würden fehlschlagen)")
 
     # 2. API-Keys (FIRECRAWL_API_KEY optional — scraping via Jina/crawl4ai)
-    if not os.getenv("ANTHROPIC_API_KEY"):
+    anthropic_key = os.getenv("ANTHROPIC_API_KEY")
+    if not anthropic_key:
         errors.append("  FEHLT: ANTHROPIC_API_KEY  (→ keine Claude-Analyse möglich)")
+    else:
+        # Budget/Limit-Ping: 1-Token-Call gegen Haiku, um Usage-Limit früh zu erkennen.
+        try:
+            import anthropic
+            client = anthropic.Anthropic(api_key=anthropic_key)
+            # Realistic-size preflight: small budgets pass max_tokens=1 with empty input
+            # but fail when the model has to actually generate ~500 tokens of output.
+            preflight_prompt = (
+                "Du bist ein B2B-Lead-Analyst. Antworte mit einem JSON-Objekt "
+                "{\"ok\": true, \"note\": \"<2-3 Sätze über DTC-Support-Automation>\"}. "
+                "Halte dich an valides JSON."
+            )
+            client.messages.create(
+                model="claude-haiku-4-5-20251001",
+                max_tokens=500,
+                messages=[{"role": "user", "content": preflight_prompt}],
+            )
+        except Exception as e:
+            msg = str(e)[:200]
+            if "usage limit" in msg.lower() or "credit" in msg.lower() or "400" in msg:
+                errors.append(f"  ANTHROPIC USAGE-LIMIT erreicht: {msg}")
+            elif "401" in msg or "authentication" in msg.lower():
+                errors.append(f"  ANTHROPIC API-KEY ungültig: {msg}")
+            else:
+                errors.append(f"  ANTHROPIC Preflight-Call fehlgeschlagen: {msg}")
 
     # 3. Output-Pfad schreibbar
     output_path = Path(output_file)
@@ -424,6 +541,7 @@ def main():
     parser.add_argument("--output", default=None, help="Output JSON path (auto-set with --niche)")
     parser.add_argument("--heal-only", action="store_true", help="Only retry errors in existing results")
     parser.add_argument("--niche", default=None, help="Niche name — loads config from configs/{niche}.yaml")
+    parser.add_argument("--limit", type=int, default=None, help=f"Max URLs per run (default: {MAX_URLS_PER_RUN})")
     args = parser.parse_args()
 
     if not args.heal_only and not args.url_file:
@@ -465,8 +583,12 @@ def main():
         payload = json.loads(output_path.read_text(encoding="utf-8"))
         results = payload.get("results", [])
         run_at = payload.get("run_at", datetime.now(timezone.utc).isoformat())
+        hiring_signal_run = bool(payload.get("hiring_signal_run", False))
         print(f"\n--heal-only: {len(results)} Einträge aus {output_path} geladen")
-        heal_errors(results, firecrawl_key, anthropic_key, output_path, run_at, cache_dir=cache_dir)
+        if hiring_signal_run:
+            print("  hiring_signal_run=true — geheilte Leads erhalten hiring_signal=true")
+        heal_errors(results, firecrawl_key, anthropic_key, output_path, run_at,
+                    cache_dir=cache_dir, hiring_signal_run=hiring_signal_run)
         print_batch_summary(results)
         print(f"\nAktualisierte Ergebnisse: {output_path}")
         _sync_to_sheet(results, run_at)
@@ -475,41 +597,103 @@ def main():
 
     url_file = args.url_file
     urls = load_urls(url_file)
+    hiring_signal_run = detect_hiring_signal(url_file)
 
     print(f"\n{len(urls)} URLs geladen aus {url_file}")
+    if hiring_signal_run:
+        print("  Header erkannt: hiring_signal: true — alle OK-Leads werden markiert")
     urls = prefilter_urls(urls)
 
     if not urls:
         print("Alle URLs vom Vorfilter aussortiert — nichts zu analysieren.")
         sys.exit(0)
 
-    print(f"Starte Batch-Analyse ({len(urls)} URLs)...\n")
+    # URL-Limit prüfen
+    effective_limit = args.limit if args.limit is not None else MAX_URLS_PER_RUN
+    if len(urls) > effective_limit:
+        print(f"\nERROR: Datei hat {len(urls)} URLs, Limit ist {effective_limit}.")
+        print(f"  Nutze --limit {len(urls)} zum Überschreiben oder splitte die Datei.")
+        sys.exit(1)
+
+    print(f"Starte Batch-Analyse ({len(urls)} / {effective_limit} URLs, Limit aktiv)...\n")
 
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
     run_at = datetime.now(timezone.utc).isoformat()
+
+    # Run-level stats tracking
+    import analyze_lead as _al
+    _al.scrape_run_stats = {"firecrawl": 0, "jina": 0, "skip": 0}
+    run_stats: dict = {"input_tokens": 0, "output_tokens": 0,
+                       "cache_creation_input_tokens": 0, "cache_read_input_tokens": 0,
+                       "cost_usd": 0.0}
+    consecutive_api_errors = 0
+    aborted = False
 
     results = []
     for i, url in enumerate(urls, 1):
         url = normalize_url(url)
         print(f"[{i}/{len(urls)}] {url}")
         result = analyze_one(url, firecrawl_key, anthropic_key, cache_dir=cache_dir,
-                             extra_suffix=extra_suffix)
+                             extra_suffix=extra_suffix, run_stats=run_stats)
+        if hiring_signal_run and result.get("status") == "ok" and isinstance(result.get("data"), dict):
+            result["data"]["hiring_signal"] = True
         results.append(result)
 
+        # Circuit breaker
+        kind = _classify_error(result) if result.get("status") == "error" else None
+        if kind == "api_error":
+            consecutive_api_errors += 1
+            if consecutive_api_errors >= CIRCUIT_BREAKER_LIMIT:
+                last_err = (result.get("error_detail") or {}).get("message", result.get("error", ""))
+                print(f"\n  CIRCUIT BREAKER: {CIRCUIT_BREAKER_LIMIT} consecutive API errors → Run aborted")
+                print(f"  Last error: {last_err[:200]}")
+                print(f"  Likely cause: Anthropic usage limit / rate limit / overload")
+                print(f"  Action: Check ANTHROPIC_API_KEY budget, retry later, or switch model")
+                aborted = True
+                _persist(results, output_path, run_at, hiring_signal_run=hiring_signal_run)
+                _write_failed_leads(results, output_path, reason="circuit_breaker", last_error=last_err)
+                _append_no_email_queue(results, reason="circuit_breaker_api_errors")
+                sys.exit(2)
+        else:
+            consecutive_api_errors = 0
+
+        # Hard cost cap
+        if run_stats["cost_usd"] >= MAX_RUN_COST_USD:
+            print(f"\n  COST CAP: ${run_stats['cost_usd']:.2f} ≥ ${MAX_RUN_COST_USD} → Run abgebrochen")
+            aborted = True
+            _persist(results, output_path, run_at, hiring_signal_run=hiring_signal_run)
+            break
+
         # Zwischenspeichern nach jedem URL — Crash-sicher
-        output_path.write_text(
-            json.dumps({"run_at": run_at, "total": len(results), "results": results}, indent=2, ensure_ascii=False),
-            encoding="utf-8",
-        )
+        _persist(results, output_path, run_at, hiring_signal_run=hiring_signal_run)
 
         if i < len(urls):
             time.sleep(DELAY_BETWEEN_URLS)
 
-    # Automatische Heal-Phase am Ende jedes Batch-Runs
-    heal_errors(results, firecrawl_key, anthropic_key, output_path, run_at, cache_dir=cache_dir)
+    if not aborted:
+        # Automatische Heal-Phase am Ende jedes Batch-Runs
+        heal_errors(results, firecrawl_key, anthropic_key, output_path, run_at,
+                    cache_dir=cache_dir, hiring_signal_run=hiring_signal_run)
 
     print_batch_summary(results)
+
+    # Run-Summary
+    sc = _al.scrape_run_stats
+    tok = run_stats
+    cached = tok["cache_read_input_tokens"]
+    total_in = tok["input_tokens"]
+    cache_pct = int(cached / total_in * 100) if total_in else 0
+    print(f"\n{'═'*62}")
+    print(f"  RUN-SUMMARY")
+    print(f"{'═'*62}")
+    print(f"  URLs: {len(results)} / {effective_limit} (Limit)")
+    print(f"  Scraping: {sc['firecrawl']} Firecrawl, {sc['jina']} Jina-Fallback, {sc['skip']} Skip")
+    print(f"  Tokens: {total_in} input ({cached} cached={cache_pct}%), {tok['output_tokens']} output")
+    print(f"  Kosten: ${tok['cost_usd']:.4f}")
+    print(f"  Budget: ${tok['cost_usd']:.4f} / ${MAX_RUN_COST_USD:.2f} ({tok['cost_usd']/MAX_RUN_COST_USD*100:.1f}%)")
+    print(f"{'═'*62}")
+
     print(f"\nVollständige Ergebnisse gespeichert in: {output_path}")
     _sync_to_sheet(results, run_at)
     _export_qualified(results, output_path)

@@ -8,7 +8,7 @@ const steps = [
   {
     num: '02',
     title: 'Bauen',
-    time: '2–3 Wochen',
+    time: '2 Wochen',
     desc: 'Ich baue deinen Agenten auf n8n-Basis, verbinde ihn mit deinem Shop und trainiere ihn auf deine echten Tickets. Du bekommst Zwischenstände — nicht nur ein Endergebnis.',
   },
   {

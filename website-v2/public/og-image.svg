@@ -1,0 +1,22 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#c9a66b" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#0b0e14" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0b0e14"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="80" y="60" width="120" height="2" fill="#c9a66b" opacity="0.8"/>
+  <text x="80" y="120" font-family="system-ui,-apple-system,sans-serif" font-size="13" font-weight="600" letter-spacing="2" fill="#c9a66b">KI-SUPPORT-AUTOMATION · DACH E-COMMERCE</text>
+  <text x="80" y="210" font-family="Georgia,serif" font-size="72" font-weight="400" fill="#f5f3ec" letter-spacing="-2">Statt einer</text>
+  <text x="80" y="295" font-family="Georgia,serif" font-size="72" font-weight="400" fill="#c9a66b" letter-spacing="-2" font-style="italic">Support-Vollzeitkraft.</text>
+  <text x="80" y="370" font-family="system-ui,-apple-system,sans-serif" font-size="22" fill="#8892a6">60-70 % automatisiert. Festpreis. Tag 14 live.</text>
+  <rect x="80" y="410" width="1040" height="1" fill="#23293a"/>
+  <text x="80"  y="450" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#5a6278">· DSGVO-konform</text>
+  <text x="225" y="450" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#5a6278">· EU-gehostet</text>
+  <text x="335" y="450" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#5a6278">· Individueller Build</text>
+  <text x="495" y="450" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#5a6278">· Festpreis ab 2.000 EUR</text>
+  <text x="1120" y="450" font-family="Georgia,serif" font-size="28" font-weight="500" fill="#f5f3ec" text-anchor="end">GetKi<tspan fill="#c9a66b">Agent</tspan></text>
+  <text x="1120" y="476" font-family="system-ui,-apple-system,sans-serif" font-size="13" fill="#5a6278" text-anchor="end">getkiagent.de</text>
+</svg>

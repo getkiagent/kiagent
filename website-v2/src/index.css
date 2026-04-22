@@ -191,3 +191,8 @@ a { color: inherit; }
 .hairline {
   border-top: 1px solid var(--border);
 }
+
+/* Nav links — hide on mobile */
+@media (max-width: 768px) {
+  .nav-links { display: none !important; }
+}

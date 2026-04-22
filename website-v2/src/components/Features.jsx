@@ -8,8 +8,8 @@ const deliverables = [
   },
   {
     icon: Mail,
-    title: 'Gmail-Draft-Automation',
-    desc: 'Eingehende Support-Mails werden automatisch analysiert und als Entwurf in Gmail vorformuliert. Du prüfst und sendest — oder aktivierst Auto-Versand.',
+    title: 'Ticket-Analyse & Auto-Antworten',
+    desc: 'Eingehende Anfragen werden klassifiziert, priorisiert und beantwortet — vollautomatisch oder als geprüfter Entwurf. Du entscheidest den Autonomiegrad.',
   },
   {
     icon: ShoppingBag,
@@ -26,7 +26,7 @@ const deliverables = [
 export default function Features() {
   return (
     <section
-      id="leistungen"
+      id="lieferumfang"
       className="section"
       style={{
         background: 'var(--bg)',
@@ -37,17 +37,17 @@ export default function Features() {
         <div style={{ marginBottom: '3.5rem', maxWidth: '680px' }}>
           <p className="eyebrow">Lieferumfang</p>
           <h2 className="display-l" style={{ marginBottom: '1rem' }}>
-            Konkrete Deliverables.<br />
-            <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>Keine Buzzwords.</em>
+            Was du nach 14 Tagen hast.<br />
+            <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>Aufgeschlüsselt.</em>
           </h2>
           <p className="lead">
-            Was du nach zwei Wochen in der Hand hast — aufgeschlüsselt, nachvollziehbar, ohne Marketing-Nebel.
+            Keine Folien. Kein "Konzept". Ein laufender Agent, der deine echten Tickets beantwortet — auf deinem Stack.
           </p>
         </div>
 
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
           gap: '1.25rem',
         }}>
           {deliverables.map(({ icon: Icon, title, desc }) => (

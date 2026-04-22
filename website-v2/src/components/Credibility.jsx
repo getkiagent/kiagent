@@ -1,13 +1,6 @@
-import { useState } from 'react'
-import { Play } from 'lucide-react'
-
-const LOOM_ID = 'a243a6f8c920487a9db15e9c9816c36e'
-
 const stack = ['n8n', 'Claude (Anthropic)', 'Gmail API', 'Shopify', 'WooCommerce', 'Playwright', 'Python']
 
 export default function Credibility() {
-  const [loaded, setLoaded] = useState(false)
-
   return (
     <section
       id="warum"
@@ -21,15 +14,15 @@ export default function Credibility() {
         <div style={{ marginBottom: '3rem', maxWidth: '720px' }}>
           <p className="eyebrow">Warum mir</p>
           <h2 className="display-l">
-            Kein Template. Kein Baukasten.<br />
-            <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>Kein Abo.</em>
+            Kein Agency-Pitch.<br />
+            <em style={{ color: 'var(--accent)', fontStyle: 'italic' }}>Retail-Ops-Background.</em>
           </h2>
         </div>
 
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'minmax(0, 1fr)',
-          gap: '3rem',
+          gap: '2rem',
           alignItems: 'start',
         }}>
           <blockquote style={{
@@ -50,92 +43,57 @@ export default function Credibility() {
               marginBottom: '1.25rem',
               fontStyle: 'italic',
             }}>
-              „Ich baue seit 2024 KI-Support-Workflows auf n8n-Basis. Jeder Agent wird für einen konkreten Shop entwickelt — angepasst an Stack, Ticket-Typen und Tonalität. Statt Demo-Screenshots zeige ich dir direkt eine Live-Demo eines funktionsfähigen Systems."
+              „Ich war selbst Filialleiter mit 50 Mitarbeitern und siebenstelliger Umsatzverantwortung. Ich kenne den Aufwand und die Kosten von Support-Personal aus erster Hand — und weiß genau, wo Automatisierung wirklich greift und wo nicht.“
             </p>
             <footer style={{
               fontSize: '0.825rem',
               color: 'var(--text-subtle)',
               letterSpacing: '0.03em',
             }}>
-              — Ilias Tebque, Gründer GetKiAgent
+              — Ilias Tebque, Gründer GetKiAgent · 4+ Jahre Retail-Ops-Background
             </footer>
           </blockquote>
 
-          <div>
-            <p style={{
-              fontSize: '0.8rem',
-              color: 'var(--text-subtle)',
-              textTransform: 'uppercase',
-              letterSpacing: '0.12em',
-              marginBottom: '0.875rem',
-              fontWeight: 600,
-            }}>
-              Live-Demo eines gebauten Agenten
-            </p>
-            <div
-              style={{
-                position: 'relative',
-                width: '100%',
-                maxWidth: '820px',
-                aspectRatio: '16 / 9',
-                borderRadius: 'var(--r-md)',
-                overflow: 'hidden',
-                border: '1px solid var(--border-strong)',
-                background: 'var(--bg-elevated)',
-                cursor: loaded ? 'default' : 'pointer',
-              }}
-              onClick={() => setLoaded(true)}
-            >
-              {loaded ? (
-                <iframe
-                  src={`https://www.loom.com/embed/${LOOM_ID}?autoplay=1`}
-                  title="GetKiAgent Live-Demo"
-                  loading="lazy"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
-                  allowFullScreen
-                  style={{
-                    position: 'absolute',
-                    inset: 0,
-                    width: '100%',
-                    height: '100%',
-                  }}
-                />
-              ) : (
-                <button
-                  type="button"
-                  aria-label="Live-Demo abspielen"
-                  onClick={() => setLoaded(true)}
-                  style={{
-                    position: 'absolute',
-                    inset: 0,
-                    width: '100%',
-                    height: '100%',
-                    background: 'radial-gradient(ellipse at center, rgba(201,166,107,0.15) 0%, rgba(11,14,20,0.4) 70%)',
-                    border: 'none',
-                    cursor: 'pointer',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: 'var(--text)',
-                  }}
-                >
-                  <span style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    width: '72px',
-                    height: '72px',
-                    borderRadius: '50%',
-                    background: 'var(--accent)',
-                    color: 'var(--bg)',
-                    boxShadow: '0 12px 40px -8px rgba(201, 166, 107, 0.5)',
-                  }}>
-                    <Play size={26} fill="currentColor" style={{ marginLeft: '4px' }} />
-                  </span>
-                </button>
-              )}
-            </div>
+          <div style={{
+            display: 'flex',
+            gap: '1.5rem',
+            flexWrap: 'wrap',
+            maxWidth: '820px',
+          }}>
+            {[
+              { value: '50', label: 'Mitarbeiter geführt' },
+              { value: '7-stellig', label: 'Umsatzverantwortung' },
+              { value: '4+', label: 'Jahre Retail-Ops' },
+            ].map(({ value, label }) => (
+              <div
+                key={label}
+                style={{
+                  flex: '1 1 160px',
+                  background: 'var(--bg-elevated)',
+                  border: '1px solid var(--border)',
+                  borderRadius: 'var(--r-md)',
+                  padding: '1.25rem 1.5rem',
+                }}
+              >
+                <div style={{
+                  fontFamily: 'var(--font-serif)',
+                  fontSize: 'clamp(1.5rem, 2.5vw, 2rem)',
+                  fontWeight: 500,
+                  color: 'var(--accent)',
+                  letterSpacing: '-0.02em',
+                  lineHeight: 1,
+                  marginBottom: '0.375rem',
+                }}>
+                  {value}
+                </div>
+                <div style={{
+                  fontSize: '0.825rem',
+                  color: 'var(--text-subtle)',
+                }}>
+                  {label}
+                </div>
+              </div>
+            ))}
           </div>
 
           <div style={{ maxWidth: '820px' }}>

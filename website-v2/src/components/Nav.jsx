@@ -55,9 +55,36 @@ export default function Nav() {
           <span style={{ color: 'var(--accent)' }}>Agent</span>
         </a>
 
-        <a href="#kontakt" className="btn-primary" style={{ padding: '0.625rem 1.25rem', fontSize: '0.875rem' }}>
-          Kostenloses Gespräch
-        </a>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+          <div className="nav-links" style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+            {[
+              { label: 'Leistungen', href: '#leistungen' },
+              { label: 'Ablauf',     href: '#ablauf' },
+              { label: 'Preise',     href: '#preise' },
+              { label: 'Kontakt',    href: '#kontakt' },
+            ].map(({ label, href }) => (
+              <a
+                key={href}
+                href={href}
+                style={{
+                  color: 'var(--text-muted)',
+                  textDecoration: 'none',
+                  fontSize: '0.875rem',
+                  fontWeight: 500,
+                  transition: 'color 0.2s ease',
+                  whiteSpace: 'nowrap',
+                }}
+                onMouseEnter={(e) => (e.target.style.color = 'var(--accent)')}
+                onMouseLeave={(e) => (e.target.style.color = 'var(--text-muted)')}
+              >
+                {label}
+              </a>
+            ))}
+          </div>
+          <a href="#demo" className="btn-primary" style={{ padding: '0.625rem 1.25rem', fontSize: '0.875rem', whiteSpace: 'nowrap' }}>
+            Demo ansehen
+          </a>
+        </div>
       </nav>
     </header>
   )
